@@ -2,7 +2,6 @@
 
 package br.dominio.universidade;
 
-
 /*
  *  Classe que faz parte do projeto Classes
  */
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import br.dominio.empresa.Empresa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
 
 public class Universidade extends Empresa
 {
@@ -25,14 +23,12 @@ public class Universidade extends Empresa
     
     private ArrayList listaSalas = new ArrayList();
     
-    //Fim do campo de declaração de atributos;
-    
+    //Fim do campo de declaração de atributos;  
    
     public Universidade()
     {
         
     }//Fim do método construtor padrão para todas as classes;
-    
     
     public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario reitor, Funcionario viceReitor, Funcionario diretorPedagogico, Funcionario viceDiretorPedagogico, float orcamentoPedagogicoTrimestre)
     {  
