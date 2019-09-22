@@ -57,61 +57,61 @@ public class Universidade extends Empresa
     {      
         return this.reitor;
     
-    }
+    }//Fim do método que retorna o reitor para o objeto do tipo Universidade;
     
     public void alterarReitor(Funcionario novoReitor)
     {
         this.reitor=novoReitor;
     
-    }
+    }//Fim do método que altera o reitor para o objeto do tipo Universidade;
     
     public Funcionario retornarViceReitor()
     {   
         return this.viceReitor;
     
-    }
+    }//Fim do método que retorna o vice reitor para o objeto do tipo Universidade;
     
     public void alterarViceReitor(Funcionario novoViceReitor)
     {   
         this.viceReitor=novoViceReitor;
     
-    }
+    }//Fim do método que altera o vice reitor para o objeto do tipo Universidade;
     
     public Funcionario retornarDiretorPedagogico()
     {   
         return this.diretorPedagogico;
     
-    }
+    }//Fim do método que retorna o diretor pedagogico para o objeto do tipo Universidade;
     
     public void alterarDiretorPedagogico(Funcionario novoDiretorPedagogico)
     {   
         this.diretorPedagogico=novoDiretorPedagogico;
     
-    }
+    }//Fim do método que altera o diretor pedagogico para o objeto do tipo Universidade;
     
     public Funcionario retornarViceDiretorPedagogico()
     {   
         return this.viceDiretorPedagogico;
     
-    }
+    }//FIm do método que retorna o vice Diretor Pedagogio para o objeto do tipo Universidade;
     
     public void alterarViceDiretorPedagogico(Funcionario novoViceDiretorPedagogico)
     {   
         this.viceDiretorPedagogico=novoViceDiretorPedagogico;
     
-    }
+    }//Fim do método que altera o vice Diretor pedagogico para o objeto do tipo Universidade
     
     public float retornarOrcamentoPedagogicoTrimestre()
     {   
         return this.orcamentoPedagogicoTrimestre;
     
-    }//Fim do método que retorna o orcamento pedagogio trismestral para o objeto Universidade;
+    }//Fim do método que retorna o orcamento pedagogio trismestral para o objeto do tipo Universidade;
     
     public void alterarOrcamentoPedagogicoTrimestre(float novoOrcamentoPedagogicoTrimestre)
     {   
         this.orcamentoPedagogicoTrimestre=novoOrcamentoPedagogicoTrimestre;
         
-    }//Fim do método que altera o orcamento pedagogico trimestral para o objeto Universidade;
+    }//Fim do método que altera o orcamento pedagogico trimestral para o objeto do tipo Universidade;
     
     public ArrayList retornarListaColegiados()
     {   
