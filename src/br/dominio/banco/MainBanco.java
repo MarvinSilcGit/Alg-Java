@@ -19,7 +19,7 @@ public class MainBanco{
         
         Endereco endereco2 = new Endereco("","48400-000","alameda dos anjos","alameda","QG","","");
         
-        Correntista ca1 = new Correntista("mma",null,"1123","",0,'s',null,0,"financeiro","",null);
+        Correntista ca1 = new Correntista("mma",null,"1123","",0,'s',null,0,"financeiro","",null,null);
         
         CartaoDebito cd1 = new CartaoDebito(0,0,0,0,"a","s",null,"x"); 
         
