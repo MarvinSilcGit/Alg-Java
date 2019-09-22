@@ -105,13 +105,13 @@ public class Universidade extends Empresa
     {   
         return this.orcamentoPedagogicoTrimestre;
     
-    }
+    }//Fim do método que retorna o orcamento pedagogio trismestral para o objeto Universidade;
     
     public void alterarOrcamentoPedagogicoTrimestre(float novoOrcamentoPedagogicoTrimestre)
     {   
         this.orcamentoPedagogicoTrimestre=novoOrcamentoPedagogicoTrimestre;
         
-    }
+    }//Fim do método que altera o orcamento pedagogico trimestral para o objeto Universidade;
     
     public ArrayList retornarListaColegiados()
     {   
