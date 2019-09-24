@@ -110,8 +110,7 @@ public class Universidade extends Empresa
       else
       {       
          this.listaColegiados.add(novoColegiado);
-      }
-        
+      }    
     }//Fim do método que insere um objeto do tipo Colegiado na lista do objeto do tipo Universidade;
     
    public void removerColegiadoLista(Colegiado removerColegiado)
