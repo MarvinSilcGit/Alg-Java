@@ -59,62 +59,69 @@ public class Colegiado{
    public int retornarNumeroMaximoSemestres()
    { 
       return this.numeroMaximoSemestres;
-   }
+   }//Fim do método que retorna o número máximo de semestres para o objeto do tipo Colegiado;
     
    public void alterarNumeroMaximoSemestres(int novoMaximo)
    {     
       this.numeroMaximoSemestres=novoMaximo;
-   }
+   }//Fim do método que altera o número máximo de semestres para o objeto do tipo Colegiado;
     
    public int retornarNumeroMinimoSemestres()
    { 
       return this.numeroMinimoSemestres;
-   }
+   }//Fim do método que retorna o número mínimo de semestres para o objeto do tipo Colegiado;
     
    public void alterarNumeroMinimoSemestres(int novoMinimo)
    {     
       this.numeroMinimoSemestres=novoMinimo;
-   }
+   }//Fim do método que altera o número mínimo de semestre para o objeto do tipo Colegiado;
     
    public ArrayList retornarListaEstudantes()
    {    
        return this.listaEstudantes;
-   }
+   }//Fim do método que retorna a lista de estudantes do objeto do tipo Colegiado;
     
    public void inserirEstudanteColegiado(Estudante novoEstudante)
    {    
-       this.listaEstudantes.add(novoEstudante);
-   }
+      if(this.listaEstudantes.contains(novoEstudante))
+      {
+         System.out.println("Este estudante já está na lista");
+      }
+      else
+      {
+          this.listaEstudantes.add(novoEstudante);
+      }
+   }//Fim do método que insere um objeto do tipo Estudante na lista do objeto do tipo Colegiado;
     
    public void removerEstudanteColegiado(Estudante removerEstudante)
    {    
        this.listaEstudantes.remove(removerEstudante);
-   }
+   }//Fim do método que remove um objeto do tipo Estudante da lista do objeto do tipo Colegiado;
     
    public ArrayList retornarListaProfessores()
    {    
        return this.listaProfessores;
-   }
+   }//Fim do método que retorna a lista de professores do objeto do tipo Colegiado;
     
    public void inserirProfessorColegiado(Professor novoProfessor)
    {    
        this.listaProfessores.add(novoProfessor);
-   }
+   }//Fim do método que insere um objeto do tipo Professor na lista do objeto do tipo Colegiado;
     
    public void removerProfessorColegiado(Professor removerProfessor)
    {   
        this.listaProfessores.remove(removerProfessor);
-   }
+   }//Fim do método que remove um objeto do tipo Professor da lista do objeto do tipo Colegiado; 
     
     public ArrayList retornarListaDisciplinas()
     {   
         return this.listaDisciplinas;
-    }
+    }//Fim do método que retorna a lista de disciplinas do objeto do tipo Colegiado;
     
     public void inserirDisciplinaColegiado(Disciplina novaDisciplina)
     {   
         this.listaDisciplinas.add(novaDisciplina);
-    }
+    }//Fim do método que insere um objeto do tipo Disciplina na lista do objeto do tipo Colegiado;
     
     public void removerDisciplinaColegiado(Disciplina removerDisciplina)
     {       
