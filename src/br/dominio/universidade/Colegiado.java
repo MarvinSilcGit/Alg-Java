@@ -4,8 +4,8 @@ package br.dominio.universidade;
 import java.util.ArrayList;
 
 
-public class Colegiado{
-  
+public class Colegiado
+{  
     
    private String nome;
     
@@ -32,8 +32,7 @@ public class Colegiado{
    }//Fim do método construtor padrão da classe Colegiado;
     
    public Colegiado(String nome, Funcionario coordenador, int numeroMaximoSemestres, int numeroMinimoSemestres)
-   {
-        
+   {       
        this.nome=nome;
         
        this.coordenador=coordenador;
@@ -115,34 +114,49 @@ public class Colegiado{
        this.listaProfessores.remove(removerProfessor);
    }//Fim do método que remove um objeto do tipo Professor da lista do objeto do tipo Colegiado; 
     
-    public ArrayList retornarListaDisciplinas()
-    {   
-        return this.listaDisciplinas;
-    }//Fim do método que retorna a lista de disciplinas do objeto do tipo Colegiado;
+   public ArrayList retornarListaDisciplinas()
+   {   
+      return this.listaDisciplinas;
+   }//Fim do método que retorna a lista de disciplinas do objeto do tipo Colegiado;
     
-    public void inserirDisciplinaColegiado(Disciplina novaDisciplina)
-    {   
-        this.listaDisciplinas.add(novaDisciplina);
-    }//Fim do método que insere um objeto do tipo Disciplina na lista do objeto do tipo Colegiado;
+   public void inserirDisciplinaColegiado(Disciplina novaDisciplina)
+   {   
+      this.listaDisciplinas.add(novaDisciplina);
+   }//Fim do método que insere um objeto do tipo Disciplina na lista do objeto do tipo Colegiado;
     
-    public void removerDisciplinaColegiado(Disciplina removerDisciplina)
-    {       
-        this.listaDisciplinas.remove(removerDisciplina);
-    }//Fim do método que remove um objeto do tipo disciplina da lista do objeto do tipo Colegiado;
+   public void removerDisciplinaColegiado(Disciplina removerDisciplina)
+   {       
+      this.listaDisciplinas.remove(removerDisciplina);
+   }//Fim do método que remove um objeto do tipo disciplina da lista do objeto do tipo Colegiado;
     
-    public ArrayList retornarListaSalas()
-    {
-        return this.listaSalas;       
-    }//Retorna a lista de objetos do tipo Sala da lista do objeto do tipo Universidade;
+   public ArrayList retornarListaSalas()
+   {
+      return this.listaSalas;       
+   }//Fim do método que retorna objetos do tipo Sala da lista do objeto do tipo Colegiado;
     
-    public void inserirSalaLista(SalaAula novaSala)
-    {   
-       this.listaSalas.add(novaSala);       
-    }//Final do método que insere um objeto do tipo Sala na lisa do objeto do tipo Universidade;
+   public void inserirSalaLista(SalaAula novaSala)
+   {   
+      this.listaSalas.add(novaSala);       
+   }//Final do método que insere um objeto do tipo Sala na lisa do objeto do tipo Colegiado;
     
-    public void removerSalaLista(SalaAula removerSala)
-    {   
-       this.listaSalas.remove(removerSala);     
-    }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Universidade;
+   public void removerSalaLista(SalaAula removerSala)
+   {   
+      this.listaSalas.remove(removerSala);     
+   }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Colegiado;
     
+   public ArrayList retornarListaTurmas()
+   {
+      return this.listaTurmas;
+   }//Fim do método que retorna objetos do tipo Turma da lista do objeto do tipo Colegiado;
+   
+   public void inserirTurmaLista(Turma novaTurma)
+   {
+      this.listaTurmas.add(novaTurma);
+   }//Fim do método que insere um objeto do tipo Turma na lista do objeto do tipo Colegiado
+   
+   public void removerTurmaLista(Turma TurmaEscolhida)
+   {
+      this.listaTurmas.remove(TurmaEscolhida);
+   }//Fim do método que remove um objeto do tipo Turma da lista do objeto do tipo Colegiado;
+   
 }//Fim da classe Colegiado;

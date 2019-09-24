@@ -8,8 +8,6 @@ public class Disciplina
 {      
    private String nome, tipo, ementa;
     
-   private SalaAula numeroSala;
-    
    private int cargaHoraria, creditos;
     
    private ArrayList listaRequisitos = new ArrayList();
@@ -81,11 +79,6 @@ public class Disciplina
     public void alterarCreditos(int novoValor)
     {
        this.creditos=novoValor;
-    }
-    
-    public String retornarNumeroSala()
-    {    
-       return this.numeroSala.retornarNumeroSala();
     }
     
     public ArrayList retornarListaRequisitos()

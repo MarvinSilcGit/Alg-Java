@@ -16,7 +16,7 @@ public class Turma
 {
    private String periodo;
    
-   private ArrayList listaTurma = new ArrayList();
+   private ArrayList listaEstudantes = new ArrayList();
    
    private Professor professorResponsavel;
    
@@ -62,18 +62,18 @@ public class Turma
       this.sala=novaSala;
    }
    
-   public ArrayList retornarListaTurma()
+   public ArrayList retornarListaEstudante()
    {
-      return this.listaTurma;
+      return this.listaEstudantes;
    }//Fim do método que retorna a lista do objeto do tipo Turma;
    
    public void inserirEstudanteTurma(Estudante novoEstudante)
    {
-      this.listaTurma.add(novoEstudante);
+      this.listaEstudantes.add(novoEstudante);
    }//Fim do método que insere um objeto do tipo Estudante na lista do objeto do tipo Turma;
    
    public void removerEstudanteTurma(Estudante removerEstudante)
    {
-      this.listaTurma.remove(removerEstudante);
+      this.listaEstudantes.remove(removerEstudante);
    }//Fim do método que remove um objeto do tipo Estudante da lista do objeto do tipo Turma;
 }
