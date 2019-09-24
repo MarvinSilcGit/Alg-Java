@@ -21,7 +21,9 @@ public class Colegiado{
         
    private ArrayList listaSalas = new ArrayList();
    
-   //Fim do campo de declaração atributos;
+   private ArrayList listaTurmas = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
     
     
    public Colegiado()
@@ -143,4 +145,4 @@ public class Colegiado{
        this.listaSalas.remove(removerSala);     
     }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Universidade;
     
-}
+}//Fim da classe Colegiado;
