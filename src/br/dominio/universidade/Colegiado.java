@@ -39,22 +39,22 @@ public class Colegiado{
        this.numeroMaximoSemestres=numeroMaximoSemestres;
         
        this.numeroMinimoSemestres=numeroMinimoSemestres;
-   }
+   }//Fim do método construtor personalisado da classe Colegiado
     
    public String retornarNomeColegiado()
    {
       return this.nome;
-   }
+   }//Fim do método que retorna o nome do objeto do tipo Colegiado;
     
    public Funcionario retornarCoordenador()
    {   
       return this.coordenador;
-   }
+   }//Fim do método que retorna o coordenador do objeto do tipo Colegiado;
     
    public void alterarCoordenador(Funcionario novoCoordenador)
    {     
       this.coordenador=novoCoordenador;
-   }
+   }//Fim do método que alterao coordenador do objeto do tipo Colegiado;
     
    public int retornarNumeroMaximoSemestres()
    { 
@@ -119,7 +119,7 @@ public class Colegiado{
     public void removerDisciplinaColegiado(Disciplina removerDisciplina)
     {       
         this.listaDisciplinas.remove(removerDisciplina);
-    }
+    }//Fim do método que remove um objeto do tipo disciplina da lista do objeto do tipo Colegiado;
     
     public ArrayList retornarListaSalas()
     {
@@ -134,6 +134,6 @@ public class Colegiado{
     public void removerSalaLista(SalaAula removerSala)
     {   
        this.listaSalas.remove(removerSala);     
-    }//Final do método que remove um obbjeto to tipo Sala da lista do objeto do tipo Universidade;
+    }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Universidade;
     
 }
