@@ -2,15 +2,12 @@ package br.dominio.universidade;
 
 
 public class SalaAula
-{    
-    
+{     
     private String numeroSala, cor;
     
     private int capacidade;
     
     private double area;
-    
-    private Professor professorResponsavel;
     
     
     public SalaAula()
@@ -20,7 +17,6 @@ public class SalaAula
     
     public SalaAula(String numeroSala, String cor, int capacidade,  double area, Professor professorResponsavel)
     {
-        
         this.numeroSala=numeroSala;
         
         this.cor=cor;
@@ -28,8 +24,6 @@ public class SalaAula
         this.capacidade=capacidade;
         
         this.area=area;
-        
-        this.professorResponsavel=professorResponsavel;
     }
     
     public String retornarNumeroSala()
@@ -66,4 +60,5 @@ public class SalaAula
     {    
         this.area=novaArea;
     }
-}
+    
+}//Fim da classe SalaAula;
