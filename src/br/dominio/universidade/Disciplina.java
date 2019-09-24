@@ -1,5 +1,15 @@
+/*
+ *  Classe que faz parte do projeto Classes
+ * 
+ *  Autor: MVSC 
+ */
+
 package br.dominio.universidade;
 
+/**
+ *
+ * @author belogo
+ */
 
 import java.util.ArrayList;
 
@@ -11,7 +21,8 @@ public class Disciplina
    private int cargaHoraria, creditos;
     
    private ArrayList listaRequisitos = new ArrayList();
-    
+   //Fim do campor de declaração de atributos;
+   
     
    public Disciplina()
    {
@@ -96,4 +107,4 @@ public class Disciplina
        this.listaRequisitos.remove(removerRequisito);
     }
     
-}//Fimd da classe Disciplina
+}//Fim da classe Disciplina

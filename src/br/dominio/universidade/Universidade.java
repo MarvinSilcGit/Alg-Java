@@ -1,9 +1,14 @@
-// Classe do pacote br.dominio.universidade; 
+/*
+ *  Classe que faz parte do projeto Classes
+ * 
+ *  Autor: MVSC 
+ */
 
 package br.dominio.universidade;
 
-/*
- *  Classe que faz parte do projeto Classes
+/**
+ *
+ * @author belogo
  */
 
 import java.util.ArrayList;
@@ -11,6 +16,7 @@ import java.util.ArrayList;
 import br.dominio.empresa.Empresa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class Universidade extends Empresa
 {   
@@ -21,6 +27,7 @@ public class Universidade extends Empresa
    private ArrayList listaColegiados = new ArrayList(50);
     
    //Fim do campo de declaração de atributos;  
+  
    
    public Universidade()
    {

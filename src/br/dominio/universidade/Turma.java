@@ -3,6 +3,7 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.universidade;
 
 /**
@@ -21,6 +22,7 @@ public class Turma
    private Professor professorResponsavel;
    
    private SalaAula sala;
+   //Fim do campo de declaração de atributos;
    
    
    public Turma()
@@ -55,12 +57,12 @@ public class Turma
    public SalaAula retornarSalaTurma()
    {
       return this.sala;
-   }
+   }//Fim do método que retorna um objeto do tipo Sala para o objeto do tipo Turma;
    
    public void alterarSalaTurma(SalaAula novaSala)
    {
       this.sala=novaSala;
-   }
+   }//Fim do método que altera o objeto do tipo Sala do objeto do tipo Turma;
    
    public ArrayList retornarListaEstudante()
    {
@@ -76,4 +78,5 @@ public class Turma
    {
       this.listaEstudantes.remove(removerEstudante);
    }//Fim do método que remove um objeto do tipo Estudante da lista do objeto do tipo Turma;
-}
+   
+}//Fim da classe Turma;

@@ -1,12 +1,21 @@
+/*
+ *  Classe que faz parte do projeto Classes
+ * 
+ *  Autor: MVSC 
+ */
+
 package br.dominio.universidade;
 
+/**
+ *
+ * @author belogo
+ */
 
 import java.util.ArrayList;
 
 
 public class Colegiado
-{  
-    
+{   
    private String nome;
     
    private Funcionario coordenador;
@@ -22,7 +31,6 @@ public class Colegiado
    private ArrayList listaSalas = new ArrayList();
    
    private ArrayList listaTurmas = new ArrayList();
-   
    //Fim do campo de declaração de atributos;
     
     
