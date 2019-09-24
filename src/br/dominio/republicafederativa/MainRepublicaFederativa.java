@@ -4,11 +4,11 @@ package br.dominio.republicafederativa;
 import br.dominio.universidade.Endereco;
 
 
-public class MainRepublicaFederativa{
+public class MainRepublicaFederativa
+{
 
-
-    public static void main(String[] args){
-
+    public static void main(String[] args)
+    {
         Endereco e1 = new Endereco("","","","333","","","");
         
         Pais pais = new Pais("Brasil","Real",1990000.0,0,0,0);
