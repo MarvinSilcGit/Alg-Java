@@ -14,23 +14,26 @@ import java.util.ArrayList;
 
 public class Turma 
 {
-   
    private String periodo;
    
    private ArrayList listaTurma = new ArrayList();
    
    private Professor professorResponsavel;
    
+   private SalaAula sala;
+   
    public Turma()
    {
       
    }
    
-   public Turma(String periodo, Professor professorResponsavel)
+   public Turma(String periodo, Professor professorResponsavel, SalaAula sala)
    {
       this.periodo=periodo;
       
       this.professorResponsavel=professorResponsavel;
+      
+      this.sala=sala;
    }
     
    public String retornarPeriodo()
@@ -47,6 +50,16 @@ public class Turma
    {
       this.professorResponsavel=novoProfessor;
    }//Fim do método que altera o professor Responsavel do objeto do tipo Turma;
+   
+   public SalaAula retornarSalaTurma()
+   {
+      return this.sala;
+   }
+   
+   public void alterarSalaTurma(SalaAula novaSala)
+   {
+      this.sala=novaSala;
+   }
    
    public ArrayList retornarListaTurma()
    {

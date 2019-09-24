@@ -20,8 +20,6 @@ public class Universidade extends Empresa
     
    private ArrayList listaColegiados = new ArrayList(50);
     
-   private ArrayList listaSalas = new ArrayList();
-    
    //Fim do campo de declaração de atributos;  
    
    public Universidade()
@@ -124,20 +122,5 @@ public class Universidade extends Empresa
           this.listaColegiados.remove(removerColegiado);
       }      
    }//Fim do método que remove um objeto do tipo Colegiado da lista do objeto do tipo Universidade;
-    
-   public ArrayList retornarListaSalas()
-   {
-       return this.listaSalas;       
-   }//Retorna a lista de objetos do tipo Sala da lista do objeto do tipo Universidade;
-    
-   public void inserirSalaLista(SalaAula novaSala)
-   {   
-      this.listaSalas.add(novaSala);       
-   }//Final do método que insere um objeto do tipo Sala na lisa do objeto do tipo Universidade;
-    
-   public void removerSalaLista(SalaAula removerSala)
-   {   
-      this.listaSalas.remove(removerSala);     
-   }//Final do método que remove um obbjeto to tipo Sala da lista do objeto do tipo Universidade;
    
 }//Final da classe Universidade;

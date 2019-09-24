@@ -7,111 +7,133 @@ import java.util.ArrayList;
 public class Colegiado{
   
     
-    private String nome;
+   private String nome;
     
-    private Funcionario coordenador;
+   private Funcionario coordenador;
     
-    private int numeroMaximoSemestres, numeroMinimoSemestres;
+   private int numeroMaximoSemestres, numeroMinimoSemestres;
     
-    private ArrayList listaProfessores = new ArrayList(20);
+   private ArrayList listaProfessores = new ArrayList(20);
     
-    private ArrayList listaDisciplinas = new ArrayList();
+   private ArrayList listaDisciplinas = new ArrayList();
     
-    private ArrayList listaEstudantes = new ArrayList();
-    
-    
-    public Colegiado(){
+   private ArrayList listaEstudantes = new ArrayList();
         
-    }
+   private ArrayList listaSalas = new ArrayList();
+   
+   //Fim do campo de declaração atributos;
     
-    public Colegiado(String nome, Funcionario coordenador, int numeroMaximoSemestres, int numeroMinimoSemestres){
-        
-        this.nome=nome;
-        
-        this.coordenador=coordenador;
-        
-        this.numeroMaximoSemestres=numeroMaximoSemestres;
-        
-        this.numeroMinimoSemestres=numeroMinimoSemestres;
-    }
     
-    public String retornarNomeColegiado(){
+   public Colegiado()
+   {
         
-        return this.nome;
-    }
+   }//Fim do método construtor padrão da classe Colegiado;
     
-    public Funcionario retornarCoordenador(){
+   public Colegiado(String nome, Funcionario coordenador, int numeroMaximoSemestres, int numeroMinimoSemestres)
+   {
         
-        return this.coordenador;
-    }
-    
-    public void alterarCoordenador(Funcionario novoCoordenador){
+       this.nome=nome;
         
-        this.coordenador=novoCoordenador;
-    }
-    
-    public int retornarNumeroMaximoSemestres(){
+       this.coordenador=coordenador;
         
-        return this.numeroMaximoSemestres;
-    }
-    
-    public void alterarNumeroMaximoSemestres(int novoMaximo){
+       this.numeroMaximoSemestres=numeroMaximoSemestres;
         
-        this.numeroMaximoSemestres=novoMaximo;
-    }
+       this.numeroMinimoSemestres=numeroMinimoSemestres;
+   }
     
-    public int retornarNumeroMinimoSemestres(){
+   public String retornarNomeColegiado()
+   {
+      return this.nome;
+   }
     
-        return this.numeroMinimoSemestres;
-    }
+   public Funcionario retornarCoordenador()
+   {   
+      return this.coordenador;
+   }
     
-    public void alterarNumeroMinimoSemestres(int novoMinimo){
-        
-        this.numeroMinimoSemestres=novoMinimo;
-    }
+   public void alterarCoordenador(Funcionario novoCoordenador)
+   {     
+      this.coordenador=novoCoordenador;
+   }
     
-    public ArrayList retornarListaEstudantes(){
-        
-        return this.listaEstudantes;
-    }
+   public int retornarNumeroMaximoSemestres()
+   { 
+      return this.numeroMaximoSemestres;
+   }
     
-    public void inserirEstudanteColegiado(Estudante novoEstudante){
-        
-        this.listaEstudantes.add(novoEstudante);
-    }
+   public void alterarNumeroMaximoSemestres(int novoMaximo)
+   {     
+      this.numeroMaximoSemestres=novoMaximo;
+   }
     
-    public void removerEstudanteColegiado(Estudante removerEstudante){
-        
-        this.listaEstudantes.remove(removerEstudante);
-    }
+   public int retornarNumeroMinimoSemestres()
+   { 
+      return this.numeroMinimoSemestres;
+   }
     
-    public ArrayList retornarListaProfessores(){
-        
-        return this.listaProfessores;
-    }
+   public void alterarNumeroMinimoSemestres(int novoMinimo)
+   {     
+      this.numeroMinimoSemestres=novoMinimo;
+   }
     
-    public void inserirProfessorColegiado(Professor novoProfessor){
-        
-        this.listaProfessores.add(novoProfessor);
-    }
+   public ArrayList retornarListaEstudantes()
+   {    
+       return this.listaEstudantes;
+   }
     
-    public void removerProfessorColegiado(Professor removerProfessor){
-        
-        this.listaProfessores.remove(removerProfessor);
-    }
+   public void inserirEstudanteColegiado(Estudante novoEstudante)
+   {    
+       this.listaEstudantes.add(novoEstudante);
+   }
     
-    public ArrayList retornarListaDisciplinas(){
-        
+   public void removerEstudanteColegiado(Estudante removerEstudante)
+   {    
+       this.listaEstudantes.remove(removerEstudante);
+   }
+    
+   public ArrayList retornarListaProfessores()
+   {    
+       return this.listaProfessores;
+   }
+    
+   public void inserirProfessorColegiado(Professor novoProfessor)
+   {    
+       this.listaProfessores.add(novoProfessor);
+   }
+    
+   public void removerProfessorColegiado(Professor removerProfessor)
+   {   
+       this.listaProfessores.remove(removerProfessor);
+   }
+    
+    public ArrayList retornarListaDisciplinas()
+    {   
         return this.listaDisciplinas;
     }
     
-    public void inserirDisciplinaColegiado(Disciplina novaDisciplina){
-        
+    public void inserirDisciplinaColegiado(Disciplina novaDisciplina)
+    {   
         this.listaDisciplinas.add(novaDisciplina);
     }
     
-    public void removerDisciplinaColegiado(Disciplina removerDisciplina){
-        
+    public void removerDisciplinaColegiado(Disciplina removerDisciplina)
+    {       
         this.listaDisciplinas.remove(removerDisciplina);
     }
+    
+    public ArrayList retornarListaSalas()
+    {
+        return this.listaSalas;       
+    }//Retorna a lista de objetos do tipo Sala da lista do objeto do tipo Universidade;
+    
+    public void inserirSalaLista(SalaAula novaSala)
+    {   
+       this.listaSalas.add(novaSala);       
+    }//Final do método que insere um objeto do tipo Sala na lisa do objeto do tipo Universidade;
+    
+    public void removerSalaLista(SalaAula removerSala)
+    {   
+       this.listaSalas.remove(removerSala);     
+    }//Final do método que remove um obbjeto to tipo Sala da lista do objeto do tipo Universidade;
+    
 }
