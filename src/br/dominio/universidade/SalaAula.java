@@ -1,8 +1,8 @@
 package br.dominio.universidade;
 
 
-public class SalaAula{
-    
+public class SalaAula
+{    
     
     private String numeroSala, cor;
     
@@ -13,11 +13,13 @@ public class SalaAula{
     private Professor professorResponsavel;
     
     
-    public SalaAula(){
+    public SalaAula()
+    {
         
     }
     
-    public SalaAula(String numeroSala, String cor, int capacidade,  double area, Professor professorResponsavel){
+    public SalaAula(String numeroSala, String cor, int capacidade,  double area, Professor professorResponsavel)
+    {
         
         this.numeroSala=numeroSala;
         
@@ -30,48 +32,48 @@ public class SalaAula{
         this.professorResponsavel=professorResponsavel;
     }
     
-    public String retornarNumeroSala(){
-        
+    public String retornarNumeroSala()
+    {   
         return this.numeroSala;
     }
     
-    public String retornarCor(){
-    
+    public String retornarCor()
+    {
         return this.cor;
     }
     
-    public void alterarCor(String novaCor){
-    
+    public void alterarCor(String novaCor)
+    {
         this.cor=novaCor;
     }
     
-    public int retornarCapacidade(){
-        
+    public int retornarCapacidade()
+    {    
         return this.capacidade;
     }
     
-    public void alterarCapacidade(int novaCapacidade){
-        
+    public void alterarCapacidade(int novaCapacidade)
+    {    
         this.capacidade=novaCapacidade;
     }
     
-    public double retornarArea(){
-    
+    public double retornarArea()
+    {
         return this.area;
     }
     
-    public void alterarAreaSala(double novaArea){
-        
+    public void alterarAreaSala(double novaArea)
+    {    
         this.area=novaArea;
     }
     
-    public Professor retornarProfessorResponsavel(){
-     
+    public Professor retornarProfessorResponsavel()
+    { 
         return this.professorResponsavel;
     }
     
-    public void alterarProfessorResponsavel(Professor novoProfessor){
-    
+    public void alterarProfessorResponsavel(Professor novoProfessor)
+    {
         this.professorResponsavel=novoProfessor;
     }
 }
