@@ -66,14 +66,4 @@ public class SalaAula
     {    
         this.area=novaArea;
     }
-    
-    public Professor retornarProfessorResponsavel()
-    { 
-        return this.professorResponsavel;
-    }
-    
-    public void alterarProfessorResponsavel(Professor novoProfessor)
-    {
-        this.professorResponsavel=novoProfessor;
-    }
 }
