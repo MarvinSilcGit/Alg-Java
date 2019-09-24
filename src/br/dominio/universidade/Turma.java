@@ -17,7 +17,7 @@ public class Turma
    
    private String periodo;
    
-   private ArrayList listaAlunos = new ArrayList();
+   private ArrayList listaTurma = new ArrayList();
    
    private Professor professorResponsavel;
    
@@ -46,5 +46,20 @@ public class Turma
    public void alterarProfessorResponsavel(Professor novoProfessor)
    {
       this.professorResponsavel=novoProfessor;
-   }//Fim do método que altera o   
+   }//Fim do método que altera o professor Responsavel do objeto do tipo Turma;
+   
+   public ArrayList retornarListaTurma()
+   {
+      return this.listaTurma;
+   }//Fim do método que retorna a lista do objeto do tipo Turma;
+   
+   public void inserirEstudanteTurma(Estudante novoEstudante)
+   {
+      this.listaTurma.add(novoEstudante);
+   }//Fim do método que insere um objeto do tipo Estudante na lista do objeto do tipo Turma;
+   
+   public void removerEstudanteTurma(Estudante removerEstudante)
+   {
+      this.listaTurma.remove(removerEstudante);
+   }//Fim do método que remove um objeto do tipo Estudante da lista do objeto do tipo Turma;
 }
