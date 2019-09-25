@@ -26,11 +26,7 @@ public class MainUniversidade
         
       Acesso ac2 = new Acesso();
         
-      Estudante e1 = new Estudante("aas",null,"12345","@gmail.com",12,'m',endereco1,10,0,0,8,0,0,"diurno","medicina",20,ac2);
- 
-      System.out.println(e1.retornarDescontoAplicado());   
-      
-      System.out.println(e1.retornarMensalidade());
+      Estudante e1 = new Estudante("aas",null,"12345","@gmail.com",12,'m',endereco1,10,0,0,8,"diurno","medicina",20,ac2);
     }
     
 }//Fim da classe MainUniversidade;

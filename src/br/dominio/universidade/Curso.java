@@ -19,6 +19,8 @@ public class Curso
    
    private int numeroMaximoSemestres, numeroMinimoSemestres;
    
+   private double mensalidade, valorTotal;
+   
    private ArrayList listaDisciplinas = new ArrayList();
    
    //Fim do campo de declaração de atributos;
@@ -29,19 +31,23 @@ public class Curso
       
    }//Fim do método construtor padrão;
    
-   public Curso(String nome, int numeroMaximoSemestres, int numeroMinimoSemestres)
+   public Curso(String nome, int numeroMaximoSemestres, int numeroMinimoSemestres, double mensalidade, double valorTotal)
    {
       this.nome=nome;
       
       this.numeroMaximoSemestres=numeroMaximoSemestres;
       
       this.numeroMinimoSemestres=numeroMinimoSemestres;
+      
+      this.mensalidade=mensalidade;
+      
+      this.valorTotal=valorTotal;
    }//Fim do método construtor personalizado;
    
    public String retornarNome()
    {
       return this.nome;
-   }
+   }//Fim do método que retorna o nome do curso;
    
    public int retornarNumeroMaximoSemestres()
    { 

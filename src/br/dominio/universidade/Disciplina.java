@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class Disciplina 
 {      
-   private String nome, tipo, ementa;
+   private String nome, tipo, ementa, periodoAula;
     
    private int cargaHoraria, creditos;
     
@@ -70,6 +70,16 @@ public class Disciplina
     public void alterarEmenta(String novaEmenta)
     {    
        this.ementa=novaEmenta;
+    }
+    
+    public String retornarPeriodoAula()
+    {
+        return this.periodoAula;
+    }
+    
+    public void alterarPeriodoAula(String novoPeriodoAula)
+    {
+        this.periodoAula=novoPeriodoAula;
     }
     
     public int retornarCargaHoraria()
