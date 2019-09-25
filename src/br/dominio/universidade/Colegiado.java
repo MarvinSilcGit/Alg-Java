@@ -37,7 +37,7 @@ public class Colegiado
    public Colegiado()
    {
         
-   }//Fim do método construtor padrão da classe Colegiado;
+   }//Fim do método construtor padrão;
     
    public Colegiado(String nome, Funcionario coordenador, int numeroMaximoSemestres, int numeroMinimoSemestres)
    {       

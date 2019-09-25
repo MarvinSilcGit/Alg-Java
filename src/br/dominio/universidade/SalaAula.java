@@ -19,11 +19,12 @@ public class SalaAula
     
     private double area;
     
+    //Fim do campo de declaração de atributos;
     
     public SalaAula()
     {
         
-    }
+    }//Fim do método construtor padrão
     
     public SalaAula(String numeroSala, String cor, int capacidade,  double area, Professor professorResponsavel)
     {

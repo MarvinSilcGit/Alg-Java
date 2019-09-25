@@ -32,7 +32,7 @@ public class Universidade extends Empresa
    public Universidade()
    {
         
-   }//Fim do método construtor padrão para todas as classes;
+   }//Fim do método construtor padrão;
     
    public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario reitor, Funcionario viceReitor, Funcionario diretorPedagogico, Funcionario viceDiretorPedagogico, float orcamentoPedagogicoTrimestre)
    {  
