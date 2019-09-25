@@ -16,14 +16,14 @@ public class Endereco
    private String numero, bairro, cep, complemento, rua, cidade, estado;
     
     
-    public Endereco()
-    {     
+   public Endereco()
+   {     
     
-    }//Fim do método construtor padrão;
+   }//Fim do método construtor padrão;
     
    public Endereco(String numero, String bairro, String cep, String complemento, String rua, String cidade, String estado)
    {    
-     this.numero=numero;
+      this.numero=numero;
        
       this.bairro=bairro;
         
