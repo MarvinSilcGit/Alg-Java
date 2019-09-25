@@ -19,7 +19,7 @@ public class Curso
    
    private int numeroMaximoSemestres, numeroMinimoSemestres;
    
-   private double mensalidade, valorTotal;
+   private double mensalidade, valorCurso;
    
    private ArrayList listaDisciplinas = new ArrayList();
    
@@ -31,7 +31,7 @@ public class Curso
       
    }//Fim do método construtor padrão;
    
-   public Curso(String nome, int numeroMaximoSemestres, int numeroMinimoSemestres, double mensalidade, double valorTotal)
+   public Curso(String nome, int numeroMaximoSemestres, int numeroMinimoSemestres, double mensalidade, double valorCurso)
    {
       this.nome=nome;
       
@@ -41,13 +41,13 @@ public class Curso
       
       this.mensalidade=mensalidade;
       
-      this.valorTotal=valorTotal;
+      this.valorCurso=valorCurso;
    }//Fim do método construtor personalizado;
    
    public String retornarNome()
    {
       return this.nome;
-   }//Fim do método que retorna o nome do curso;
+   }//Fim do método que retorna o nome para o objeto do tipo curso;
    
    public int retornarNumeroMaximoSemestres()
    { 
@@ -69,6 +69,21 @@ public class Curso
       this.numeroMinimoSemestres=novoMinimo;
    }//Fim do método que altera o número mínimo de semestre para o objeto do tipo Curso;
        
+   public double retornarMensalidade()
+   {
+      return this.mensalidade;
+   }//Fim do método que retorna a mensalidade para o objeto do tipo Curso;
+   
+   public void alterarMensalidade(double alterarMensalidade)
+   {
+      this.mensalidade=alterarMensalidade;
+   }
+   
+   public double retornarValorCurso()
+   {
+      return this.mensalidade*(this.numeroMinimoSemestres*6);
+   }//Fim do método que retorna o valor do para o objeto do tipo Curso;
+   
    public ArrayList retornarListaDisciplinas()
    {   
       return this.listaDisciplinas;

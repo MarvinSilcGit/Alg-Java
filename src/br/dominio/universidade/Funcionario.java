@@ -18,8 +18,6 @@ import br.dominio.banco.Acesso;
 
 public abstract class Funcionario extends Pessoa
 {
-    
-
    private double salario;
     
    private String setor, cargo;
@@ -27,12 +25,14 @@ public abstract class Funcionario extends Pessoa
    private Date dataAdmissao;
     
    private Acesso conta;
+   
+   //Fim do campo de declaração de atributos;
     
    
    public Funcionario()
    {
         
-   }
+   }//Fim do método construtor padrão;
     
    public Funcionario(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta)
    {    
@@ -47,7 +47,7 @@ public abstract class Funcionario extends Pessoa
       this.dataAdmissao=dataAdmissao;
         
       this.conta=conta;
-   }
+   }//Fim do primeiro método construtor personalizado;
     
    public Funcionario(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta)
    {    
@@ -60,7 +60,7 @@ public abstract class Funcionario extends Pessoa
       this.dataAdmissao=dataAdmissao;
         
       this.conta=conta;     
-   }
+   }//Fim do primeiro método construtor personalizado;
     
    public double retornarSalario()
    { 
