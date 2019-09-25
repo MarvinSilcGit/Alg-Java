@@ -37,7 +37,7 @@ public class Universidade extends Empresa
    public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario reitor, Funcionario viceReitor, Funcionario diretorPedagogico, Funcionario viceDiretorPedagogico, float orcamentoPedagogicoTrimestre)
    {  
        super(cnpj, razaoSocial, nomeFantasia, endereco);    
-       //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um dos construtores que ela possui;
+       //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um de seus construtores;
         
        this.reitor=reitor;
         
@@ -49,7 +49,7 @@ public class Universidade extends Empresa
         
        this.orcamentoPedagogicoTrimestre=orcamentoPedagogicoTrimestre;
     
-   }//Fim do método construtor da classe Uniseridade;
+   }//Fim do método construtor personalizado;
     
    public Funcionario retornarReitor()
    {      

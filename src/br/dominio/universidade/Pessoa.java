@@ -14,9 +14,8 @@ package br.dominio.universidade;
 import java.util.Date;
 
 
-public abstract class Pessoa{
-    
-    
+public abstract class Pessoa
+{    
     private String nome, cpf, email;
     
     private Date nascimento;

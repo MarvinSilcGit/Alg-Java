@@ -18,9 +18,8 @@ import java.util.ArrayList;
 import br.dominio.banco.Acesso;
 
 
-public class Estudante extends Pessoa{
-    
-
+public class Estudante extends Pessoa
+{
     private int quantidadeDisciplinasSemestre, cargaHoraria, horasExtras, codeMatricula, semestresTotais, semestreAtual;
     
     private String periodoAula, curso;
@@ -36,12 +35,13 @@ public class Estudante extends Pessoa{
     private ArrayList disciplinasCursadas = new ArrayList();
     
     
-    public Estudante(){
-        
+    public Estudante()
+    {    
+    
     }
     
-    public Estudante(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, int quantidadeDisciplinasSemestre, int cargaHoraria, int horasExtras, int codeMatricula, int semestresTotais, int semestreAtual, String periodoAula, String curso, double descontoFiesProUni, Acesso conta){
-        
+    public Estudante(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, int quantidadeDisciplinasSemestre, int cargaHoraria, int horasExtras, int codeMatricula, int semestresTotais, int semestreAtual, String periodoAula, String curso, double descontoFiesProUni, Acesso conta)
+    {    
         super(nome, nascimento, cpf, email, telefone, sexo, endereco);
      
         this.quantidadeDisciplinasSemestre=quantidadeDisciplinasSemestre;
@@ -65,94 +65,94 @@ public class Estudante extends Pessoa{
         this.conta=conta;
     }
     
-    public int retornarQuantidadeDisciplinasSemestre(){
-        
+    public int retornarQuantidadeDisciplinasSemestre()
+    {    
         return this.quantidadeDisciplinasSemestre;
     }
     
-    public void alterarQuantidadeDisciplinasSemestre(int alterarQuantidadeDisciplinasSemestre){
-    
+    public void alterarQuantidadeDisciplinasSemestre(int alterarQuantidadeDisciplinasSemestre)
+    {
         this.quantidadeDisciplinasSemestre=alterarQuantidadeDisciplinasSemestre;
     }
     
-    public int retornarCargaHorária(){
-    
+    public int retornarCargaHorária()
+    {  
         return this.cargaHoraria*this.quantidadeDisciplinasSemestre;
     }
     
-    public int retornarHorasExtras(){
-    
+    public int retornarHorasExtras()
+    {
         return this.horasExtras;
     }
     
-    public void aumentarHorasExtras(int alterar){
-    
+    public void aumentarHorasExtras(int alterar)
+    {
         this.horasExtras=alterar;
     }
     
-    public int retornarMatrícula(){
-    
+    public int retornarMatrícula()
+    {
         return this.codeMatricula;
     }
     
-    public int retornarSemestresTotais(){
-    
+    public int retornarSemestresTotais()
+    {
         return this.semestresTotais;
     }
     
-    public int retornarSemestreAtual(){
-    
+    public int retornarSemestreAtual()
+    {
         return this.semestreAtual;
     }
     
-    public int retornarSemestresFaltantes(){
-    
+    public int retornarSemestresFaltantes()
+    {
         return this.semestresTotais-this.semestreAtual;
     }
     
-    public String retornarPeriodoAula(){
-    
+    public String retornarPeriodoAula()
+    {
         return this.periodoAula;
     }
     
-    public void alterarPeriodoAula(String alterarPeriodoAula){
-    
+    public void alterarPeriodoAula(String alterarPeriodoAula)
+    {
         this.periodoAula=alterarPeriodoAula;
     }
     
-    public String retornarCurso(){
-    
+    public String retornarCurso()
+    {
         return this.curso;
     }
     
-    public void alterarCurso(String alterar){
-    
+    public void alterarCurso(String alterar)
+    {
         this.curso=alterar;
     }
     
-    public double retornarDescontoFiesProUni(){
-    
+    public double retornarDescontoFiesProUni()
+    {
         return this.descontoFiesProUni;
     }
     
-    public Acesso acessarContaAcesso(){
-    
+    public Acesso acessarContaAcesso()
+    {
         return this.conta;
     }
     
-    public double retornarDescontoAplicado(){
-    
+    public double retornarDescontoAplicado()
+    {
         return (this.retornarMensalidade()/1000)*this.retornarDescontoFiesProUni();
     }
     
     public double retornarMensalidade(){
     
-        if (this.retornarCurso().equals("letras")){
-        
+        if (this.retornarCurso().equals("letras"))
+        {
             return (1200/10)*(this.retornarQuantidadeDisciplinasSemestre()*2);
         }
-        else switch (this.retornarCurso()){
-           
+        else switch (this.retornarCurso())
+        {       
             case "medicina":
             
                 return (7000/10)*(this.retornarQuantidadeDisciplinasSemestre()*2);
@@ -203,30 +203,31 @@ public class Estudante extends Pessoa{
         }
     }
     
-    public ArrayList retornarDisciplinasCursando(){
-        
+    public ArrayList retornarDisciplinasCursando()
+    {      
         return this.disciplinasCursando;
     }
     
     public void inserirDisciplinaAluno(Disciplina novaDisciplina){
         
-        if (this.retornarDisciplinasCursando().size() == this.retornarQuantidadeDisciplinasSemestre()){
-            
+        if (this.retornarDisciplinasCursando().size() == this.retornarQuantidadeDisciplinasSemestre())
+        {   
             System.out.println("Não é mais possível adcionar disciplinas");
         }
-        else{
-            
+        else
+        {    
             this.disciplinasCursando.add(novaDisciplina);
         }
     }
     
-    public void removerDisciplinaAluno(Disciplina removerDisciplina){
-        
+    public void removerDisciplinaAluno(Disciplina removerDisciplina)
+    {    
         this.disciplinasCursando.remove(removerDisciplina);
     }
     
-    public ArrayList retornarDisciplinasCursadas(){
-        
+    public ArrayList retornarDisciplinasCursadas()
+    {   
         return this.disciplinasCursadas;
     }
-}
+    
+}//Fim da classe Estudante;

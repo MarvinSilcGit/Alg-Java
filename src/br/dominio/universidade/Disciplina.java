@@ -40,7 +40,7 @@ public class Disciplina
       this.cargaHoraria=cargaHoraria;
         
       this.creditos=creditos;
-   }
+   }//Fim do método construtor personalizado;
     
    public String retornarNome()
    {  

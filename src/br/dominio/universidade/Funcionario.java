@@ -16,88 +16,90 @@ import java.util.Date;
 import br.dominio.banco.Acesso;
 
 
-public abstract class Funcionario extends Pessoa{
+public abstract class Funcionario extends Pessoa
+{
     
 
-    private double salario;
+   private double salario;
     
-    private String setor, cargo;
+   private String setor, cargo;
     
-    private Date dataAdmissao;
+   private Date dataAdmissao;
     
-    private Acesso conta;
+   private Acesso conta;
     
    
-    public Funcionario(){
+   public Funcionario()
+   {
         
-    }
+   }
     
-    public Funcionario(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta){
-        
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco);          
+   public Funcionario(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta)
+   {    
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco);          
     
-        this.salario=salario;
+      this.salario=salario;
         
-        this.setor=setor;
+      this.setor=setor;
         
-        this.cargo=cargo;
+      this.cargo=cargo;
         
-        this.dataAdmissao=dataAdmissao;
+      this.dataAdmissao=dataAdmissao;
         
-        this.conta=conta;
-    }
+      this.conta=conta;
+   }
     
-    public Funcionario(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta){
-        
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco);
+   public Funcionario(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta)
+   {    
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco);
        
-        this.setor=setor;
+      this.setor=setor;
         
-        this.cargo=cargo;
+      this.cargo=cargo;
         
-        this.dataAdmissao=dataAdmissao;
+      this.dataAdmissao=dataAdmissao;
         
-        this.conta=conta;
-        
-    }
+      this.conta=conta;     
+   }
     
-    public double retornarSalario(){
+   public double retornarSalario()
+   { 
+      return this.salario;
+   }
     
-        return this.salario;
-    }
+   public void alterarSalario(double alterarSalario)
+   { 
+      this.salario=alterarSalario;
+   }
     
-    public void alterarSalario(double alterarSalario){
+   public String retornarSetor()
+   {
+      return this.setor;
+   }
     
-        this.salario=alterarSalario;
-    }
+   public void alterarSetor(String alterarSetor)
+   {   
+      this.setor=alterarSetor;
+   }
     
-    public String retornarSetor(){
+   public String retornarCargo()
+   { 
+      return this.cargo;
+   }
     
-        return this.setor;
-    }
+   public void alterarCargo(String alterarSetor)
+   { 
+      this.cargo=alterarSetor;
+   }
     
-    public void alterarSetor(String alterarSetor){
+   public Date retornarDataAdmissão()
+   {   
+      return this.dataAdmissao;
+   }
     
-        this.setor=alterarSetor;
-    }
-    
-    public String retornarCargo(){
-    
-        return this.cargo;
-    }
-    
-    public void alterarCargo(String alterarSetor){
-    
-        this.cargo=alterarSetor;
-    }
-    
-    public Date retornarDataAdmissão(){
-    
-        return this.dataAdmissao;
-    }
-    
-    public Acesso acessarContaAcesso(){
-    
-        return this.conta;
-    }
-}
+   public Acesso acessarContaAcesso()
+   {  
+      return this.conta;
+   }
+   
+}//Fim da classe Funcionario;

@@ -11,87 +11,88 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-public class Endereco {
+public class Endereco 
+{
+   private String numero, bairro, cep, complemento, rua, cidade, estado;
     
     
-    private String numero, bairro, cep, complemento, rua, cidade, estado;
-    
-    
-    public Endereco(){     
+    public Endereco()
+    {     
     
     }
     
-    public Endereco(String numero, String bairro, String cep, String complemento, String rua, String cidade, String estado){
-        
-        this.numero=numero;
+   public Endereco(String numero, String bairro, String cep, String complemento, String rua, String cidade, String estado)
+   {    
+     this.numero=numero;
        
-        this.bairro=bairro;
+      this.bairro=bairro;
         
-        this.cep=cep;
+      this.cep=cep;
         
-        this.complemento=complemento;
+      this.complemento=complemento;
         
-        this.rua=rua;
+      this.rua=rua;
         
-        this.cidade=cidade;
+      this.cidade=cidade;
         
-        this.estado=estado;
-    }
+      this.estado=estado;
+   }
     
-    public String retornarEnderecoCompleto(){
-
-            return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
-    }
+   public String retornarEnderecoCompleto()
+   {
+      return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
+   }
     
-    public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novoComplemento, String novaRua, String novaCidade, String novoEstado){
+   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novoComplemento, String novaRua, String novaCidade, String novoEstado)
+   {    
+      this.numero=novoNumero;
         
-        this.numero=novoNumero;
+      this.bairro=novoBairro;
         
-        this.bairro=novoBairro;
+      this.cep=novoCEP;
         
-        this.cep=novoCEP;
+      this.complemento=novoComplemento;
         
-        this.complemento=novoComplemento;
+      this.rua=novaRua;
         
-        this.rua=novaRua;
+      this.cidade=novaCidade;
         
-        this.cidade=novaCidade;
-        
-        this.estado=novoEstado;
-    }
+      this.estado=novoEstado;
+   }
     
-    public String retornarNumero(){
+   public String retornarNumero()
+   {
+      return this.numero;
+   }
     
-        return this.numero;
-    }
+   public String retornarBairro()
+   { 
+      return this.bairro;
+   }
     
-    public String retornarBairro(){
+   public String retornarCep()
+   { 
+      return this.cep;
+   }
     
-        return this.bairro;
-    }
+   public String retornarComplemento()
+   { 
+      return this.complemento;
+   }
     
-    public String retornarCep(){
+   public String retornarRua()
+   { 
+      return this.rua;
+   }
     
-        return this.cep;
-    }
+   public String retornarCidade()
+   { 
+      return this.cidade;
+   }
     
-    public String retornarComplemento(){
-    
-        return this.complemento;
-    }
-    
-    public String retornarRua(){
-    
-        return this.rua;
-    }
-    
-    public String retornarCidade(){
-    
-        return this.cidade;
-    }
-    
-    public String retornarEstado(){
-    
-        return this.estado;
-    }
-}
+   public String retornarEstado()
+   { 
+      return this.estado;
+   }
+   
+}//Fim da classe Endereco

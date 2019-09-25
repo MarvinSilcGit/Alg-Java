@@ -35,7 +35,7 @@ public class SalaAula
         this.capacidade=capacidade;
         
         this.area=area;
-    }
+    }//Fim do método construtor personalizado;
     
     public String retornarNumeroSala()
     {   
