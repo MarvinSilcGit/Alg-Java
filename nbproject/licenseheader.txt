@@ -1,0 +1,9 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix} Classe que faz parte do projeto Classes
+${licensePrefix}
+${licensePrefix} Autor: MVSC 
+<#if licenseLast??>
+${licenseLast}
+</#if>
