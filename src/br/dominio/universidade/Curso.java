@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class Curso 
 {
-   private String nome;
+   private String nome, modalidade, tipo;
    
    private int numeroMaximoSemestres, numeroMinimoSemestres;
    
@@ -31,9 +31,13 @@ public class Curso
       
    }//Fim do método construtor padrão;
    
-   public Curso(String nome, int numeroMaximoSemestres, int numeroMinimoSemestres, double mensalidade, double valorCurso)
+   public Curso(String nome, String modalidade, String tipo, int numeroMaximoSemestres, int numeroMinimoSemestres, double mensalidade, double valorCurso)
    {
       this.nome=nome;
+      
+      this.modalidade=modalidade;
+      
+      this.tipo=tipo;
       
       this.numeroMaximoSemestres=numeroMaximoSemestres;
       
@@ -47,7 +51,27 @@ public class Curso
    public String retornarNome()
    {
       return this.nome;
-   }//Fim do método que retorna o nome para o objeto do tipo curso;
+   }//Fim do método que retorna o nome para o objeto do tipo Curso;
+   
+   public String retornarModalidade()
+   {
+      return this.modalidade;
+   }//Fim do método que retorna a modalidade para o objeto do tipo Curso;
+   
+   public void alterarModalidadeCurso(String novaModalidade)
+   {
+      this.modalidade=novaModalidade;
+   }//Fim do método que altera a modalidade para o objeto do tipo Curso;
+   
+   public String retornarTipoCurso()
+   {
+      return this.tipo;
+   }//Fim do método que retorna o tipo para o objeto do tipo Curso;
+   
+   public void alterarTipoCurso(String novoTipo)
+   {
+      this.tipo=novoTipo;
+   }//Fim do método que altera o tipo para o objeto do tipo Curso;
    
    public int retornarNumeroMaximoSemestres()
    { 
@@ -77,24 +101,26 @@ public class Curso
    public void alterarMensalidade(double alterarMensalidade)
    {
       this.mensalidade=alterarMensalidade;
-   }
+      
+      this.valorCurso=this.mensalidade*(this.numeroMinimoSemestres*6);
+   }//Fim do método que altera a mensalidade do objeto do tipo Curso;
    
    public double retornarValorCurso()
    {
-      return this.mensalidade*(this.numeroMinimoSemestres*6);
+      return this.valorCurso;
    }//Fim do método que retorna o valor do para o objeto do tipo Curso;
    
-   public ArrayList retornarListaDisciplinas()
+   public ArrayList retornarListaDisciplinasCurso()
    {   
       return this.listaDisciplinas;
    }//Fim do método que retorna a lista de disciplinas do objeto do tipo Curso;
     
-   public void inserirDisciplinaColegiado(Disciplina novaDisciplina)
+   public void inserirDisciplinaCurso(Disciplina novaDisciplina)
    {   
       this.listaDisciplinas.add(novaDisciplina);
    }//Fim do método que insere um objeto do tipo Disciplina na lista do objeto do tipo Curso;
     
-   public void removerDisciplinaColegiado(Disciplina removerDisciplina)
+   public void removerDisciplinaCurso(Disciplina removerDisciplina)
    {       
       this.listaDisciplinas.remove(removerDisciplina);
    }//Fim do método que remove um objeto do tipo disciplina da lista do objeto do tipo Curso;

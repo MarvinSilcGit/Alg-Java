@@ -16,80 +16,84 @@ import java.util.Date;
 
 public abstract class Pessoa
 {    
-    private String nome, cpf, email;
+   private String nome, cpf, email;
     
-    private Date nascimento;
+   private Date nascimento;
     
-    private int telefone;
+   private int telefone;
     
-    private char sexo;
+   private char sexo;
     
-    private Endereco endereco;
+   private Endereco endereco;
 
+   //Fim do campo de declaração de atributos;
     
-    public Pessoa(){ 
+    
+   public Pessoa()
+   { 
         
-    }
+   }
     
-    public Pessoa(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco){
+   public Pessoa(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco)
+   {     
+      this.nome=nome;
         
-        this.nome=nome;
+      this.nascimento=nascimento;
         
-        this.nascimento=nascimento;
+      this.cpf=cpf;
         
-        this.cpf=cpf;
+      this.email=email;
         
-        this.email=email;
+      this.telefone=telefone;
         
-        this.telefone=telefone;
+      this.sexo=sexo;
         
-        this.sexo=sexo;
-        
-        this.endereco=endereco;
-    }
+      this.endereco=endereco;
+   }
     
-    public String retornarNome(){
-        
-        return this.nome;
-    }
+   public String retornarNome()
+   {      
+      return this.nome;
+   }
     
-    public Date retornarNascimento(){
+   public Date retornarNascimento()
+   { 
+      return this.nascimento;
+   }
     
-        return this.nascimento;
-    }
+   public String retornarCpf()
+   { 
+      return this.cpf;
+   }
     
-    public String retornarCpf(){
+   public String retornarEmail()
+   { 
+      return this.email;
+   }
     
-        return this.cpf;
-    }
+   public void alterarEmail(String alterarEmail)
+   { 
+      this.email=alterarEmail;
+   }
     
-    public String retornarEmail(){
+   public int retornarTelefone()
+   {  
+      return this.telefone;
+   }//Fim do método que 
     
-        return this.email;
-    }
+   public void alterarTelefone(int novoTelefone)
+   {  
+      this.telefone=novoTelefone;
+   }//Fim do método que altera o telefone do objeto do tipo Pessoa;
     
-    public void alterarEmail(String alterarEmail){
+   public char retornarSexo()
+   {    
+      return this.sexo;
+   }//Fim do método que retorna o sexo do objeto do tipo Pessoa;
     
-        this.email=alterarEmail;
-    }
-    
-    public int retornarTelefone(){
-    
-        return this.telefone;
-    }
-    
-    public void alterarTelefone(int novoTelefone){
-    
-        this.telefone=novoTelefone;
-    }
-    
-    public char retornarSexo(){
-    
-        return this.sexo;
-    }
-    
-    public Endereco acessarEndereco(){
-    
-        return this.endereco;
-    }
-}   
+   public Endereco acessarEndereco()
+   {    
+      return this.endereco;
+   }//Fim do método que acessa o objeto do tipo Endereco;
+   
+}//Fim da classe Pessoa; 

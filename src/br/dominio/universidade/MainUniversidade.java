@@ -27,6 +27,6 @@ public class MainUniversidade
       Acesso ac2 = new Acesso();
         
       Estudante e1 = new Estudante("aas",null,"12345","@gmail.com",12,'m',endereco1,10,0,20,ac2);
-    }
+    }//Fim do método estático;
     
 }//Fim da classe MainUniversidade;

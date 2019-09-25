@@ -60,12 +60,12 @@ public abstract class Funcionario extends Pessoa
       this.dataAdmissao=dataAdmissao;
         
       this.conta=conta;     
-   }//Fim do primeiro método construtor personalizado;
+   }//Fim do segundo método construtor personalizado;
     
    public double retornarSalario()
    { 
       return this.salario;
-   }
+   }//Fim do método que retorna o salario do objeto do tipo Funcionario;
     
    public void alterarSalario(double alterarSalario)
    { 

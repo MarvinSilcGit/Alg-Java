@@ -42,12 +42,12 @@ public class Turma
    public String retornarPeriodo()
    {
       return this.periodo;
-   }
+   }//Fim do método que retorna o período do objeto do tipo Turma;
    
    public Professor retornarProfessorResponsavel()
    { 
       return this.professorResponsavel;
-   }
+   }//Fim do método que retorna o professor Responsavel do objeto do tipo Turma;
     
    public void alterarProfessorResponsavel(Professor novoProfessor)
    {
