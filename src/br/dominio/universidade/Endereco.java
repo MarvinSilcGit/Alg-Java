@@ -19,7 +19,7 @@ public class Endereco
     public Endereco()
     {     
     
-    }
+    }//Fim do método construtor padrão;
     
    public Endereco(String numero, String bairro, String cep, String complemento, String rua, String cidade, String estado)
    {    
@@ -36,7 +36,7 @@ public class Endereco
       this.cidade=cidade;
         
       this.estado=estado;
-   }
+   }//Fim do método construtor personalizado;
     
    public String retornarEnderecoCompleto()
    {
