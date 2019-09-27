@@ -12,9 +12,8 @@ import java.util.Dictionary;
 import java.util.ArrayList;
 
 
-public class Boletim {
-
-    
+public class Boletim
+{    
     private int codigo;
     
     private ArrayList listaDisciplinas = new ArrayList();
@@ -22,7 +21,8 @@ public class Boletim {
     private Dictionary dicionario;
     
   
-    public Boletim(){
+    public Boletim()
+    {
             
     }
     
@@ -31,13 +31,14 @@ public class Boletim {
         this.codigo=codigo;
     }
     
-    public int retornarCodigo(){
-        
+    public int retornarCodigo()
+    {    
         return this.codigo;
     }
     
-    public void inserirValor(int novo, String novo1){
-        
+    public void inserirValor(int novo, String novo1)
+    {     
         this.dicionario.put(novo, novo1);
     }
-}
+    
+}//Fim da classe Boletim;

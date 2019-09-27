@@ -15,9 +15,8 @@ package br.dominio.universidade;
 import java.util.ArrayList;
 
 
-public  class Departamento{
-    
-    
+public  class Departamento
+{
     private String nome;
     
     private Funcionario diretor, viceDiretor;
@@ -27,12 +26,13 @@ public  class Departamento{
     private ArrayList listaFuncionarios = new ArrayList(40);
     
     
-    public Departamento(){
+    public Departamento()
+    {
         
     }
     
-    public Departamento(String nome, Funcionario diretor, Funcionario viceDiretor){
-        
+    public Departamento(String nome, Funcionario diretor, Funcionario viceDiretor)
+    {     
         this.nome=nome;
         
         this.diretor=diretor;
@@ -40,67 +40,68 @@ public  class Departamento{
         this.viceDiretor=viceDiretor;
     }
     
-    public String retornarNomeDepartamento(){
-        
+    public String retornarNomeDepartamento()
+    {    
         return this.nome;
     }
     
-    public void alterarNomeDepartamento(String novoNome){
-        
+    public void alterarNomeDepartamento(String novoNome)
+    {    
         this.nome=novoNome;
     } 
     
-    public Funcionario retornarDiretor(){
-        
+    public Funcionario retornarDiretor()
+    {
         return this.diretor;
     }
     
-    public void alterarDiretor(Funcionario novoDiretor){
-    
+    public void alterarDiretor(Funcionario novoDiretor)
+    {
         this.diretor=novoDiretor;
     }
     
-    public Funcionario retornarViceDiretor(){
-        
+    public Funcionario retornarViceDiretor()
+    {    
         return this.viceDiretor;
     }
     
-    public void alterarViceDiretor(Funcionario novoViceDiretor){
-        
+    public void alterarViceDiretor(Funcionario novoViceDiretor)
+    {    
         this.viceDiretor=novoViceDiretor;
     }
     
-    public Universidade acessarOrcamento(){
-        
+    public Universidade acessarOrcamento()
+    {    
         return this.acessarOrcamento;
     }
     
-    public ArrayList retornarListaFuncionarios(){
-    
+    public ArrayList retornarListaFuncionarios()
+    {
         return this.listaFuncionarios;
     }
     
-    public void inserirFuncionarioDepartamento(Funcionario novoFuncionario){
-     
-        if (this.listaFuncionarios.size()==40){
-            
+    public void inserirFuncionarioDepartamento(Funcionario novoFuncionario)
+    { 
+        if (this.listaFuncionarios.size()==40)
+        {    
             System.out.println("Não é mais possível adicionar funcionário ao departamento "+this.nome);
         }
-        else{
-            
+        else
+        {    
             this.listaFuncionarios.add(novoFuncionario);
         }
     }
     
-    public void removerFuncionarioDepartamento(Funcionario removerFuncionario){
-        
-        if (this.listaFuncionarios.size()==0){
-            
+    public void removerFuncionarioDepartamento(Funcionario removerFuncionario)
+    {     
+        if (this.listaFuncionarios.size()==0)
+        {    
             System.out.println("Este departamento será automaticamente excluído da Universidade");
         }
-        else{
-            
+        else
+        {    
             this.listaFuncionarios.remove(removerFuncionario);
         }
     }
-}
+    
+}//Fim da classe Departamento;
