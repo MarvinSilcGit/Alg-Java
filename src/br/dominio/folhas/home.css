@@ -27,5 +27,9 @@ p b{
 
 form{
     
+    color: white;
+    
+    font-family: noto sans;
+    
     text-align: center;
 }
