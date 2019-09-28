@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 import br.dominio.banco.Acesso;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class Professor extends Funcionario
 {

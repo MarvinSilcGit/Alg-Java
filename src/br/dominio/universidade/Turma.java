@@ -13,6 +13,9 @@ package br.dominio.universidade;
 
 import java.util.ArrayList;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
+
 public class Turma 
 {
    private String periodo;
@@ -22,6 +25,7 @@ public class Turma
    private Professor professorResponsavel;
    
    private SalaAula sala;
+   
    //Fim do campo de declaração de atributos;
    
    
