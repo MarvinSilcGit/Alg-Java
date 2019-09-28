@@ -16,19 +16,19 @@ import java.util.ArrayList;
 
 public class Colegiado
 {   
-   private String nome;
+   private String nome, area;
     
    private Funcionario coordenador;
     
    private ArrayList listaProfessores = new ArrayList(20);
-    
-   private ArrayList listaDisciplinas = new ArrayList();
     
    private ArrayList listaEstudantes = new ArrayList();
         
    private ArrayList listaSalas = new ArrayList();
    
    private ArrayList listaTurmas = new ArrayList();
+   
+   private ArrayList listaCursos = new ArrayList();
    //Fim do campo de declaração de atributos;
     
     
@@ -125,5 +125,20 @@ public class Colegiado
    {
       this.listaTurmas.remove(TurmaEscolhida);
    }//Fim do método que remove um objeto do tipo Turma da lista do objeto do tipo Colegiado;
+   
+   public ArrayList retornarListaCursos()
+   {
+      return this.listaCursos;
+   }
+   
+   public void inserirCursoLista(Curso novoCurso)
+   {
+      this.listaCursos.add(novoCurso);
+   }
+   
+   public void removerCursoList(Curso removerCurso)
+   {
+      this.listaCursos.remove(removerCurso);
+   }
    
 }//Fim da classe Colegiado;
