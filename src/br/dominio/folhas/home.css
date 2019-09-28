@@ -10,6 +10,22 @@
 
 body{
     
-    background-color: black;
+    background-color: blueviolet;
+}
+
+p{
     
+    text-align: center;
+    
+    color: white;
+    
+    font-family: noto sans;
+}
+p b{
+
+}
+
+form{
+    
+    text-align: center;
 }
