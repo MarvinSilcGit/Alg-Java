@@ -14,6 +14,8 @@ package br.dominio.universidade;
 public class Endereco 
 {
    private String numero, bairro, cep, complemento, rua, cidade, estado;
+   
+   //Fim do campo de declaração de atributos;
     
     
    public Endereco()
@@ -41,7 +43,7 @@ public class Endereco
    public String retornarEnderecoCompleto()
    {
       return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
-   }
+   }//Fim do método que retorna a rua, número, bairro, complemento, cep, cidade e estado do objeto do tipo Endereco;
     
    public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novoComplemento, String novaRua, String novaCidade, String novoEstado)
    {    
@@ -58,41 +60,41 @@ public class Endereco
       this.cidade=novaCidade;
         
       this.estado=novoEstado;
-   }
+   }//Fim do método que altera a rua, número, bairro, complemento, cep, cidade e bairro do objeto do tipo Endereco;
     
    public String retornarNumero()
    {
       return this.numero;
-   }
+   }//Fim do método que retorna o número do objeto do tipo Endereco;
     
    public String retornarBairro()
    { 
       return this.bairro;
-   }
+   }//Fim do método que retorna o bairro do objeto do tipo Endereco;
     
    public String retornarCep()
    { 
       return this.cep;
-   }
+   }//Fim do método que retorna o cep do objeto do tipo Endereco;
     
    public String retornarComplemento()
    { 
       return this.complemento;
-   }
+   }//Fim do método que retorna o complemento do objeto do tipo Endereco;
     
    public String retornarRua()
    { 
       return this.rua;
-   }
+   }//Fim do método que retorna a rua do objeto do tipo Endereco;
     
    public String retornarCidade()
    { 
       return this.cidade;
-   }
+   }//Fim do método que retorna a cidade do objeto do tipo Endereco;
     
    public String retornarEstado()
    { 
       return this.estado;
-   }
+   }//Fim do método que retorna o estado do objeto do tipo Endereco;
    
 }//Fim da classe Endereco

@@ -11,6 +11,10 @@ package br.dominio.universidade;
  * @author belogo
  */
 
+
+
+
+///Atributo para carga horária obrigatóri;
 import java.util.Date;
 
 import java.util.ArrayList;

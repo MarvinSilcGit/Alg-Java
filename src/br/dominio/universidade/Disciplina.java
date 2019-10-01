@@ -55,70 +55,54 @@ public class Disciplina
       this.nome=novoNome;
    }//Fim do método que altera o nome do objeto do tipo Disciplina;
     
-    
    public String retornarTipo()
    {    
       return this.tipo;
-   }
+   }//Fim do método que retorna o tipo do objeto do tipo Disciplina;
     
    public void alterarTipo(String alterarTipo)
    {   
       this.tipo=alterarTipo;
-   }
+   }//Fim do método que altera o tipo do objeto do tipo Disciplina;
     
    public String retornarEmenta()
    {    
       return this.ementa;
-   }
+   }//Fim do método que retorna a ementa do objeto do tipo Disciplina;
     
    public void alterarEmenta(String novaEmenta)
    {    
      this.ementa=novaEmenta;
-   }
+   }//Fim do método que altera a ementa do objeto do tipo Disciplina;
     
    public String retornarPeriodoAula()
    {
       return this.periodoAula;
-   }
+   }//Fim do método que altera o período de aula do objeto do tipo Disciplina;
     
    public void alterarPeriodoAula(String novoPeriodoAula)
    {
       this.periodoAula=novoPeriodoAula;
-   }
+   }//Fim do método que altera o período de aula do objeto do tipo Disciplina;
     
    public int retornarCargaHoraria()
    {    
       return this.cargaHoraria;
-   }
+   }//Fim do método que retorna a cargaHoraria do objeto do tipo Disciplina;
     
    public void alterarCargaHoraria(int alterarCargaHoraria)
    {    
       this.cargaHoraria=alterarCargaHoraria;
-   }
+   }//Fim do método que altera a carga horária do objeto do tipo Disciplina;
     
    public int retornarCreditos()
    {   
       return this.creditos;
-   }
+   }//Fim do método que retorna os créditos do objeto do tipo Disciplina;
     
    public void alterarCreditos(int novoValor)
    {
       this.creditos=novoValor;
-   }
-    
-   public ArrayList retornarListaRequisitos()
-   {    
-      return this.listaRequisitos;
-   }
-    
-   public void inserirDisciplinaRequisito(Disciplina novoRequisito)
-   {    
-      this.listaRequisitos.add(novoRequisito);
-   }
-    
-   public void removerDisciplinaRequisito(Disciplina removerRequisito)
-   {    
-     this.listaRequisitos.remove(removerRequisito);
-   }//Fim do método que remove disciplina requisito do objeto do tipo disciplina;
+   }//Fim do método que altera os créditos do objeto do tipo Disciplina;
     
 }//Fim da classe Disciplina

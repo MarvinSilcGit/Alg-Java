@@ -81,7 +81,7 @@ public abstract class Pessoa
    public int retornarTelefone()
    {  
       return this.telefone;
-   }//Fim do método que 
+   }//Fim do método que retorna o te
     
    public void alterarTelefone(int novoTelefone)
    {  
