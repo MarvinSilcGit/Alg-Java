@@ -31,9 +31,9 @@ public class Estudante extends Pessoa
     
    private ArrayList listaBoletins = new ArrayList();
     
-   private ArrayList disciplinasCursando = new ArrayList();
+   private ArrayList disciplinasCursando = new ArrayList(6);
     
-   private ArrayList disciplinasCursadas = new ArrayList();
+   private ArrayList disciplinasCursadas = new ArrayList(40);
     
    //Fim do campo de declaração de atributos;
     
@@ -91,11 +91,32 @@ public class Estudante extends Pessoa
    public ArrayList retornarDisciplinasCursando()
    {      
       return this.disciplinasCursando;
-   }//Fim do método que retorna a
+   }//Fim do método que retorna as disciplinas cursando da lista do objeto do tipo Estudante;
     
+   public void inserirDisciplinaCursando(Disciplina novaDisciplina)
+   {
+      if(this.disciplinasCursadas.contains(novaDisciplina))
+      {
+         System.out.println("Esta disciplina já foi cursada");
+      }
+      else
+      {
+         this.disciplinasCursando.add(novaDisciplina);
+      }
+   }//Fim do método que insere disciplinas para o objeto do tipo Estudante;
+   
+   public void removerDisciplinaCursando(Disciplina disciplina)
+   {
+      this.disciplinasCursando.remove(disciplina);
+   }
+   
    public ArrayList retornarDisciplinasCursadas()
    {   
       return this.disciplinasCursadas;
-   }
+   }//Fim do método que retorna as disciplinas cursadas da lista do objeto do tipo Estudante;
     
+   public void inserirDisciplinasCursadas()
+   {
+      
+   }
 }//Fim da classe Estudante;
