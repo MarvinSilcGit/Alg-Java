@@ -7,6 +7,8 @@
 package br.dominio.universidade;
 
 
+import java.util.Map;
+
 import java.util.Dictionary;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -17,6 +19,8 @@ public class Boletim
     private int codigo;
  
     private double nota;
+    
+    private Map eee;
     
     private Estudante estudante;
     
@@ -52,9 +56,11 @@ public class Boletim
        this.nota=novaNota;
     }
     
-    public void inserirValor(Disciplina nomeDisciplina, double novaNota)
+    public void inserirNota(Disciplina nomeDisciplina, double novaNota)
     {     
         this.dicionario.put(nomeDisciplina, novaNota);
+        
+     //   this.eee.keySet().add(novaNota);
     }
     
 }//Fim da classe Boletim;
