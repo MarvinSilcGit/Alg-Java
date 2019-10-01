@@ -23,6 +23,10 @@ public class Curso
    
    private double mensalidade;
    
+   private Funcionario coordenador;
+   
+   private ArrayList listaProfessores = new ArrayList(20);
+   
    private ArrayList listaDisciplinas = new ArrayList();
    
    //Fim do campo de declaração de atributos;
@@ -102,6 +106,21 @@ public class Curso
    {
       this.mensalidade=alterarMensalidade;
    }//Fim do método que altera a mensalidade do objeto do tipo Curso;
+   
+   public ArrayList retornarListaProfessores()
+   {    
+       return this.listaProfessores;
+   }//Fim do método que retorna a lista de professores do objeto do tipo Cursoo;
+    
+   public void inserirProfessorColegiado(Professor novoProfessor)
+   {    
+       this.listaProfessores.add(novoProfessor);
+   }//Fim do método que insere um objeto do tipo Professor na lista do objeto do tipo Curso;
+    
+   public void removerProfessorColegiado(Professor removerProfessor)
+   {   
+       this.listaProfessores.remove(removerProfessor);
+   }//Fim do método que remove um objeto do tipo Professor da lista do objeto do tipo Curso; 
    
    public ArrayList retornarListaDisciplinasCurso()
    {   
