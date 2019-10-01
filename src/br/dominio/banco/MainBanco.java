@@ -12,6 +12,8 @@ import br.dominio.cartao.CartaoDebito;
 import br.dominio.cartao.CartaoCredito;
 
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 public class MainBanco{
     
     
@@ -19,7 +21,7 @@ public class MainBanco{
         
         Endereco endereco2 = new Endereco("","48400-000","alameda dos anjos","alameda","QG","","");
         
-        Correntista ca1 = new Correntista("mma",null,"1123","",0,'s',null,0,"financeiro","",null,null);
+        Correntista ca1 = new Correntista("mma",null,"1123","",null,'s',null,0,"financeiro","",null,null);
         
         CartaoDebito cd1 = new CartaoDebito(0,0,0,0,"a","s",null,"x"); 
         
@@ -31,9 +33,9 @@ public class MainBanco{
         
         Acesso ac1 = new Acesso("","");
         
-        ClienteSimples cl1 = new ClienteSimples("João",null,"0909","",0,'m',null,null,5,cp1);
+        ClienteSimples cl1 = new ClienteSimples("João",null,"0909","",null,'m',null,null,5,cp1);
        
-        ClientePro cm1 = new ClientePro("",null,"","",0,'s',endereco2,ac1,6,ct1);
+        ClientePro cm1 = new ClientePro("",null,"","",null,'s',endereco2,ac1,6,ct1);
         
         System.out.println(cm1.acessarContaCorrente().acessarCartaoCredito().retornarBandeira());
         

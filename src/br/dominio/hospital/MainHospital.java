@@ -10,6 +10,7 @@ public class MainHospital{
         
         Endereco e1 = new Endereco("","","","333","","","");
         
-        Paciente p1 = new Paciente("marcos",null,"12131","",0,'s',e1,null,null);
+        Paciente p1 = new Paciente("marcos",null,"12131","",null,'s',e1,null,null);
     }   
-}
+    
+}//Fim da classe MainHospital;

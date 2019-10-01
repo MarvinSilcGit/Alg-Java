@@ -9,6 +9,8 @@ import br.dominio.universidade.Funcionario;
 
 import br.dominio.banco.Acesso;
 
+import br.dominio.universidade.Telefone;
+
 
 public class Farmaceutico extends Funcionario{
     
@@ -20,7 +22,7 @@ public class Farmaceutico extends Funcionario{
         
     }
     
-    public Farmaceutico(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, String crf){
+    public Farmaceutico(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, String crf){
         
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, salario, setor, cargo, dataAdmissao, conta);
         
@@ -31,4 +33,5 @@ public class Farmaceutico extends Funcionario{
       
         return this.crf;
     }
-}
+    
+}//Fim da classe Farmaceutico;

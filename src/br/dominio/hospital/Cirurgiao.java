@@ -7,6 +7,8 @@ import br.dominio.universidade.Endereco;
 
 import br.dominio.banco.Acesso;
 
+import br.dominio.universidade.Telefone;
+
 
 public class Cirurgiao extends ProfissionalMedicina{
     
@@ -20,7 +22,7 @@ public class Cirurgiao extends ProfissionalMedicina{
        
     }
     
-    public Cirurgiao(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia, String especialidade){
+    public Cirurgiao(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia, String especialidade){
         
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta, crm, valorConsulta);
         
@@ -48,4 +50,5 @@ public class Cirurgiao extends ProfissionalMedicina{
         
         this.especialidade=novaEspecialidade;
     }
-}
+    
+}//Fim da classe Cirurgiao;

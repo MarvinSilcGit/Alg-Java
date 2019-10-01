@@ -22,7 +22,7 @@ public abstract class Pessoa
     
    private Date nascimento;
     
-   private int telefone;
+   private Telefone telefone;
     
    private char sexo;
     
@@ -36,7 +36,7 @@ public abstract class Pessoa
         
    }
     
-   public Pessoa(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco)
+   public Pessoa(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco)
    {     
       this.nome=nome;
         
@@ -78,12 +78,12 @@ public abstract class Pessoa
       this.email=alterarEmail;
    }
     
-   public int retornarTelefone()
+   public Telefone retornarTelefone()
    {  
       return this.telefone;
    }//Fim do método que retorna o te
     
-   public void alterarTelefone(int novoTelefone)
+   public void alterarTelefone(Telefone novoTelefone)
    {  
       this.telefone=novoTelefone;
    }//Fim do método que altera o telefone do objeto do tipo Pessoa;

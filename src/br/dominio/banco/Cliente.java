@@ -7,6 +7,8 @@ import br.dominio.universidade.Pessoa;
 
 import br.dominio.universidade.Endereco;
 
+import br.dominio.universidade.Telefone;
+
 
     public abstract class Cliente extends Pessoa{
         
@@ -21,7 +23,7 @@ import br.dominio.universidade.Endereco;
     
         }
     
-        public Cliente(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, Acesso conta, int tempoClienteBanco){
+        public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, Acesso conta, int tempoClienteBanco){
         
             super(nome, nascimento, cpf, email, telefone, sexo, endereco);
         
@@ -39,4 +41,5 @@ import br.dominio.universidade.Endereco;
     
         return this.tempoClienteBanco;
     }
-}
+    
+}//Fim da classe Cliente;

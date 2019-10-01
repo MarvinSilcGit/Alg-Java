@@ -11,6 +11,8 @@ import br.dominio.universidade.Funcionario;
 
 import br.dominio.banco.Acesso;
 
+import br.dominio.universidade.Telefone;
+
 
 public abstract class ProfissionalEnfermagem  extends Funcionario{
     
@@ -26,7 +28,7 @@ public abstract class ProfissionalEnfermagem  extends Funcionario{
         
     }
     
-    public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade){
+    public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade){
      
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, salario, setor, cargo, dataAdmissao, conta);        
         
@@ -73,4 +75,5 @@ public abstract class ProfissionalEnfermagem  extends Funcionario{
         
         this.listaPacientes.remove(remover);
     }
-}
+    
+}//Fim da classe ProfissionalEnfermagem;

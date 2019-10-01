@@ -11,6 +11,7 @@ import br.dominio.universidade.Endereco;
 
 import br.dominio.banco.Acesso;
 
+import br.dominio.universidade.Telefone;
 
 public class Ministro extends Funcionario{
     
@@ -21,7 +22,7 @@ public class Ministro extends Funcionario{
         
     }
     
-    public Ministro(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta){
+    public Ministro(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta){
         
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, salario, setor, cargo, dataAdmissao, conta);
     }
@@ -40,4 +41,5 @@ public class Ministro extends Funcionario{
     
         this.equipe.remove(remover);
     }
-}
+    
+}//Fim da classe Ministro;

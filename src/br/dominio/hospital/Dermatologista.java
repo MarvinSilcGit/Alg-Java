@@ -13,13 +13,16 @@ import br.dominio.universidade.Endereco;
 
 import br.dominio.banco.Acesso;
 
+import br.dominio.universidade.Telefone;
+
 
 public class Dermatologista extends ProfissionalMedicina{
     
     
     
-    public Dermatologista(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
+    public Dermatologista(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
         
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta, crm, valorConsulta);
     }
-}
+    
+}//Fim da classe Dermatologista;

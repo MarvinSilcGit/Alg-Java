@@ -7,6 +7,8 @@ import br.dominio.universidade.Endereco;
 
 import br.dominio.conta.ContaPoupanca;
 
+import br.dominio.universidade.Telefone;
+
 
 public class ClienteSimples extends Cliente{
     
@@ -18,7 +20,7 @@ public class ClienteSimples extends Cliente{
         
     }
      
-    public ClienteSimples(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, Acesso conta, int tempoClienteBanco, ContaPoupanca contaPoupanca){
+    public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, Acesso conta, int tempoClienteBanco, ContaPoupanca contaPoupanca){
         
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, conta, tempoClienteBanco);
 
@@ -29,4 +31,5 @@ public class ClienteSimples extends Cliente{
 
         return this.contaPoupanca;
     } 
-}
+    
+}//Fim da classe CLienteSimples;

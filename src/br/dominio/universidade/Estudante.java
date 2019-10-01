@@ -11,9 +11,6 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-
-
-
 ///Atributo para carga horária obrigatóri;
 import java.util.Date;
 
@@ -46,7 +43,7 @@ public class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, int horasExtras, int codeMatricula, double descontoFiesProUni, Acesso conta)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, int horasExtras, int codeMatricula, double descontoFiesProUni, Acesso conta)
    {    
       super(nome, nascimento, cpf, email, telefone, sexo, endereco);
         

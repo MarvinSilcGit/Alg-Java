@@ -24,6 +24,7 @@ public class MainSupermercado{
         
         Acesso ac1 = new Acesso();
         
-        Cliente cl = new Cliente("assa",null,"","",0,'a',e1,cd,ac1);
+        Cliente cl = new Cliente("assa",null,"","",null,'a',e1,cd,ac1);
     }
-}
+    
+}//Fim da classe MainSupermercado;

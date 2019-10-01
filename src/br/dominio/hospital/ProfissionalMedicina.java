@@ -17,6 +17,8 @@ import br.dominio.universidade.Funcionario;
 
 import br.dominio.banco.Acesso;
 
+import br.dominio.universidade.Telefone;
+
 
 public abstract class ProfissionalMedicina extends Funcionario{
     
@@ -32,7 +34,7 @@ public abstract class ProfissionalMedicina extends Funcionario{
         
     }
     
-    public ProfissionalMedicina(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
+    public ProfissionalMedicina(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
         
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta);
         
@@ -83,4 +85,4 @@ public abstract class ProfissionalMedicina extends Funcionario{
         
         
     }
-}
+}//Fim da classe ProfissionalMedicina;

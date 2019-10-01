@@ -11,6 +11,8 @@ import br.dominio.universidade.Pessoa;
 
 import br.dominio.drograria.Remedio;
 
+import br.dominio.universidade.Telefone;
+
 
 public class Paciente extends Pessoa{
     
@@ -27,7 +29,7 @@ public class Paciente extends Pessoa{
         
     }
     
-    public Paciente(String nome, Date nascimento, String cpf, String email, int telefone, char sexo, Endereco endereco, Date dataEntrada, Date dataAlta){
+    public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, Date dataEntrada, Date dataAlta){
        
         super(nome, nascimento, cpf, email, telefone, sexo, endereco);
        
@@ -88,4 +90,5 @@ public class Paciente extends Pessoa{
         
         this.listasEnfermeiras.add(novoProfissionalEnfermagem3);
     }
-}
+    
+}//Fim da classe Paciente;
