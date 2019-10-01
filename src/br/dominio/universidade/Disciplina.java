@@ -23,6 +23,7 @@ public class Disciplina
    private int cargaHoraria, creditos;
     
    private ArrayList listaRequisitos = new ArrayList();
+  
    //Fim do campor de declaração de atributos;
    
     
@@ -47,76 +48,77 @@ public class Disciplina
    public String retornarNome()
    {  
       return this.nome;
-   }
+   }//Fim do método que retorna o nome do objeto do tipo Disciplina;
     
    public void alterarNome(String novoNome)
    {      
       this.nome=novoNome;
+   }//Fim do método que altera o nome do objeto do tipo Disciplina;
+    
+    
+   public String retornarTipo()
+   {    
+      return this.tipo;
    }
     
-    public String retornarTipo()
-    {    
-        return this.tipo;
-    }
+   public void alterarTipo(String alterarTipo)
+   {   
+      this.tipo=alterarTipo;
+   }
     
-    public void alterarTipo(String alterarTipo)
-    {   
-        this.tipo=alterarTipo;
-    }
+   public String retornarEmenta()
+   {    
+      return this.ementa;
+   }
     
-    public String retornarEmenta()
-    {    
-        return this.ementa;
-    }
+   public void alterarEmenta(String novaEmenta)
+   {    
+     this.ementa=novaEmenta;
+   }
     
-    public void alterarEmenta(String novaEmenta)
-    {    
-       this.ementa=novaEmenta;
-    }
+   public String retornarPeriodoAula()
+   {
+      return this.periodoAula;
+   }
     
-    public String retornarPeriodoAula()
-    {
-        return this.periodoAula;
-    }
+   public void alterarPeriodoAula(String novoPeriodoAula)
+   {
+      this.periodoAula=novoPeriodoAula;
+   }
     
-    public void alterarPeriodoAula(String novoPeriodoAula)
-    {
-        this.periodoAula=novoPeriodoAula;
-    }
+   public int retornarCargaHoraria()
+   {    
+      return this.cargaHoraria;
+   }
     
-    public int retornarCargaHoraria()
-    {    
-       return this.cargaHoraria;
-    }
+   public void alterarCargaHoraria(int alterarCargaHoraria)
+   {    
+      this.cargaHoraria=alterarCargaHoraria;
+   }
     
-    public void alterarCargaHoraria(int alterarCargaHoraria)
-    {    
-       this.cargaHoraria=alterarCargaHoraria;
-    }
+   public int retornarCreditos()
+   {   
+      return this.creditos;
+   }
     
-    public int retornarCreditos()
-    {   
-       return this.creditos;
-    }
+   public void alterarCreditos(int novoValor)
+   {
+      this.creditos=novoValor;
+   }
     
-    public void alterarCreditos(int novoValor)
-    {
-       this.creditos=novoValor;
-    }
+   public ArrayList retornarListaRequisitos()
+   {    
+      return this.listaRequisitos;
+   }
     
-    public ArrayList retornarListaRequisitos()
-    {    
-       return this.listaRequisitos;
-    }
+   public void inserirDisciplinaRequisito(Disciplina novoRequisito)
+   {    
+      this.listaRequisitos.add(novoRequisito);
+   }
     
-    public void inserirDisciplinaRequisito(Disciplina novoRequisito)
-    {    
-       this.listaRequisitos.add(novoRequisito);
-    }
-    
-    public void removerDisciplinaRequisito(Disciplina removerRequisito)
-    {    
-       this.listaRequisitos.remove(removerRequisito);
-    }
+   public void removerDisciplinaRequisito(Disciplina removerRequisito)
+   {    
+     this.listaRequisitos.remove(removerRequisito);
+   }//Fim do método que remove disciplina requisito do objeto do tipo disciplina;
     
 }//Fim da classe Disciplina

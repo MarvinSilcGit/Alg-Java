@@ -58,7 +58,7 @@ public class Colegiado
    public void alterarCoordenadorColegiado(Funcionario novoCoordenador)
    {     
       this.coordenador=novoCoordenador;
-   }//Fim do método que alterao coordenador do objeto do tipo Colegiado;
+   }//Fim do método que altera o coordenador do objeto do tipo Colegiado;
     
    public ArrayList retornarListaSalas()
    {

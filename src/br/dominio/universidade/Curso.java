@@ -107,6 +107,16 @@ public class Curso
       this.mensalidade=alterarMensalidade;
    }//Fim do método que altera a mensalidade do objeto do tipo Curso;
    
+   public Funcionario retornarCoordenadorCurso()
+   {
+      return this.coordenador;
+   }//Fim do método que retorna o coordenador do objeto do tipo Curso;
+   
+   public void alterarCoordenadorCurso(Funcionario novoCoordenador)
+   {
+      this.coordenador=novoCoordenador;
+   }//Fim do método que altera o coordenador do objeto do tipo Curso;
+   
    public ArrayList retornarListaProfessores()
    {    
        return this.listaProfessores;
