@@ -34,9 +34,9 @@ public class Universidade extends Empresa
         
    }//Fim do método construtor padrão;
     
-   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario reitor, Funcionario viceReitor, Funcionario diretorPedagogico, Funcionario viceDiretorPedagogico, float orcamentoPedagogicoTrimestre)
+   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor, Funcionario diretorPedagogico, Funcionario viceDiretorPedagogico, float orcamentoPedagogicoTrimestre)
    {  
-       super(cnpj, razaoSocial, nomeFantasia, endereco);    
+       super(cnpj, razaoSocial, nomeFantasia, endereco, telefone);    
        //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um de seus construtores;
         
        this.reitor=reitor;

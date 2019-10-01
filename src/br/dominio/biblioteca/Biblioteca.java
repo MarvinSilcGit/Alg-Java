@@ -9,6 +9,8 @@ import br.dominio.universidade.Funcionario;
 
 import br.dominio.universidade.Endereco;
 
+import br.dominio.universidade.Telefone;
+
 
 public class Biblioteca extends Empresa{
     
@@ -20,9 +22,9 @@ public class Biblioteca extends Empresa{
         
     }
     
-    public Biblioteca(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente){
+    public Biblioteca(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente){
         
-        super(cnpj, razaoSocial, nomeFantasia, endereco, presidente, vicePresidente);
+        super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente);
     }
     
     public ArrayList retornarPratileiras(){
@@ -39,4 +41,5 @@ public class Biblioteca extends Empresa{
 
         this.listaPratileiras.remove(remover);
     }
-}
+    
+}//Fim da classe Biblioteca;

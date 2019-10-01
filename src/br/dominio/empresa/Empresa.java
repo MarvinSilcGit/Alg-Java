@@ -9,6 +9,8 @@ import br.dominio.universidade.Endereco;
 
 import br.dominio.universidade.Departamento;
 
+import br.dominio.universidade.Telefone;
+
 
 public class Empresa{
     
@@ -16,6 +18,8 @@ public class Empresa{
     private String cnpj, razaoSocial, nomeFantasia;
      
     private Endereco endereco;
+    
+    private Telefone telefone;
      
     private ArrayList listaConselho = new ArrayList(20);
      
@@ -30,7 +34,7 @@ public class Empresa{
          
     }
     
-    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco){
+    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone){
         
         this.cnpj=cnpj;
         
@@ -39,9 +43,11 @@ public class Empresa{
         this.nomeFantasia=nomeFantasia;
         
         this.endereco=endereco;
+        
+        this.telefone=telefone;
     }
      
-    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente){
+    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente){
          
         this.cnpj=cnpj;
         
@@ -50,6 +56,8 @@ public class Empresa{
         this.nomeFantasia=nomeFantasia;
         
         this.endereco=endereco;
+        
+        this.telefone=telefone;
          
         this.presidente=presidente;
          
@@ -79,6 +87,16 @@ public class Empresa{
     public void alterarEndereco(Endereco novoEndereco){
         
         this.endereco=novoEndereco;
+    }
+    
+    public Telefone acessarTelefone()
+    {
+       return this.telefone;
+    }
+    
+    public void alterarTelefone(Telefone novoTelefone)
+    {
+       this.telefone=novoTelefone;
     }
     
     public Funcionario retornarPresidente(){
@@ -149,4 +167,5 @@ public class Empresa{
             this.listaDepartamentos.remove(removerDepartamento);   
         }
     }
-}
+    
+}//Fim da classe Empresa;

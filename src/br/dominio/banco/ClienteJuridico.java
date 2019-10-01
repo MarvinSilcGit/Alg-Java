@@ -9,6 +9,8 @@ import br.dominio.empresa.Empresa;
 
 import br.dominio.universidade.Funcionario;
 
+import br.dominio.universidade.Telefone;
+
 
 public class ClienteJuridico extends Empresa{
     
@@ -22,9 +24,9 @@ public class ClienteJuridico extends Empresa{
         
     }
     
-    public ClienteJuridico(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, ContaCorrente contaCorrente, Acesso conta){ 
+    public ClienteJuridico(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, ContaCorrente contaCorrente, Acesso conta){ 
         
-        super(cnpj, razaoSocial, nomeFantasia, endereco, presidente, vicePresidente);
+        super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente);
         
         this.contaCorrente=contaCorrente;
         

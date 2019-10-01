@@ -78,7 +78,7 @@ public abstract class Pessoa
       this.email=alterarEmail;
    }
     
-   public Telefone retornarTelefone()
+   public Telefone acessarTelefone()
    {  
       return this.telefone;
    }//Fim do método que retorna o te
