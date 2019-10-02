@@ -12,6 +12,7 @@ package br.dominio.universidade;
  */
 
 import br.dominio.empresa.Funcionario;
+
 import br.dominio.cadastro.Endereco;
 
 import br.dominio.cadastro.Telefone;

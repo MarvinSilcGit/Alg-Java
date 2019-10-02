@@ -13,6 +13,7 @@ package br.dominio.universidade;
 
 ///Atributo para carga horária obrigatória;
 import br.dominio.cadastro.Pessoa;
+
 import br.dominio.cadastro.Endereco;
 
 import br.dominio.cadastro.Telefone;

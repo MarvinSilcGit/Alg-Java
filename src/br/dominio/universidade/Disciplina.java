@@ -24,7 +24,7 @@ public class Disciplina
     
    private ArrayList listaRequisitos = new ArrayList();
   
-   //Fim do campor de declaração de atributos;
+   //Fim do campo de declaração de atributos;
    
     
    public Disciplina()
