@@ -1,7 +1,7 @@
 package br.dominio.banco;
 
 
-import br.dominio.universidade.Endereco;
+import br.dominio.cadastro.Endereco;
 
 import br.dominio.conta.ContaCorrente;
 

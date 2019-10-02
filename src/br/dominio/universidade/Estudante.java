@@ -11,7 +11,11 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-///Atributo para carga horária obrigatóri;
+///Atributo para carga horária obrigatória;
+import br.dominio.cadastro.Endereco;
+
+import br.dominio.cadastro.Telefone;
+
 import java.util.Date;
 
 import java.util.ArrayList;
@@ -103,12 +107,12 @@ public class Estudante extends Pessoa
       {
          this.disciplinasCursando.add(novaDisciplina);
       }
-   }//Fim do método que insere disciplinas para o objeto do tipo Estudante;
+   }//Fim do método que insere disciplinas na lista para o objeto do tipo Estudante;
    
    public void removerDisciplinaCursando(Disciplina disciplina)
    {
       this.disciplinasCursando.remove(disciplina);
-   }
+   }//Fim do método que remove disciplinas da lista do objeto do tipo Estudante;
    
    public ArrayList retornarDisciplinasCursadas()
    {   
@@ -119,4 +123,5 @@ public class Estudante extends Pessoa
    {
       
    }
+   
 }//Fim da classe Estudante;

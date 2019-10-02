@@ -1,9 +1,9 @@
 package br.dominio.supermercado;
 
 
-import br.dominio.universidade.Endereco;
+import br.dominio.cadastro.Endereco;
 
-import br.dominio.universidade.Departamento;
+import br.dominio.empresa.Departamento;
 
 import br.dominio.cartao.CartaoCredito;
 

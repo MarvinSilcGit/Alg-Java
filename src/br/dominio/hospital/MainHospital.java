@@ -1,7 +1,7 @@
 package br.dominio.hospital;
 
 
-import br.dominio.universidade.Endereco;
+import br.dominio.cadastro.Endereco;
 
 
 public class MainHospital{

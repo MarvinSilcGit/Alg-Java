@@ -11,6 +11,7 @@ package br.dominio.universidade;
  * @author belogo
  */
 
+import br.dominio.cadastro.Endereco;
 import br.dominio.banco.Acesso;
 
 

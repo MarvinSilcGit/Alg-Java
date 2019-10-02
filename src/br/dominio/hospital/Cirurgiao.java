@@ -3,11 +3,11 @@ package br.dominio.hospital;
 
 import java.util.Date;
 
-import br.dominio.universidade.Endereco;
+import br.dominio.cadastro.Endereco;
 
 import br.dominio.banco.Acesso;
 
-import br.dominio.universidade.Telefone;
+import br.dominio.cadastro.Telefone;
 
 
 public class Cirurgiao extends ProfissionalMedicina{

@@ -4,14 +4,14 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.universidade;
+package br.dominio.empresa;
 
 /**
  *
  * @author belogo
  */
-
  
+import br.dominio.universidade.Universidade;
 import java.util.ArrayList;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -31,7 +31,7 @@ public  class Departamento
     public Departamento()
     {
         
-    }
+    }//Fim do método construtor padrão;
     
     public Departamento(String nome, Funcionario diretor, Funcionario viceDiretor)
     {     
@@ -40,22 +40,22 @@ public  class Departamento
         this.diretor=diretor;
         
         this.viceDiretor=viceDiretor;
-    }
+    }//Fim do método construtor personalizado;
     
     public String retornarNomeDepartamento()
     {    
         return this.nome;
-    }
+    }//Fim do método que retorna o nome do objeto do tipo Departamento;
     
     public void alterarNomeDepartamento(String novoNome)
     {    
         this.nome=novoNome;
-    } 
+    }//Fim do método que altera o nome do objeto do tipo Departamento;
     
     public Funcionario retornarDiretor()
     {
         return this.diretor;
-    }
+    }//Fim do método que retorna o diretor
     
     public void alterarDiretor(Funcionario novoDiretor)
     {

@@ -11,6 +11,11 @@ package br.dominio.universidade;
  * @author belogo
  */
 
+import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Endereco;
+
+import br.dominio.cadastro.Telefone;
+
 import java.util.Date;
 
 import java.util.ArrayList;

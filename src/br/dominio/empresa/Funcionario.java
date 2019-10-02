@@ -4,16 +4,19 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.universidade;
+package br.dominio.empresa;
 
 /**
  *
  * @author belogo
  */
 
+import br.dominio.cadastro.Endereco;
+import br.dominio.cadastro.Telefone;
 import java.util.Date;
 
 import br.dominio.banco.Acesso;
+import br.dominio.universidade.Pessoa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

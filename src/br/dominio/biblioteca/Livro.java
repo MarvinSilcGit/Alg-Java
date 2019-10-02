@@ -3,22 +3,26 @@ package br.dominio.biblioteca;
 
 import java.util.Date;
 
+import br.dominio.supermercado.Produto;
 
-public class Livro{
+import br.dominio.empresa.Funcionario;
+
+
+public class Livro extends Produto
+{     
+   private String titulo, subtitulo, genero, nomeAutor, editora, tradutor;
+
+   private int isbn, quantidadePaginas, edicao;
+
+   private Date ano;
     
 
-    private String titulo, subtitulo, genero, nomeAutor, editora, tradutor;
-
-    private int isbn, quantidadePaginas, edicao;
-
-    private Date ano;
+   public Livro()
+   {       
     
-
-    public Livro(){
-        
-    }
+   }
     
-    public Livro(String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
+    public Livro(String nome, Funcionario cadastrante, int codigo, int quantidade,Date dataEntrada, Date dataSaida, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
         
         this.titulo=titulo;
 

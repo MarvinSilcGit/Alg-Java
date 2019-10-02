@@ -11,6 +11,11 @@ package br.dominio.universidade;
  * @author belogo
  */
 
+import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Endereco;
+
+import br.dominio.cadastro.Telefone;
+
 import java.util.ArrayList;
 
 import br.dominio.empresa.Empresa;
@@ -20,7 +25,7 @@ import br.dominio.empresa.Empresa;
 
 public class Universidade extends Empresa
 {   
-   private Funcionario reitor, viceReitor, diretorPedagogico, viceDiretorPedagogico;
+   private Funcionario reitor, viceReitor;
     
    private float orcamentoPedagogicoTrimestre;
     
@@ -34,7 +39,7 @@ public class Universidade extends Empresa
         
    }//Fim do método construtor padrão;
     
-   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor, Funcionario diretorPedagogico, Funcionario viceDiretorPedagogico, float orcamentoPedagogicoTrimestre)
+   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
    {  
        super(cnpj, razaoSocial, nomeFantasia, endereco, telefone);    
        //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um de seus construtores;
@@ -42,10 +47,6 @@ public class Universidade extends Empresa
        this.reitor=reitor;
         
        this.viceReitor=viceReitor;
-        
-       this.diretorPedagogico=diretorPedagogico;
-        
-       this.viceDiretorPedagogico=viceDiretorPedagogico;
         
        this.orcamentoPedagogicoTrimestre=orcamentoPedagogicoTrimestre;
     
@@ -70,27 +71,7 @@ public class Universidade extends Empresa
    {   
        this.viceReitor=novoViceReitor;   
    }//Fim do método que altera o vice reitor para o objeto do tipo Universidade;
-    
-   public Funcionario retornarDiretorPedagogico()
-   {   
-       return this.diretorPedagogico;   
-   }//Fim do método que retorna o diretor pedagogico para o objeto do tipo Universidade;
-    
-   public void alterarDiretorPedagogico(Funcionario novoDiretorPedagogico)
-   {   
-      this.diretorPedagogico=novoDiretorPedagogico;
-    }//Fim do método que altera o diretor pedagogico para o objeto do tipo Universidade;
-    
-   public Funcionario retornarViceDiretorPedagogico()
-   {   
-      return this.viceDiretorPedagogico;  
-   }//FIm do método que retorna o vice Diretor Pedagogio para o objeto do tipo Universidade;
-    
-   public void alterarViceDiretorPedagogico(Funcionario novoViceDiretorPedagogico)
-   {   
-      this.viceDiretorPedagogico=novoViceDiretorPedagogico;   
-   }//Fim do método que altera o vice Diretor pedagogico para o objeto do tipo Universidade
-    
+   
    public float retornarOrcamentoPedagogicoTrimestre()
    {   
       return this.orcamentoPedagogicoTrimestre;  

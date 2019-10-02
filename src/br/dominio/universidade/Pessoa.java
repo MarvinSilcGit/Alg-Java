@@ -11,6 +11,10 @@ package br.dominio.universidade;
  * @author belogo
  */
 
+import br.dominio.cadastro.Endereco;
+
+import br.dominio.cadastro.Telefone;
+
 import java.util.Date;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -18,7 +22,7 @@ import java.util.Date;
 
 public abstract class Pessoa
 {    
-   private String nome, cpf, email;
+   private String nome, cpf, email, condicaoCivil;
     
    private Date nascimento;
     

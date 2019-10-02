@@ -3,11 +3,11 @@ package br.dominio.banco;
 
 import java.util.Date;
 
-import br.dominio.universidade.Endereco;
+import br.dominio.cadastro.Endereco;
 
 import br.dominio.conta.ContaPoupanca;
 
-import br.dominio.universidade.Telefone;
+import br.dominio.cadastro.Telefone;
 
 
 public class ClienteSimples extends Cliente{

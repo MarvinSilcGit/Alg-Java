@@ -3,13 +3,9 @@ package br.dominio.empresa;
 
 import java.util.ArrayList;
 
-import br.dominio.universidade.Funcionario;
 
-import br.dominio.universidade.Endereco;
-
-import br.dominio.universidade.Departamento;
-
-import br.dominio.universidade.Telefone;
+import br.dominio.cadastro.Endereco;
+import br.dominio.cadastro.Telefone;
 
 
 public class Empresa{

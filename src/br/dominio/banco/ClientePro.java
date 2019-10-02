@@ -5,9 +5,8 @@ import java.util.Date;
 
 import br.dominio.conta.ContaCorrente;
 
-import br.dominio.universidade.Endereco;
-
-import br.dominio.universidade.Telefone;
+import br.dominio.cadastro.Endereco;
+import br.dominio.cadastro.Telefone;
 
 
 public class ClientePro extends Cliente{

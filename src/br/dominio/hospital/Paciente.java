@@ -5,13 +5,13 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.universidade.Endereco;
+import br.dominio.cadastro.Endereco;
 
 import br.dominio.universidade.Pessoa;
 
 import br.dominio.drograria.Remedio;
 
-import br.dominio.universidade.Telefone;
+import br.dominio.cadastro.Telefone;
 
 
 public class Paciente extends Pessoa{

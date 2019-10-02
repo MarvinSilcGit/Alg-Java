@@ -5,11 +5,10 @@ import java.util.ArrayList;
 
 import br.dominio.empresa.Empresa;
 
-import br.dominio.universidade.Funcionario;
+import br.dominio.empresa.Funcionario;
 
-import br.dominio.universidade.Endereco;
-
-import br.dominio.universidade.Telefone;
+import br.dominio.cadastro.Endereco;
+import br.dominio.cadastro.Telefone;
 
 
 public class Biblioteca extends Empresa{
