@@ -16,7 +16,7 @@ import br.dominio.cadastro.Telefone;
 import java.util.Date;
 
 import br.dominio.banco.Acesso;
-import br.dominio.universidade.Pessoa;
+import br.dominio.cadastro.Pessoa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

@@ -3,7 +3,7 @@ package br.dominio.banco;
 
 import java.util.Date;
 
-import br.dominio.universidade.Pessoa;
+import br.dominio.cadastro.Pessoa;
 
 import br.dominio.cadastro.Endereco;
 import br.dominio.cadastro.Telefone;

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import br.dominio.cadastro.Endereco;
 
-import br.dominio.universidade.Pessoa;
+import br.dominio.cadastro.Pessoa;
 
 import br.dominio.cartao.CartaoCredito;
 

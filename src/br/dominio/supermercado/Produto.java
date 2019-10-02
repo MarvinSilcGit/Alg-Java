@@ -5,12 +5,9 @@ import java.util.Date;
 
 import br.dominio.empresa.Funcionario;
 
-
 public class Produto
 {    
    private String nome;
-
-   private Funcionario cadastrante;
    
    private int codigo, quantidade;
 
@@ -20,64 +17,65 @@ public class Produto
    public Produto()
    {
         
-   }
-    
-    
+   }//Fim do método construtor padrão;
 
-   public Produto(String nome, Funcionario cadastrante, int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade)   
+   public Produto(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade)   
    {    
-       this.nome=nome;
        
-       this.cadastrante=cadastrante;
+      this.nome=nome;
        
-       this.codigo=codigo;
+      this.codigo=codigo;
        
-       this.quantidade=quantidade;
+      this.quantidade=quantidade;
        
-       this.dataEntrada=dataEntrada;
+      this.dataEntrada=dataEntrada;
        
-       this.dataSaida=dataSaida;
+      this.dataSaida=dataSaida;
 
-       this.dataValidade=dataValidade;
+      this.dataValidade=dataValidade;
     }//Fim do primeiro método construtor personalizado;
     
-    public Produto(String nome, Funcionario cadastrante, int codigo, int quantidade, Date dataEntrada, Date dataSaida)
-    {
-           
-    }//Fim do segundo método construtor personalizado;
     
-    public String retornarNomeProduto(){
- 
-        return this.nome;
-    }
+   public Produto(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida)
+   {
+      
+      this.nome=nome;
+      
+      this.codigo=codigo;
+      
+      this.dataEntrada=dataEntrada;
+      
+      this.dataSaida=dataSaida; 
+   }//Fim do segundo método construtor personalizado;
     
-    public Funcionario retornarFuncionarioCadastrante(){
+   public String retornarNomeProduto()
+   { 
+      return this.nome;
+   }
     
-        return this.cadastrante;
-    }
+   public int retornarCodigo() 
+   {
+      return this.codigo;
+   }
     
-    public int retornarCodigo(){
+   public int retornarQuantidade()
+   {
+      return this.quantidade;
+   }
     
-        return this.codigo;
-    }
+   public Date retornarDataEntrada()
+   { 
+      return this.dataEntrada;
+   }
     
-    public int retornarQuantidade(){
+   public Date retornarDataSaida()
+   { 
+      return this.dataSaida;
+   }
     
-        return this.quantidade;
-    }
+   public Date retornarDataValidade()
+   {  
+      return this.dataValidade;
+   }
     
-    public Date retornarDataEntrada(){
-    
-        return this.dataEntrada;
-    }
-    
-    public Date retornarDataSaida(){
-    
-        return this.dataSaida;
-    }
-    
-    public Date retornarDataValidade(){
-    
-        return this.dataValidade;
-    }
-}
+}//Fim da classe Produto;

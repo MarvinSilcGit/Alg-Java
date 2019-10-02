@@ -3,7 +3,7 @@ package br.dominio.republicafederativa;
 
 import java.util.Date;
 
-import br.dominio.universidade.Pessoa;
+import br.dominio.cadastro.Pessoa;
 
 import br.dominio.cadastro.*;
 

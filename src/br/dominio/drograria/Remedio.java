@@ -16,9 +16,9 @@ public class Remedio extends Produto{
         
     }
     
-    public Remedio(String nome, Funcionario funcionario, int codigo, int quantidade,Date dataEntrada, Date dataSaida, Date dataValidade, String categoria){
+    public Remedio(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade, String categoria){
     
-        super(nome, funcionario, codigo, quantidade, dataEntrada, dataSaida, dataValidade);
+        super(nome, codigo, quantidade, dataEntrada, dataSaida, dataValidade);
         
         this.categoria=categoria;
     }
