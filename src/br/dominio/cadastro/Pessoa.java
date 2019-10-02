@@ -11,10 +11,6 @@ package br.dominio.cadastro;
  * @author belogo
  */
 
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
-
 import java.util.Date;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;

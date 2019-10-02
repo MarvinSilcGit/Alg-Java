@@ -5,8 +5,6 @@ import java.util.Date;
 
 import br.dominio.supermercado.Produto;
 
-import br.dominio.empresa.Funcionario;
-
 
 public class Livro extends Produto
 {     
@@ -22,8 +20,10 @@ public class Livro extends Produto
     
    }
     
-    public Livro(String nome, Funcionario cadastrante, int codigo, int quantidade,Date dataEntrada, Date dataSaida, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
+    public Livro(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
         
+       super(nome, codigo, quantidade, dataEntrada, dataSaida);
+       
         this.titulo=titulo;
 
         this.subtitulo=subtitulo;
@@ -94,4 +94,5 @@ public class Livro extends Produto
 
         return this.ano;
     }
-}
+    
+}//Fim da classe Livro;

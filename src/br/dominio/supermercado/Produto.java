@@ -43,6 +43,8 @@ public class Produto
       
       this.codigo=codigo;
       
+      this.quantidade=quantidade;
+      
       this.dataEntrada=dataEntrada;
       
       this.dataSaida=dataSaida; 
