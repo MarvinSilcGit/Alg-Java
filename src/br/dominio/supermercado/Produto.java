@@ -22,8 +22,7 @@ public class Produto
    }//Fim do método construtor padrão;
 
    public Produto(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade)   
-   {    
-       
+   {       
       this.nome=nome;
        
       this.codigo=codigo;
@@ -37,10 +36,8 @@ public class Produto
       this.dataValidade=dataValidade;
    }//Fim do primeiro método construtor personalizado;
     
-    
    public Produto(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida)
-   {
-      
+   {      
       this.nome=nome;
       
       this.codigo=codigo;

@@ -6,12 +6,10 @@ import java.util.ArrayList;
 
 public class Estoque
 {
-  
    private int numeroCategorias;
 
    
-   private ArrayList listaProdutos = new ArrayList();
-    
+   private ArrayList listaProdutos = new ArrayList(); 
 
    
    public Estoque()
