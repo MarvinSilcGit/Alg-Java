@@ -14,10 +14,9 @@ import br.dominio.banco.Acesso;
 import br.dominio.cadastro.Telefone;
 
 
-public abstract class ProfissionalEnfermagem  extends Funcionario{
-    
-   
-    private ArrayList listaPacientes = new ArrayList(15);
+public abstract class ProfissionalEnfermagem  extends Funcionario
+{   
+   private ArrayList listaPacientes = new ArrayList(15);
    
     private int quantidadePlantoesSemana;
     
@@ -28,9 +27,9 @@ public abstract class ProfissionalEnfermagem  extends Funcionario{
         
     }
     
-    public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade){
+    public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade){
      
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, salario, setor, cargo, dataAdmissao, conta);        
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);        
         
         this.quantidadePlantoesSemana=quanitadePlantoesSemana;
         

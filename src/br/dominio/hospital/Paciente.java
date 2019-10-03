@@ -29,9 +29,9 @@ public class Paciente extends Pessoa{
         
     }
     
-    public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, Date dataEntrada, Date dataAlta){
+    public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Date dataEntrada, Date dataAlta){
        
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco);
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
        
         this.dataEntrada=dataEntrada;
         

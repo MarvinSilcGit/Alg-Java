@@ -9,22 +9,24 @@ import br.dominio.cartao.CartaoCredito;
 
 import br.dominio.banco.Acesso;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class MainSupermercado{
 
-    public static void main(String[] args){
-                
-        Endereco e1 = new Endereco("","","","333","","","");
+public class MainSupermercado
+{
+    
+   public static void main(String[] args)
+   {   
+      Departamento dp1 = new Departamento();
         
-        Departamento dp1 = new Departamento();
+       
+      Estoque es1 = new Estoque(1);
         
-        Estoque es1 = new Estoque(1);
+      
+      CartaoCredito cd = new CartaoCredito(0,0,0,0,"","Desavisa",null,1000,null);
         
-        CartaoCredito cd = new CartaoCredito(0,0,0,0,"","Desavisa",null,1000,null);
-        
-        Acesso ac1 = new Acesso();
-        
-        Cliente cl = new Cliente("assa",null,"","",null,'a',e1,cd,ac1);
-    }
+      
+      Acesso ac1 = new Acesso();
+    }//Fim do método main;
     
 }//Fim da classe MainSupermercado;

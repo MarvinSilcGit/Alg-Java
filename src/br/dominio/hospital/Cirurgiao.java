@@ -10,26 +10,31 @@ import br.dominio.banco.Acesso;
 import br.dominio.cadastro.Telefone;
 
 
-public class Cirurgiao extends ProfissionalMedicina{
+public class Cirurgiao extends ProfissionalMedicina
+{  
+
+   private double valorCirurgia;
+   
+   private String especialidade;
+     
+   //Fim do campo de declaração de atributos;
+   
+   
+   public Cirurgiao()
+   {    
+   
+   }
     
-    
-    private double valorCirurgia;
-    
-    private String especialidade;
-    
-    
-    public Cirurgiao(){
+    public Cirurgiao(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia, String especialidade)
+    {     
+       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta, crm, valorConsulta);
+        
+        
+       this.valorCirurgia=valorCirurgia;
+        
        
-    }
-    
-    public Cirurgiao(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia, String especialidade){
-        
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta, crm, valorConsulta);
-        
-        this.valorCirurgia=valorCirurgia;
-        
-        this.especialidade=especialidade;
-    }
+       this.especialidade=especialidade;
+   }
  
     public double retornarValorCirurgia(){
         

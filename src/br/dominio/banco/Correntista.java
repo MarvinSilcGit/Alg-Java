@@ -11,11 +11,11 @@ import br.dominio.empresa.Funcionario;
 
 import br.dominio.cadastro.Telefone;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class Correntista extends Funcionario{
- 
-    
-    private ArrayList listaClienteFisico = new ArrayList (15);
+public class Correntista extends Funcionario
+{   
+   private ArrayList listaClienteFisico = new ArrayList (15);
     
     private ArrayList listaClienteJuridico = new ArrayList (15);
     
@@ -23,9 +23,9 @@ public class Correntista extends Funcionario{
         
     }
     
-    public Correntista(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta){
+    public Correntista(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta){
         
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, salario, setor, cargo, dataAdmissao, conta);
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);
     }
     
     public ArrayList retornarListaClienteFisico(){

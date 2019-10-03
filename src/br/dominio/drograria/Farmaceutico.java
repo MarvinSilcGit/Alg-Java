@@ -12,19 +12,20 @@ import br.dominio.banco.Acesso;
 import br.dominio.cadastro.Telefone;
 
 
-public class Farmaceutico extends Funcionario{
+public class Farmaceutico extends Funcionario
+{   
+   private String crf;
     
-    
-    private String crf;
-    
+   //Fim do campo de declaração de atributos;
    
-    public Farmaceutico(){
-        
-    }
+   public Farmaceutico()
+   {
+   
+   }
     
-    public Farmaceutico(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, String crf){
+    public Farmaceutico(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, String crf){
         
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, salario, setor, cargo, dataAdmissao, conta);
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);
         
         this.crf=crf;
     }

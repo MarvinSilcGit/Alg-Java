@@ -6,19 +6,20 @@ import br.dominio.cadastro.Endereco;
 
 public class MainRepublicaFederativa
 {
-
-    public static void main(String[] args)
-    {
-        Endereco e1 = new Endereco("","","","333","","","");
+   public static void main(String[] args)
+   {   
+      Pais pais = new Pais("Brasil","Real",1990000.0,0,0,0);
         
-        Pais pais = new Pais("Brasil","Real",1990000.0,0,0,0);
+      
+      System.out.println(pais.retornarListaPessoas());
         
-        System.out.println(pais.retornarListaPessoas());
+      
+      Estado estado1 = new Estado("Bahia","",0,0,0,0);
         
-        Estado estado1 = new Estado("Bahia","",0,0,0,0);
+      
+      pais.inserirEstados(estado1.retornarNome());
         
-        pais.inserirEstados(estado1.retornarNome());
-        
-        System.out.println(pais.retornarListaEstados());
-    }
-}
+      System.out.println(pais.retornarListaEstados());
+    }//Fim do método main;
+   
+}//Fim da classe MainRepublicaFederativa;

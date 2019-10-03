@@ -19,8 +19,8 @@ import br.dominio.cadastro.Telefone;
 public class Pediatra  extends ProfissionalMedicina
 {
 
-    public Pediatra(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+    public Pediatra(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
     {     
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta, crm, valorConsulta);   
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta, crm, valorConsulta);   
     }
 }//Fim da classe Pediatra;

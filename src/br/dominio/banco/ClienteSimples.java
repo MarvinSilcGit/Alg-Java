@@ -9,27 +9,32 @@ import br.dominio.conta.ContaPoupanca;
 
 import br.dominio.cadastro.Telefone;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class ClienteSimples extends Cliente{
+public class ClienteSimples extends Cliente
+{ 
+   private ContaPoupanca contaPoupanca;
     
-
-    private ContaPoupanca contaPoupanca;
-    
-    
-    public ClienteSimples(){
-        
-    }
+   //Fim do campo de declaração de atributos; 
+   
+   public ClienteSimples()
+   {        
+   
+   }
      
-    public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, Acesso conta, int tempoClienteBanco, ContaPoupanca contaPoupanca){
-        
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, conta, tempoClienteBanco);
-
-        this.contaPoupanca=contaPoupanca;
-    }
+   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, int tempoClienteBanco, ContaPoupanca contaPoupanca)
+   {     
+   
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, conta, tempoClienteBanco);
+      
+      //Fim do método Super da superclasse ou classe mãe Cliente;
+      
+      this.contaPoupanca=contaPoupanca;
+   }//Fim do método construtor personalizado;
     
-    public ContaPoupanca acessarContaPoupanca(){
-
-        return this.contaPoupanca;
-    } 
+   public ContaPoupanca acessarContaPoupanca()
+   {
+      return this.contaPoupanca;
+   } 
     
 }//Fim da classe CLienteSimples;

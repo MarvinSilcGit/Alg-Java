@@ -30,9 +30,9 @@ public class Cliente extends Pessoa{
         
     }
     
-    public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, CartaoCredito cartaoCredito, Acesso conta){
+    public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco,String condicaoCivil, CartaoCredito cartaoCredito, Acesso conta){
      
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco);
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
 
         this.cartaoCredito=cartaoCredito;
 

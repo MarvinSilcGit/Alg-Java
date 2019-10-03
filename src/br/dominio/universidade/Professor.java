@@ -40,9 +40,10 @@ public class Professor extends Funcionario
     
    }//Fim do método construtor padrão;
     
-   public Professor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, double salarioHora)
+   public Professor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, double salarioHora)
    {    
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta);
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta);
+      
       //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando um de seus contrutores; 
         
       this.salarioHora=salarioHora;    

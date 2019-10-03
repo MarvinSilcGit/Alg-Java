@@ -11,9 +11,18 @@ package br.dominio.cadastro;
  * @author belogo
  */
 
+import br.dominio.republicafederativa.Cidade;
+
+import br.dominio.republicafederativa.Estado;
+        
+
 public class Endereco 
 {
-   private String numero, bairro, cep, complemento, rua, cidade, estado;
+   private String numero, bairro, cep, complemento, rua;
+   
+   private Cidade cidade;
+   
+   private Estado estado;
    
    //Fim do campo de declaração de atributos;
     
@@ -23,7 +32,7 @@ public class Endereco
     
    }//Fim do método construtor padrão;
     
-   public Endereco(String numero, String bairro, String cep, String complemento, String rua, String cidade, String estado)
+   public Endereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade, Estado estado)
    {    
       this.numero=numero;
        
@@ -45,7 +54,7 @@ public class Endereco
       return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
    }//Fim do método que retorna a rua, número, bairro, complemento, cep, cidade e estado do objeto do tipo Endereco;
     
-   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novoComplemento, String novaRua, String novaCidade, String novoEstado)
+   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novoComplemento, String novaRua, Cidade novaCidade, Estado novoEstado)
    {    
       this.numero=novoNumero;
         
@@ -87,12 +96,12 @@ public class Endereco
       return this.rua;
    }//Fim do método que retorna a rua do objeto do tipo Endereco;
     
-   public String retornarCidade()
+   public Cidade retornarCidade()
    { 
       return this.cidade;
    }//Fim do método que retorna a cidade do objeto do tipo Endereco;
     
-   public String retornarEstado()
+   public Estado retornarEstado()
    { 
       return this.estado;
    }//Fim do método que retorna o estado do objeto do tipo Endereco;

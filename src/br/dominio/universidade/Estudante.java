@@ -49,11 +49,11 @@ public class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, int horasExtras, int codeMatricula, double descontoFiesProUni, Acesso conta)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, int horasExtras, int codeMatricula, double descontoFiesProUni, Acesso conta)
    {    
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco);
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
         
-      //Fim do método Super da classe mão ou Superclasse Pessoa, inicializando um de seus construtores;
+      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando um de seus construtores;
      
       this.horasExtras=horasExtras;
         

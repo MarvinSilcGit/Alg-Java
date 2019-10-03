@@ -20,10 +20,9 @@ import br.dominio.banco.Acesso;
 import br.dominio.cadastro.Telefone;
 
 
-public abstract class ProfissionalMedicina extends Funcionario{
-    
-   
-    private ArrayList listaPacientes = new ArrayList(15);
+public abstract class ProfissionalMedicina extends Funcionario
+{  
+   private ArrayList listaPacientes = new ArrayList(15);
    
     private String crm;
     
@@ -34,9 +33,9 @@ public abstract class ProfissionalMedicina extends Funcionario{
         
     }
     
-    public ProfissionalMedicina(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
+    public ProfissionalMedicina(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
         
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, setor, cargo, dataAdmissao, conta);
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta);
         
         this.crm=crm;
         
@@ -85,4 +84,5 @@ public abstract class ProfissionalMedicina extends Funcionario{
         
         
     }
+    
 }//Fim da classe ProfissionalMedicina;
