@@ -4,6 +4,8 @@ package br.dominio.republicafederativa;
 import java.util.ArrayList;
 
 
+//Colocar lista secretarias municipais e estaduais;
+
 public class Estado extends Pais
 {    
    private ArrayList listaCidades = new ArrayList();
