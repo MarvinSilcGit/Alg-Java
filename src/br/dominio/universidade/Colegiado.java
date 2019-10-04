@@ -18,7 +18,8 @@ import java.util.ArrayList;
 
 public class Colegiado
 {   
-   private String nome, areaCientifica;
+   private String nome,
+           areaCientifica;
     
    private Funcionario coordenador;
         

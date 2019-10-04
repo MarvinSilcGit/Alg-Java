@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Estoque
 {
    private int numeroCategorias;
-
    
    private ArrayList listaProdutos = new ArrayList(); 
 
@@ -15,14 +14,14 @@ public class Estoque
    public Estoque()
    {     
    
-   }
+   }//Fim do método construtor padrão;
     
     
    public Estoque(int numeroCategorias)
    {     
       this.numeroCategorias=numeroCategorias;
  
-   }
+   }//Fim do método construtor personalizado;
     
    
    public int retornarNumeroCategorias()

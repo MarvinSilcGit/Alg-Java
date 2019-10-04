@@ -18,9 +18,12 @@ import java.util.ArrayList;
 
 public class Curso 
 {
-   private String nome, modalidade, tipo;
+   private String nome,
+           modalidade,
+           tipo;
    
-   private int numeroMaximoSemestres, numeroMinimoSemestres;
+   private int numeroMaximoSemestres,
+           numeroMinimoSemestres;
    
    private double mensalidade;
    

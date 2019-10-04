@@ -29,7 +29,8 @@ import br.dominio.banco.Acesso;
 
 public class Estudante extends Pessoa
 { 
-   private int horasExtras, codeMatricula;
+   private int horasExtras,
+           codeMatricula;
     
    private double  descontoFiesProUni;
     

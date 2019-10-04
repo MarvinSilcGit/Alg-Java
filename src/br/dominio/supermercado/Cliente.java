@@ -17,52 +17,52 @@ import br.dominio.cadastro.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class Cliente extends Pessoa{
+public class Cliente extends Pessoa
+{       
+   private ArrayList carrinho = new ArrayList();
+
+   private CartaoCredito cartaoCredito;
+
+   private Acesso conta;
+      
     
-    
-    private ArrayList carrinho = new ArrayList();
-
-    private CartaoCredito cartaoCredito;
-
-    private Acesso conta;
-    
-    
-    public Cliente(){
-        
-    }
-    
-    public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco,String condicaoCivil, CartaoCredito cartaoCredito, Acesso conta){
-     
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
-
-        this.cartaoCredito=cartaoCredito;
-
-        this.conta=conta;
-    }
-    
-    public ArrayList retornarCarrinho(){
-
-        return this.carrinho;
-    }
-
-    public void inserirProdutoCarrinho(int inserir){
-
-        this.carrinho.add(inserir);
-    }
-
-    public void removerProdutoCarrinho(int remover){
-
-        this.carrinho.remove(remover);
-    }
-
-    public CartaoCredito acessarCartaoCredito(){
-
-        return this.cartaoCredito;
+   public Cliente()
+   {        
+   
+   }   
+   
+   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco,String condicaoCivil, CartaoCredito cartaoCredito, Acesso conta)
+   {     
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
+       
+      this.cartaoCredito=cartaoCredito; 
+      
+      this.conta=conta;
     }
    
-    public Acesso acessarContaAcesso(){
+   public ArrayList retornarCarrinho()
+   {  
+      return this.carrinho;
+   }
+
+   public void inserirProdutoCarrinho(int inserir)
+   {   
+      this.carrinho.add(inserir);
+   }
+
+   public void removerProdutoCarrinho(int remover)
+   {
+      this.carrinho.remove(remover); 
+   }
     
-        return this.conta;
-    }
+   public CartaoCredito acessarCartaoCredito()
+   { 
+       return this.cartaoCredito;
+   }
+    
+   public Acesso acessarContaAcesso()
+   {     
+      return this.conta;
+   }
     
 }//Fim da classe Cliente;

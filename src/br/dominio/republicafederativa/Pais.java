@@ -6,9 +6,13 @@ import java.util.ArrayList;
 
 public class Pais{
     
-    private String nome, moeda;
+    private String nome,
+            moeda;
  
-    private double populacao, tesouro, pib, idh;
+    private double populacao,
+            tesouro,
+            pib,
+            idh;
  
     private ArrayList listaPessoas = new ArrayList();
     

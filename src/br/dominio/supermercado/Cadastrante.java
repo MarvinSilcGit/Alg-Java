@@ -14,8 +14,7 @@ import br.dominio.empresa.Funcionario;
 
 
 public class Cadastrante extends Funcionario
-{
-   
+{   
    
    public Cadastrante()
    {

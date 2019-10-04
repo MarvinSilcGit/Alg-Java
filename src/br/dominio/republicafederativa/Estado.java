@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class Estado extends Pais
 {    
-
    private ArrayList listaCidades = new ArrayList();
     
    

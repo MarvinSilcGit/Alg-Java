@@ -9,9 +9,12 @@ public class Produto
 {    
    private String nome;
    
-   private int codigo, quantidade;
+   private int codigo,
+           quantidade;
 
-   private Date dataEntrada, dataSaida, dataValidade;
+   private Date dataEntrada,
+           dataSaida,
+           dataValidade;
   
    //Fim do campo de declaração de atributos;
    

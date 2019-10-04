@@ -13,7 +13,8 @@ package br.dominio.universidade;
 
 public class SalaAula
 {     
-    private String numeroSala, cor;
+    private String numeroSala,
+            cor;
     
     private int capacidadeEstudantes;
     

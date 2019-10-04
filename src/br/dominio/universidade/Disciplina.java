@@ -18,7 +18,10 @@ import java.util.ArrayList;
 
 public class Disciplina 
 {      
-   private String nome, tipo, ementa, periodoAula;
+   private String nome,
+           tipo,
+           ementa,
+           periodoAula;
     
    private int cargaHoraria, creditos;
     

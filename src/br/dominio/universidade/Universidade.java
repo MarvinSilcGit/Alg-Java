@@ -12,6 +12,7 @@ package br.dominio.universidade;
  */
 
 import br.dominio.empresa.Funcionario;
+
 import br.dominio.cadastro.Endereco;
 
 import br.dominio.cadastro.Telefone;
@@ -25,7 +26,8 @@ import br.dominio.empresa.Empresa;
 
 public class Universidade extends Empresa
 {   
-   private Funcionario reitor, viceReitor;
+   private Funcionario reitor,
+           viceReitor;
     
    private float orcamentoPedagogicoTrimestre;
     
