@@ -17,7 +17,8 @@ import br.dominio.cadastro.Telefone;
 public class Paciente extends Pessoa{
     
     
-    private Date dataEntrada, dataAlta;
+    private Date dataEntrada,
+            dataAlta;
    
     private ArrayList listaRemedios = new ArrayList();
     

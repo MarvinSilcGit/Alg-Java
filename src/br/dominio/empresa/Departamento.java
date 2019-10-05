@@ -17,12 +17,14 @@ import java.util.ArrayList;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
+//Tirar esse atributo do tipo funcionario e colocar do tipo Direto ou semelhante
 
 public  class Departamento
 {
     private String nome;
     
-    private Funcionario diretor, viceDiretor;
+    private Funcionario diretor,
+            viceDiretor;
     
     private Universidade acessarOrcamento;
     

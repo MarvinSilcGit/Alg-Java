@@ -20,7 +20,8 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
    
     private int quantidadePlantoesSemana;
     
-    private String coren, especialidade;
+    private String coren,
+            especialidade;
     
     
     public ProfissionalEnfermagem(){

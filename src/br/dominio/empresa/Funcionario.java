@@ -28,7 +28,8 @@ public abstract class Funcionario extends Pessoa
 {
    private double salario;
     
-   private String setor, cargo;
+   private String setor,
+           cargo;
     
    private Date dataAdmissao;
     

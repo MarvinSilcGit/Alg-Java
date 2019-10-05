@@ -11,7 +11,9 @@ import br.dominio.cadastro.Telefone;
 public class Empresa{
     
     
-    private String cnpj, razaoSocial, nomeFantasia;
+    private String cnpj,
+            razaoSocial,
+            nomeFantasia;
      
     private Endereco endereco;
     

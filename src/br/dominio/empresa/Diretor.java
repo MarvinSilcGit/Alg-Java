@@ -36,4 +36,4 @@ public class Diretor extends Funcionario
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);
    }
         
-}
+}//Fim da classe Diretor;
