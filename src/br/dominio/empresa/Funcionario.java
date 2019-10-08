@@ -29,6 +29,7 @@ public abstract class Funcionario extends Pessoa
    private double salario;
     
    private String setor,
+           
            cargo;
     
    private Date dataAdmissao;
@@ -79,32 +80,32 @@ public abstract class Funcionario extends Pessoa
    public void alterarSalario(double alterarSalario)
    { 
       this.salario=alterarSalario;
-   }
+   }//Fim do método que altera o salario do objeto do tipo Funcionario;
     
    public String retornarSetor()
    {
       return this.setor;
-   }
+   }//Fim do método que retorna o setor do objeto do tipo Funcionario;
     
    public void alterarSetor(String alterarSetor)
    {   
       this.setor=alterarSetor;
-   }
+   }//Fim do método que altera o setor do objeto do tipo Funcionario;
     
    public String retornarCargo()
    { 
       return this.cargo;
-   }
+   }//Fim do método que retora o cargo do objeto do tipo Funcionario;
     
    public void alterarCargo(String alterarSetor)
    { 
       this.cargo=alterarSetor;
-   }
+   }//Fim do método que altera o cargo do objeto do tipo Funcionario;
     
    public Date retornarDataAdmissão()
    {   
       return this.dataAdmissao;
-   }
+   }//Fim do método que retorna a data admissão do objeto do tipo Funcionario;
     
    public Acesso acessarContaAcesso()
    {  

@@ -5,67 +5,70 @@ import java.util.ArrayList;
 
 
 import br.dominio.cadastro.Endereco;
+
 import br.dominio.cadastro.Telefone;
 
 
-public class Empresa{
+public class Empresa
+{     
+   private String cnpj,
+           
+           razaoSocial,
+           
+           nomeFantasia;
+ 
+   private Endereco endereco;
     
-    
-    private String cnpj,
-            razaoSocial,
-            nomeFantasia;
+   private Telefone telefone;
      
-    private Endereco endereco;
+   private ArrayList listaConselho = new ArrayList(20);
+       
+   private ArrayList listaDepartamentos = new ArrayList(10);
+        
+   private Funcionario presidente, vicePresidente;
     
-    private Telefone telefone;
-     
-    private ArrayList listaConselho = new ArrayList(20);
-     
-    private ArrayList listaDepartamentos = new ArrayList(10);
-     
-    private Funcionario presidente, vicePresidente;
-    
-    private Orcamento acessarOrcamento;
+   private Orcamento acessarOrcamento;
     
      
-    public Empresa(){
-         
-    }
-    
-    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone){
-        
-        this.cnpj=cnpj;
-        
-        this.razaoSocial=razaoSocial;
-        
-        this.nomeFantasia=nomeFantasia;
-        
-        this.endereco=endereco;
-        
-        this.telefone=telefone;
-    }
+   public Empresa()
+   {    
+   
+   }//Fim do método construtor padrão;
      
-    public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente){
-         
-        this.cnpj=cnpj;
+   public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone)
+   {  
+      this.cnpj=cnpj;
+      
+      this.razaoSocial=razaoSocial;
         
-        this.razaoSocial=razaoSocial;
+      this.nomeFantasia=nomeFantasia;
         
-        this.nomeFantasia=nomeFantasia;
+      this.endereco=endereco;
         
-        this.endereco=endereco;
+      this.telefone=telefone;
+   }//Fim do primeiro método construtor personalizado;    
+   
+   public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente)
+   {     
+      this.cnpj=cnpj;
         
-        this.telefone=telefone;
-         
-        this.presidente=presidente;
-         
-        this.vicePresidente=vicePresidente;
-    }
+      this.razaoSocial=razaoSocial;
+        
+      this.nomeFantasia=nomeFantasia;
+        
+      this.endereco=endereco;
+      
+      this.telefone=telefone;
+      
+      this.presidente=presidente;
+            
+      this.vicePresidente=vicePresidente;
+   }//Fim do segundo método construtor personalizado;
     
-    public String retornarCnpj(){
-        
-        return this.cnpj;
-    }
+   public String retornarCnpj()  
+   {     
+      return this.cnpj;
+   }
     
     public String retornarRazaoSocial(){
         

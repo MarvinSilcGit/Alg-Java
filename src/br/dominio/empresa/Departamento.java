@@ -63,27 +63,22 @@ public  class Departamento
     public void alterarDiretor(Funcionario novoDiretor)
     {
         this.diretor=novoDiretor;
-    }
+    }// Fim do método que altera o diretor do objeto do tipo Departamento;
     
     public Funcionario retornarViceDiretor()
     {    
         return this.viceDiretor;
-    }
+    }//Fim do método que retorna o vice diretor do objeto do tipo Departamento;
     
     public void alterarViceDiretor(Funcionario novoViceDiretor)
     {    
         this.viceDiretor=novoViceDiretor;
-    }
-    
-    public Universidade acessarOrcamento()
-    {    
-        return this.acessarOrcamento;
-    }
+    }//Fim do método que altera o vice diretor do objetod do tipo Departamento;
     
     public ArrayList retornarListaFuncionarios()
     {
         return this.listaFuncionarios;
-    }
+    }//Fim do método que retorna os funcionarios da lista do objeto do tipo Departamento;
     
     public void inserirFuncionarioDepartamento(Funcionario novoFuncionario)
     { 
@@ -95,7 +90,7 @@ public  class Departamento
         {    
             this.listaFuncionarios.add(novoFuncionario);
         }
-    }
+    }//Fim do método que insere funcionario na lista do objeto do tipo Departamento;
     
     public void removerFuncionarioDepartamento(Funcionario removerFuncionario)
     {     
@@ -107,6 +102,6 @@ public  class Departamento
         {    
             this.listaFuncionarios.remove(removerFuncionario);
         }
-    }
+    }//Fim do método que remove funcionario da lista do objeto do tipo Departamento;
     
 }//Fim da classe Departamento;
