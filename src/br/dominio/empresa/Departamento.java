@@ -10,8 +10,6 @@ package br.dominio.empresa;
  *
  * @author belogo
  */
- 
-import br.dominio.universidade.Universidade;
 
 import java.util.ArrayList;
 
@@ -23,10 +21,10 @@ public  class Departamento
 {
     private String nome;
     
-    private Funcionario diretor,
-            viceDiretor;
+    private Diretor diretor;
     
-    private Universidade acessarOrcamento;
+    private ViceDiretor viceDiretor;
+            
     
     private ArrayList listaFuncionarios = new ArrayList(40);
     
@@ -36,13 +34,14 @@ public  class Departamento
         
     }//Fim do método construtor padrão;
     
-    public Departamento(String nome, Funcionario diretor, Funcionario viceDiretor)
+    public Departamento(String nome, Diretor diretor, ViceDiretor viceDiretor)
     {     
         this.nome=nome;
         
         this.diretor=diretor;
         
         this.viceDiretor=viceDiretor;
+        
     }//Fim do método construtor personalizado;
     
     public String retornarNomeDepartamento()
@@ -55,22 +54,22 @@ public  class Departamento
         this.nome=novoNome;
     }//Fim do método que altera o nome do objeto do tipo Departamento;
     
-    public Funcionario retornarDiretor()
+    public Diretor retornarDiretor()
     {
         return this.diretor;
     }//Fim do método que retorna o diretor
     
-    public void alterarDiretor(Funcionario novoDiretor)
+    public void alterarDiretor(Diretor novoDiretor)
     {
         this.diretor=novoDiretor;
     }// Fim do método que altera o diretor do objeto do tipo Departamento;
     
-    public Funcionario retornarViceDiretor()
+    public ViceDiretor retornarViceDiretor()
     {    
         return this.viceDiretor;
     }//Fim do método que retorna o vice diretor do objeto do tipo Departamento;
     
-    public void alterarViceDiretor(Funcionario novoViceDiretor)
+    public void alterarViceDiretor(ViceDiretor novoViceDiretor)
     {    
         this.viceDiretor=novoViceDiretor;
     }//Fim do método que altera o vice diretor do objetod do tipo Departamento;
