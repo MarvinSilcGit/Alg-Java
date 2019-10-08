@@ -93,7 +93,7 @@ public  class Departamento
     
     public void removerFuncionarioDepartamento(Funcionario removerFuncionario)
     {     
-        if (this.listaFuncionarios.size()==0)
+        if (this.listaFuncionarios.isEmpty())
         {    
             System.out.println("Este departamento será automaticamente excluído da Universidade");
         }
