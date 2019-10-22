@@ -1,6 +1,10 @@
 package br.dominio.banco;
 
 
+import br.dominio.cadastro.Cliente;
+
+import br.dominio.cadastro.Acesso;
+
 import java.util.Date;
 
 import br.dominio.cadastro.Endereco;
@@ -20,9 +24,9 @@ public class ClienteSimples extends Cliente
    public ClienteSimples()
    {        
    
-   }
+   }//Fim do método construtor padrão;
      
-   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, int tempoClienteBanco, ContaPoupanca contaPoupanca)
+   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaPoupanca contaPoupanca)
    {     
    
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, conta, tempoClienteBanco);

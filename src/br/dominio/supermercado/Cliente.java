@@ -11,7 +11,7 @@ import br.dominio.cadastro.Pessoa;
 
 import br.dominio.cartao.CartaoCredito;
 
-import br.dominio.banco.Acesso;
+import br.dominio.cadastro.Acesso;
 
 import br.dominio.cadastro.Telefone;
 

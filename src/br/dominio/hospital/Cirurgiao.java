@@ -5,7 +5,7 @@ import java.util.Date;
 
 import br.dominio.cadastro.Endereco;
 
-import br.dominio.banco.Acesso;
+import br.dominio.cadastro.Acesso;
 
 import br.dominio.cadastro.Telefone;
 
@@ -23,12 +23,13 @@ public class Cirurgiao extends ProfissionalMedicina
    public Cirurgiao()
    {    
    
-   }
+   }//Fim do método construtor padrão;
     
-    public Cirurgiao(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia, String especialidade)
+    public Cirurgiao(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia, String especialidade)
     {     
-       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta, crm, valorConsulta);
+       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, dataAdmissao, conta, crm, valorConsulta);
         
+       //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
         
        this.valorCirurgia=valorCirurgia;
         

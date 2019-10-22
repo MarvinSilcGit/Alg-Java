@@ -1,4 +1,4 @@
-package br.dominio.banco;
+package br.dominio.cadastro;
 
 
 public class Acesso{

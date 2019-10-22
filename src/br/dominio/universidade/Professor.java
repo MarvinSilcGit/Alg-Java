@@ -11,7 +11,7 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 import br.dominio.cadastro.Endereco;
 
@@ -21,7 +21,7 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.banco.Acesso;
+import br.dominio.cadastro.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -40,9 +40,9 @@ public class Professor extends Funcionario
     
    }//Fim do método construtor padrão;
     
-   public Professor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, double salarioHora)
+   public Professor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, double salarioHora)
    {    
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta);
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, dataAdmissao, conta);
       
       //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando um de seus contrutores; 
         

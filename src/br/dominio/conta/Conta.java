@@ -4,16 +4,19 @@ package br.dominio.conta;
 import br.dominio.cartao.CartaoDebito;
 
 
-public abstract class Conta{
+public abstract class Conta
+{  
+   private double saldo,
+           valorInicial;
     
-    private double saldo, valorInicial;
-   
-    private CartaoDebito cartaoDebito;
-    
+   private CartaoDebito cartaoDebito;
 
-    public Conta(){
-        
-    }
+   //Fim do campo de declaração de atributos;
+
+   public Conta()  
+   {        
+  
+   }
     
     public Conta(double saldo, double valorInicial, CartaoDebito cartaoDebito){
         
@@ -49,4 +52,5 @@ public abstract class Conta{
 
         return this.cartaoDebito;
     }
-}
+    
+}//Fim da classe Conta;

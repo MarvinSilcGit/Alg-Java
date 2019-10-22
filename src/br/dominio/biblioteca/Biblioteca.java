@@ -5,9 +5,10 @@ import java.util.ArrayList;
 
 import br.dominio.empresa.Empresa;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 import br.dominio.cadastro.Endereco;
+
 import br.dominio.cadastro.Telefone;
 
 

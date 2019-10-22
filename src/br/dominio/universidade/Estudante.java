@@ -22,7 +22,7 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.banco.Acesso;
+import br.dominio.cadastro.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

@@ -11,7 +11,7 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 import java.util.ArrayList;
 

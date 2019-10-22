@@ -3,7 +3,7 @@ package br.dominio.republicafederativa;
 
 import java.util.ArrayList;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 
 public class Ministerio{

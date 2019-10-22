@@ -1,8 +1,9 @@
 package br.dominio.empresa;
 
 
-import java.util.ArrayList;
+import br.dominio.cadastro.Funcionario;
 
+import java.util.ArrayList;
 
 import br.dominio.cadastro.Endereco;
 

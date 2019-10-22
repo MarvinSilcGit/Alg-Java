@@ -1,13 +1,15 @@
 package br.dominio.banco;
 
 
+import br.dominio.cadastro.Acesso;
+
 import br.dominio.conta.ContaCorrente;
 
 import br.dominio.cadastro.Endereco;
 
 import br.dominio.empresa.Empresa;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 import br.dominio.cadastro.Telefone;
 

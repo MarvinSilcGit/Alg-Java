@@ -5,7 +5,7 @@ import java.util.Date;
 
 import br.dominio.supermercado.Produto;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 
 public class Remedio extends Produto{

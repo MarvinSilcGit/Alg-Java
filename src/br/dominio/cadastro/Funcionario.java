@@ -4,22 +4,15 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.empresa;
+package br.dominio.cadastro;
 
 /**
  *
  * @author belogo
  */
 
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
-
 import java.util.Date;
 
-import br.dominio.banco.Acesso;
-
-import br.dominio.cadastro.Pessoa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -44,7 +37,7 @@ public abstract class Funcionario extends Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta)
+   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
    {    
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);          
     
@@ -52,20 +45,16 @@ public abstract class Funcionario extends Pessoa
         
       this.setor=setor;
         
-      this.cargo=cargo;
-        
       this.dataAdmissao=dataAdmissao;
         
       this.conta=conta;
    }//Fim do primeiro método construtor personalizado;
     
-   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta)
+   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta)
    {    
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
        
       this.setor=setor;
-        
-      this.cargo=cargo;
         
       this.dataAdmissao=dataAdmissao;
         

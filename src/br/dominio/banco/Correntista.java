@@ -1,13 +1,15 @@
 package br.dominio.banco;
 
 
+import br.dominio.cadastro.Acesso;
+
 import java.util.Date;
 
 import java.util.ArrayList;
 
 import br.dominio.cadastro.Endereco;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 import br.dominio.cadastro.Telefone;
 
@@ -23,9 +25,9 @@ public class Correntista extends Funcionario
         
     }
     
-    public Correntista(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta){
+    public Correntista(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta){
         
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);
     }
     
     public ArrayList retornarListaClienteFisico(){

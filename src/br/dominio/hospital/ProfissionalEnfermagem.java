@@ -7,30 +7,31 @@ import java.util.Date;
 
 import br.dominio.cadastro.Endereco;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
-import br.dominio.banco.Acesso;
+import br.dominio.cadastro.Acesso;
 
 import br.dominio.cadastro.Telefone;
 
 
 public abstract class ProfissionalEnfermagem  extends Funcionario
-{   
+{  
    private ArrayList listaPacientes = new ArrayList(15);
    
-    private int quantidadePlantoesSemana;
+   private int quantidadePlantoesSemana;
     
     private String coren,
             especialidade;
     
     
-    public ProfissionalEnfermagem(){
+    public ProfissionalEnfermagem()
+    {
         
-    }
+    }//Fim do método construtor padrão;
     
-    public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade){
+    public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade){
      
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);        
+        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);        
         
         this.quantidadePlantoesSemana=quanitadePlantoesSemana;
         

@@ -13,9 +13,9 @@ import java.util.ArrayList;
 
 import br.dominio.cadastro.Endereco;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
-import br.dominio.banco.Acesso;
+import br.dominio.cadastro.Acesso;
 
 import br.dominio.cadastro.Telefone;
 
@@ -28,19 +28,22 @@ public abstract class ProfissionalMedicina extends Funcionario
     
     private double valorConsulta;
     
+    //Fim do campo de declaração de atributos;
     
-    public ProfissionalMedicina(){
-        
-    }
     
-    public ProfissionalMedicina(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, String cargo, Date dataAdmissao, Acesso conta, String crm, double valorConsulta){
+    public ProfissionalMedicina()
+    {
         
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, cargo, dataAdmissao, conta);
+    }//Fim do método construtor padrão;
+    
+    public ProfissionalMedicina(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+    {    
+       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, dataAdmissao, conta);
         
         this.crm=crm;
         
         this.valorConsulta=valorConsulta;
-    }
+    }//Fim do método construtor personalizado;
     
     public String retornarCrm(){
      

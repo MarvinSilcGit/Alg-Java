@@ -3,7 +3,7 @@ package br.dominio.supermercado;
 
 import java.util.Date;
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 public class Produto
 {    

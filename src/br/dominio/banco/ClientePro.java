@@ -1,6 +1,10 @@
 package br.dominio.banco;
 
 
+import br.dominio.cadastro.Cliente;
+
+import br.dominio.cadastro.Acesso;
+
 import java.util.Date;
 
 import br.dominio.conta.ContaCorrente;
@@ -22,7 +26,7 @@ public class ClientePro extends Cliente
     
    }//Fim do método construtor personalizado;
     
-    public ClientePro(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, int tempoClienteBanco, ContaCorrente contaCorrente){
+    public ClientePro(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaCorrente contaCorrente){
     
         super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, conta, tempoClienteBanco);
 

@@ -10,7 +10,7 @@ package br.dominio.supermercado;
  * @author belogo
  */
 
-import br.dominio.empresa.Funcionario;
+import br.dominio.cadastro.Funcionario;
 
 
 public class Cadastrante extends Funcionario

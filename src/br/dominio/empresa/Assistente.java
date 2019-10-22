@@ -10,6 +10,8 @@ package br.dominio.empresa;
  * @author belogo
  */
 
+import br.dominio.cadastro.Funcionario;
+
 import java.util.Date;
 
 import br.dominio.cadastro.Telefone;
@@ -18,7 +20,7 @@ import br.dominio.cadastro.Endereco;
 
 import java.util.ArrayList;
 
-import br.dominio.banco.Acesso;//Mudar classe acesso para pacote cadastro;
+import br.dominio.cadastro.Acesso;//Mudar classe acesso para pacote cadastro;
 
 public class Assistente extends Funcionario
 {
@@ -30,9 +32,9 @@ public class Assistente extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Assistente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta)
+   public Assistente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
    {
-      super (nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, cargo, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);
    }
    
 }//Fim da classe assitente;

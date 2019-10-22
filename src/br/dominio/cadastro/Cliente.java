@@ -1,13 +1,7 @@
-package br.dominio.banco;
+package br.dominio.cadastro;
 
 
 import java.util.Date;
-
-import br.dominio.cadastro.Pessoa;
-
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -15,8 +9,8 @@ import br.dominio.cadastro.Telefone;
 public abstract class Cliente extends Pessoa
 {        
    private Acesso conta;
-    
-   private int tempoClienteBanco;
+  
+   private Date dataFidelizacaoCliente;
     
    //Fim do campode declaração de atributos;
    
@@ -26,7 +20,7 @@ public abstract class Cliente extends Pessoa
    
    }//Fim do método construtor padrão;    
        
-   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, int tempoClienteBanco)
+   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date dataFidelizacaoCliente)
    {     
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
         
@@ -34,19 +28,17 @@ public abstract class Cliente extends Pessoa
       
       this.conta=conta;
       
-      this.tempoClienteBanco=tempoClienteBanco;      
+      this.dataFidelizacaoCliente=dataFidelizacaoCliente;      
    }//Fim do método construtor personalizado;
- 
-    
+  
    public Acesso acessarContaAcesso()
-   {     
-
+   {    
       return this.conta;
    }
     
-   public int retornarTempoClienteBanco()
+   public Date retornarTempoClienteBanco()
    { 
-      return this.tempoClienteBanco;
+      return this.dataFidelizacaoCliente;//Alterar o comportamento do método
    }
     
 }//Fim da classe Cliente;

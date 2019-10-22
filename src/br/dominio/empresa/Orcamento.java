@@ -3,7 +3,6 @@ package br.dominio.empresa;
 
 public class Orcamento
 { 
-
    private float orcamentoGeralTrimestre,
             orcamentoAdministrativoTrimestre;
      
@@ -11,7 +10,7 @@ public class Orcamento
    public Orcamento()
    {
         
-   }
+   }//Fim do método construtor padrão;
     
    public Orcamento(float orcamentoGeralTrimestre, float orcamentoAdministrativoTrimestre)
    {         
