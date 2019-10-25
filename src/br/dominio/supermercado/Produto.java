@@ -3,7 +3,8 @@ package br.dominio.supermercado;
 
 import java.util.Date;
 
-import br.dominio.cadastro.Funcionario;
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class Produto
 {    

@@ -11,7 +11,7 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-///Atributo para carga horária obrigatória;
+//Atributo para carga horária obrigatória;
 import br.dominio.cadastro.Pessoa;
 
 import br.dominio.cadastro.Endereco;
@@ -93,7 +93,7 @@ public class Estudante extends Pessoa
    public Acesso acessarContaAcesso()
    {
       return this.conta;
-   }//Fim do método que acessa a conta do objeto do tipo Estudante;
+   }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Estudante;
     
    public ArrayList retornarDisciplinasCursando()
    {      

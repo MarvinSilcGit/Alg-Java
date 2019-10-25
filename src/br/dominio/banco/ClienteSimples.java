@@ -15,11 +15,13 @@ import br.dominio.cadastro.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
+
 public class ClienteSimples extends Cliente
 { 
    private ContaPoupanca contaPoupanca;
     
    //Fim do campo de declaração de atributos; 
+   
    
    public ClienteSimples()
    {        

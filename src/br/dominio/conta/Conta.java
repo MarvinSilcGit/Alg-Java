@@ -7,7 +7,7 @@ import br.dominio.cartao.CartaoDebito;
 public abstract class Conta
 {  
    private double saldo,
-           valorInicial;
+           valorInicial;//Mudar ou não a classe conta de lugar; Todo o cliente possui uma conta, ou será o banco?
     
    private CartaoDebito cartaoDebito;
 
