@@ -33,6 +33,13 @@ public class CirurgiaoVascular extends ProfissionalMedicina
       this.valorCirurgia=valorCirurgia;
    }//Fim do método construtor padrão;
  
+   
+   @Override
+   public void realizarConsulta()
+   {
+      
+   }//Terminar esse polimorfismo;
+   
    public double retornarValorCirurgia()
    {    
       return this.valorCirurgia; 

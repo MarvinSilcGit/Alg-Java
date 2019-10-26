@@ -15,6 +15,8 @@ import br.dominio.cadastro.Acesso;
 
 import br.dominio.cadastro.Telefone;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class Dermatologista extends ProfissionalMedicina
 {    
@@ -31,5 +33,11 @@ public class Dermatologista extends ProfissionalMedicina
       //Fim do método construtor super da classe mãe o super classe ProfissionalMedicina; 
       
    }//Fim do método construtor personalizado;
+   
+   @Override
+   public void realizarConsulta()
+   {
+      
+   }//Terminar esse polimorfismo;
     
 }//Fim da classe Dermatologista;
