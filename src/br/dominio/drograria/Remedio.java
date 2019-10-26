@@ -3,28 +3,34 @@ package br.dominio.drograria;
 
 import java.util.Date;
 
-import br.dominio.supermercado.Produto;
+import java.util.ArrayList;
 
-import br.dominio.cadastro.Funcionario;
+import br.dominio.cadastro.Produto;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Remedio extends Produto{
+public class Remedio extends Produto
+{    
+   private String tipoTarja, nome;
+   
+   private ArrayList listaSubstancias = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
+   
     
-    private String categoria;
+   public Remedio()
+   {     
+   
+   }//Fim do método construtor padrão;
     
-    public Remedio(){
-        
-    }
-    
-    public Remedio(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade, String categoria){
-    
-        super(nome, codigo, quantidade, dataEntrada, dataSaida, dataValidade);
-        
-        this.categoria=categoria;
-    }
-    
-    public String retornarCategoriaRemedio(){
-        
-        return this.categoria;
-    } 
-}
+  /* public Remedio(int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade, String categoria, String tipoTarja, String nome)
+   {         
+      super(codigo, quantidade, dataEntrada, dataSaida, dataValidade);
+       
+      //Fim do método super da classe mãe ou super classe Produto;
+
+     
+   }//Fim do método construtor personalizado;
+   */
+}//Fim da classe Remedio;

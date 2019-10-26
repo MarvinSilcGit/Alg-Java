@@ -3,7 +3,9 @@ package br.dominio.biblioteca;
 
 import java.util.Date;
 
-import br.dominio.supermercado.Produto;
+import br.dominio.cadastro.Produto;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class Livro extends Produto
@@ -18,11 +20,11 @@ public class Livro extends Produto
    public Livro()
    {       
     
-   }
+   }//Fim do método construtor padrão;
     
-    public Livro(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
+    public Livro(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
         
-       super(nome, codigo, quantidade, dataEntrada, dataSaida);
+       super(codigo, quantidade, dataEntrada, dataSaida, categoria);
        
         this.titulo=titulo;
 

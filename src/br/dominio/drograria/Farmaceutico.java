@@ -11,6 +11,8 @@ import br.dominio.cadastro.Acesso;
 
 import br.dominio.cadastro.Telefone;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class Farmaceutico extends Funcionario
 {   

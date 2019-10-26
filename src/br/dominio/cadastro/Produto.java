@@ -1,4 +1,4 @@
-package br.dominio.supermercado;
+package br.dominio.cadastro;
 
 
 import java.util.Date;
@@ -6,16 +6,16 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Produto
-{    
-   private String nome;
-   
+public abstract class Produto
+{  
    private int codigo,
            quantidade;
 
    private Date dataEntrada,
            dataSaida,
            dataValidade;
+   
+   private String categoria;
   
    //Fim do campo de declaração de atributos;
    
@@ -25,10 +25,8 @@ public class Produto
         
    }//Fim do método construtor padrão;
 
-   public Produto(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade)   
-   {       
-      this.nome=nome;
-       
+   public Produto(int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade, String categoria)   
+   {        
       this.codigo=codigo;
        
       this.quantidade=quantidade;
@@ -38,12 +36,12 @@ public class Produto
       this.dataSaida=dataSaida;
 
       this.dataValidade=dataValidade;
+      
+      this.categoria=categoria;
    }//Fim do primeiro método construtor personalizado;
     
-   public Produto(String nome, int codigo, int quantidade, Date dataEntrada, Date dataSaida)
-   {      
-      this.nome=nome;
-      
+   public Produto(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria)
+   {        
       this.codigo=codigo;
       
       this.quantidade=quantidade;
@@ -51,12 +49,9 @@ public class Produto
       this.dataEntrada=dataEntrada;
       
       this.dataSaida=dataSaida; 
+      
+      this.categoria=categoria;
    }//Fim do segundo método construtor personalizado;
-    
-   public String retornarNomeProduto()
-   { 
-      return this.nome;
-   }//Fim do método que retorna o nome do objeto do tipo Produto;
     
    public int retornarCodigo() 
    {
@@ -82,5 +77,10 @@ public class Produto
    {  
       return this.dataValidade;
    }//Fim do método que retorna a data de validade do objeto do tipo Produto;
-    
+
+   public String retornarCategoriaRemedio()
+   {       
+      return this.categoria;
+   }//Fim do método que retorna a categoria do objeto do tipo Produto; 
+   
 }//Fim da classe Produto;

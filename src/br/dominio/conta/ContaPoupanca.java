@@ -1,20 +1,27 @@
 package br.dominio.conta;
 
 
+import br.dominio.cadastro.Conta;
+
 import br.dominio.cartao.CartaoDebito;
 
+import br.dominio.banco.ContaBancaria;
 
-public class ContaPoupanca extends Conta{
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
+
+public class ContaPoupanca extends ContaBancaria
+{    
+   private double taxaDividendosAno;
+   
+   private int limiteSaquesMensais;
     
-    private double taxaDividendosAno;
+   //Fim do campo de declaração de atributos;
 
-    private int limiteSaquesMensais;
-    
-
-    public ContaPoupanca(){
+  /* public ContaPoupanca()
+   {
         
-    }
+   }*/
     
     public ContaPoupanca(double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaDividendosAno, int limiteSaquesMensais){
         

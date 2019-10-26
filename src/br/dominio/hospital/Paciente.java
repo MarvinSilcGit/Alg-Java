@@ -13,83 +13,89 @@ import br.dominio.drograria.Remedio;
 
 import br.dominio.cadastro.Telefone;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class Paciente extends Pessoa{
-    
-    
-    private Date dataEntrada,
+
+public class Paciente extends Pessoa
+{ 
+   private Date dataEntrada,
             dataAlta;
    
-    private ArrayList listaRemedios = new ArrayList();
+   private ArrayList listaRemedios = new ArrayList();
     
-    private ArrayList listaMedicos = new ArrayList(3);
+   private ArrayList listaMedicos = new ArrayList(3);
     
-    private ArrayList listasEnfermeiras = new ArrayList(3);
-    
-    public Paciente(){
+   private ArrayList listasEnfermeiras = new ArrayList(3);
+
+   //Fim do campo de declaração de atributos;
+ 
+   public Paciente()
+   {
         
-    }
+   }//Fim do método construtor padrão;
     
-    public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Date dataEntrada, Date dataAlta){
+   public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Date dataEntrada, Date dataAlta)
+   {   
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
        
-        super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
+      //Fim do método super da classe mãe ou superclasse Pessoa;
        
-        this.dataEntrada=dataEntrada;
+      this.dataEntrada=dataEntrada;
         
-        this.dataAlta=dataAlta;
-    }
+      this.dataAlta=dataAlta;
+   }//Fim do método construtor personalizado;
     
-    public Date retornarDataEntrada(){
-     
-        return this.dataEntrada;
-    }
+   public Date retornarDataEntrada()
+   {     
+      return this.dataEntrada;
+   }
     
-    public Date retornarDataAlta(){
+   public Date retornarDataAlta()
+   {
+      return this.dataAlta;
+   }      
     
-        return this.dataAlta;
-    }   
+   public ArrayList retornarListaRemedios()
+   { 
+      return this.listaRemedios;
+   }
     
-    public ArrayList retornarListaRemedios(){
+   public void inserirRemedioListaPaciente(Remedio novoRemedio)
+   { 
+      this.listaRemedios.add(novoRemedio);
+   }
     
-        return this.listaRemedios;
-    }
-    
-    public void inserirRemedioPaciente(Remedio novoRemedio){
-    
-        this.listaRemedios.add(novoRemedio);
-    }
-    
-    public void removerRemedioPaciente(Remedio removerRemedio){
-    
+   public void removerRemedioListaPaciente(Remedio removerRemedio)
+   { 
         this.listaRemedios.remove(removerRemedio);
-    }
+   }
     
-    public ArrayList retornarMedicos(){
-    
-        return this.listaMedicos;
-    }
-    
-    public void alterarMedicos(ProfissionalMedicina novoMedico, ProfissionalMedicina novoMedico2, ProfissionalMedicina novoMedico3){
-    
-        this.listaMedicos.add(novoMedico);
+   public ArrayList retornarListaMedicos()
+   {
+      return this.listaMedicos;
+   }
+     
+   public void alterarListaMedicos(ProfissionalMedicina novoMedico, ProfissionalMedicina novoMedico2, ProfissionalMedicina novoMedico3)
+   { 
+      this.listaMedicos.add(novoMedico);    
+      
+      this.listaMedicos.add(novoMedico2);
         
-        this.listaMedicos.add(novoMedico2);
-        
-        this.listaMedicos.add(novoMedico3);
-    }
+      this.listaMedicos.add(novoMedico3);
+   }
+  
+   public ArrayList retornarListaEnfermeiras()
+   {       
+      return this.listasEnfermeiras;
+   }
     
-    public ArrayList retornarEnfermeiras(){
+   public void alterarListaEnfermeiras(ProfissionalEnfermagem novoProfissionalEnfermagem, ProfissionalEnfermagem novoProfissionalEnfermagem2, ProfissionalEnfermagem novoProfissionalEnfermagem3)
+   {  
+      this.listasEnfermeiras.add(novoProfissionalEnfermagem);
         
-        return this.listasEnfermeiras;
-    }
-    
-    public void alterarEnfermeiras(ProfissionalEnfermagem novoProfissionalEnfermagem, ProfissionalEnfermagem novoProfissionalEnfermagem2, ProfissionalEnfermagem novoProfissionalEnfermagem3){
-    
-        this.listasEnfermeiras.add(novoProfissionalEnfermagem);
+      this.listasEnfermeiras.add(novoProfissionalEnfermagem2);
         
-        this.listasEnfermeiras.add(novoProfissionalEnfermagem2);
-        
-        this.listasEnfermeiras.add(novoProfissionalEnfermagem3);
-    }
+      this.listasEnfermeiras.add(novoProfissionalEnfermagem3);
+   }
     
 }//Fim da classe Paciente;
