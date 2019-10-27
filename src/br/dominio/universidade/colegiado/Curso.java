@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.universidade;
+package br.dominio.universidade.colegiado;
 
 import br.dominio.classesabstratas.Funcionario;
 

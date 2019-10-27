@@ -1,6 +1,7 @@
 package br.dominio.cartao;
 
 
+import br.dominio.classesabstratas.Cartao;
 import java.util.Date;
 
 

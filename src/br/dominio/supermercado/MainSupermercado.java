@@ -3,7 +3,7 @@ package br.dominio.supermercado;
 
 import br.dominio.classesabstratas.Endereco;
 
-import br.dominio.empresa.Departamento;
+import br.dominio.empresa.departamento.Departamento;
 
 import br.dominio.cartao.CartaoCredito;
 

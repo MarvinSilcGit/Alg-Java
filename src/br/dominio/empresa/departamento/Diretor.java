@@ -3,7 +3,7 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.empresa;
+package br.dominio.empresa.departamento;
 
 /**
  *
@@ -17,11 +17,14 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import br.dominio.classesabstratas.Acesso;
+
 import br.dominio.classesabstratas.Endereco;
+
 import br.dominio.classesabstratas.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-             
+
+
 public class Diretor extends Funcionario
 {
    private ArrayList equipe = new ArrayList();

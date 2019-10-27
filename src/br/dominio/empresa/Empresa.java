@@ -1,12 +1,19 @@
 package br.dominio.empresa;
 
 
+import br.dominio.empresa.departamento.Departamento;
+
+import br.dominio.empresa.departamento.Orcamento;
+
 import br.dominio.classesabstratas.Funcionario;
 
 import java.util.ArrayList;
 
 import br.dominio.classesabstratas.Endereco;
+
 import br.dominio.classesabstratas.Telefone;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class Empresa
@@ -28,6 +35,8 @@ public class Empresa
    private Funcionario presidente, vicePresidente;
     
    private Orcamento acessarOrcamento;
+   
+   //Fim do campo de declaração de atributos;
     
      
    public Empresa()

@@ -1,6 +1,7 @@
 package br.dominio.republicafederativa;
 
 
+import br.dominio.republicafederativa.estado.Estado;
 import java.util.ArrayList;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -15,6 +16,10 @@ public class Pais
             tesouro,
             pib,
             idh;
+   
+   private Presidente presidente;
+   
+   private VicePresidente vicePresidente;
  
    private ArrayList listaPessoas = new ArrayList();
     

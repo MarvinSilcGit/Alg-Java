@@ -11,9 +11,9 @@ package br.dominio.classesabstratas;
  * @author belogo
  */
 
-import br.dominio.republicafederativa.Cidade;
+import br.dominio.republicafederativa.cidade.Cidade;
 
-import br.dominio.republicafederativa.Estado;
+import br.dominio.republicafederativa.estado.Estado;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         

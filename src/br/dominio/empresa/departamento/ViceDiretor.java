@@ -3,7 +3,7 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.empresa;
+package br.dominio.empresa.departamento;
 
 /**
  *
@@ -13,7 +13,9 @@ package br.dominio.empresa;
 import java.util.Date;
 
 import br.dominio.classesabstratas.Endereco;
+
 import br.dominio.classesabstratas.Telefone;
+
 import br.dominio.classesabstratas.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -22,6 +24,8 @@ import br.dominio.classesabstratas.Acesso;
 public class ViceDiretor extends Diretor
 {
    private Diretor chefe;
+   //Fazer atributo derivado para chefe;
+   //Fim do campo de declaração de atributos;
    
    
    public ViceDiretor()

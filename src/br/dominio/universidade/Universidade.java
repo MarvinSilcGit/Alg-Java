@@ -11,6 +11,7 @@ package br.dominio.universidade;
  * @author belogo
  */
 
+import br.dominio.universidade.colegiado.Colegiado;
 import br.dominio.classesabstratas.Funcionario;
 
 import br.dominio.classesabstratas.Endereco;

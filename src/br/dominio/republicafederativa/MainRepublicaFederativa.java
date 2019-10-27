@@ -1,6 +1,7 @@
 package br.dominio.republicafederativa;
 
 
+import br.dominio.republicafederativa.estado.Estado;
 import br.dominio.classesabstratas.Endereco;
 
 

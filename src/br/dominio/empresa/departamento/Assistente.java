@@ -3,7 +3,7 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.empresa;
+package br.dominio.empresa.departamento;
 
 /**
  *
@@ -15,6 +15,7 @@ import br.dominio.classesabstratas.Funcionario;
 import java.util.Date;
 
 import br.dominio.classesabstratas.Telefone;
+
 import br.dominio.classesabstratas.Endereco;
 
 import java.util.ArrayList;

@@ -1,11 +1,13 @@
-package br.dominio.empresa;
+package br.dominio.empresa.departamento;
 
 
 public class Orcamento
 { 
    private float orcamentoGeralTrimestre,
+           
             orcamentoAdministrativoTrimestre;
      
+   //Fim do campo de declaração de atributos;
     
    public Orcamento()
    {
