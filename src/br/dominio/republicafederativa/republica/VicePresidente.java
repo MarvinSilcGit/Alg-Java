@@ -20,6 +20,8 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
+import br.dominio.api.Acesso;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -35,8 +37,9 @@ public class VicePresidente extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public VicePresidente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco)
+   public VicePresidente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
+      
       
    }
    
