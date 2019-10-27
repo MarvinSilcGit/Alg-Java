@@ -11,7 +11,7 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-import br.dominio.cadastro.Funcionario;
+import br.dominio.classesabstratas.Funcionario;
 
 import java.util.ArrayList;
 

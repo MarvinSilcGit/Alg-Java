@@ -1,7 +1,7 @@
 package br.dominio.republicafederativa;
 
 
-import br.dominio.cadastro.Endereco;
+import br.dominio.classesabstratas.Endereco;
 
 
 public class MainRepublicaFederativa

@@ -3,7 +3,7 @@ package br.dominio.biblioteca;
 
 import java.util.Date;
 
-import br.dominio.cadastro.ProdutoSemValidade;
+import br.dominio.classesabstratas.ProdutoSemValidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

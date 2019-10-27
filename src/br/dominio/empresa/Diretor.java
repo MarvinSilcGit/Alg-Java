@@ -10,17 +10,15 @@ package br.dominio.empresa;
  * @author belogo
  */
 
-import br.dominio.cadastro.Funcionario;
+import br.dominio.classesabstratas.Funcionario;
 
 import java.util.ArrayList;
 
 import java.util.Date;
 
-import br.dominio.cadastro.Acesso;
-
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
+import br.dominio.classesabstratas.Acesso;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
              

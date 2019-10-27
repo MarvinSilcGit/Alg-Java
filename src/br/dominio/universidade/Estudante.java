@@ -12,17 +12,15 @@ package br.dominio.universidade;
  */
 
 //Atributo para carga horária obrigatória;
-import br.dominio.cadastro.Pessoa;
-
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
+import br.dominio.classesabstratas.Pessoa;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Telefone;
 
 import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.cadastro.Acesso;
+import br.dominio.classesabstratas.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

@@ -1,13 +1,13 @@
 package br.dominio.supermercado;
 
 
-import br.dominio.cadastro.Endereco;
+import br.dominio.classesabstratas.Endereco;
 
 import br.dominio.empresa.Departamento;
 
 import br.dominio.cartao.CartaoCredito;
 
-import br.dominio.cadastro.Acesso;
+import br.dominio.classesabstratas.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

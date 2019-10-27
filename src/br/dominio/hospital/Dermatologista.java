@@ -7,13 +7,13 @@
 package br.dominio.hospital;
 
 
+import br.dominio.classesabstratas.ProfissionalMedicina;
+
 import java.util.Date;
 
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Acesso;
-
-import br.dominio.cadastro.Telefone;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Acesso;
+import br.dominio.classesabstratas.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -21,7 +21,6 @@ import br.dominio.cadastro.Telefone;
 public class Dermatologista extends ProfissionalMedicina
 {    
    
- 
    public Dermatologista()
    {
       

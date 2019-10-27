@@ -12,11 +12,9 @@ package br.dominio.empresa;
 
 import java.util.Date;
 
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
-
-import br.dominio.cadastro.Acesso;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Telefone;
+import br.dominio.classesabstratas.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

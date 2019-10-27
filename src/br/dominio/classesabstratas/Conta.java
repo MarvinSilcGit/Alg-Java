@@ -1,4 +1,4 @@
-package br.dominio.cadastro;
+package br.dominio.classesabstratas;
 
 
 public abstract class Conta

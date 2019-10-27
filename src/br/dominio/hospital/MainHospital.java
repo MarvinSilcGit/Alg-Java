@@ -1,7 +1,7 @@
 package br.dominio.hospital;
 
 
-import br.dominio.cadastro.Endereco;
+import br.dominio.classesabstratas.Endereco;
 
 
 public class MainHospital

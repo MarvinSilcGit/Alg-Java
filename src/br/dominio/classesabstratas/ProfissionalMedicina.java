@@ -4,20 +4,18 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.hospital;
+package br.dominio.classesabstratas;
 
 
 import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Funcionario;
-
-import br.dominio.cadastro.Acesso;
-
-import br.dominio.cadastro.Telefone;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Funcionario;
+import br.dominio.classesabstratas.Acesso;
+import br.dominio.classesabstratas.Telefone;
+import br.dominio.hospital.Paciente;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

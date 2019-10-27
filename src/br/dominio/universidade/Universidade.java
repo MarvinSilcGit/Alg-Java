@@ -11,11 +11,9 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-import br.dominio.cadastro.Funcionario;
-
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
+import br.dominio.classesabstratas.Funcionario;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Telefone;
 
 import java.util.ArrayList;
 

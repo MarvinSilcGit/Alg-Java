@@ -10,7 +10,7 @@ package br.dominio.supermercado;
  * @author belogo
  */
 
-import br.dominio.cadastro.Funcionario;
+import br.dominio.classesabstratas.Funcionario;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

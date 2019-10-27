@@ -1,7 +1,7 @@
 package br.dominio.supermercado;
 
 
-import br.dominio.cadastro.Produto;
+import br.dominio.classesabstratas.Produto;
 
 import java.util.ArrayList;
 

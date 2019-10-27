@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.cadastro;
+package br.dominio.classesabstratas;
 
 /**
  *

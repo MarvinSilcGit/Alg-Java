@@ -1,17 +1,15 @@
 package br.dominio.banco;
 
 
-import br.dominio.cadastro.Cliente;
-
-import br.dominio.cadastro.Acesso;
+import br.dominio.classesabstratas.Cliente;
+import br.dominio.classesabstratas.Acesso;
 
 import java.util.Date;
 
 import br.dominio.conta.ContaCorrente;
 
-import br.dominio.cadastro.Endereco;
-
-import br.dominio.cadastro.Telefone;
+import br.dominio.classesabstratas.Endereco;
+import br.dominio.classesabstratas.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
