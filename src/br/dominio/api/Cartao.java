@@ -3,74 +3,84 @@ package br.dominio.api;
 
 import java.util.Date;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public abstract class Cartao{
+
+public abstract class Cartao
+{     
+   private int numeroCartao,
+           codeSeguranca,
+           categoria,
+           senhaNumero;
     
-    private int numeroCartao, codeSeguranca, categoria, senhaNumero;
+   private String nomeGravado,
+           bandeira;
     
-    private String nomeGravado, bandeira;
+   private Date vencimentoCartao;
+   
+   //Fim do campo de declaração de atributos;
     
-    private Date vencimentoCartao;
     
+   public Cartao()
+   {   
+
+   }//Fim do método construtor padrão;
     
-    public Cartao(){
+   public Cartao(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao)
+   {     
+      this.numeroCartao=numeroCartao;
         
-    }
-    
-    public Cartao(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao){
+      this.codeSeguranca=codeSeguranca;
         
-        this.numeroCartao=numeroCartao;
+      this.categoria=categoria;
         
-        this.codeSeguranca=codeSeguranca;
+      this.senhaNumero=senhaNumero;
         
-        this.categoria=categoria;
+      this.nomeGravado=nomeGravado;
         
-        this.senhaNumero=senhaNumero;
+      this.bandeira=bandeira;
         
-        this.nomeGravado=nomeGravado;
-        
-        this.bandeira=bandeira;
-        
-        this.vencimentoCartao=vencimentoCartao;
-    }
+      this.vencimentoCartao=vencimentoCartao;
+   }//Fim do método construtor personalizado;
     
-    public int retornarNumeroCartao(){
-        
-        return this.numeroCartao;
-    }
+   public int retornarNumeroCartao()
+   {    
+      return this.numeroCartao;
+   }//Fim do método que retornao o número do objeto do tipo Cartão;
     
-    public int retornarCodeSeguranca(){
+   public int retornarCodeSeguranca()
+   { 
+      return this.codeSeguranca;
+   }//Fim do método que retorna o código de segunrança do objeto do tipo Cartão;
     
-        return this.codeSeguranca;
-    }
+   public int retornarCategoria()
+   { 
+      return this.categoria;
+   }//Fim do método que retorna a categoria do objeto do tipo Cartão;
     
-    public int retornarCategoria(){
+   public int retornarSenhaNumero()
+   { 
+      return this.senhaNumero;
+   }//Fim do método que retorna a senha do objeto do tipo Cartao;
     
-        return this.categoria;
-    }
+   public void alterarSenhaNumero(int alterar)
+   { 
+      this.senhaNumero=alterar;
+   }//Fim do método que altera o objeto do tipo Cartao;
     
-    public int retornarSenhaNumero(){
+   public String retornarNomeGravado()
+   { 
+      return this.nomeGravado;
+   }//Fim do método que retorna o nome gravado do objeto do tipo Cartão;
     
-        return this.senhaNumero;
-    }
+   public String retornarBandeira()
+   { 
+      return this.bandeira;
+   }//FIm do método que retorna a bandeira do objeto do tipo Cartão;
     
-    public void alterarSenhaNumero(int alterar){
-    
-        this.senhaNumero=alterar;
-    }
-    
-    public String retornarNomeGravado(){
-    
-        return this.nomeGravado;
-    }
-    
-    public String retornarBandeira(){
-    
-        return this.bandeira;
-    }
-    
-    public Date retornarVencimentoCartao(){
-    
-        return this.vencimentoCartao;
-    }
-}
+   public Date retornarVencimentoCartao()
+   { 
+      return this.vencimentoCartao;
+   }//Fim do método que retorna a data de vencimento do objeto do tipo Cartão;
+   
+}//Fim da classe Cartao;

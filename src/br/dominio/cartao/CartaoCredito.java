@@ -5,35 +5,43 @@ import br.dominio.api.Cartao;
 
 import java.util.Date;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class CartaoCredito extends Cartao{
+
+public class CartaoCredito extends Cartao
+{  
+   private double limite;
     
-    private double limite;
+   private Date vencimentoFatura;
     
-    private Date vencimentoFatura;
+     
+   public CartaoCredito()
+   {    
     
+   }
     
-    public CartaoCredito(){
+   public CartaoCredito(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao, double limite, Date vencimentoFatura)
+   {     
+      super(numeroCartao, codeSeguranca, categoria, senhaNumero, nomeGravado, bandeira, vencimentoCartao);
         
-    }
-    
-    public CartaoCredito(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao, double limite, Date vencimentoFatura){
-        
-        super(numeroCartao, codeSeguranca, categoria, senhaNumero, nomeGravado, bandeira, vencimentoCartao);
-        
-        this.limite=limite;
+      this.limite=limite;
        
-        this.vencimentoFatura=vencimentoFatura;
+      this.vencimentoFatura=vencimentoFatura;
     }
     
-    public double retornarLimite(){
-    
+    public double retornarLimite()
+    {
         return this.limite;
     }   
     
-    public void alterarLimite(double alterar){
+    public void aumentarLimite(double novoLimite)
+    {
+        this.limite=novoLimite;
+    }
     
-        this.limite=alterar;
+    public void diminuirLimite(double novoLimite)
+    {
+       this.limite=novoLimite;
     }
     
     public Date retornarVencimentoFatura(){
@@ -45,4 +53,5 @@ public class CartaoCredito extends Cartao{
     
         this.vencimentoFatura=alterar;
     }
+    
 }
