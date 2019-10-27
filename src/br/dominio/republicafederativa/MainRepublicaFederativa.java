@@ -1,26 +1,20 @@
 package br.dominio.republicafederativa;
 
 
+import br.dominio.republicafederativa.republica.Pais;
+
 import br.dominio.republicafederativa.estado.Estado;
+
 import br.dominio.classesabstratas.Endereco;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class MainRepublicaFederativa
 {
    public static void main(String[] args)
    {   
-      Pais pais = new Pais("Brasil","Real",1990000.0,0,0,0);
-        
-      
-      System.out.println(pais.retornarListaPessoas());
-        
-      
-      Estado estado1 = new Estado("Bahia","",0,0,0,0);
-        
-      
-      pais.inserirEstados(estado1.retornarNome());
-        
-      System.out.println(pais.retornarListaEstados());
+
     }//Fim do método main;
    
 }//Fim da classe MainRepublicaFederativa;

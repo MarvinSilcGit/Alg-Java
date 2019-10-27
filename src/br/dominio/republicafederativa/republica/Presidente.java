@@ -1,4 +1,4 @@
-package br.dominio.republicafederativa;
+package br.dominio.republicafederativa.republica;
 
 
 import java.util.ArrayList;
@@ -30,8 +30,11 @@ public class Presidente extends Funcionario
     
    public Presidente (String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
    {
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);       
-   }
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);      
+      
+      //Fim do método super da classe mãe ou super classe Funcionario;
+      
+   }//Fim do método construtor padrão;
     
    public ArrayList retornarGabinete()
    {

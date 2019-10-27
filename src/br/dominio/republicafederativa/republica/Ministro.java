@@ -1,4 +1,4 @@
-package br.dominio.republicafederativa;
+package br.dominio.republicafederativa.republica;
 
 
 import java.util.Date;

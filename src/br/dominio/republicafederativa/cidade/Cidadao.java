@@ -1,4 +1,4 @@
-package br.dominio.republicafederativa;
+package br.dominio.republicafederativa.cidade;
 
 
 import br.dominio.classesabstratas.Endereco;

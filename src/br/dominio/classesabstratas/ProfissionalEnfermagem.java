@@ -5,11 +5,9 @@ import java.util.ArrayList;
 
 import java.util.Date;
 
-import br.dominio.classesabstratas.Endereco;
-import br.dominio.classesabstratas.Funcionario;
-import br.dominio.classesabstratas.Acesso;
-import br.dominio.classesabstratas.Telefone;
 import br.dominio.hospital.Paciente;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public abstract class ProfissionalEnfermagem  extends Funcionario
@@ -20,6 +18,8 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
     
    private String coren,
             especialidade;
+   
+   //Fim do campo de declaração de atributos;
     
     
    public ProfissionalEnfermagem()
@@ -31,12 +31,14 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
    {  
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);        
         
+      //Fim do método super da classe mãe ou super classe Funcionario;
+      
       this.quantidadePlantoesSemana=quanitadePlantoesSemana;
        
       this.coren=coren;
         
       this.especialidade=especialidade;
-   }
+   }//Fim do método construtor padrão;
     
    public int retornarQuantidadePlantoesSemana()
    {    
