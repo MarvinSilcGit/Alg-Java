@@ -2,7 +2,9 @@ package br.dominio.republicafederativa;
 
 
 import br.dominio.classesabstratas.Endereco;
+
 import br.dominio.classesabstratas.Telefone;
+
 import java.util.Date;
 
 import br.dominio.classesabstratas.Pessoa;
@@ -10,6 +12,8 @@ import br.dominio.classesabstratas.Pessoa;
 public class Cidadao extends Pessoa 
 {
    private int numeroSus;
+   
+   //Fim do campo de declaração de atributos;
    
    
    public Cidadao()

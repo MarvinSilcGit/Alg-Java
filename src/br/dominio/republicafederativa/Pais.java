@@ -3,102 +3,109 @@ package br.dominio.republicafederativa;
 
 import java.util.ArrayList;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class Pais{
-    
-    private String nome,
+
+public class Pais
+{   
+   private String nome,
             moeda;
  
-    private double populacao,
+   private double populacao,
             tesouro,
             pib,
             idh;
  
-    private ArrayList listaPessoas = new ArrayList();
+   private ArrayList listaPessoas = new ArrayList();
     
-    private ArrayList listaEstados = new ArrayList();
+   private ArrayList listaEstados = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
     
-    public Pais(){
+   
+   public Pais()
+   {     
+   
+   }//Fim do método construtor padrão;
+    
+   public Pais(String nome, String moeda, double populacao, double tesouro, double pib, double idh)
+   {   
+      this.nome=nome;
         
-    }
-    
-    public Pais(String nome, String moeda, double populacao, double tesouro, double pib, double idh){
-      
-        this.nome=nome;
+      this.moeda=moeda;
         
-        this.moeda=moeda;
+      this.populacao=populacao;
         
-        this.populacao=populacao;
+      this.tesouro=tesouro;
         
-        this.tesouro=tesouro;
+      this.pib=pib;
         
-        this.pib=pib;
-        
-        this.idh=idh;
-    }
+      this.idh=idh;
+   }//Fim da método construtor padrão;
     
-    public String retornarNome(){
-        
-        return this.nome;
-    }
+   public String retornarNome()
+   {     
+      return this.nome;
+   }
     
-    public String retornarMoedaOficial(){
+   public String retornarMoedaOficial()
+   { 
+      return this.moeda;
+   }
     
-        return this.moeda;
-    }
+   public void alterarMoedaOficial(String alterarMoedaOficial)
+   { 
+      this.moeda=alterarMoedaOficial;
+   }
     
-    public void alterarMoedaOficial(String alterarMoedaOficial){
+   public double retornarPopupalacao()
+   { 
+      return this.populacao;
+   }
     
-        this.moeda=alterarMoedaOficial;
-    }
+   public double retornarTesouro()
+   { 
+      return this.tesouro;
+   }
     
-    public double retornarPopupalacao(){
+   public void alterarTesouro(double alterarTesouro)
+   { 
+      this.tesouro=alterarTesouro; 
+   }
     
-        return this.populacao;
-    }
+   public double retornarPib()
+   { 
+      return this.pib;
+   }
     
-    public double retornarTesouro(){
+   public double retornarIdh()
+   { 
+      return this.idh;
+   }
     
-        return this.tesouro;
-    }
+   public ArrayList retornarListaEstados()
+   { 
+      return this.listaEstados;
+   }
     
-    public void alterarTesouro(double alterarTesouro){
+   public void inserirEstados(String novoEstado)
+   { 
+      this.listaEstados.add(novoEstado);
+   }
     
-        this.tesouro=alterarTesouro; 
-    }
+   public void removerEstados(Estado removerEstado)
+   {     
+      this.listaEstados.add(removerEstado);
+   }
     
-    public double retornarPib(){
+   public ArrayList retornarListaPessoas()
+   { 
+      return this.listaPessoas;
+   }
     
-        return this.pib;
-    }
-    
-    public double retornarIdh(){
-    
-        return this.idh;
-    }
-    
-    public ArrayList retornarListaEstados(){
-    
-        return this.listaEstados;
-    }
-    
-    public void inserirEstados(String novoEstado){
-    
-        this.listaEstados.add(novoEstado);
-    }
-    
-    public void removerEstados(Estado removerEstado){
-        
-        this.listaEstados.add(removerEstado);
-    }
-    
-    public ArrayList retornarListaPessoas(){
-    
-        return this.listaPessoas;
-    }
-    
-    public void inserirPessoas(String inserir){
-    
-        this.listaPessoas.add(inserir);
-    }
-}
+   public void inserirPessoas(String inserir)
+   { 
+      this.listaPessoas.add(inserir);
+   }
+   
+}//Fim da class Pais;

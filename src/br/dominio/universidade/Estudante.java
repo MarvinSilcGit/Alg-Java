@@ -13,7 +13,9 @@ package br.dominio.universidade;
 
 //Atributo para carga horária obrigatória;
 import br.dominio.classesabstratas.Pessoa;
+
 import br.dominio.classesabstratas.Endereco;
+
 import br.dominio.classesabstratas.Telefone;
 
 import java.util.Date;

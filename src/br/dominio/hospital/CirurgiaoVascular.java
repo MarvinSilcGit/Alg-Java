@@ -6,7 +6,9 @@ import br.dominio.classesabstratas.ProfissionalMedicina;
 import java.util.Date;
 
 import br.dominio.classesabstratas.Endereco;
+
 import br.dominio.classesabstratas.Acesso;
+
 import br.dominio.classesabstratas.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
