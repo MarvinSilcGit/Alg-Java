@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.classesabstratas;
+package br.dominio.api;
 
 /**
  *
@@ -41,6 +41,8 @@ public abstract class Funcionario extends Pessoa
    {    
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);          
     
+      //Fim do método super da classe mãe ou superclasse Pessoa;
+      
       this.salario=salario;
         
       this.setor=setor;
@@ -54,6 +56,8 @@ public abstract class Funcionario extends Pessoa
    {    
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
        
+      //Fim do método super da classe mãe ou superclasse Pessoa;
+      
       this.setor=setor;
         
       this.dataAdmissao=dataAdmissao;
@@ -61,6 +65,20 @@ public abstract class Funcionario extends Pessoa
       this.conta=conta;     
    }//Fim do segundo método construtor personalizado;
     
+   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Acesso conta)
+   {    
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);          
+    
+      //Fim do método super da classe mãe ou superclasse Pessoa;
+      
+      this.salario=salario;
+        
+      this.setor=setor;
+        
+      this.conta=conta;
+   }//Fim do terceiro método construtor personalizado;
+   
+   
    public double retornarSalario()
    { 
       return this.salario;

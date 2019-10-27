@@ -11,7 +11,7 @@ package br.dominio.empresa.departamento;
  * @author belogo
  */
 
-import br.dominio.classesabstratas.Funcionario;
+import br.dominio.api.Funcionario;
 
 import java.util.ArrayList;
 

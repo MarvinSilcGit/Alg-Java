@@ -1,16 +1,18 @@
 package br.dominio.banco;
 
 
-import br.dominio.classesabstratas.Acesso;
+import br.dominio.api.Acesso;
 
 import br.dominio.conta.ContaCorrente;
 
-import br.dominio.classesabstratas.Endereco;
+import br.dominio.api.Endereco;
 
 import br.dominio.empresa.Empresa;
 
-import br.dominio.classesabstratas.Funcionario;
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Funcionario;
+
+import br.dominio.api.Telefone;
+
 
 
 public class ClienteJuridico extends Empresa{

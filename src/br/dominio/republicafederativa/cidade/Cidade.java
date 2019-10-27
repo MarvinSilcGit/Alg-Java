@@ -12,7 +12,7 @@ public class Cidade extends Estado
 {     
    private ArrayList listaSecretarias = new ArrayList();
    
-   private ArrayList listaPessoas = new ArrayList();
+   private ArrayList listaCidadaos = new ArrayList();
    
    //Fim do campo de declaração de atributos;
    
@@ -30,14 +30,14 @@ public class Cidade extends Estado
       
    }//Fim do método construtor personalizado;
      
-   public ArrayList retornarListaPessoas()
+   public ArrayList retornarListaCidadaos()
    { 
-      return this.listaPessoas;
+      return this.listaCidadaos;
    }
     
    public void inserirPessoas(String inserir)
    { 
-      this.listaPessoas.add(inserir);
+      this.listaCidadaos.add(inserir);
    }
     
 }//Fim da classe Cidade;

@@ -3,7 +3,7 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.classesabstratas;
+package br.dominio.api;
 
 /**
  *

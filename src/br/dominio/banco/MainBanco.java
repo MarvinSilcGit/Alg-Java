@@ -1,7 +1,7 @@
 package br.dominio.banco;
 
 
-import br.dominio.classesabstratas.Endereco;
+import br.dominio.api.Endereco;
 
 import br.dominio.conta.ContaCorrente;
 

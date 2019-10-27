@@ -7,13 +7,13 @@
 package br.dominio.hospital;
 
 
-import br.dominio.classesabstratas.ProfissionalMedicina;
+import br.dominio.api.ProfissionalMedicina;
 
 import java.util.Date;
 
-import br.dominio.classesabstratas.Endereco;
-import br.dominio.classesabstratas.Acesso;
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Endereco;
+import br.dominio.api.Acesso;
+import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

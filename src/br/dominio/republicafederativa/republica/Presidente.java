@@ -5,13 +5,13 @@ import java.util.ArrayList;
 
 import java.util.Date;
 
-import br.dominio.classesabstratas.Funcionario;
+import br.dominio.api.Funcionario;
 
-import br.dominio.classesabstratas.Endereco;
+import br.dominio.api.Endereco;
 
-import br.dominio.classesabstratas.Acesso;
+import br.dominio.api.Acesso;
 
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -19,6 +19,9 @@ import br.dominio.classesabstratas.Telefone;
 public class Presidente extends Funcionario
 {    
    private ArrayList gabinete =  new ArrayList(20);
+   
+   private Date dataPosse,
+           dataDesposse;
     
    //Fim do campo de declaração de atributos;
    
@@ -28,13 +31,16 @@ public class Presidente extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public Presidente (String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Presidente (String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);      
+      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, conta);      
       
-      //Fim do método super da classe mãe ou super classe Funcionario;
+      //Fim do método super da classe mãe ou superclasse Funcionario;
       
-   }//Fim do método construtor padrão;
+      this.dataPosse=dataPosse;
+      
+      this.dataDesposse=dataDesposse;
+   }//Fim do método construtor personalizado;
     
    public ArrayList retornarGabinete()
    {

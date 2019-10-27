@@ -1,19 +1,20 @@
 package br.dominio.cartao;
 
 
-import br.dominio.classesabstratas.Cartao;
+import br.dominio.api.Cartao;
+
 import java.util.Date;
 
 
-public class CartaoDebito extends Cartao{
+public class CartaoDebito extends Cartao
+{     
+   private String senhaLetra;
     
     
-    private String senhaLetra;
-    
-    
-    public CartaoDebito(){
-        
-    }
+   public CartaoDebito()
+   {     
+   
+   }
     
     public CartaoDebito(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao, String senhaLetra){
         

@@ -1,19 +1,19 @@
 package br.dominio.hospital;
 
 
-import br.dominio.classesabstratas.ProfissionalMedicina;
-import br.dominio.classesabstratas.ProfissionalEnfermagem;
+import br.dominio.api.ProfissionalMedicina;
+import br.dominio.api.ProfissionalEnfermagem;
 
 import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.classesabstratas.Endereco;
-import br.dominio.classesabstratas.Pessoa;
+import br.dominio.api.Endereco;
+import br.dominio.api.Pessoa;
 
 import br.dominio.drograria.Remedio;
 
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

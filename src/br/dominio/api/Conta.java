@@ -1,4 +1,4 @@
-package br.dominio.classesabstratas;
+package br.dominio.api;
 
 
 public abstract class Conta

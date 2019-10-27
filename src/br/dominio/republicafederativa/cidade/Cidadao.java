@@ -1,13 +1,12 @@
 package br.dominio.republicafederativa.cidade;
 
 
-import br.dominio.classesabstratas.Endereco;
-
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Endereco;
+import br.dominio.api.Telefone;
 
 import java.util.Date;
 
-import br.dominio.classesabstratas.Pessoa;
+import br.dominio.api.Pessoa;
 
 public class Cidadao extends Pessoa 
 {

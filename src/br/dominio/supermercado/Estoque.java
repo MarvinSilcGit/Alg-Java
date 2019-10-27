@@ -1,9 +1,9 @@
 package br.dominio.supermercado;
 
 
-import br.dominio.classesabstratas.Produto;
-
 import java.util.ArrayList;
+
+import br.dominio.api.Produto;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

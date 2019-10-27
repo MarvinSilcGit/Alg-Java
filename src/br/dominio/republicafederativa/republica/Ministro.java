@@ -5,10 +5,10 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.classesabstratas.Funcionario;
-import br.dominio.classesabstratas.Endereco;
-import br.dominio.classesabstratas.Acesso;
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Funcionario;
+import br.dominio.api.Endereco;
+import br.dominio.api.Acesso;
+import br.dominio.api.Telefone;
 
 
 public class Ministro extends Funcionario

@@ -12,11 +12,9 @@ package br.dominio.universidade;
  */
 
 import br.dominio.universidade.colegiado.Colegiado;
-import br.dominio.classesabstratas.Funcionario;
-
-import br.dominio.classesabstratas.Endereco;
-
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Funcionario;
+import br.dominio.api.Endereco;
+import br.dominio.api.Telefone;
 
 import java.util.ArrayList;
 

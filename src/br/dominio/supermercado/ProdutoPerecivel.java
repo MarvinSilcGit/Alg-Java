@@ -12,7 +12,7 @@ package br.dominio.supermercado;
 
 import java.util.Date;
 
-import br.dominio.classesabstratas.ProdutoComValidade;
+import br.dominio.api.ProdutoComValidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

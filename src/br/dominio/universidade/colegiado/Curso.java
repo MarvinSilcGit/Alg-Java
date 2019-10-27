@@ -6,7 +6,7 @@
 
 package br.dominio.universidade.colegiado;
 
-import br.dominio.classesabstratas.Funcionario;
+import br.dominio.api.Funcionario;
 
 import java.util.ArrayList;
 

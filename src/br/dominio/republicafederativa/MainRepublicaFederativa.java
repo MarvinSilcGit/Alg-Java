@@ -5,7 +5,7 @@ import br.dominio.republicafederativa.republica.Pais;
 
 import br.dominio.republicafederativa.estado.Estado;
 
-import br.dominio.classesabstratas.Endereco;
+import br.dominio.api.Endereco;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

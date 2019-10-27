@@ -1,17 +1,17 @@
 package br.dominio.empresa;
 
 
+import java.util.ArrayList;
+
 import br.dominio.empresa.departamento.Departamento;
 
 import br.dominio.empresa.departamento.Orcamento;
 
-import br.dominio.classesabstratas.Funcionario;
+import br.dominio.api.Funcionario;
 
-import java.util.ArrayList;
+import br.dominio.api.Endereco;
 
-import br.dominio.classesabstratas.Endereco;
-
-import br.dominio.classesabstratas.Telefone;
+import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
