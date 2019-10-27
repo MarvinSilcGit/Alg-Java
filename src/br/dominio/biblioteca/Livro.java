@@ -3,18 +3,22 @@ package br.dominio.biblioteca;
 
 import java.util.Date;
 
-import br.dominio.cadastro.Produto;
+import br.dominio.cadastro.ProdutoSemValidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Livro extends Produto
+public class Livro extends ProdutoSemValidade
 {     
    private String titulo, subtitulo, genero, nomeAutor, editora, tradutor;
 
-   private int isbn, quantidadePaginas, edicao;
+   private long isbn;
+          
+   private int quantidadePaginas, edicao;
 
-   private Date ano;
+   private Date anoPublicacao;
+   
+   //Fim do campo de declaração de atributos;
     
 
    public Livro()
@@ -22,79 +26,81 @@ public class Livro extends Produto
     
    }//Fim do método construtor padrão;
     
-    public Livro(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, int isbn, int quantidadePaginas, int edicao, Date anoPublicação){
-        
-       super(codigo, quantidade, dataEntrada, dataSaida, categoria);
-       
-        this.titulo=titulo;
+   public Livro(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, long isbn, int quantidadePaginas, int edicao, Date anoPublicacao)
+   {     
+      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
+      
+      //Fim do método super da classe mãe ou super classe ProdutoSemValidade;
+      
+      this.titulo=titulo;
 
-        this.subtitulo=subtitulo;
+      this.subtitulo=subtitulo;
 
-        this.genero=genero;
+      this.genero=genero;
 
-        this.nomeAutor=nomeAutor;
+      this.nomeAutor=nomeAutor;
 
-        this.editora=editora;
+      this.editora=editora;
 
-        this.tradutor=tradutor;
+      this.tradutor=tradutor;
 
-        this.isbn=isbn;
+      this.isbn=isbn;
 
-        this.quantidadePaginas=quantidadePaginas;
+      this.quantidadePaginas=quantidadePaginas;
 
-        this.edicao=edicao;
+      this.edicao=edicao;
 
-        this.ano=anoPublicação;
-    }
+      this.anoPublicacao=anoPublicacao;
+   }//Fim do método construtor personalizado;
     
-    public String retornarTitulo(){
+   public String retornarTitulo()
+   {
+      return this.titulo;
+   }
 
-        return this.titulo;
-    }
+   public String retornarSubtitulo()
+   {
+      return this.subtitulo;
+   }
 
-    public String retornarSubtitulo(){
+   public String retornarGenero()
+   {
+      return this.genero;
+   }
 
-        return this.subtitulo;
-    }
+   public String retornarNomeAutor()
+   {
+      return this.nomeAutor;
+   }
 
-    public String retornarGenero(){
+   public String retornarEditora()
+   {
+      return this.editora;
+   }
+    
+   public String retornarTradutor()
+   {
+      return this.tradutor;
+   }
 
-        return this.genero;
-    }
+   public long retornarIsbn()
+   {
+      return this.isbn;
+   }
 
-    public String retornarNomeAutor(){
+   public int retornarQuantidadePaginas()
+   {
+      return this.quantidadePaginas;
+   } 
 
-        return this.nomeAutor;
-    }
+   public int retornarEdicao()
+   {
+      return this.edicao;
+   }
 
-    public String retornarEditora(){
-
-        return this.editora;
-    }
-
-    public String retornarTradutor(){
-
-        return this.tradutor;
-    }
-
-    public int retornarIsbn(){
-
-        return this.isbn;
-    }
-
-    public int retornarQuantidadePaginas(){
-
-        return this.quantidadePaginas;
-    } 
-
-    public int retornarEdicao(){
-
-        return this.edicao;
-    }
-
-    public Date retornarAnoPublicação(){
-
-        return this.ano;
-    }
+   public Date retornarAnoPublicacao()
+   {
+      return this.anoPublicacao;
+   }
     
 }//Fim da classe Livro;

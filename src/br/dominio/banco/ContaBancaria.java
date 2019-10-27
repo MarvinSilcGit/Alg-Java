@@ -20,6 +20,12 @@ public class ContaBancaria
    private CartaoDebito cartaoDebito;
        
    //Fim do campo de declaração dea atributos;
+   
+   
+   public ContaBancaria()
+   {
+      
+   }//Fim do método construtor padrão;
 
    public ContaBancaria(double saldo, double valorInicial, CartaoDebito cartaoDebito)
    {
@@ -27,8 +33,24 @@ public class ContaBancaria
       
       this.valorInicial=valorInicial;
       
-      this.cartaoDebito=cartaoDebito;
-      
+      this.cartaoDebito=cartaoDebito;    
+   }//Fim do método construtor personalizado;
+   
+   public double retornarSaldo()
+   {
+      if (this.valorInicial != 0)
+      {
+         return this.valorInicial;
+      }
+      else
+      {
+         return this.saldo;
+      }
+   }
+   
+   public void alterarSaldo(double novoValor)
+   {
+      this.saldo+=novoValor;
    }
    
 }//Fim da classe ContaBancaria;

@@ -1,14 +1,9 @@
 package br.dominio.cadastro;
 
 
-import br.dominio.cartao.CartaoDebito;
-
-
 public abstract class Conta
 {  
    private long numeroContrato;
-    
-   private CartaoDebito cartaoDebito;
 
    //Fim do campo de declaração de atributos;
 
@@ -17,5 +12,10 @@ public abstract class Conta
    {        
   
    }//Fim do método construtor padrão;
+   
+   public Conta(long numeroContrato)
+   {
+      
+   }
 
 }//Fim da classe Conta;

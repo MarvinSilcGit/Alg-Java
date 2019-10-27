@@ -12,10 +12,9 @@ public abstract class Produto
            quantidade;
 
    private Date dataEntrada,
-           dataSaida,
-           dataValidade;
+           dataSaida;
    
-   private String categoria;
+   private String categoria, nome;
   
    //Fim do campo de declaração de atributos;
    
@@ -25,7 +24,7 @@ public abstract class Produto
         
    }//Fim do método construtor padrão;
 
-   public Produto(int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade, String categoria)   
+   public Produto(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)   
    {        
       this.codigo=codigo;
        
@@ -34,24 +33,9 @@ public abstract class Produto
       this.dataEntrada=dataEntrada;
        
       this.dataSaida=dataSaida;
-
-      this.dataValidade=dataValidade;
       
       this.categoria=categoria;
    }//Fim do primeiro método construtor personalizado;
-    
-   public Produto(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria)
-   {        
-      this.codigo=codigo;
-      
-      this.quantidade=quantidade;
-      
-      this.dataEntrada=dataEntrada;
-      
-      this.dataSaida=dataSaida; 
-      
-      this.categoria=categoria;
-   }//Fim do segundo método construtor personalizado;
     
    public int retornarCodigo() 
    {
@@ -73,11 +57,6 @@ public abstract class Produto
       return this.dataSaida;
    }//Fim do método que retorna a data de saída do objeto do tipo Produto;
     
-   public Date retornarDataValidade()
-   {  
-      return this.dataValidade;
-   }//Fim do método que retorna a data de validade do objeto do tipo Produto;
-
    public String retornarCategoriaRemedio()
    {       
       return this.categoria;

@@ -12,12 +12,12 @@ package br.dominio.supermercado;
 
 import java.util.Date;
 
-import br.dominio.cadastro.Produto;
+import br.dominio.cadastro.ProdutoComValidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ProdutoPerecivel extends Produto
+public class ProdutoPerecivel extends ProdutoComValidade
 {
    
    public ProdutoPerecivel()
@@ -25,9 +25,9 @@ public class ProdutoPerecivel extends Produto
       
    }//Fim do método construtor padrão;
    
-   public ProdutoPerecivel(int codigo,int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)
+   public ProdutoPerecivel(int codigo,int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, Date dataValidade)
    {
-      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
+      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome, dataValidade);
       
       //Fim do método super da classe mãe ou super classe Produto;
       

@@ -5,14 +5,14 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.cadastro.Produto;
+import br.dominio.supermercado.ProdutoNaoPerecivel;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Remedio extends Produto
+public class Remedio extends ProdutoNaoPerecivel
 {    
-   private String tipoTarja, nome;
+   private String tipoTarja;
    
    private ArrayList listaSubstancias = new ArrayList();
    
@@ -24,13 +24,12 @@ public class Remedio extends Produto
    
    }//Fim do método construtor padrão;
     
-  /* public Remedio(int codigo, int quantidade, Date dataEntrada, Date dataSaida, Date dataValidade, String categoria, String tipoTarja, String nome)
+   public Remedio(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, Date dataValidade, String tipoTarja)
    {         
-      super(codigo, quantidade, dataEntrada, dataSaida, dataValidade);
+      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome, dataValidade);
        
       //Fim do método super da classe mãe ou super classe Produto;
-
      
    }//Fim do método construtor personalizado;
-   */
+   
 }//Fim da classe Remedio;

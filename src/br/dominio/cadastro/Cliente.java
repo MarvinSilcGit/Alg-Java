@@ -12,7 +12,7 @@ public abstract class Cliente extends Pessoa
   
    private Date dataFidelizacaoCliente;
     
-   //Fim do campode declaração de atributos;
+   //Fim do campo de declaração de atributos;
    
    
    public Cliente()
@@ -24,7 +24,7 @@ public abstract class Cliente extends Pessoa
    {     
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
         
-      //Fim do métod Super da superclasse ou classe mãe Pessoa;
+      //Fim do método super da superclasse ou classe mãe Pessoa;
       
       this.conta=conta;
       
@@ -36,9 +36,14 @@ public abstract class Cliente extends Pessoa
       return this.conta;
    }
     
-   public Date retornarTempoClienteBanco()
+   public Date retornarDataFidelizacao()
    { 
       return this.dataFidelizacaoCliente;//Alterar o comportamento do método
+   }
+   
+   public Date tString()
+   {
+      return this.dataFidelizacaoCliente;
    }
     
 }//Fim da classe Cliente;

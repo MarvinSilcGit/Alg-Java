@@ -19,18 +19,20 @@ public class ContaCorrente extends ContaBancaria
    //Fim do campo de declaração de atributos;
     
     
-   /*public ContaCorrente()
+   public ContaCorrente()
    {        
    
    }//Fim do método construtor padrão;
-    */
-    public ContaCorrente(double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaMensal, CartaoCredito cartaoCredito){
-        
-        super(saldo, valorInicial, cartaoDebito);
     
-        this.taxaMensal=taxaMensal;
-        
-        this.cartaoCredito=cartaoCredito;
+   public ContaCorrente(double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaMensal, CartaoCredito cartaoCredito)
+   {     
+      super(saldo, valorInicial, cartaoDebito);
+    
+      //Fim do método super da classe mãe ou super classe ContaBancaria;
+      
+      this.taxaMensal=taxaMensal;  
+      
+      this.cartaoCredito=cartaoCredito;
     }
     
     public double retornarTaxaMensal(){

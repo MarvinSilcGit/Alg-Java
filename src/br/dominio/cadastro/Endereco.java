@@ -14,6 +14,8 @@ package br.dominio.cadastro;
 import br.dominio.republicafederativa.Cidade;
 
 import br.dominio.republicafederativa.Estado;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         
 
 public class Endereco 
