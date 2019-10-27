@@ -77,8 +77,7 @@ public abstract class Funcionario extends Pessoa
         
       this.conta=conta;
    }//Fim do terceiro método construtor personalizado;
-   
-   
+    
    public double retornarSalario()
    { 
       return this.salario;

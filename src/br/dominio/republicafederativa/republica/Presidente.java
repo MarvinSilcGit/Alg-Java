@@ -42,6 +42,16 @@ public class Presidente extends Funcionario
       this.dataDesposse=dataDesposse;
    }//Fim do método construtor personalizado;
     
+   public Date retornarDataPosse()
+   {
+      return this.dataPosse;
+   }
+   
+   public Date retornarDataDesposse()
+   {
+      return this.dataDesposse;
+   }
+   
    public ArrayList retornarGabinete()
    {
       return this.gabinete;
