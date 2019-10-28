@@ -30,10 +30,9 @@ public class ClienteSimples extends Cliente
      
    public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaPoupanca contaPoupanca)
    {     
-   
       super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, conta, tempoClienteBanco);
       
-      //Fim do método Super da superclasse ou classe mãe Cliente;
+      //Fim do método super da classe mãe ou super classe Cliente;
       
       this.contaPoupanca=contaPoupanca;
    }//Fim do método construtor personalizado;
@@ -41,6 +40,6 @@ public class ClienteSimples extends Cliente
    public ContaPoupanca acessarContaPoupanca()
    {
       return this.contaPoupanca;
-   } 
+   }//Fim do método que dá acesso ao objeto do tipo ContaPoupanca no objeto do tipo ClienteSimples;
     
 }//Fim da classe CLienteSimples;

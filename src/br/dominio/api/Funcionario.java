@@ -115,6 +115,6 @@ public abstract class Funcionario extends Pessoa
    public Acesso acessarContaAcesso()
    {  
       return this.conta;
-   }//Fim do método que da acesso ao objeto conta no objeto do tipo Funcionario;
+   }//Fim do método que da acesso ao objeto do tipo Conta no objeto do tipo Funcionario;
    
 }//Fim da classe Funcionario;

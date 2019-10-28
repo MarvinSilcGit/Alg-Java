@@ -5,12 +5,15 @@
  */
 package br.dominio.banco;
 
-import br.dominio.cartao.CartaoDebito;
-
 /**
  *
  * @author belogo
  */
+
+import br.dominio.cartao.CartaoDebito;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class ContaBancaria
 {
@@ -19,7 +22,7 @@ public class ContaBancaria
    
    private CartaoDebito cartaoDebito;
        
-   //Fim do campo de declaração dea atributos;
+   //Fim do campo de declaração de atributos;
    
    
    public ContaBancaria()
@@ -46,11 +49,21 @@ public class ContaBancaria
       {
          return this.saldo;
       }
-   }
+   }//Fim do método que retorna o saldo do objeto do tipo ContaBancaria;
    
-   public void alterarSaldo(double novoValor)
+   public void aumentarSaldo(double novoValor)
    {
       this.saldo+=novoValor;
-   }
+   }//Fim do método que aumenta o saldo do objeto do tipo ContaBancaria;
+   
+   public void diminuirSaldo(double novoValor)
+   {
+      this.saldo-=novoValor;
+   }//Fim do método que diminui o saldo do objeto do tipo ContaBancaria
+   
+   public CartaoDebito retornarCartaoDebito()
+   {
+      return this.cartaoDebito;
+   }//Fim do método que dá acesso ao objeto do tipo CartaoDebito no objeto do tipo ContaBancaria;
    
 }//Fim da classe ContaBancaria;
