@@ -53,16 +53,16 @@ public class Correntista extends Funcionario
    public void removerClienteFisico(String removerCPF)
    { 
       this.listaClienteFisico.remove(removerCPF);
-   }
+   }//Fim do método que remove ClienteFisico da lista do objeto do tipo Correntista;
     
    public void inserirClienteJuridico(String inserirCNPJ)
    { 
       this.listaClienteJuridico.add(inserirCNPJ);
-   }
+   }//Fim do método que insere ClienteJuridico na lista do objeto do tipo Correntista;
     
    public void removerClienteJuridico(String removerCNPJ)
    { 
       this.listaClienteJuridico.remove(removerCNPJ);
-   }
+   }//Fim do método que remove ClienteJuridico da lista do objeto do tipo Correntista;
     
 }//Fim da classe Correntista;
