@@ -26,6 +26,9 @@ public abstract class ProdutoSemValidade extends Produto
    
    public ProdutoSemValidade(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)
    {
+      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
+      
+      //Fim do método super da classe mãe ou superclasse Produto;
       
    }//Fim do método construtor personalizado;
    

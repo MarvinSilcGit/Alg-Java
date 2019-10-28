@@ -3,6 +3,7 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.api;
 
 /**
@@ -15,6 +16,7 @@ public class Telefone
    private int ddi, dddCurtaDistancia, dddLongaDistancia, numero;
    
    //Fim do campo de declaração de atributos;
+   
    
    public Telefone()
    {

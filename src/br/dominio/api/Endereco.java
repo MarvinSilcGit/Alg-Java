@@ -78,6 +78,11 @@ public class Endereco
       return this.numero;
    }//Fim do método que retorna o número do objeto do tipo Endereco;
     
+   public void alterarNumero(String novoNumero)
+   {
+      this.numero=novoNumero;
+   }//Fim do método que altera o número do objeto do tipo Endereco;
+   
    public String retornarBairro()
    { 
       return this.bairro;
@@ -92,11 +97,23 @@ public class Endereco
    { 
       return this.complemento;
    }//Fim do método que retorna o complemento do objeto do tipo Endereco;
+   
+   public void alteraComplemento(String novoComplemento)
+   {
+      this.complemento=novoComplemento;
+   }//Fim do método que altera o complemento do objeto do tipo Endereco;
     
    public String retornarRua()
    { 
       return this.rua;
    }//Fim do método que retorna a rua do objeto do tipo Endereco;
+   
+   public void alterarRua(String novaRua)
+   {
+      this.rua=novaRua;
+      
+     // this.numero; Pedir entrada de dados para o novo número do endereco;
+   }//Fim do método que altera a rua do objeto do tipo Rua;
     
    public Cidade retornarCidade()
    { 

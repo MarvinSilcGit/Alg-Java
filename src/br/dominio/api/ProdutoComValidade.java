@@ -36,4 +36,9 @@ public abstract class ProdutoComValidade extends Produto
       this.dataValidade=dataValidade;
    }//Fim do método construtor personalizado;
    
+   public Date retornarDataValidade()
+   {
+      return this.dataValidade;
+   }//Fim do método que retorna a dataValidade do objeto do tipo ProdutoComValidade;
+   
 }//Fim da classe ProdutoComValidade;

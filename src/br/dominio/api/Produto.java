@@ -57,9 +57,14 @@ public abstract class Produto
       return this.dataSaida;
    }//Fim do método que retorna a data de saída do objeto do tipo Produto;
     
-   public String retornarCategoriaRemedio()
+   public String retornarCategoria()
    {       
       return this.categoria;
    }//Fim do método que retorna a categoria do objeto do tipo Produto; 
+   
+   public String retornarNome()
+   {
+      return this.nome;
+   }//Fim do método que retorna o nome do objeto do tipo Produto;
    
 }//Fim da classe Produto;

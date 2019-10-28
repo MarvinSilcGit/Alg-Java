@@ -34,16 +34,11 @@ public abstract class Cliente extends Pessoa
    public Acesso acessarContaAcesso()
    {    
       return this.conta;
-   }
+   }//Fim do método que permite acesso ao objeto do tipo Conta no objeto do tipo Cliente;
     
    public Date retornarDataFidelizacao()
    { 
       return this.dataFidelizacaoCliente;//Alterar o comportamento do método
-   }
-   
-   public Date tString()
-   {
-      return this.dataFidelizacaoCliente;
-   }
+   }//Fim do método que retorna a data de fidelização do objeto do tipo Cliente;
     
 }//Fim da classe Cliente;

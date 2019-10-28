@@ -11,10 +11,6 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.api.Endereco;
-import br.dominio.api.Funcionario;
-import br.dominio.api.Acesso;
-import br.dominio.api.Telefone;
 import br.dominio.hospital.Paciente;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -48,22 +44,22 @@ public abstract class ProfissionalMedicina extends Funcionario
    public String retornarCrm()
    {  
       return this.crm;
-   }
+   }//Fim do método que retorna o Crm do objeto do tipo ProfissionalMedicina;
 
    public double retornarValorConsulta()
    {    
       return this.valorConsulta;
-   }
+   }//Fim do método que retorna o valor da consulta do objeto do tipo ProfissionalMedicina;
     
    public void alterarValorConsulta(double novoValorConsulta)
    {     
       this.valorConsulta=novoValorConsulta;
-   }
+   }//Fim do método que altera o valor da consulta do objeto do tipo ProfissionalMedicina;
     
    public ArrayList retornarListaPacientes()
    {
       return this.listaPacientes;
-   }
+   }//Fim do método que retorna a lista de pacientes do objeto do tipo ProfissionalMedicina;
   
    public void inserirPacientesLista(Paciente novoPaciente)
    {    
@@ -75,13 +71,13 @@ public abstract class ProfissionalMedicina extends Funcionario
       {      
          this.listaPacientes.add(novoPaciente);
       }
-    }
+    }//Fim do método que insere paciente na lista do objeto do tipo ProfissionalMedicina;
     
    public void removerPacientesLista(Paciente removerPaciente)
    {    
        this.listaPacientes.remove(removerPaciente);
-   }
+   }//Fim do método que remover paciente da lista do objeto do tipo ProfissionalMedicina;
     
-   public abstract void realizarConsulta();
+   public abstract void realizarConsulta();//Fim do método abstrato que será implementado pelas sub classes;
     
 }//Fim da classe ProfissionalMedicina;
