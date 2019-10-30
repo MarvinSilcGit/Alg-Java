@@ -41,11 +41,11 @@ public class Predio
    public String retornarNomePredio()
    {
       return this.nome;
-   }
+   }//Fim do método que retorna o nome do objeto do tipo Predio;
    
    public void alterarNome(String novoNome)
    {
       this.nome=novoNome;
-   }
+   }//Fim do método que altera o nome do objeto do tipo Predio;
    
 }//Fim da classe Predio;

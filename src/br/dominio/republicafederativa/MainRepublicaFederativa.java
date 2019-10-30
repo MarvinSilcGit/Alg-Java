@@ -12,9 +12,10 @@ import br.dominio.api.Endereco;
 
 public class MainRepublicaFederativa
 {
+   
    public static void main(String[] args)
    {   
 
-    }//Fim do método main;
+   }//Fim do método main;
    
 }//Fim da classe MainRepublicaFederativa;

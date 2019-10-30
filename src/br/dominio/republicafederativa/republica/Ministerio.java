@@ -5,69 +5,79 @@ import java.util.ArrayList;
 
 import br.dominio.api.Funcionario;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+//Criar classe Servidor;
 
-public class Ministerio{
+public class Ministerio
+{     
+   private String nome;
+
+   private Ministro ministro;
+
+   private double orcamentoAnual;
+
+   private ArrayList listaServidores = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
+   
+
+   public Ministerio()
+   {
+      
+   }//Fim do método construtor padrão;
     
+   public Ministerio(String nome, Ministro ministro, double orcamentoAnual)
+   {     
+      this.nome=nome;
 
-    private String nome;
+      this.ministro=ministro;
 
-    private Ministro ministro;
-
-    private double orcamentoAnual;
-
-    private ArrayList listaServidores = new ArrayList();
+      this.orcamentoAnual=orcamentoAnual;
+   }//Fim do método construtor personalizado;
     
+   public String retornarNome()
+   {
+      return this.nome;
+   }//Fim do método que retorna o nome do objeto do tipo Ministerio;
 
-    public Ministerio(){
-        
-    }
-    
-    public Ministerio(String nome, Ministro ministro, double orcamentoAnual){
-        
-        this.nome=nome;
+   public void alterarNome(String novoNome)
+   {  
+      this.nome=novoNome;
+   }//Fim do método que altera o nome do objeto do tipo Ministerio;
 
-        this.ministro=ministro;
+   public Ministro retornarMinistro()
+   {  
+      return  this.ministro;
+   }//Fim do método que retorna o objeto do tipo Ministro do objeto do tipo Ministerio;
 
-        this.orcamentoAnual=orcamentoAnual;
-    }
-    
-    public String retornarNome(){
+   public void alterarMinistro(Ministro novoMinistro)
+   {  
+      this.ministro=novoMinistro;
+   }//Fim do método que altera o objeto to tipo Ministro do objeto do tipo Ministerio;
 
-        return this.nome;
-    }
+   public double retornarOrcamentoAnual()
+   {
+      return this.orcamentoAnual;
+   }//Fim do método que retorna o orçamento anual;
 
-    public void alterarNome(String novoNome){
+   public void alterarOrcamentoAnual(double novoOrcamento)
+   {
+      this.orcamentoAnual=novoOrcamento;
+   }//Fim do método que altera o orçamento anual do objeto do tipo Ministerio;
+   
+   public ArrayList retornarListaServidores()
+   {
+      return this.listaServidores;
+   }//Fim do método que retorna a lista servidores do objeto do tipo Ministerio;
 
-        this.nome=novoNome;
-    }
+   public void inserirServidor(Funcionario novoServidor)
+   {
+      this.listaServidores.add(novoServidor);
+   }//Fim do método que insere o objeto do tipo Servidor na lista do objeto do tipo Ministerio;
 
-    public Ministro retornarMinistro(){
-
-        return  this.ministro;
-    }
-
-    public void alterarMInistro(Ministro novoMinistro){
-
-        this.ministro=novoMinistro;
-    }
-
-    public double retornarOrcamentoAnual(){
-
-        return this.orcamentoAnual;
-    }
-
-    public ArrayList retornarListaServidores(){
-
-        return this.listaServidores;
-    }
-
-    public void inserirServidor(Funcionario novoServidor){
-
-        this.listaServidores.add(novoServidor);
-    }
-
-    public void removerServidor(Funcionario removerServidor){
-
-        this.listaServidores.remove(removerServidor);
-    }
-}
+   public void removerServidor(Funcionario removerServidor)
+   {
+      this.listaServidores.remove(removerServidor);
+   }//Fim do método que remove o objeto do tipo Servidor da lista do objeto do tipo Ministerio;
+   
+}//Fim da classe Ministerio;

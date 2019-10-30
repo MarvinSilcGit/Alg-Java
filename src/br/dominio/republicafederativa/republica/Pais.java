@@ -1,17 +1,18 @@
 package br.dominio.republicafederativa.republica;
 
 
-import br.dominio.republicafederativa.estado.Estado;
-
 import java.util.ArrayList;
+
+import br.dominio.republicafederativa.estado.Estado;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class Pais
 {   
-   private String nome,
-            moeda;
+   private String nome;
+                 
+   private Moeda moeda;
  
    private double tesouro,
             pib,
@@ -21,7 +22,7 @@ public class Pais
    
    private VicePresidente vicePresidente;
     
-   private ArrayList listaEstados = new ArrayList();
+   private ArrayList <Estado> listaEstados = new ArrayList();
    
    //Fim do campo de declaração de atributos;
     
@@ -31,7 +32,7 @@ public class Pais
    
    }//Fim do método construtor padrão;
     
-   public Pais(String nome, String moeda, double tesouro, double pib, double idh, Presidente presidente, VicePresidente vicePresidente)
+   public Pais(String nome, Moeda moeda, double tesouro, double pib, double idh, Presidente presidente, VicePresidente vicePresidente)
    {   
       this.nome=nome;
         
@@ -48,7 +49,7 @@ public class Pais
       this.vicePresidente=vicePresidente;
    }//Fim do primeiro método construtor personalizado;
     
-   public Pais(String nome, String moeda, double tesouro, double pib, double idh)
+   public Pais(String nome, Moeda moeda, double tesouro, double pib, double idh)
    {
       this.nome=nome;
       
@@ -64,56 +65,56 @@ public class Pais
    public String retornarNome()
    {     
       return this.nome;
-   }
+   }//Fim do método que retorna o nome do objeto do tipo Pais;
     
-   public String retornarMoedaOficial()
+   public Moeda retornarMoedaOficial()
    { 
       return this.moeda;
-   }
+   }//Fim do método que retorna o objeto do tipo Moeda do objeto do tipo Pais;
     
-   public void alterarMoedaOficial(String alterarMoedaOficial)
+   public void alterarMoedaOficial(Moeda alterarMoedaOficial)
    { 
       this.moeda=alterarMoedaOficial;
-   }
+   }//Fim do método que altera o objeto do tipo Moeda do objeto do tipo Pais;
     
    public double retornarTesouro()
    { 
       return this.tesouro;
-   }
+   }//Fim do método que retorna o tesouro do objeto do tipo Pais;
     
    public void aumentarTesouro(double aumentarValor)
    { 
       this.tesouro=+aumentarValor; 
-   }
+   }//Fim do método que aumenta o tesouro do objeto do tipo Pais;
    
    public void diminuirTesouro(double diminuirValor)
    {
       this.tesouro-=diminuirValor;
-   }
+   }//Fim do método que diminui o tesouro do objeto do tipo Pais;
     
    public double retornarPib()
    { 
       return this.pib;
-   }
+   }//Fim do método que retorna o pib do objeto do tipo Pais;
     
    public double retornarIdh()
    { 
       return this.idh;
-   }
+   }//Fim do método que retorna o idh do objeto do tipo Pais;
     
    public ArrayList retornarListaEstados()
    { 
       return this.listaEstados;
-   }
+   }//Fim do método que retorna a lista do objeto do tipo Pais;
     
-   public void inserirEstados(String novoEstado)
+   public void inserirEstado(Estado novoEstado)
    { 
       this.listaEstados.add(novoEstado);
-   }
+   }//Fim do método que insere o objeto do tipo Estado na lista do objeto do tipo Pais
     
-   public void removerEstados(Estado removerEstado)
+   public void removerEstado(Estado removerEstado)
    {     
       this.listaEstados.add(removerEstado);
-   }
+   }//Fim do método que remove o objeto do tipo Estado da lista do objeto do tipo Pais;
    
 }//Fim da classe Pais;

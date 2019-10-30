@@ -56,51 +56,51 @@ public class Livro extends ProdutoSemValidade
    public String retornarTitulo()
    {
       return this.titulo;
-   }
+   }//Fim do método que retorna o título do objeto do tipo Livro;
 
    public String retornarSubtitulo()
    {
       return this.subtitulo;
-   }
+   }//Fim do método que retorna o subtítulo do objeto do tipo Livro;
 
    public String retornarGenero()
    {
       return this.genero;
-   }
+   }//Fim do método que retorna o gênero do objeto do tipo Livro;
 
    public String retornarNomeAutor()
    {
       return this.nomeAutor;
-   }
+   }//Fim do método que retorna o nome do autor do objeto do tipo Livros;
 
    public String retornarEditora()
    {
       return this.editora;
-   }
+   }//Fim do método que retorna a editora do objeto do tipo Livro;
     
    public String retornarTradutor()
    {
       return this.tradutor;
-   }
+   }//Fim do método que retorna o tradutor do objeto do tipo Livro;
 
    public long retornarIsbn()
    {
       return this.isbn;
-   }
+   }//Fim do método que retorna o isbn do objeto do tipo Livro;
 
    public int retornarQuantidadePaginas()
    {
       return this.quantidadePaginas;
-   } 
+   }//Fim do método que retorna a quantidade páginas do objeto do tipo Livro;
 
    public int retornarEdicao()
    {
       return this.edicao;
-   }
+   }//Fim do método que retorna a edição do objeto do tipo Livro;
 
    public Date retornarAnoPublicacao()
    {
       return this.anoPublicacao;
-   }
+   }//Fim do método que retorna o ano publicação do objeto do tipo Livro;
     
 }//Fim da classe Livro;

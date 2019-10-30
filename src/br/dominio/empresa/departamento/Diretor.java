@@ -53,11 +53,11 @@ public class Diretor extends Funcionario
    public Assistente retornarAssistente()
    {
       return this.assistente;
-   }
+   }//Fim do método que retorna o objeto do tipo Assistente do objeto do tipo Diretor;
    
    public void alterarAssistente(Assistente assistente)
    {
       this.assistente=assistente;
-   }
+   }//Fim do método que altera o objeto do tipo Assisnte do objeto do tipo Diretor;
    
 }//Fim da classe Diretor;

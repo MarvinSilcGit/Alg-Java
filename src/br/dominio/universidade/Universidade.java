@@ -12,13 +12,16 @@ package br.dominio.universidade;
  */
 
 import br.dominio.universidade.colegiado.Colegiado;
+
 import br.dominio.api.Funcionario;
+
 import br.dominio.api.Endereco;
+
 import br.dominio.api.Telefone;
 
 import java.util.ArrayList;
 
-import br.dominio.empresa.Empresa;
+import br.dominio.api.Empresa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 

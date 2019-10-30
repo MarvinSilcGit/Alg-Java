@@ -12,26 +12,31 @@ public class CartaoDebito extends Cartao
 {     
    private String senhaLetra;
     
+   //Fim do campo de declaração de atributos;
+   
     
    public CartaoDebito()
    {     
    
-   }
+   }//Fim do método construtor padrão;
     
-    public CartaoDebito(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao,  String senhaLetra){
-        
-        super(numeroCartao, codeSeguranca, categoria, senhaNumero, nomeGravado, bandeira, vencimentoCartao);
+   public CartaoDebito(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao,  String senhaLetra)
+   {
+      super(numeroCartao, codeSeguranca, categoria, senhaNumero, nomeGravado, bandeira, vencimentoCartao);
+      
+      //Fim do método super da classe mãe ou super classe Cartão;
        
-        this.senhaLetra=senhaLetra;
-    }
+      this.senhaLetra=senhaLetra;
+   }//Fim do método construtor padrão;
     
-    public String retornarSenhaLetra(){
-        
-        return this.senhaLetra;
-    }
+   public String retornarSenhaLetra()
+   {     
+      return this.senhaLetra;
+   }//Fim do étodo que retorna a senha letra do objeto do tipo CartaoDebito;
     
-    public void alterarSenhaLetra(String alterar){
-    
-        this.senhaLetra=alterar;
-    }
-}
+   public void alterarSenhaLetra(String alterar)
+   { 
+      this.senhaLetra=alterar;
+   }//Fim do método que altera a senha letra do objeto do tipo CartaoDebito;
+   
+}//Fim da classe CartaoDebito;

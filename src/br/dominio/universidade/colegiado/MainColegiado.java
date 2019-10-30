@@ -4,20 +4,19 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.api;
+package br.dominio.universidade.colegiado;
 
 /**
  *
  * @author belogo
  */
 
-public class MainCadastro 
+public class MainColegiado 
 {
    
-   public static void main(String [] args)
+   public static void main()
    {
-     
       
    }//Fim do método main;
    
-}//Fim da classe MainCadastro;
+}//Fim da classe MainColegiado;

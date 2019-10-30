@@ -2,6 +2,7 @@ package br.dominio.hospital;
 
 
 import br.dominio.api.ProfissionalMedicina;
+
 import br.dominio.api.ProfissionalEnfermagem;
 
 import java.util.Date;
@@ -9,6 +10,7 @@ import java.util.Date;
 import java.util.ArrayList;
 
 import br.dominio.api.Endereco;
+
 import br.dominio.api.Pessoa;
 
 import br.dominio.drograria.Remedio;
@@ -23,11 +25,11 @@ public class Paciente extends Pessoa
    private Date dataEntrada,
             dataAlta;
    
-   private ArrayList listaRemedios = new ArrayList();
+   private ArrayList <Remedio> listaRemedios = new ArrayList();
     
-   private ArrayList listaMedicos = new ArrayList(3);
+   private ArrayList <ProfissionalMedicina> listaMedicos = new ArrayList(3);
     
-   private ArrayList listasEnfermeiras = new ArrayList(3);
+   private ArrayList <ProfissionalEnfermagem>listasEnfermeiras = new ArrayList(3);
 
    //Fim do campo de declaração de atributos;
  

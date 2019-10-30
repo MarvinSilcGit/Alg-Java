@@ -45,21 +45,26 @@ public class Presidente extends Funcionario
    public Date retornarDataPosse()
    {
       return this.dataPosse;
-   }
+   }//Fim do método que retorna a dataPosse do objeto do tipo Presidente;
    
    public Date retornarDataDesposse()
    {
       return this.dataDesposse;
-   }
+   }//Fim do método que retorna a dataDesposse do objeto do tipo Presidente;
    
    public ArrayList retornarGabinete()
    {
       return this.gabinete;
-   }
+   }//Fim do método que retorna o gabinete do objeto do tipo Presidente;
     
    public void inserirFuncionarioGabinete(Funcionario novoFuncionario)
    {
       this.gabinete.add(novoFuncionario);
-   }
+   }//Fim do método que insere o objeto do tipo Funcionario no gabinete do objeto do tipo Presidente;
+   
+   public void removerFuncionarioGabinete(Funcionario removerFuncionario)
+   {
+      this.gabinete.remove(removerFuncionario);
+   }//Fim do método que remove o objeto do tipo Funcionario do gabinete do objeto do tipo Presidente;
    
 }//Fim da classe Presidente;

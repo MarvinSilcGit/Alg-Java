@@ -7,7 +7,7 @@ import br.dominio.conta.ContaCorrente;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.empresa.Empresa;
+import br.dominio.api.Empresa;
 
 import br.dominio.api.Funcionario;
 

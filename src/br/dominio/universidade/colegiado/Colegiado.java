@@ -11,11 +11,11 @@ package br.dominio.universidade.colegiado;
  * @author belogo
  */
 
-import br.dominio.api.Funcionario;
-
 import java.util.ArrayList;
 
-//sFim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+import br.dominio.api.Funcionario;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class Colegiado
@@ -25,11 +25,11 @@ public class Colegiado
     
    private Funcionario coordenador;
         
-   private ArrayList listaSalas = new ArrayList();
+   private ArrayList <SalaAula> listaSalas = new ArrayList();
    
-   private ArrayList listaTurmas = new ArrayList();
+   private ArrayList <Turma> listaTurmas = new ArrayList();
    
-   private ArrayList listaCursos = new ArrayList();
+   private ArrayList <Curso> listaCursos = new ArrayList();
    //Fim do campo de declaração de atributos;
     
     
@@ -105,7 +105,7 @@ public class Colegiado
       this.listaCursos.add(novoCurso);
    }//Fim do método que insere um objeto do tipo Curso na lista do objeto do tipo Colegiado;
    
-   public void removerCursoList(Curso removerCurso)
+   public void removerCursoLista(Curso removerCurso)
    {
       this.listaCursos.remove(removerCurso);
    }//Fim do método que remove um objeto do tipo Curso da lista do objeto do tipo Colegiado;

@@ -32,4 +32,14 @@ public class Remedio extends ProdutoNaoPerecivel
      
    }//Fim do método construtor personalizado;
    
+   public String retornaTipoTarja()
+   {
+      return this.tipoTarja;
+   }//Fim do método que retorna o tarja do objeto do tipo Remedio;
+   
+   public ArrayList retornarListaSubstancias()
+   {
+      return this.listaSubstancias;
+   }//Fim do método que retorna a lista do objeto do tipo Remedio;
+   
 }//Fim da classe Remedio;

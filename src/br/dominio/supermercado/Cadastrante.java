@@ -16,8 +16,7 @@ import br.dominio.api.Funcionario;
 
 
 public class Cadastrante extends Funcionario
-{   
-   
+{     
       
    public Cadastrante()
    {

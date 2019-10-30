@@ -28,8 +28,7 @@ public class Estoque
    {     
       this.numeroCategorias=numeroCategorias;
  
-   }//Fim do método construtor personalizado;
-    
+   }//Fim do método construtor personalizado; 
    
    public int retornarNumeroCategorias()
    {

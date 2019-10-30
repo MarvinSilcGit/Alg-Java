@@ -5,14 +5,20 @@ import java.util.ArrayList;
 
 import br.dominio.republicafederativa.estado.Estado;
 
+import br.dominio.republicafederativa.republica.Moeda;
+
+import br.dominio.api.Pessoa;
+
+import br.dominio.api.Funcionario;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class Cidade extends Estado
 {     
-   private ArrayList listaSecretarias = new ArrayList();
+   private ArrayList <Funcionario> listaSecretarias = new ArrayList();
    
-   private ArrayList listaCidadaos = new ArrayList();
+   private ArrayList <Pessoa> listaCidadaos = new ArrayList();
    
    //Fim do campo de declaração de atributos;
    
@@ -22,7 +28,7 @@ public class Cidade extends Estado
         
    }//Fim do método construtor padrão;
     
-   public Cidade(String nome, String moeda, double tesouro, double pib, double idh)
+   public Cidade(String nome, Moeda moeda, double tesouro, double pib, double idh)
    {     
       super(nome, moeda, tesouro, pib, idh); 
       
@@ -33,11 +39,16 @@ public class Cidade extends Estado
    public ArrayList retornarListaCidadaos()
    { 
       return this.listaCidadaos;
-   }
+   }//Fim do método que retorna a lista do objeto do tipo Cidade;
     
-   public void inserirPessoas(String inserir)
+   public void inserirCidadao(Cidadao inserir)
    { 
       this.listaCidadaos.add(inserir);
-   }
+   }//Fim do métdo que insere o objeto do tipo Cidadao na lista do objeto do tipo Cidade;
     
+   public void removerCidadao(Cidadao remover)
+   {
+      this.listaCidadaos.remove(remover);
+   }//Fim do método que remove o objetod do tipo Cidadao da lista do objeto do tipo Cidade;
+   
 }//Fim da classe Cidade;

@@ -31,14 +31,16 @@ public class ViceDiretor extends Diretor
    public ViceDiretor()
    {
       //alterar o tipo do atributo sexo para um imutável;
-   }
+   }//Fim do método construtor padrão;
    
-   public ViceDiretor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, Assistente assistente)
+   public ViceDiretor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, Assistente assistente, Diretor chefe)
    {
-      
-   }
-   
-   
-   
+      this.chefe=chefe;
+   }//Fim do método construtor personalizado;
+  
+   public Diretor retornaChefeDiretor()
+   {
+      return this.chefe;
+   }//Fim do método que retorna o chefe do objeto do tipo ViceDiretor;
    
 }//Fim da classe ViceDiretor;

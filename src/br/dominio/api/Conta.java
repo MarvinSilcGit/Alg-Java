@@ -1,11 +1,6 @@
 package br.dominio.api;
 
 
-import br.dominio.empresa.Empresa;
-
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
-
 public abstract class Conta
 {  
    private long numeroContrato;

@@ -33,21 +33,21 @@ public class ContaCorrente extends ContaBancaria
       this.taxaMensal=taxaMensal;  
       
       this.cartaoCredito=cartaoCredito;
-    }
+    }//Fim do método construtor padrão;
     
-    public double retornarTaxaMensal(){
-        
-        return this.taxaMensal;
-    }
+   public double retornarTaxaMensal()
+   {     
+      return this.taxaMensal;
+   }//Fim do método que retorna a taxa mensal do objeto do tipo ContaCorrente;
     
-    public void alterarTaxaMensal(double novaTaxaMensal){
+   public void alterarTaxaMensal(double novaTaxaMensal)
+   { 
+      this.taxaMensal=novaTaxaMensal;
+   }//Fim do método que altera a taxa mensal do objeto do tipo ContaCorrente;
     
-        this.taxaMensal=novaTaxaMensal;
-    }
-    
-    public CartaoCredito acessarCartaoCredito(){
-    
-        return this.cartaoCredito;
-    }
+   public CartaoCredito acessarCartaoCredito()
+   { 
+      return this.cartaoCredito;
+   }//Fim do método que da acesso o objeto do tipo CartaoCredito no objeto do tipo ContaCorrente;
     
 }//Fim da classe ContaCorrente;
