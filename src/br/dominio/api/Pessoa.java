@@ -18,7 +18,10 @@ import java.util.Date;
 
 public abstract class Pessoa
 {    
-   private String nome, cpf, email, condicaoCivil;
+   private String nome,
+           cpf,
+           email,
+           condicaoCivil;
     
    private Date nascimento;
     
