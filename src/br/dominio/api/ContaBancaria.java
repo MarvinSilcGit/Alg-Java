@@ -3,7 +3,7 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.banco;
+package br.dominio.api;
 
 /**
  *
@@ -15,7 +15,7 @@ import br.dominio.cartao.CartaoDebito;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ContaBancaria
+public abstract class ContaBancaria
 {
    private double saldo,
            valorInicial; 

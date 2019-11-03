@@ -10,7 +10,7 @@ import br.dominio.supermercado.ProdutoNaoPerecivel;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Remedio extends ProdutoNaoPerecivel
+public final class Remedio extends ProdutoNaoPerecivel
 {    
    private String tipoTarja;
    

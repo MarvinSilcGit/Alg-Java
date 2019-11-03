@@ -14,7 +14,7 @@ import br.dominio.api.Funcionario;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Cidade extends Estado
+public final class Cidade extends Estado
 {     
    private ArrayList <Funcionario> listaSecretarias = new ArrayList();
    

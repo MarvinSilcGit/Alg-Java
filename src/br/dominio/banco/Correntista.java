@@ -16,7 +16,7 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Correntista extends Funcionario
+public final class Correntista extends Funcionario
 {   
    private ArrayList listaClienteFisico = new ArrayList (15);
     

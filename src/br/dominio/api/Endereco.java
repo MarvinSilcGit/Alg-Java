@@ -18,7 +18,7 @@ import br.dominio.republicafederativa.estado.Estado;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         
 
-public class Endereco 
+public final class Endereco 
 {
    private String numero, bairro, cep, complemento, rua;
    

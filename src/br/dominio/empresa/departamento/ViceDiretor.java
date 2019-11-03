@@ -21,7 +21,7 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ViceDiretor extends Diretor
+public final class ViceDiretor extends Diretor
 {
    private Diretor chefe;
    //Fazer atributo derivado para chefe;

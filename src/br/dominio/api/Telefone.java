@@ -11,9 +11,12 @@ package br.dominio.api;
  * @author belogo
  */
 
-public class Telefone 
+public final class Telefone 
 {
-   private int ddi, dddCurtaDistancia, dddLongaDistancia, numero;
+   private int ddi,
+           dddCurtaDistancia,
+           dddLongaDistancia,
+           numero;
    
    //Fim do campo de declaração de atributos;
    

@@ -8,7 +8,7 @@ import br.dominio.api.Cartao;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class CartaoDebito extends Cartao
+public final class CartaoDebito extends Cartao
 {     
    private String senhaLetra;
     

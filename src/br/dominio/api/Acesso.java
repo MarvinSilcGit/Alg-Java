@@ -1,7 +1,7 @@
 package br.dominio.api;
 
 
-public class Acesso
+public final class Acesso
 {    
    private String usuario,
            senha;

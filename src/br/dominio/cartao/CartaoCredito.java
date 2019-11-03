@@ -8,7 +8,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class CartaoCredito extends Cartao
+public final class CartaoCredito extends Cartao
 {  
    private double limite;
     

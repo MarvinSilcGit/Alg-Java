@@ -3,12 +3,12 @@ package br.dominio.conta;
 
 import br.dominio.cartao.CartaoDebito;
 
-import br.dominio.banco.ContaBancaria;
+import br.dominio.api.ContaBancaria;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ContaPoupanca extends ContaBancaria
+public final class ContaPoupanca extends ContaBancaria
 {    
    private double taxaDividendosAno;
    

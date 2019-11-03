@@ -16,7 +16,7 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ClientePro extends Cliente
+public final class ClientePro extends Cliente
 {
    private ContaCorrente contaCorrente;
     

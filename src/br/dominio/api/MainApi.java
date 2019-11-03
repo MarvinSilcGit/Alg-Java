@@ -11,7 +11,7 @@ package br.dominio.api;
  * @author belogo
  */
 
-public class MainApi 
+public final class MainApi 
 {
    
    public static void main(String[]args)

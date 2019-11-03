@@ -27,7 +27,7 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Estudante extends Pessoa
+public final class Estudante extends Pessoa
 { 
    private int horasExtras,
            codeMatricula;

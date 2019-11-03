@@ -1,7 +1,7 @@
 package br.dominio.conta;
 
 
-import br.dominio.banco.ContaBancaria;
+import br.dominio.api.ContaBancaria;
 
 import br.dominio.cartao.CartaoDebito;
 
@@ -10,7 +10,7 @@ import br.dominio.cartao.CartaoCredito;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ContaCorrente extends ContaBancaria
+public final class ContaCorrente extends ContaBancaria
 {   
    private double taxaMensal;
     
