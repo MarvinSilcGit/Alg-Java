@@ -42,7 +42,7 @@ public abstract class Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Pessoa(String nome, Date nascimento, String cpf, String email, Telefone telefone, enum sexo, Endereco endereco, String condicaoCivil)
+   public Pessoa(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil)
    {     
       this.nome=nome;
         
@@ -53,8 +53,6 @@ public abstract class Pessoa
       this.email=email;
         
       this.telefone=telefone;
-        
-      this.sexo=sexo;
         
       this.endereco=endereco;
       
@@ -95,11 +93,6 @@ public abstract class Pessoa
    {  
       this.telefone=novoTelefone;
    }//Fim do método que altera o telefone do objeto do tipo Pessoa;
-    
-   public char retornarSexo()
-   {    
-      return this.sexo;
-   }//Fim do método que retorna o sexo do objeto do tipo Pessoa;
     
    public Endereco acessarEndereco()
    {    

@@ -38,9 +38,9 @@ public final class Paciente extends Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Date dataEntrada, Date dataAlta)
+   public Paciente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, Date dataEntrada, Date dataAlta)
    {   
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
        
       //Fim do método super da classe mãe ou superclasse Pessoa;
        

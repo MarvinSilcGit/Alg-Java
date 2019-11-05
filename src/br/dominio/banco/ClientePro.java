@@ -27,9 +27,9 @@ public final class ClientePro extends Cliente
     
    }//Fim do método construtor personalizado;
     
-   public ClientePro(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaCorrente contaCorrente)
+   public ClientePro(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaCorrente contaCorrente)
    { 
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, conta, tempoClienteBanco);
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, conta, tempoClienteBanco);
       
       //Fim do método super da classe mãe ou super classe Cliente;
       

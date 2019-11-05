@@ -28,9 +28,9 @@ public class Dermatologista extends ProfissionalMedicina
       
    }//Fim do método construtor padrão;
    
-   public Dermatologista(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+   public Dermatologista(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
    {    
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, dataAdmissao, conta, crm, valorConsulta);
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, setor, dataAdmissao, conta, crm, valorConsulta);
       //Fim do método construtor super da classe mãe o super classe ProfissionalMedicina; 
       
    }//Fim do método construtor personalizado;

@@ -23,9 +23,9 @@ import br.dominio.api.Telefone;
 public class Pediatra  extends ProfissionalMedicina
 {
    
-   public Pediatra(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+   public Pediatra(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
    {     
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, setor, dataAdmissao, conta, crm, valorConsulta);   
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, setor, dataAdmissao, conta, crm, valorConsulta);   
          
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
    

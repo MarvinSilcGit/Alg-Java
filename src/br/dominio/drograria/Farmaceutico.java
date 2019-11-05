@@ -25,9 +25,9 @@ public class Farmaceutico extends Funcionario
    
    }//Fim do método construtor padrão;
     
-   public Farmaceutico(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, String crf)
+   public Farmaceutico(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, String crf)
    {     
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);
         
       //Fim do método super da classe mãe ou super classe Funcionario;
       

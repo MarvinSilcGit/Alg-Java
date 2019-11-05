@@ -8,7 +8,7 @@ import java.util.Date;
 
 public abstract class Produto
 {  
-   private int codigo,
+   private int codigoBarras,
            quantidade;
 
    private Date dataEntrada,
@@ -24,9 +24,9 @@ public abstract class Produto
         
    }//Fim do método construtor padrão;
 
-   public Produto(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)   
+   public Produto(int codigoBarras, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)   
    {        
-      this.codigo=codigo;
+      this.codigoBarras=codigoBarras;
        
       this.quantidade=quantidade;
        
@@ -39,7 +39,7 @@ public abstract class Produto
     
    public int retornarCodigo() 
    {
-      return this.codigo;
+      return this.codigoBarras;
    }//Fim do método que retorna o codigo do objeto do tipo Produto;
     
    public int retornarQuantidade()

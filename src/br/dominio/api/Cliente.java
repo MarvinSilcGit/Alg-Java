@@ -20,9 +20,9 @@ public abstract class Cliente extends Pessoa
    
    }//Fim do método construtor padrão;    
        
-   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date dataFidelizacaoCliente)
+   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, Acesso conta, Date dataFidelizacaoCliente)
    {     
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil);
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
         
       //Fim do método super da classe mãe ou super classe Pessoa;
       

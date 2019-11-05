@@ -28,9 +28,9 @@ public final class ClienteSimples extends Cliente
    
    }//Fim do método construtor padrão;
      
-   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaPoupanca contaPoupanca)
+   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaPoupanca contaPoupanca)
    {     
-      super(nome, nascimento, cpf, email, telefone, sexo, endereco, condicaoCivil, conta, tempoClienteBanco);
+      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, conta, tempoClienteBanco);
       
       //Fim do método super da classe mãe ou super classe Cliente;
       
