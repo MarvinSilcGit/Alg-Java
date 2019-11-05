@@ -3,19 +3,18 @@
  * 
  *  Autor: MVSC 
  */
-
 package br.dominio.biblioteca;
+
 
 /**
  *
  * @author belogo
  */
 
-import br.dominio.api.ProdutoSemValidade;
+import br.dominio.api.Livro;
 
 
 
-public class Revista extends ProdutoSemValidade
-{
+public class LivroImportado extends Livro {
    
-}//Fim da classe Revista;
+}

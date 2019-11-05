@@ -26,20 +26,23 @@ public abstract class Pessoa
    private Date nascimento;
     
    private Telefone telefone;
-    
-   private char sexo;
-    
+       
    private Endereco endereco;
 
    //Fim do campo de declaração de atributos;
     
+   public enum sexo
+   {
+      Masculino,
+      Feminino;
+   }
     
    public Pessoa()
    { 
         
    }//Fim do método construtor padrão;
     
-   public Pessoa(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil)
+   public Pessoa(String nome, Date nascimento, String cpf, String email, Telefone telefone, enum sexo, Endereco endereco, String condicaoCivil)
    {     
       this.nome=nome;
         

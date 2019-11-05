@@ -20,7 +20,11 @@ import br.dominio.republicafederativa.estado.Estado;
 
 public final class Endereco 
 {
-   private String numero, bairro, cep, complemento, rua;
+   private String numero,
+           bairro,
+           cep,
+           complemento,
+           rua;
    
    private Cidade cidade;
    

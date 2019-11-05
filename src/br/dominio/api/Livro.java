@@ -1,20 +1,23 @@
-package br.dominio.biblioteca;
+package br.dominio.api;
 
 
 import java.util.Date;
 
-import br.dominio.api.ProdutoSemValidade;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Livro extends ProdutoSemValidade
+public abstract class Livro extends ProdutoSemValidade
 {     
-   private String titulo, subtitulo, genero, nomeAutor, editora, tradutor;
-
+   private String titulo,
+           subtitulo,
+           genero,
+           nomeAutor,
+           editora;
+   
    private long isbn;
           
-   private int quantidadePaginas, edicao;
+   private int quantidadePaginas,
+           edicao;
 
    private Date anoPublicacao;
    
@@ -26,7 +29,7 @@ public class Livro extends ProdutoSemValidade
     
    }//Fim do método construtor padrão;
     
-   public Livro(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, String titulo, String subtitulo, String genero, String nomeAutor, String tradutor, String editora, long isbn, int quantidadePaginas, int edicao, Date anoPublicacao)
+   public Livro(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, String titulo, String subtitulo, String genero, String nomeAutor, String editora, long isbn, int quantidadePaginas, int edicao, Date anoPublicacao)
    {     
       super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
       
@@ -41,8 +44,6 @@ public class Livro extends ProdutoSemValidade
       this.nomeAutor=nomeAutor;
 
       this.editora=editora;
-
-      this.tradutor=tradutor;
 
       this.isbn=isbn;
 
@@ -77,11 +78,6 @@ public class Livro extends ProdutoSemValidade
    {
       return this.editora;
    }//Fim do método que retorna a editora do objeto do tipo Livro;
-    
-   public String retornarTradutor()
-   {
-      return this.tradutor;
-   }//Fim do método que retorna o tradutor do objeto do tipo Livro;
 
    public long retornarIsbn()
    {
