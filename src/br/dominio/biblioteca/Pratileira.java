@@ -1,7 +1,8 @@
 package br.dominio.biblioteca;
 
 
-import br.dominio.api.Livro;
+import br.dominio.api.Periodico;
+
 import java.util.ArrayList;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -45,7 +46,7 @@ public class Pratileira
       return this.listaLivros;
    }//Fim do método que retorna a lista do objeto do tipo Pratileira;
     
-    public void inserirLivro(Livro inserir)
+    public void inserirLivro(Periodico inserir)
     {    
        if (this.listaLivros.size()>=this.capacidade)
        { 
@@ -54,7 +55,7 @@ public class Pratileira
        else{  
           if (this.listaLivros.contains(inserir))
           {       
-             System.out.println("O livro "+inserir.retornarTitulo()+", com o códido ISBN "+inserir.retornarIsbn()+", já está na pratileira");
+             System.out.println("O livro "+inserir.retornarTitulo()+", com o códido ISBN "+inserir.retornarCodigo()+", já está na pratileira");
           }  
           else
           {
@@ -68,7 +69,7 @@ public class Pratileira
         }
     }//Fim do método que insere livro na lista do objeto do tipo Pratileira;
    
-    public void removerLivro(Livro remover)
+    public void removerLivro(Periodico remover)
     {
        if (this.listaLivros.contains(remover))
        {        
@@ -76,7 +77,7 @@ public class Pratileira
        }
        else
        {    
-          System.out.println("O livro " + remover.retornarTitulo() + ", com o código ISBN " + remover.retornarIsbn() + ", não está na pratileira para ser removido");
+          System.out.println("O livro " + remover.retornarTitulo() + ", com o código ISBN " + remover.retornarCodigo() + ", não está na pratileira para ser removido");
        }
     }//Fim do método que remove livro da lista do objeto do tipo Pratileira;
     

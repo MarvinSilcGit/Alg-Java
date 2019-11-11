@@ -14,7 +14,8 @@ public abstract class Produto
    private Date dataEntrada,
            dataSaida;
    
-   private String categoria, nome;
+   private String categoria,
+           nome;
   
    //Fim do campo de declaração de atributos;
    

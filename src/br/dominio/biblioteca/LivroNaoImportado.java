@@ -10,10 +10,12 @@ package br.dominio.biblioteca;
  * @author belogo
  */
 
-import br.dominio.api.Livro;
+import br.dominio.api.Periodico;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class LivroNaoImportado extends Livro 
+public class LivroNaoImportado extends Periodico 
 {  
 
 }//Fim da classe LivroNaoImportado;

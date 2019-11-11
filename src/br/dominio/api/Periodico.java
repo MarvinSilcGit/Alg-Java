@@ -6,15 +6,13 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public abstract class Livro extends ProdutoSemValidade
+public abstract class Periodico extends ProdutoSemValidade
 {     
    private String titulo,
            subtitulo,
            genero,
            nomeAutor,
            editora;
-   
-   private long isbn;
           
    private int quantidadePaginas,
            edicao;
@@ -24,12 +22,12 @@ public abstract class Livro extends ProdutoSemValidade
    //Fim do campo de declaração de atributos;
     
 
-   public Livro()
+   public Periodico()
    {       
     
    }//Fim do método construtor padrão;
     
-   public Livro(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, String titulo, String subtitulo, String genero, String nomeAutor, String editora, long isbn, int quantidadePaginas, int edicao, Date anoPublicacao)
+   public Periodico(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, String titulo, String subtitulo, String genero, String nomeAutor, String editora, int quantidadePaginas, int edicao, Date anoPublicacao)
    {     
       super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
       
@@ -45,8 +43,6 @@ public abstract class Livro extends ProdutoSemValidade
 
       this.editora=editora;
 
-      this.isbn=isbn;
-
       this.quantidadePaginas=quantidadePaginas;
 
       this.edicao=edicao;
@@ -57,17 +53,17 @@ public abstract class Livro extends ProdutoSemValidade
    public String retornarTitulo()
    {
       return this.titulo;
-   }//Fim do método que retorna o título do objeto do tipo Livro;
+   }//Fim do método que retorna o título do objeto do tipo Periodico;
 
    public String retornarSubtitulo()
    {
       return this.subtitulo;
-   }//Fim do método que retorna o subtítulo do objeto do tipo Livro;
+   }//Fim do método que retorna o subtítulo do objeto do tipo Periodico;
 
    public String retornarGenero()
    {
       return this.genero;
-   }//Fim do método que retorna o gênero do objeto do tipo Livro;
+   }//Fim do método que retorna o gênero do objeto do tipo Periodico;
 
    public String retornarNomeAutor()
    {
@@ -77,26 +73,21 @@ public abstract class Livro extends ProdutoSemValidade
    public String retornarEditora()
    {
       return this.editora;
-   }//Fim do método que retorna a editora do objeto do tipo Livro;
-
-   public long retornarIsbn()
-   {
-      return this.isbn;
-   }//Fim do método que retorna o isbn do objeto do tipo Livro;
+   }//Fim do método que retorna a editora do objeto do tipo Periodico;
 
    public int retornarQuantidadePaginas()
    {
       return this.quantidadePaginas;
-   }//Fim do método que retorna a quantidade páginas do objeto do tipo Livro;
+   }//Fim do método que retorna a quantidade páginas do objeto do tipo Periodico;
 
    public int retornarEdicao()
    {
       return this.edicao;
-   }//Fim do método que retorna a edição do objeto do tipo Livro;
+   }//Fim do método que retorna a edição do objeto do tipo Periodico;
 
    public Date retornarAnoPublicacao()
    {
       return this.anoPublicacao;
-   }//Fim do método que retorna o ano publicação do objeto do tipo Livro;
+   }//Fim do método que retorna o ano publicação do objeto do tipo Periodico;
     
-}//Fim da classe Livro;
+}//Fim da classe Periodico;
