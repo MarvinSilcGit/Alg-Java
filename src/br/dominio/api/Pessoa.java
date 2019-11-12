@@ -13,17 +13,21 @@ package br.dominio.api;
 
 import java.util.Date;
 
+import br.dominio.republicafederativa.cidade.Cidade;
+
+import br.dominio.republicafederativa.estado.Estado;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public abstract class Pessoa
 {    
    private String nome,
-           cpf,
+           cpf,   
            email,
            condicaoCivil;
     
-   private Date nascimento;
+   private Date dataNascimento;
     
    private Telefone telefone;
        
@@ -42,21 +46,21 @@ public abstract class Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Pessoa(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil)
+   public Pessoa(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil)
    {     
-      this.nome=nome;
+      this.nome = nome;
         
-      this.nascimento=nascimento;
+      this.dataNascimento = dataNascimento;
         
-      this.cpf=cpf;
+      this.cpf = cpf;
         
-      this.email=email;
+      this.email = email;
         
-      this.telefone=telefone;
+      this.telefone = telefone;
         
-      this.endereco=endereco;
+      this.endereco = endereco;
       
-      this.condicaoCivil=condicaoCivil;
+      this.condicaoCivil = condicaoCivil;
    }//Fim do método construtor personalizado;
     
    public String retornarNome()
@@ -64,9 +68,9 @@ public abstract class Pessoa
       return this.nome;
    }//Fim do método que retorna o nome do objeto do tipo Pessoa;
     
-   public Date retornarNascimento()
+   public Date retornarDataNascimento()
    { 
-      return this.nascimento;
+      return this.dataNascimento;
    }//Fim do método que retorna o nascimento do objeto do tipo Pessoa;
     
    public String retornarCpf()
@@ -79,9 +83,9 @@ public abstract class Pessoa
       return this.email;
    }//Fim do método que retorna o email do objeto do tipo Pessoa;
     
-   public void alterarEmail(String alterarEmail)
+   public void alterarEmail(String novoEmail)
    { 
-      this.email=alterarEmail;
+      this.email = novoEmail;
    }//Fim do método que altera o email do objeto do tipo Pessoa;
     
    public Telefone acessarTelefone()
@@ -91,13 +95,18 @@ public abstract class Pessoa
     
    public void alterarTelefone(Telefone novoTelefone)
    {  
-      this.telefone=novoTelefone;
+      this.telefone = novoTelefone;
    }//Fim do método que altera o telefone do objeto do tipo Pessoa;
     
-   public Endereco acessarEndereco()
+   public Endereco retornarEndereco()
    {    
       return this.endereco;
    }//Fim do método que acessa o objeto do tipo Endereco;
+   
+   public void alterarEndereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade, Estado estado)
+   {
+      this.endereco.alterarEndereco(numero, bairro, cep, complemento, rua, cidade, estado);
+   }//Fim do método que altera o endereco do objeto do tipo Pessoa;
    
    public String retornarCondicaoCivil()
    {
@@ -106,7 +115,7 @@ public abstract class Pessoa
    
    public void alterarCondicaoCivil(String condicaoCivil)
    {
-      this.condicaoCivil=condicaoCivil;
+      this.condicaoCivil = condicaoCivil;
    }//Fim do método que altera a condição civil do objeto do tipo Pessoa;
    
 }//Fim da classe Pessoa; 

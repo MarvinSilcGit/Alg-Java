@@ -66,13 +66,18 @@ public class Pais
    {     
       return this.nome;
    }//Fim do método que retorna o nome do objeto do tipo Pais;
+   
+   public void alterarNome(String novoNome)
+   {
+      this.nome = novoNome;
+   }//Fim do método que altera o nome do objeto do tipo Pais;
     
    public Moeda retornarMoedaOficial()
    { 
       return this.moeda;
    }//Fim do método que retorna o objeto do tipo Moeda do objeto do tipo Pais;
     
-   public void alterarMoedaOficial(Moeda alterarMoedaOficial)
+   private void alterarMoedaOficial(Moeda alterarMoedaOficial)
    { 
       this.moeda=alterarMoedaOficial;
    }//Fim do método que altera o objeto do tipo Moeda do objeto do tipo Pais;
@@ -102,19 +107,24 @@ public class Pais
       return this.idh;
    }//Fim do método que retorna o idh do objeto do tipo Pais;
     
-   public ArrayList retornarListaEstados()
+   private ArrayList retornarListaEstados()
    { 
       return this.listaEstados;
-   }//Fim do método que retorna a lista do objeto do tipo Pais;
+   }//Fim do método que retorna a lista de objetos do tipo Estado do objeto do tipo Pais;
     
-   public void inserirEstado(Estado novoEstado)
+   private void inserirEstado(Estado novoEstado)
    { 
       this.listaEstados.add(novoEstado);
    }//Fim do método que insere o objeto do tipo Estado na lista do objeto do tipo Pais
     
-   public void removerEstado(Estado removerEstado)
+   private void removerEstado(Estado removerEstado)
    {     
       this.listaEstados.add(removerEstado);
    }//Fim do método que remove o objeto do tipo Estado da lista do objeto do tipo Pais;
+   
+   public Presidente retornarPresidente()
+   {
+      return this.presidente;
+   }//Fim do método que retorna o objeto do tipo Presidente do objeto do tipo Pais;
    
 }//Fim da classe Pais;

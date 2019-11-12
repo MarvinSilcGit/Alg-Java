@@ -15,6 +15,8 @@ import br.dominio.republicafederativa.cidade.Cidade;
 
 import br.dominio.republicafederativa.estado.Estado;
 
+import br.dominio.republicafederativa.Pais;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         
 
@@ -23,14 +25,41 @@ public final class Endereco
    private String numero,
            bairro,
            cep,
-           complemento,
            rua;
    
    private Cidade cidade;
    
    private Estado estado;
    
+   private Pais pais;
+   
    //Fim do campo de declaração de atributos;
+   
+   public enum complemento
+   {
+      Casa,
+      Apartamento,
+      Chácara,
+      Kitnet,
+      CasaDeCondomínio,
+      Flat,
+      Terreno,
+      LoteResidencial,
+      Sobrado,
+      Cobertura,
+      EdifícioResidencial,
+      Consultório,
+      PrédioComercial,
+      SalaComercial,
+      Fazenda,
+      Galpão,
+      Depósito,
+      Armazém,
+      ImóvelComercial,
+      Loja, 
+      LoteComercial,
+      PontoComercial;
+   }
     
     
    public Endereco()
@@ -38,37 +67,35 @@ public final class Endereco
     
    }//Fim do método construtor padrão;
     
-   public Endereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade, Estado estado)
+   public Endereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade, Estado estado, Pais pais)
    {    
-      this.numero=numero;
+      this.numero = numero;
        
-      this.bairro=bairro;
+      this.bairro = bairro;
         
-      this.cep=cep;
+      this.cep = cep;
         
-      this.complemento=complemento;
+      this.rua = rua;
         
-      this.rua=rua;
+      this.cidade = cidade;
         
-      this.cidade=cidade;
-        
-      this.estado=estado;
+      this.estado = estado;
+      
+      this.pais = pais;
    }//Fim do método construtor personalizado;
-    
+  /*  
    public String retornarEnderecoCompleto()
    {
       return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
    }//Fim do método que retorna a rua, número, bairro, complemento, cep, cidade e estado do objeto do tipo Endereco;
-    
-   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novoComplemento, String novaRua, Cidade novaCidade, Estado novoEstado)
+    */
+   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, enum novoComplemento, String novaRua, Cidade novaCidade, Estado novoEstado)
    {    
       this.numero=novoNumero;
         
       this.bairro=novoBairro;
         
       this.cep=novoCEP;
-        
-      this.complemento=novoComplemento;
         
       this.rua=novaRua;
         

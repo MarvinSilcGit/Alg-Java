@@ -12,7 +12,6 @@ import br.dominio.api.Funcionario;
 import br.dominio.republicafederativa.cidade.Cidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-//Fazer uma classe abstrata para comportar todos os governos;
 
 public class Estado extends Pais
 {    
@@ -51,5 +50,20 @@ public class Estado extends Pais
       //Fim do método construtor Super da classe mãe ou superclasse Pais;
       
    }//Fim do método construtor personalizado;
+   
+   public ArrayList retornarCidades()
+   {
+      return this.listaCidades;
+   }//FIm do método que retorna lista de Cidades do objeto do tipo Estado;
+   
+   public void inserirCidadeLista(Cidade novaCidade)
+   {
+      this.listaCidades.add(novaCidade);
+   }//Fim do método que insere objeto do tipo Cidade na lista do objeto do tipo Estado;
+   
+   public void removerCidadeLista(Cidade cidade)
+   {
+      this.listaCidades.remove(cidade);
+   }//Fim do método que remove objeto do tipo Cidade da lista do objeto do tipo Estado;
    
 }//Fim da classe Estado;
