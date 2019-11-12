@@ -18,11 +18,15 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
+
 public class Autor extends Pessoa
 {
    private String cnpj;
    
    //Fim do campo de declaração de atributos;
+   
    
    public Autor()
    {
@@ -32,6 +36,8 @@ public class Autor extends Pessoa
    public Autor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String cnpj)
    {
       super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
+      
+      this.cnpj = cnpj;
       
       //Fim do método super da classe mãe ou super classe Autor;
       
