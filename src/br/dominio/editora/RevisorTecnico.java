@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package Editora;
+package br.dominio.editora;
 
 /**
  *
