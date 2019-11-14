@@ -15,7 +15,7 @@ import br.dominio.republicafederativa.cidade.Cidade;
 
 import br.dominio.republicafederativa.estado.Estado;
 
-import br.dominio.republicafederativa.Pais;
+import br.dominio.republicafederativa.republica.Pais;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         
@@ -89,7 +89,7 @@ public final class Endereco
       return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
    }//Fim do método que retorna a rua, número, bairro, complemento, cep, cidade e estado do objeto do tipo Endereco;
     */
-   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, enum novoComplemento, String novaRua, Cidade novaCidade, Estado novoEstado)
+   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novaRua, Cidade novaCidade, Estado novoEstado)
    {    
       this.numero=novoNumero;
         
@@ -124,16 +124,6 @@ public final class Endereco
       return this.cep;
    }//Fim do método que retorna o cep do objeto do tipo Endereco;
     
-   public String retornarComplemento()
-   { 
-      return this.complemento;
-   }//Fim do método que retorna o complemento do objeto do tipo Endereco;
-   
-   public void alteraComplemento(String novoComplemento)
-   {
-      this.complemento=novoComplemento;
-   }//Fim do método que altera o complemento do objeto do tipo Endereco;
-    
    public String retornarRua()
    { 
       return this.rua;
@@ -149,11 +139,16 @@ public final class Endereco
    public Cidade retornarCidade()
    { 
       return this.cidade;
-   }//Fim do método que retorna a cidade do objeto do tipo Endereco;
+   }//Fim do método que retorna o objeto do tipo Cidade do objeto do tipo Endereco;
     
    public Estado retornarEstado()
    { 
       return this.estado;
-   }//Fim do método que retorna o estado do objeto do tipo Endereco;
+   }//Fim do método que retorna o objeto do tipo Estado do objeto do tipo Endereco;
+   
+   public Pais retornarPais()
+   {
+      return this.pais;
+   }//Fim do método retorna o objeto do tipo Pais do objeto do tipo Endereco;
    
 }//Fim da classe Endereco

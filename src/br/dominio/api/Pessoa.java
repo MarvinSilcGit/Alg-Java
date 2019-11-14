@@ -103,9 +103,9 @@ public abstract class Pessoa
       return this.endereco;
    }//Fim do método que acessa o objeto do tipo Endereco;
    
-   public void alterarEndereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade, Estado estado)
+   public void alterarEndereco(String numero, String bairro, String cep, String rua, Cidade cidade, Estado estado)
    {
-      this.endereco.alterarEndereco(numero, bairro, cep, complemento, rua, cidade, estado);
+      this.endereco.alterarEndereco(numero, bairro, cep, rua, cidade, estado);
    }//Fim do método que altera o endereco do objeto do tipo Pessoa;
    
    public String retornarCondicaoCivil()

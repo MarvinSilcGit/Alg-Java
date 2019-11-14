@@ -16,7 +16,8 @@ public final class MainApi
    
    public static void main(String[]args)
    {
-      
+      System.out.println("");
+
    }//Fim do método main;
    
 }//Fim da classe MainApi;

@@ -28,7 +28,6 @@ public final class Telefone
    
    public Telefone(int ddi, int dddCurtaDistancia, int dddLongaDistancia, int numero)
    {
-      
       this.ddi=ddi;
       
       this.dddCurtaDistancia=dddCurtaDistancia;
