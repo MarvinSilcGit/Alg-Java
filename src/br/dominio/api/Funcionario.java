@@ -34,9 +34,9 @@ public abstract class Funcionario extends Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Funcionario(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
    {    
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);          
+      super(nome, dataNascimento, cpf, email, telefone, endereco, condicaoCivil);          
     
       //Fim do método super da classe mãe ou superclasse Pessoa;
       
@@ -49,9 +49,9 @@ public abstract class Funcionario extends Pessoa
       this.conta=conta;
    }//Fim do primeiro método construtor personalizado;
     
-   public Funcionario(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta)
+   public Funcionario(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta)
    {    
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
+      super(nome, dataNascimento, cpf, email, telefone, endereco, condicaoCivil);
        
       //Fim do método super da classe mãe ou superclasse Pessoa;
       

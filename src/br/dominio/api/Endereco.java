@@ -35,6 +35,7 @@ public final class Endereco
    
    //Fim do campo de declaração de atributos;
    
+   
    public enum complemento
    {
       Casa,
