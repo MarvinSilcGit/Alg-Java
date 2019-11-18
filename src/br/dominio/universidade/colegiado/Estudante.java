@@ -11,7 +11,6 @@ package br.dominio.universidade.colegiado;
  * @author belogo
  */
 
-//Atributo para carga horária obrigatória;
 import java.util.Date;
 
 import java.util.ArrayList;
@@ -30,7 +29,8 @@ import br.dominio.api.Acesso;
 public final class Estudante extends Pessoa
 { 
    private int horasExtras,
-           codeMatricula;
+           matricula,
+           horasExtrasMinimas;
     
    private double  descontoFiesProUni;
     
@@ -50,19 +50,19 @@ public final class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, int horasExtras, int codeMatricula, double descontoFiesProUni, Acesso conta)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, int horasExtras, int matricula, double descontoFiesProUni, Acesso conta)
    {    
       super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
         
       //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando um de seus construtores;
      
-      this.horasExtras=horasExtras;
+      this.horasExtras = horasExtras;
         
-      this.codeMatricula=codeMatricula;
+      this.matricula = matricula;
         
-      this.descontoFiesProUni=descontoFiesProUni; 
+      this.descontoFiesProUni = descontoFiesProUni; 
         
-      this.conta=conta;
+      this.conta = conta;
    }//Fim do método construtor personalizado;
     
    public int retornarHorasExtras()
@@ -70,61 +70,66 @@ public final class Estudante extends Pessoa
       return this.horasExtras;
    }//Fim do método que retorna as horas extras do objeto do tipo Estudante;
     
-   public void aumentarHorasExtras(int valor)
+   public void aumentarHorasExtras(int novoValor)
    {
-      this.horasExtras+=valor;
+      horasExtras+= novoValor;
    }//Fim do método que aumenta as horas extras do objeto do tipo Estudante;
     
-   public void diminuirHoasExtras(int valor)
+   public void diminuirHorasExtras(int valor)
    {
-      this.horasExtras-=valor;
+      horasExtras-= valor;
    }//Fim do método que diminui as horas extras do objeto do tipo Estudante;
     
    public int retornarMatrícula()
    {
-      return this.codeMatricula;
+      return matricula;
    }//Fim do método que retorna a matrícula do objeto do tipo Estudante;
     
    public double retornarDescontoFiesProUni()
    {
-      return this.descontoFiesProUni;
+      return descontoFiesProUni;
    }//Fim do método que retorna o desconto Fies ou ProUni do objeto do tipo Estudante;
     
    public Acesso acessarContaAcesso()
    {
-      return this.conta;
+      return conta;
    }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Estudante;
     
    public ArrayList retornarDisciplinasCursando()
    {      
-      return this.disciplinasCursando;
-   }//Fim do método que retorna as disciplinas cursando da lista do objeto do tipo Estudante;
+      return disciplinasCursando;
+   }//Fim do método que retorna o objeto do tipo Disciplinas cursando da lista do objeto do tipo Estudante;
     
    public void inserirDisciplinaCursando(Disciplina novaDisciplina)
    {
-      if(this.disciplinasCursadas.contains(novaDisciplina))
+      if(disciplinasCursadas.contains(novaDisciplina))
       {
          System.out.println("Esta disciplina já foi cursada");
       }
       else
       {
-         this.disciplinasCursando.add(novaDisciplina);
+         disciplinasCursando.add(novaDisciplina);
       }
-   }//Fim do método que insere disciplinas na lista para o objeto do tipo Estudante;
+   }//Fim do método que insere o objeto do tipo Disciplina na lista do objeto do tipo Estudante;
    
    public void removerDisciplinaCursando(Disciplina disciplina)
    {
-      this.disciplinasCursando.remove(disciplina);
-   }//Fim do método que remove disciplinas da lista do objeto do tipo Estudante;
+      disciplinasCursando.remove(disciplina);
+   }//Fim do método que remove o objeto do tipo Disciplina da lista do objeto do tipo Estudante;
    
    public ArrayList retornarDisciplinasCursadas()
    {   
-      return this.disciplinasCursadas;
-   }//Fim do método que retorna as disciplinas cursadas da lista do objeto do tipo Estudante;
+      return disciplinasCursadas;
+   }//Fim do método que retorna os objetos do tipo Disciplina da lista de disciplina cursadas do objeto do tipo Estudante;
     
-   public void inserirDisciplinasCursadas()
+   public void inserirDisciplinasCursadas(Disciplina novaDisciplina)
    {
-      
-   }
+      disciplinasCursadas.add(novaDisciplina);
+   }//Fim do método que insere o objeto do tipo Disciplina na lista de disciplinas cursadas do objeto do tipo Estudante;
+   
+   public void removerDisciplinasCursadas(Disciplina removerDisciplina)
+   {
+      disciplinasCursadas.remove(removerDisciplina);
+   }//Fim do método que remove o objeto do tipo Disciplina da lista de disciplinas cursadas do objeto do tipo Estudante;
    
 }//Fim da classe Estudante;
