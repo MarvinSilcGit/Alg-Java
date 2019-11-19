@@ -3,15 +3,16 @@ package br.dominio.republicafederativa.estado;
 
 import java.util.ArrayList;
 
-import br.dominio.republicafederativa.republica.Pais;
+import br.dominio.republicafederativa.Pais;
 
-import br.dominio.republicafederativa.republica.Moeda;
+import br.dominio.republicafederativa.Moeda;
 
 import br.dominio.api.Funcionario;
 
 import br.dominio.republicafederativa.cidade.Cidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class Estado extends Pais
 {    
@@ -37,9 +38,9 @@ public class Estado extends Pais
       
       //Fim do método construtor Super da classe mãe ou superclasse Pais;
       
-      this.governador=governador;
+      this.governador = governador;
       
-      this.viceGovernador=viceGovernador;
+      this.viceGovernador = viceGovernador;
       
    }//Fim do método construtor personalizado;
    
@@ -53,17 +54,17 @@ public class Estado extends Pais
    
    public ArrayList retornarCidades()
    {
-      return this.listaCidades;
+      return listaCidades;
    }//FIm do método que retorna lista de Cidades do objeto do tipo Estado;
    
    public void inserirCidadeLista(Cidade novaCidade)
    {
-      this.listaCidades.add(novaCidade);
+      listaCidades.add(novaCidade);
    }//Fim do método que insere objeto do tipo Cidade na lista do objeto do tipo Estado;
    
    public void removerCidadeLista(Cidade cidade)
    {
-      this.listaCidades.remove(cidade);
+      listaCidades.remove(cidade);
    }//Fim do método que remove objeto do tipo Cidade da lista do objeto do tipo Estado;
    
 }//Fim da classe Estado;

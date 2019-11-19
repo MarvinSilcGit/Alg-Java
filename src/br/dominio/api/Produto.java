@@ -11,8 +11,7 @@ public abstract class Produto
    private int codigoBarras,
            quantidade;
 
-   private Date dataEntrada,
-           dataSaida;
+   private Date dataFabricacao;
    
    private String categoria,
            nome;
@@ -25,47 +24,40 @@ public abstract class Produto
         
    }//Fim do método construtor padrão;
 
-   public Produto(int codigoBarras, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)   
+   public Produto(int codigoBarras, int quantidade, String categoria, String nome, Date dataFabricacao)   
    {        
-      this.codigoBarras=codigoBarras;
+      this.codigoBarras = codigoBarras;
        
-      this.quantidade=quantidade;
-       
-      this.dataEntrada=dataEntrada;
-       
-      this.dataSaida=dataSaida;
+      this.quantidade = quantidade;
       
-      this.categoria=categoria;
+      this.categoria = categoria;
+      
+      this.dataFabricacao = dataFabricacao;
    }//Fim do primeiro método construtor personalizado;
     
-   public int retornarCodigo() 
+   public int retornarCodigoBarras() 
    {
-      return this.codigoBarras;
+      return codigoBarras;
    }//Fim do método que retorna o codigo do objeto do tipo Produto;
     
    public int retornarQuantidade()
    {
-      return this.quantidade;
+      return quantidade;
    }//Fim do método que retorna a quantidade do objeto do tipo Produto;
-    
-   public Date retornarDataEntrada()
-   { 
-      return this.dataEntrada;
-   }//Fim do método que retorna a data de entrada do objeto do tipo Produto;
-    
-   public Date retornarDataSaida()
-   { 
-      return this.dataSaida;
-   }//Fim do método que retorna a data de saída do objeto do tipo Produto;
     
    public String retornarCategoria()
    {       
-      return this.categoria;
+      return categoria;
    }//Fim do método que retorna a categoria do objeto do tipo Produto; 
    
    public String retornarNome()
    {
-      return this.nome;
+      return nome;
    }//Fim do método que retorna o nome do objeto do tipo Produto;
+   
+   public Date retornarDataFabricacao()
+   {
+      return dataFabricacao;
+   }//Fim do método que retorna a data de fabricação do objeto do tipo Produto;
    
 }//Fim da classe Produto;

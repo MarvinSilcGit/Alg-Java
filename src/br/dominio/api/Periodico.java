@@ -27,67 +27,67 @@ public abstract class Periodico extends ProdutoSemValidade
     
    }//Fim do método construtor padrão;
     
-   public Periodico(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, String titulo, String subtitulo, String genero, String nomeAutor, String editora, int quantidadePaginas, int edicao, Date anoPublicacao)
+   public Periodico(int codigo, int quantidade, String categoria, String nome, Date dataFabricacao, String titulo, String subtitulo, String genero, String nomeAutor, String editora, int quantidadePaginas, int edicao, Date anoPublicacao)
    {     
-      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
+      super(codigo, quantidade, categoria, nome, dataFabricacao);
       
       //Fim do método super da classe mãe ou super classe ProdutoSemValidade;
       
-      this.titulo=titulo;
+      this.titulo = titulo;
 
-      this.subtitulo=subtitulo;
+      this.subtitulo = subtitulo;
 
-      this.genero=genero;
+      this.genero = genero;
 
-      this.nomeAutor=nomeAutor;
+      this.nomeAutor = nomeAutor;
 
-      this.editora=editora;
+      this.editora = editora;
 
-      this.quantidadePaginas=quantidadePaginas;
+      this.quantidadePaginas = quantidadePaginas;
 
-      this.edicao=edicao;
+      this.edicao = edicao;
 
-      this.anoPublicacao=anoPublicacao;
+      this.anoPublicacao = anoPublicacao;
    }//Fim do método construtor personalizado;
     
    public String retornarTitulo()
    {
-      return this.titulo;
+      return titulo;
    }//Fim do método que retorna o título do objeto do tipo Periodico;
 
    public String retornarSubtitulo()
    {
-      return this.subtitulo;
+      return subtitulo;
    }//Fim do método que retorna o subtítulo do objeto do tipo Periodico;
 
    public String retornarGenero()
    {
-      return this.genero;
+      return genero;
    }//Fim do método que retorna o gênero do objeto do tipo Periodico;
 
    public String retornarNomeAutor()
    {
-      return this.nomeAutor;
+      return nomeAutor;
    }//Fim do método que retorna o nome do autor do objeto do tipo Livros;
 
    public String retornarEditora()
    {
-      return this.editora;
+      return editora;
    }//Fim do método que retorna a editora do objeto do tipo Periodico;
 
    public int retornarQuantidadePaginas()
    {
-      return this.quantidadePaginas;
+      return quantidadePaginas;
    }//Fim do método que retorna a quantidade páginas do objeto do tipo Periodico;
 
    public int retornarEdicao()
    {
-      return this.edicao;
+      return edicao;
    }//Fim do método que retorna a edição do objeto do tipo Periodico;
 
    public Date retornarAnoPublicacao()
    {
-      return this.anoPublicacao;
+      return anoPublicacao;
    }//Fim do método que retorna o ano publicação do objeto do tipo Periodico;
     
 }//Fim da classe Periodico;

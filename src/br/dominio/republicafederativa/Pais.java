@@ -1,4 +1,4 @@
-package br.dominio.republicafederativa.republica;
+package br.dominio.republicafederativa;
 
 
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import br.dominio.republicafederativa.estado.Estado;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
+//Método que somente pode ser utilizado pela variável do tipo da classe, mesmo que fora dela, para os método de estado;
 
 public class Pais
 {   
@@ -34,97 +34,97 @@ public class Pais
     
    public Pais(String nome, Moeda moeda, double tesouro, double pib, double idh, Presidente presidente, VicePresidente vicePresidente)
    {   
-      this.nome=nome;
+      this.nome = nome;
         
-      this.moeda=moeda;
+      this.moeda = moeda;
         
-      this.tesouro=tesouro;
+      this.tesouro = tesouro;
         
-      this.pib=pib;
+      this.pib = pib;
         
-      this.idh=idh;
+      this.idh = idh;
       
-      this.presidente=presidente;
+      this.presidente = presidente;
       
-      this.vicePresidente=vicePresidente;
+      this.vicePresidente = vicePresidente;
    }//Fim do primeiro método construtor personalizado;
     
    public Pais(String nome, Moeda moeda, double tesouro, double pib, double idh)
    {
-      this.nome=nome;
+      this.nome = nome;
       
-      this.moeda=moeda;
+      this.moeda = moeda;
       
-      this.tesouro=tesouro;
+      this.tesouro = tesouro;
       
-      this.pib=pib;
+      this.pib = pib;
       
-      this.idh=idh;
+      this.idh = idh;
    }//Fim do segundo método construtor personalizado;
    
    public String retornarNome()
    {     
-      return this.nome;
+      return nome;
    }//Fim do método que retorna o nome do objeto do tipo Pais;
    
    public void alterarNome(String novoNome)
    {
-      this.nome = novoNome;
+      nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Pais;
     
    public Moeda retornarMoedaOficial()
    { 
-      return this.moeda;
+      return moeda;
    }//Fim do método que retorna o objeto do tipo Moeda do objeto do tipo Pais;
     
-   private void alterarMoedaOficial(Moeda alterarMoedaOficial)
+   public final void alterarMoedaOficial(Moeda alterarMoedaOficial)
    { 
-      this.moeda=alterarMoedaOficial;
+      moeda = alterarMoedaOficial;
    }//Fim do método que altera o objeto do tipo Moeda do objeto do tipo Pais;
     
    public double retornarTesouro()
    { 
-      return this.tesouro;
+      return tesouro;
    }//Fim do método que retorna o tesouro do objeto do tipo Pais;
     
    public void aumentarTesouro(double aumentarValor)
    { 
-      this.tesouro=+aumentarValor; 
+      tesouro+= aumentarValor; 
    }//Fim do método que aumenta o tesouro do objeto do tipo Pais;
    
    public void diminuirTesouro(double diminuirValor)
    {
-      this.tesouro-=diminuirValor;
+      tesouro-= diminuirValor;
    }//Fim do método que diminui o tesouro do objeto do tipo Pais;
     
    public double retornarPib()
    { 
-      return this.pib;
+      return pib;
    }//Fim do método que retorna o pib do objeto do tipo Pais;
     
    public double retornarIdh()
    { 
-      return this.idh;
+      return idh;
    }//Fim do método que retorna o idh do objeto do tipo Pais;
     
-   private ArrayList retornarListaEstados()
+   public final ArrayList retornarListaEstados()
    { 
-      return this.listaEstados;
+      return listaEstados;
    }//Fim do método que retorna a lista de objetos do tipo Estado do objeto do tipo Pais;
     
-   private void inserirEstado(Estado novoEstado)
+   public final void inserirEstado(Estado novoEstado)
    { 
-      this.listaEstados.add(novoEstado);
+      listaEstados.add(novoEstado);
    }//Fim do método que insere o objeto do tipo Estado na lista do objeto do tipo Pais
     
-   private void removerEstado(Estado removerEstado)
+   public final void removerEstado(Estado removerEstado)
    {     
-      this.listaEstados.add(removerEstado);
+      listaEstados.add(removerEstado);
    }//Fim do método que remove o objeto do tipo Estado da lista do objeto do tipo Pais;
    
    public Presidente retornarPresidente()
    {
-      return this.presidente;
+      return presidente;
    }//Fim do método que retorna o objeto do tipo Presidente do objeto do tipo Pais;
    
 }//Fim da classe Pais;

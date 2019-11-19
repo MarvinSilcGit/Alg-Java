@@ -3,7 +3,7 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.republicafederativa.republica;
+package br.dominio.republicafederativa;
 
 /**
  *

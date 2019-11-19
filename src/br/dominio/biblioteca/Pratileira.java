@@ -55,7 +55,7 @@ public class Pratileira
        else{  
           if (this.listaLivros.contains(inserir))
           {       
-             System.out.println("O livro "+inserir.retornarTitulo()+", com o códido ISBN "+inserir.retornarCodigo()+", já está na pratileira");
+             System.out.println("O livro "+inserir.retornarTitulo()+", com o códido ISBN "+inserir.retornarCodigoBarras()+", já está na pratileira");
           }  
           else
           {
@@ -77,7 +77,7 @@ public class Pratileira
        }
        else
        {    
-          System.out.println("O livro " + remover.retornarTitulo() + ", com o código ISBN " + remover.retornarCodigo() + ", não está na pratileira para ser removido");
+          System.out.println("O livro " + remover.retornarTitulo() + ", com o código ISBN " + remover.retornarCodigoBarras() + ", não está na pratileira para ser removido");
        }
     }//Fim do método que remove livro da lista do objeto do tipo Pratileira;
     

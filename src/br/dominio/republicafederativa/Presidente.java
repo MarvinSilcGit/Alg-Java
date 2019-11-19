@@ -1,4 +1,4 @@
-package br.dominio.republicafederativa.republica;
+package br.dominio.republicafederativa;
 
 
 import java.util.ArrayList;

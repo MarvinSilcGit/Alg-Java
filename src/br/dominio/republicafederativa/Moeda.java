@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.republicafederativa.republica;
+package br.dominio.republicafederativa;
 
 /**
  *
@@ -36,9 +36,9 @@ public class Moeda
 
    public Moeda(String nome, Date dataCriacao)
    {
-      this.nome=nome;
+      this.nome = nome;
       
-      this.dataCriacao=dataCriacao;
+      this.dataCriacao = dataCriacao;
    }//Fim do método construtor personalizado;
    
 }//Fim da classe Moeda;

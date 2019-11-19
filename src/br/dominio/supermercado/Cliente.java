@@ -42,34 +42,34 @@ public final class Cliente extends Pessoa
       
       //Fim do método super da classe mãe o super classe Pessoa; 
        
-      this.cartaoCredito=cartaoCredito; 
+      this.cartaoCredito = cartaoCredito; 
       
-      this.conta=conta;
+      this.conta = conta;
     }//Fim do método construtor personlizado;
    
    public ArrayList retornarCarrinho()
    {  
-      return this.carrinho;
+      return carrinho;
    }//Fim do método que retorna o carrinho do objeto do tipo cliente;
 
    public void inserirProdutoCarrinho(int inserir)
    {   
-      this.carrinho.add(inserir);
+      carrinho.add(inserir);
    }//Fim do método que insere um produto no carrinho do objeto do tipo Cliente;
 
    public void removerProdutoCarrinho(int remover)
    {
-      this.carrinho.remove(remover); 
+      carrinho.remove(remover); 
    }//Fim do método que remove um produto do carrinho do objeto do tipo Cliente;
     
    public CartaoCredito acessarCartaoCredito()
    { 
-       return this.cartaoCredito;
+       return cartaoCredito;
    }//Fim do método que acessa o objeto do tipo CartaoCredito do objeto do tipo cliente;
     
    public Acesso acessarContaAcesso()
    {     
-      return this.conta;
+      return conta;
    }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Cliente;
     
 }//Fim da classe Cliente;

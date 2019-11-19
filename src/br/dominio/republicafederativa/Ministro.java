@@ -1,4 +1,4 @@
-package br.dominio.republicafederativa.republica;
+package br.dominio.republicafederativa;
 
 
 import java.util.Date;
@@ -38,17 +38,17 @@ public class Ministro extends Funcionario
     
    public ArrayList retornarListaEquipe()
    {
-      return this.equipe;
+      return equipe;
    }//Fim do método que retorna a lista do objeto do tipo Ministro;
     
    public void inserirFuncionarioEquipe(Funcionario inserir)
    { 
-      this.equipe.add(inserir);
+      equipe.add(inserir);
    }//Fim do método que adiciona o objeto do tipo Funcionario na lista do objeto do tipo Ministro;
     
    public void removerFuncionarioEquipe(Funcionario remover)
    { 
-      this.equipe.remove(remover);
+      equipe.remove(remover);
    }//Fim do método que remove o objeto do tipo Funcionario da lista do objeto do tipo Ministro;
     
 }//Fim da classe Ministro;

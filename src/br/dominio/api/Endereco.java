@@ -15,7 +15,7 @@ import br.dominio.republicafederativa.cidade.Cidade;
 
 import br.dominio.republicafederativa.estado.Estado;
 
-import br.dominio.republicafederativa.republica.Pais;
+import br.dominio.republicafederativa.Pais;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         

@@ -18,13 +18,10 @@ public class MainSupermercado
    public static void main(String[] args)
    {   
       Departamento dp1 = new Departamento();
-        
        
       Estoque es1 = new Estoque(1);
-        
       
       CartaoCredito cd = new CartaoCredito(0,0,0,0,"","Desavisa",null,1000,null);
-        
       
       Acesso ac1 = new Acesso();
     }//Fim do método main;

@@ -17,16 +17,16 @@ import java.util.Date;
 
 
 public abstract class ProdutoSemValidade extends Produto
-{
+{  
  
    public ProdutoSemValidade()
    {
       
    }//Fim do método construtor padrão;
    
-   public ProdutoSemValidade(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome)
+   public ProdutoSemValidade(int codigo, int quantidade, String categoria, String nome, Date dataFabricacao)
    {
-      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome);
+      super(codigo, quantidade, categoria, nome, dataFabricacao);
       
       //Fim do método super da classe mãe ou superclasse Produto;
       

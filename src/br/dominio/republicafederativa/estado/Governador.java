@@ -16,7 +16,7 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
-import br.dominio.republicafederativa.republica.Presidente;
+import br.dominio.republicafederativa.Presidente;
 
 import br.dominio.api.Acesso;
 

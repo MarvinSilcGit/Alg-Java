@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.republicafederativa.republica;
+package br.dominio.republicafederativa;
 
 /**
  *
@@ -14,6 +14,7 @@ package br.dominio.republicafederativa.republica;
 import java.util.ArrayList;
 
 import br.dominio.api.Funcionario;
+
 
 public class Gabinete 
 {
@@ -33,11 +34,11 @@ public class Gabinete
    
    public Gabinete(Funcionario chefe, Funcionario secretario, Funcionario subSecretario)
    {
-      this.chefe=chefe;
+      this.chefe = chefe;
       
-      this.secretario=secretario;
+      this.secretario = secretario;
       
-      this.subSecretario=subSecretario;
+      this.subSecretario = subSecretario;
    }//Fim do método construtor personalizado;
    
 }//Fim da classe Gabinete;

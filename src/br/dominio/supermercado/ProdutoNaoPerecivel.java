@@ -25,9 +25,9 @@ public class ProdutoNaoPerecivel extends ProdutoComValidade
       
    }//Fim do méodo construtor padrão;
    
-   public ProdutoNaoPerecivel(int codigo, int quantidade, Date dataEntrada, Date dataSaida, String categoria, String nome, Date dataValidade)
+   public ProdutoNaoPerecivel(int codigo, int quantidade, String categoria, String nome, Date dataFabricacao, Date dataValidade)
    {
-      super(codigo, quantidade, dataEntrada, dataSaida, categoria, nome, dataValidade);
+      super(codigo, quantidade, categoria, nome, dataFabricacao, dataValidade);
       
       //Fim do método super da classe mãe ou super classe Produto;
       

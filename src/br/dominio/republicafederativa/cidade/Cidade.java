@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import br.dominio.republicafederativa.estado.Estado;
 
-import br.dominio.republicafederativa.republica.Moeda;
+import br.dominio.republicafederativa.Moeda;
 
 import br.dominio.api.Pessoa;
 
@@ -38,17 +38,17 @@ public final class Cidade extends Estado
      
    public ArrayList retornarListaCidadaos()
    { 
-      return this.listaCidadaos;
+      return listaCidadaos;
    }//Fim do método que retorna a lista do objeto do tipo Cidade;
     
    public void inserirCidadao(Cidadao inserir)
    { 
-      this.listaCidadaos.add(inserir);
+      listaCidadaos.add(inserir);
    }//Fim do métdo que insere o objeto do tipo Cidadao na lista do objeto do tipo Cidade;
     
    public void removerCidadao(Cidadao remover)
    {
-      this.listaCidadaos.remove(remover);
+      listaCidadaos.remove(remover);
    }//Fim do método que remove o objetod do tipo Cidadao da lista do objeto do tipo Cidade;
    
 }//Fim da classe Cidade;

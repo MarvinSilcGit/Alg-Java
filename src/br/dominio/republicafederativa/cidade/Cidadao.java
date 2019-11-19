@@ -30,12 +30,12 @@ public class Cidadao extends Pessoa
       
       //Fim do método super da classe mãe ou super classe Pessoa;
       
-      this.numeroSus=numeroSus;
+      this.numeroSus = numeroSus;
    }//Fim do método construtor personalizado;
    
    public int retornaNumeroSus()
    {
-      return this.numeroSus;
+      return numeroSus;
    }//Fim do método que retorna o número sus do objeto do tipo Cidadao;
    
 }//Fim da classe Cidadão;

@@ -14,7 +14,7 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
-import br.dominio.republicafederativa.republica.VicePresidente;
+import br.dominio.republicafederativa.VicePresidente;
 
 import br.dominio.api.Endereco;
 
