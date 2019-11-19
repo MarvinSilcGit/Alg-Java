@@ -67,7 +67,7 @@ public final class Estudante extends Pessoa
     
    public int retornarHorasExtras()
    {
-      return this.horasExtras;
+      return horasExtras;
    }//Fim do método que retorna as horas extras do objeto do tipo Estudante;
     
    public void aumentarHorasExtras(int novoValor)
@@ -94,6 +94,11 @@ public final class Estudante extends Pessoa
    {
       return conta;
    }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Estudante;
+   
+   public int retornarHorasExtrasMinimas()
+   {
+      return horasExtrasMinimas;
+   }//Fim do método que retorna as horas extras mínimas do objeto do tipo Estudante;
     
    public ArrayList retornarDisciplinasCursando()
    {      

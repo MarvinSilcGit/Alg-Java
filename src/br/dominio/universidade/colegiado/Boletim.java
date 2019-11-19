@@ -36,29 +36,29 @@ public class Boletim
     
    public Boletim(int codigo, double nota)
    {     
-      this.codigo=codigo;
+      this.codigo = codigo;
         
-      this.nota=nota;
+      this.nota = nota;
    }//Fim do método construtor personalizado;
     
    public int retornarCodigo()
    {    
-      return this.codigo;
+      return codigo;
    }//Fim do método que retorna o codigo do objeto do tipo Boletim;
     
    public double retornarNotaBoletim()
    {
-      return this.nota;
+      return nota;
    }//Fim do método que retorna a nota do objeto do tipo Boletim;
     
    public void alterarNotaBoletim(double novaNota)
    {
-      this.nota=novaNota;
+      nota = novaNota;
    }//Fim do método que altera a nota do objeto do tipo Boletim;
     
    public void inserirNota(Disciplina nomeDisciplina, double novaNota)
    {     
-      this.dicionario.put(nomeDisciplina, novaNota);
+      dicionario.put(nomeDisciplina, novaNota);
         
      //   this.eee.keySet().add(novaNota);
    }//Fim do método que insere nota no dicionário do objeto do tipo Boletim;

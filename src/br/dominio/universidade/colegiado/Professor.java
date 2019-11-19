@@ -35,6 +35,14 @@ public final class Professor extends Funcionario
    //Fim do campo de declaração de atributos;
    
    
+   public enum Titulacao
+   {
+      MESTRE,
+      DOUTOR,
+      DOUTORA,
+      GRADUADO
+   }//Fim do enum Titulacao do objeto do tipo Professor;
+   
    public Professor()
    {
     
@@ -46,17 +54,17 @@ public final class Professor extends Funcionario
       
       //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando um de seus contrutores; 
         
-      this.salarioHora=salarioHora;    
+      this.salarioHora = salarioHora;    
    }//Fim do método construtor personalizado;
     
    public double retornarSalarioHora()
    {    
-      return this.salarioHora;
+      return salarioHora;
    }//Fim do método que retorna o salario hora do objeto do tipo Professor;
     
-   public void alterarSalarioHora(double alterarSalárioHora)
+   public void alterarSalarioHora(double novoSalarioHora)
    {  
-      this.salarioHora=alterarSalárioHora;
+      salarioHora = novoSalarioHora;
    }//Fim do método que altera o salario hora do objeto do tipo Professor;
    
 }//Fim da classe Professor;

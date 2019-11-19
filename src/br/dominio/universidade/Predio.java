@@ -33,19 +33,19 @@ public class Predio
    
    public Predio(String nome, double area)
    {
-      this.nome=nome;
+      this.nome = nome;
       
-      this.area=area;
+      this.area = area;
    }//Fim do método construtor personalizado;
    
    public String retornarNomePredio()
    {
-      return this.nome;
+      return nome;
    }//Fim do método que retorna o nome do objeto do tipo Predio;
    
    public void alterarNome(String novoNome)
    {
-      this.nome=novoNome;
+      nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Predio;
    
 }//Fim da classe Predio;

@@ -44,15 +44,15 @@ public class Universidade extends Empresa
    }//Fim do método construtor padrão;
     
    public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
-   {  
-       super(cnpj, razaoSocial, nomeFantasia, endereco, telefone);    
-       //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um de seus construtores;
+   { 
+      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone);    
+      //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um de seus construtores;
         
-       this.reitor=reitor;
+      this.reitor = reitor;
         
-       this.viceReitor=viceReitor;
+      this.viceReitor = viceReitor;
         
-       this.orcamentoPedagogicoTrimestre=orcamentoPedagogicoTrimestre;
+      this.orcamentoPedagogicoTrimestre = orcamentoPedagogicoTrimestre;
     
    }//Fim do método construtor personalizado;
     
@@ -63,55 +63,55 @@ public class Universidade extends Empresa
     
    public void alterarReitor(Funcionario novoReitor)
    {
-      this.reitor=novoReitor;    
+      reitor = novoReitor;    
    }//Fim do método que altera o reitor para o objeto do tipo Universidade;
     
    public Funcionario retornarViceReitor()
    {   
-      return this.viceReitor;
+      return viceReitor;
    }//Fim do método que retorna o vice reitor para o objeto do tipo Universidade;
     
    public void alterarViceReitor(Funcionario novoViceReitor)
    {   
-       this.viceReitor=novoViceReitor;   
+       viceReitor = novoViceReitor;   
    }//Fim do método que altera o vice reitor para o objeto do tipo Universidade;
    
    public float retornarOrcamentoPedagogicoTrimestre()
    {   
-      return this.orcamentoPedagogicoTrimestre;  
+      return orcamentoPedagogicoTrimestre;  
    }//Fim do método que retorna o orcamento pedagogio trismestral para o objeto do tipo Universidade;
     
    public void alterarOrcamentoPedagogicoTrimestre(float novoOrcamentoPedagogicoTrimestre)
    {   
-      this.orcamentoPedagogicoTrimestre=novoOrcamentoPedagogicoTrimestre;      
+      orcamentoPedagogicoTrimestre = novoOrcamentoPedagogicoTrimestre;      
    }//Fim do método que altera o orcamento pedagogico trimestral para o objeto do tipo Universidade;
     
    public ArrayList retornarListaColegiados()
    {   
-      return this.listaColegiados;     
+      return listaColegiados;     
    }//Fim do método que retorna a lista de objetos do tipo Colegiado da lista do objeto do tipo Universidade;
     
    public void inserirColegiadoLista(Colegiado novoColegiado)
-   {   
-      if (this.listaColegiados.size()==50)
+   {  
+      if (listaColegiados.size() == 50)
       {    
          System.out.println("Não é mais possível inserir um colegiado");
       }
       else
       {       
-         this.listaColegiados.add(novoColegiado);
+         listaColegiados.add(novoColegiado);
       }    
     }//Fim do método que insere um objeto do tipo Colegiado na lista do objeto do tipo Universidade;
     
    public void removerColegiadoLista(Colegiado removerColegiado)
    { 
-      if (this.listaColegiados.size()==1)
-      {       
-          System.out.println("Não é possível remover mais nenhum colegiado");
+      if (listaColegiados.size() == 1)
+      {        
+         System.out.println("Não é possível remover mais nenhum colegiado");
       }
       else
-      {   
-          this.listaColegiados.remove(removerColegiado);
+      {    
+         listaColegiados.remove(removerColegiado);
       }      
    }//Fim do método que remove um objeto do tipo Colegiado da lista do objeto do tipo Universidade;
    

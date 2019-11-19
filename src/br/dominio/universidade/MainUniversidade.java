@@ -23,6 +23,6 @@ public class MainUniversidade
    public static void main(String[] args)
    {            
  
-    }//Fim do método estático;
+    }//Fim do método main;
     
 }//Fim da classe MainUniversidade;
