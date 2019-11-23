@@ -19,11 +19,11 @@ public class MainBanco
 
    public static void main(String[] args)
    {    
-      CartaoDebito cd1 = new CartaoDebito(0,0,0,0,"a","s",null,"x"); 
+      CartaoDebito cd1 = new CartaoDebito(0,0,0,0,"a",null,"x"); 
       
       ContaPoupanca cp1 = new ContaPoupanca(0,50,cd1,6,10);
         
-      CartaoCredito cc1 = new CartaoCredito(0,0,0,0,"a","s",null,0,null);     
+      CartaoCredito cc1 = new CartaoCredito(0,0,0,0,"a",null,0,null);     
        
       ContaCorrente ct1 = new ContaCorrente(0,100,cd1,1,cc1);    
    }//Fim do método main;

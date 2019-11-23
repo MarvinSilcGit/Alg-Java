@@ -13,20 +13,26 @@ public abstract class Cartao
            categoria,
            senhaNumero;
     
-   private String nomeGravado,
-           bandeira;
+   private String nomeGravado;
     
    private Date vencimentoCartao;
    
    //Fim do campo de declaração de atributos;
     
+   
+   public enum Bandeira
+   {
+      MASTERCARD,
+      VISA,
+      ELO;
+   }
     
    public Cartao()
    {   
 
    }//Fim do método construtor padrão;
     
-   public Cartao(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, String bandeira, Date vencimentoCartao)
+   public Cartao(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, Date vencimentoCartao)
    {     
       this.numeroCartao=numeroCartao;
         
@@ -37,8 +43,6 @@ public abstract class Cartao
       this.senhaNumero=senhaNumero;
         
       this.nomeGravado=nomeGravado;
-        
-      this.bandeira=bandeira;
         
       this.vencimentoCartao=vencimentoCartao;
    }//Fim do método construtor personalizado;
@@ -72,12 +76,7 @@ public abstract class Cartao
    { 
       return this.nomeGravado;
    }//Fim do método que retorna o nome gravado do objeto do tipo Cartão;
-    
-   public String retornarBandeira()
-   { 
-      return this.bandeira;
-   }//FIm do método que retorna a bandeira do objeto do tipo Cartão;
-    
+  
    public Date retornarVencimentoCartao()
    { 
       return this.vencimentoCartao;

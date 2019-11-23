@@ -21,7 +21,7 @@ public class MainSupermercado
        
       Estoque es1 = new Estoque(1);
       
-      CartaoCredito cd = new CartaoCredito(0,0,0,0,"","Desavisa",null,1000,null);
+      CartaoCredito cd = new CartaoCredito(0,0,0,0,"",null,1000,null);
       
       Acesso ac1 = new Acesso();
     }//Fim do método main;

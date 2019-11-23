@@ -15,7 +15,7 @@ import java.util.Date;
 
 import br.dominio.republicafederativa.cidade.Cidade;
 
-import br.dominio.republicafederativa.estado.Estado;
+import br.dominio.republicafederativa.Pais;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -105,9 +105,9 @@ public abstract class Pessoa
       return endereco;
    }//Fim do método que acessa o objeto do tipo Endereco;
    
-   public void alterarEndereco(String numero, String bairro, String cep, String rua, Cidade cidade, Estado estado)
+   public void alterarEndereco(String numero, String bairro, String cep, String rua, Cidade cidade, Pais pais)
    {
-      endereco.alterarEndereco(numero, bairro, cep, rua, cidade, estado);
+      endereco.alterarEndereco(numero, bairro, cep, rua, cidade, pais);
    }//Fim do método que altera o endereco do objeto do tipo Pessoa;
    
    public String retornarCondicaoCivil()
