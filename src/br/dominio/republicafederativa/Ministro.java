@@ -28,11 +28,11 @@ public class Ministro extends Funcionario
    
    }//Fim do método construtor padrão;
     
-   public Ministro(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Ministro(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);
+      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, conta);
         
-      //Fim do método super da classe mãe ou super classe Funcionario;
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu terceiro construtor personalizado;
         
    }//Fim do método construtor personalizado;
     

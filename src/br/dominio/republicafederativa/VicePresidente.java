@@ -35,11 +35,11 @@ public class VicePresidente extends Presidente
       
    }//Fim do método construtor padrão;
    
-   public VicePresidente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public VicePresidente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, salario, setor, conta, dataPosse, dataDesposse);
+      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
       
-      //Fim do método super da classe mãe ou super classe Presidente;
+      //Fim do método super da classe mãe ou super classe Presidente, inicializando seu construtor personalizado;
       
    }//Fim do método construtor personalizado;
    

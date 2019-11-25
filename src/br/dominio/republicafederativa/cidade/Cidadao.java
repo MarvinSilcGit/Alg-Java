@@ -24,11 +24,11 @@ public class Cidadao extends Pessoa
       
    }//Fim do método construtor padrão;
    
-   public Cidadao(String nome, Date nascimento,String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, int numeroSus)
+   public Cidadao(String nome, Date nascimento,String cpf, String email, Telefone telefone, Endereco endereco, int numeroSus)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
+      super(nome, nascimento, cpf, email, telefone, endereco);
       
-      //Fim do método super da classe mãe ou super classe Pessoa;
+      //Fim do método super da classe mãe ou super classe Pessoa, inicializando seu construtor personalizado;
       
       this.numeroSus = numeroSus;
    }//Fim do método construtor personalizado;
