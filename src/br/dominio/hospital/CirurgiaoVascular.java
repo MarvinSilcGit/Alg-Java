@@ -26,16 +26,15 @@ public class CirurgiaoVascular extends ProfissionalMedicina
    
    }//Fim do método construtor padrão;
      
-   public CirurgiaoVascular(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
+   public CirurgiaoVascular(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, setor, dataAdmissao, conta, crm, valorConsulta);  
+      super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando seu construtor personalizado;
          
       this.valorCirurgia=valorCirurgia;
    }//Fim do método construtor padrão;
- 
-   
+    
    @Override
    public void realizarConsulta()
    {

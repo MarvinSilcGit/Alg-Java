@@ -33,9 +33,9 @@ public class Autor extends Pessoa
       
    }//Fim do método construtor padrão; 
    
-   public Autor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, String cnpj)
+   public Autor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String cnpj)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
+      super(nome, nascimento, cpf, email, telefone, endereco);
       
       this.cnpj = cnpj;
       

@@ -28,18 +28,18 @@ public final class ClienteSimples extends Cliente
    
    }//Fim do método construtor padrão;
      
-   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, Acesso conta, Date tempoClienteBanco, ContaPoupanca contaPoupanca)
+   public ClienteSimples(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, Acesso conta, Date dataFidelizacaoCliente, ContaPoupanca contaPoupanca)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, conta, tempoClienteBanco);
+      super(nome, nascimento, cpf, email, telefone, endereco, conta, dataFidelizacaoCliente);
       
       //Fim do método super da classe mãe ou super classe Cliente;
       
-      this.contaPoupanca=contaPoupanca;
+      this.contaPoupanca = contaPoupanca;
    }//Fim do método construtor personalizado;
     
    public ContaPoupanca acessarContaPoupanca()
    {
-      return this.contaPoupanca;
+      return contaPoupanca;
    }//Fim do método que dá acesso ao objeto do tipo ContaPoupanca no objeto do tipo ClienteSimples;
     
 }//Fim da classe CLienteSimples;
