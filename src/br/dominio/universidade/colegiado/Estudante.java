@@ -50,11 +50,11 @@ public final class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, int horasExtras, int matricula, double descontoFiesProUni, Acesso conta)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Acesso conta)
    {    
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil);
+      super(nome, nascimento, cpf, email, telefone, endereco);
         
-      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando um de seus construtores;
+      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu construtore personalizado;
      
       this.horasExtras = horasExtras;
         
