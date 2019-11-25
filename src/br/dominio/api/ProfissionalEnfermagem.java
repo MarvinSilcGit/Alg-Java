@@ -14,7 +14,7 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
 {  
    private ArrayList listaPacientes = new ArrayList(15);
    
-   private int quantidadePlantoesSemana;
+   private static int quantidadePlantoesSemana;
     
    private String coren;
    //Colocar lista de pacientes atendidos;
@@ -26,47 +26,47 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade)
+   public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade)
    {  
-      super(nome, nascimento, cpf, email, telefone, endereco, condicaoCivil, salario, setor, dataAdmissao, conta);        
+      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);        
         
       //Fim do método super da classe mãe ou super classe Funcionario;
       
-      this.quantidadePlantoesSemana=quanitadePlantoesSemana;
+      ProfissionalEnfermagem.quantidadePlantoesSemana = quanitadePlantoesSemana;
        
-      this.coren=coren;
+      this.coren = coren;
    }//Fim do método construtor padrão;
     
    public int retornarQuantidadePlantoesSemana()
    {    
-      return this.quantidadePlantoesSemana;
+      return quantidadePlantoesSemana;
    }//Fim do método que retorna a quantidade de plantões do objeto do tipo ProfissionalEnfermagem;
     
    public String retornarCoren()
    { 
-      return this.coren;
+      return coren;
    }//Fim do método que retorna o Coren do objeto do tipo ProfissionalEnfermagem;
     
    public ArrayList retornarListaPacientes()
    { 
-      return this.listaPacientes;
+      return listaPacientes;
    }//Fim do método que retorna a lista de pacientes do objeto do tipo ProfissionalEnfermagem;
     
    public void inserirPacienteLista(Paciente inserir)
    {     
-      if (this.listaPacientes.size()>=15)
+      if (listaPacientes.size() >= 15)
       {
          System.out.println("Não é possível alocar mais pacientes para este enfermeiro()");
       }
       else
       {
-         this.listaPacientes.add(inserir);
+         listaPacientes.add(inserir);
       }
    }//Fim do método que insere paciente na lista do objeto do tipo ProfissionalEnfermagem;
     
    public void removerPacienteLista(Paciente remover)
    {     
-      this.listaPacientes.remove(remover);
+      listaPacientes.remove(remover);
    }//Fim do método que remove paciente da lista do objeto do tipo ProfisionalEnfermagem;
     
 }//Fim da classe ProfissionalEnfermagem;

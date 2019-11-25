@@ -47,20 +47,10 @@ public final class Telefone
       return this.dddCurtaDistancia;
    }//Fim do método que retorna o ddd de curta distância do objeto do tipo Telefone;
    
-   public void alterarDddCurtaDistancia(int novoDdd)
-   {
-      this.dddCurtaDistancia=novoDdd;
-   }//Fim do método que altera o ddd de curta distância do objeto do tipo Telefone;
-   
    public int retornarDddLongaDistancia()
    {
       return this.dddLongaDistancia;
    }//Fim do método que retorna o ddd de longa distância do objeto do tipo Telefone;
-   
-   public void alterarDddLongaDistancia(int novoDdd)
-   {
-      this.dddLongaDistancia=novoDdd;
-   }//Fim do método que alter o ddd de longa distância do objeto do tipo Telefone;
    
    public int retornarNumero()
    {
@@ -72,4 +62,20 @@ public final class Telefone
       this.numero=novoNumero;
    }//Fim do método que altera o numero do objeto do tipo Telefone;
    
+   public void alterarTelefoneCompleto(int novoDdi, int novoDddCurtaDistancia, int novoDddLongaDistancia, int novoNumero)
+   {
+      ddi = novoDdi;
+      
+      dddCurtaDistancia = novoDddCurtaDistancia;
+      
+      dddLongaDistancia = novoDddLongaDistancia;
+      
+      numero = novoNumero;
+   }//Fim do método que altera todos os atributos do objeto do tipo Telefone;
+   
+   public String retornarTelefoneCompleto()
+   {
+      return "DDI: " + ddi + ", DDD de curta distância: " + dddCurtaDistancia + ", DDD de longa distância: " + dddLongaDistancia + ", Número: " + numero;
+   }
+   //Converter para string;
 }//Fim da classe Telefone;

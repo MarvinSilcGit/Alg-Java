@@ -33,14 +33,22 @@ public abstract class Pessoa
        
    private Endereco endereco;
    
-   
-
+  
    //Fim do campo de declaração de atributos;
     
    public enum sexo
    {
-      Masculino,
-      Feminino;
+      MASCULINO,
+      FEMININO;
+   }
+   
+   public enum CondicaoCivil
+   {
+      SOLTEIRO,
+      CASADO,
+      DIVORCIADO,
+      VIUVO,
+      UNIAOESTAVEL;
    }
     
    public Pessoa()
@@ -48,7 +56,7 @@ public abstract class Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Pessoa(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil)
+   public Pessoa(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco)
    {     
       this.nome = nome;
         
@@ -61,8 +69,6 @@ public abstract class Pessoa
       this.telefone = telefone;
         
       this.endereco = endereco;
-      
-      this.condicaoCivil = condicaoCivil;
    }//Fim do método construtor personalizado;
     
    public String retornarNome()
@@ -90,34 +96,24 @@ public abstract class Pessoa
       email = novoEmail;
    }//Fim do método que altera o email do objeto do tipo Pessoa;
     
-   public Telefone acessarTelefone()
+   public String retornarTelefone()
    {  
-      return telefone;
+      return telefone.retornarTelefoneCompleto();
    }//Fim do método que retorna o telefone do objeto do tipo Pessoa;
     
-   public void alterarTelefone(Telefone novoTelefone)
+   public void alterarTelefone(int novoDdi, int novoDddCurtaDistancia, int novoDddLongaDistancia, int novoNumero)
    {  
-      telefone = novoTelefone;
+      telefone.alterarTelefoneCompleto(novoDdi, novoDddCurtaDistancia, novoDddLongaDistancia, novoNumero);
    }//Fim do método que altera o telefone do objeto do tipo Pessoa;
     
-   public Endereco retornarEndereco()
+   public String retornarEndereco()
    {    
-      return endereco;
-   }//Fim do método que acessa o objeto do tipo Endereco;
+      return endereco.retornarEnderecoCompleto();
+   }//Fim do método que retorna o objeto do tipo Endereco;
    
    public void alterarEndereco(String numero, String bairro, String cep, String rua, Cidade cidade, Pais pais)
    {
-      endereco.alterarEndereco(numero, bairro, cep, rua, cidade, pais);
+      endereco.alterarEndereco(numero, bairro, cep, rua, cidade);
    }//Fim do método que altera o endereco do objeto do tipo Pessoa;
-   
-   public String retornarCondicaoCivil()
-   {
-      return condicaoCivil;
-   }//Fim do método que retorna a condição civil do objeto do tipo Pessoa;
-   
-   public void alterarCondicaoCivil(String novaCondicaoCivil)
-   {
-      condicaoCivil = novaCondicaoCivil;
-   }//Fim do método que altera a condição civil do objeto do tipo Pessoa;
    
 }//Fim da classe Pessoa; 

@@ -13,8 +13,6 @@ package br.dominio.api;
 
 import br.dominio.republicafederativa.cidade.Cidade;
 
-import br.dominio.republicafederativa.Pais;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
         
 
@@ -26,8 +24,6 @@ public final class Endereco
            rua;
    
    private Cidade cidade;
-   
-   private Pais pais;
    
    //Fim do campo de declaração de atributos;
    
@@ -66,12 +62,17 @@ public final class Endereco
       BAHIA,
    }
    
+   public enum Pais
+   {
+      BRASIL;
+   }
+   
    public Endereco()
    {     
     
    }//Fim do método construtor padrão;
     
-   public Endereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade, Pais pais)
+   public Endereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade)
    {    
       this.numero = numero;
        
@@ -82,29 +83,25 @@ public final class Endereco
       this.rua = rua;
         
       this.cidade = cidade;
-      
-      this.pais = pais;
    }//Fim do método construtor personalizado;
-  /*  
+    
    public String retornarEnderecoCompleto()
    {
-      return "Rua " + this.rua + ", Número " + this.numero +", Bairro " + this.bairro + ", Complemento " + this.complemento + ", CEP " +this.cep + ", Cidade " +this.cidade + ", Estado" + this.estado;
-   }//Fim do método que retorna a rua, número, bairro, complemento, cep, cidade e estado do objeto do tipo Endereco;
-    */
-   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novaRua, Cidade novaCidade, Pais novoPais)
+      return "Rua: " + rua + ", Número: " + numero +", Bairro: " + bairro + ", CEP: " + cep + ", Rua: " + ", Cidade: " + cidade + ", Estado:  Bahia" + ", Pais: Brasil";
+   }//Fim do método que retorna todos os atributos do objeto do tipo Endereco;
+   
+   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novaRua, Cidade novaCidade)
    {    
-      this.numero = novoNumero;
+      numero = novoNumero;
         
-      this.bairro = novoBairro;
+      bairro = novoBairro;
         
-      this.cep = novoCEP;
+      cep = novoCEP;
         
-      this.rua = novaRua;
+      rua = novaRua;
         
-      this.cidade = novaCidade;
-      
-      this.pais = novoPais;
-   }//Fim do método que altera a rua, número, bairro, complemento, cep, cidade e bairro do objeto do tipo Endereco;
+      cidade = novaCidade;
+   }//Fim do método que altera todos os atributos do objeto do tipo Endereco;
     
    public String retornarNumero()
    {
@@ -142,10 +139,5 @@ public final class Endereco
    { 
       return cidade;
    }//Fim do método que retorna o objeto do tipo Cidade do objeto do tipo Endereco;
-   
-   public Pais retornarPais()
-   {
-      return pais;
-   }//Fim do método retorna o objeto do tipo Pais do objeto do tipo Endereco;
    
 }//Fim da classe Endereco
