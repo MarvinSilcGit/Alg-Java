@@ -9,7 +9,7 @@ import br.dominio.api.Produto;
 
 //Fazer uma maneira de que se possa inserir e remover categorias do estoque;
 
-public class Estoque
+public final class Estoque
 {
    private int numeroCategorias;
    

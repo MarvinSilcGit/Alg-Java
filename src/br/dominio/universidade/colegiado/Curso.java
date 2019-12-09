@@ -38,6 +38,7 @@ public class Curso
       GRADUACAO,
       MESTRADO,
       DOUTORADO,
+      TECNOLOGO;
    }//Fim do enum Tipo do objeto do tipo Curso;
    
    public enum Modalidade
@@ -49,11 +50,13 @@ public class Curso
    
    public enum NumeroSemestres
    {
-      _4,
-      _8,
-      _5,
-      _7,
-      _10,
+      QUATRO,
+      OITO,
+      CINCO,
+      SEIS,
+      DEZ,
+      DOIS,
+      TRES;
    }//Fim do enum NumeroSemestres;
    
    

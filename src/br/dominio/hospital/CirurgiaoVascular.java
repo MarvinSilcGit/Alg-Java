@@ -30,10 +30,10 @@ public class CirurgiaoVascular extends ProfissionalMedicina
    {     
       super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando seu construtor personalizado;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o método construtor personalizado;
          
       this.valorCirurgia=valorCirurgia;
-   }//Fim do método construtor padrão;
+   }//Fim do método construtor personalizado;
     
    @Override
    public void realizarConsulta()

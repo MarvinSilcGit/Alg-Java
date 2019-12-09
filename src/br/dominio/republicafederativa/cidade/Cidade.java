@@ -20,6 +20,10 @@ public final class Cidade extends Estado
    
    private ArrayList <Pessoa> listaCidadaos = new ArrayList();
    
+   private Prefeito prefeito;
+   
+   private VicePrefeito vicePrefeito;
+   
    //Fim do campo de declaração de atributos;
    
    
@@ -28,14 +32,22 @@ public final class Cidade extends Estado
         
    }//Fim do método construtor padrão;
     
-   public Cidade(String nome, Moeda moeda, double tesouro, double pib, double idh)
+   public Cidade(String nome, Moeda moeda, double tesouro, double pib, double idh, Prefeito prefeito, VicePrefeito vicePrefeito)
    {     
       super(nome, moeda, tesouro, pib, idh); 
       
       //Fim do método Super da superclasse ou classe mãe Estado;
       
+      this.prefeito = prefeito;
+      
+      this.vicePrefeito = vicePrefeito;
    }//Fim do método construtor personalizado;
      
+   public ArrayList retornarListaSecretarias()
+   {
+      return listaSecretarias;
+   }//Fim do método que retorna a lista de secretarias do objeto do tipo Cidade;
+   
    public ArrayList retornarListaCidadaos()
    { 
       return listaCidadaos;
@@ -49,6 +61,16 @@ public final class Cidade extends Estado
    public void removerCidadao(Cidadao remover)
    {
       listaCidadaos.remove(remover);
-   }//Fim do método que remove o objetod do tipo Cidadao da lista do objeto do tipo Cidade;
+   }//Fim do método que remove o objeto do tipo Cidadao da lista do objeto do tipo Cidade;
+   
+   public Prefeito retornarPrefeito()
+   {
+      return prefeito;
+   }//Fim do método que retorna o objeto do tipo Prefeito do objeto objeto do Cidade;
+   
+   public VicePrefeito retornarVicePrefeito()
+   {
+      return vicePrefeito;
+   }//Fim do método que retorna o objeto do tipo VicePrefeito do objeto do tipo Cidade;
    
 }//Fim da classe Cidade;

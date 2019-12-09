@@ -32,7 +32,7 @@ public class Dermatologista extends ProfissionalMedicina
    {    
       super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);
       
-      //Fim do método construtor super da classe mãe o super classe ProfissionalMedicina, inicilizando seu construtor personalizado; 
+      //Fim do método construtor super da classe mãe o super classe ProfissionalMedicina, inicilizando o método construtor personalizado; 
       
    }//Fim do método construtor personalizado;
    

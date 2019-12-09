@@ -16,7 +16,7 @@ import java.util.ArrayList;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Disciplina 
+public final class Disciplina 
 {      
    private String nome,
            ementa;

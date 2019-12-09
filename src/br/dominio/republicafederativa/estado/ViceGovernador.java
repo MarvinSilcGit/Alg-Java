@@ -12,8 +12,6 @@ package br.dominio.republicafederativa.estado;
 
 import java.util.Date;
 
-import java.util.ArrayList;
-
 import br.dominio.republicafederativa.VicePresidente;
 
 import br.dominio.api.Endereco;
@@ -33,9 +31,9 @@ public class ViceGovernador extends VicePresidente
       
    }//Fim do método construtor padrão;
    
-   public ViceGovernador(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public ViceGovernador(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
+      super(nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
       
       //Fim do método super da classe mãe ou super classe VicePresidente, inicializando seu construtor personalizado;
       

@@ -24,8 +24,7 @@ public abstract class Pessoa
 {    
    private String nome,
            cpf,   
-           email,
-           condicaoCivil;
+           email;
     
    private Date dataNascimento;
     

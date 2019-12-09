@@ -12,7 +12,7 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class MainSupermercado
+public final class MainSupermercado
 {
     
    public static void main(String[] args)

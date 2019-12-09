@@ -11,7 +11,7 @@ package br.dominio.universidade.colegiado;
  * @author belogo
  */
 
-public class SalaAula
+public final class SalaAula
 {     
    private String numeroSala,
             cor;
@@ -41,37 +41,37 @@ public class SalaAula
     
    public String retornarNumeroSala()
    {   
-      return this.numeroSala;
+      return numeroSala;
    }//Fim do método que retorna o número do objeto do tipo Sala;
     
    public String retornarCor()
    {
-      return this.cor;
+      return cor;
    }//Fim do método que retorna a cor do obejto do tipo Sala;
     
    public void alterarCor(String novaCor)
    {
-      this.cor=novaCor;
+      cor = novaCor;
    }//Fim do método que altera a cor do objeto do tipo Sala;
     
    public int retornarCapacidadeEstudantes()
    {    
-      return this.capacidadeEstudantes;
+      return capacidadeEstudantes;
    }//Fim do método que retorna a capacidade de estudantes do objeto do tipo Sala;
     
    public void alterarCapacidade(int novaCapacidade)
    {    
-      this.capacidadeEstudantes=novaCapacidade;
+      capacidadeEstudantes = novaCapacidade;
    }//Fim do método que altera a capacidade de estudantes do objeto do tipo Sala;
     
    public double retornarArea()
    {
-      return this.area;
+      return area;
    }//Fim do método que retorna a area do objeto do tipo Sala;
     
    public void alterarAreaSala(double novaArea)
    {    
-      this.area=novaArea;
+      area=novaArea;
    }//Fim do método que altera a area do objeto do tipo Sala;
     
 }//Fim da classe SalaAula;

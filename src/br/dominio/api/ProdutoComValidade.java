@@ -3,6 +3,7 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.api;
 
 /**
@@ -29,7 +30,7 @@ public abstract class ProdutoComValidade extends Produto
    
    public ProdutoComValidade(int codigo, int quantidade, String categoria, String nome, Date dataFabricacao, Date dataValidade)
    {
-      super(codigo, quantidade, categoria, nome, dataFabricacao);
+      super(codigo, quantidade, dataFabricacao, categoria, nome);
       
       //Fim do método super da classe mãe ou super classe Produto;
       

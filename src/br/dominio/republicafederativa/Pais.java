@@ -127,4 +127,9 @@ public class Pais
       return presidente;
    }//Fim do método que retorna o objeto do tipo Presidente do objeto do tipo Pais;
    
+   public VicePresidente retornarVicePresidente()
+   {
+      return vicePresidente;
+   }//Fim do método que retorna o objeto do tipo VicePresidente do objeto do tipo Pais;
+   
 }//Fim da classe Pais;

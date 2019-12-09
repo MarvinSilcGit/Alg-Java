@@ -18,7 +18,7 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class MainUniversidade
+public final class MainUniversidade
 {    
    public static void main(String[] args)
    {            

@@ -6,7 +6,6 @@
 
 package br.dominio.biblioteca;
 
-
 /**
  *
  * @author belogo
@@ -15,7 +14,6 @@ package br.dominio.biblioteca;
 import br.dominio.api.Periodico;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
 
 public class LivroImportado extends Periodico
 {

@@ -18,7 +18,7 @@ import br.dominio.api.Funcionario;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Colegiado
+public final class Colegiado
 {   
    private String nome;
     
@@ -48,10 +48,10 @@ public class Colegiado
    }//Fim do método construtor padrão;
     
    public Colegiado(String nome, Funcionario coordenador)
-   {       
-       this.nome = nome;
+   {        
+      this.nome = nome;
         
-       this.coordenador = coordenador;
+      this.coordenador = coordenador;
    }//Fim do método construtor personalisado da classe Colegiado
     
    public String retornarNomeColegiado()

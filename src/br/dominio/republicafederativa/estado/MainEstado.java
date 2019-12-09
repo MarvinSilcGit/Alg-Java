@@ -9,7 +9,7 @@ package br.dominio.republicafederativa.estado;
  *
  * @author belogo
  */
-public class MainEstado 
+public final class MainEstado 
 {
    
    public static void main(String[]args)

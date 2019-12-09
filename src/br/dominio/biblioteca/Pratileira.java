@@ -26,54 +26,55 @@ public class Pratileira
     
    public Pratileira(String nome, int capacidade)
    {     
-      this.nome=nome;
+      this.nome = nome;
     
-      this.capacidade=capacidade;
+      this.capacidade = capacidade;
    }//Fim do método construtor personalizado;
     
    public String retornarNomePratileira()
    {     
-      return this.nome;
+      return nome;
    }//Fim do método que retorna o nome do objeto do tipo Pratileira;
     
    public int retornarCapacidadePratileira()
    { 
-      return this.capacidade;
+      return capacidade;
    }//Fim do método que retorna a capacidade do objeto do tipo Pratileira;
     
    public ArrayList retornarListaLivros()
    { 
-      return this.listaLivros;
+      return listaLivros;
    }//Fim do método que retorna a lista do objeto do tipo Pratileira;
     
     public void inserirLivro(Periodico inserir)
     {    
-       if (this.listaLivros.size()>=this.capacidade)
+       if (listaLivros.size() >= capacidade)
        { 
           System.out.println("Pratileira Cheia");
        }
        else{  
-          if (this.listaLivros.contains(inserir))
+          
+          if (listaLivros.contains(inserir))
           {       
-             System.out.println("O livro "+inserir.retornarTitulo()+", com o códido ISBN "+inserir.retornarCodigoBarras()+", já está na pratileira");
+             System.out.println("O livro " + inserir.retornarTitulo()+", com o códido ISBN " + inserir.retornarCodigoBarras() + ", já está na pratileira");
           }  
           else
           {
-             this.listaLivros.add(inserir);
+             listaLivros.add(inserir);
                    
-             if (this.listaLivros.size()==this.capacidade)
+             if ( listaLivros.size() == capacidade)
              {     
-                System.out.println("A pratileira "+this.nome+" chegou a sua capacidade máxima");
+                System.out.println("A pratileira " + nome + " chegou a sua capacidade máxima");
              }
           }
-        }
+       }
     }//Fim do método que insere livro na lista do objeto do tipo Pratileira;
    
     public void removerLivro(Periodico remover)
     {
        if (this.listaLivros.contains(remover))
        {        
-          this.listaLivros.remove(remover);
+          listaLivros.remove(remover);
        }
        else
        {    

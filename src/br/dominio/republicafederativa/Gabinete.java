@@ -41,4 +41,19 @@ public class Gabinete
       this.subSecretario = subSecretario;
    }//Fim do método construtor personalizado;
    
+   public Funcionario retornarChefeGabinete()
+   {
+      return chefe;
+   }//Fim do método que retorna o objeto do tipo Funcionario do objeto do tipo Gabinete;
+   
+   public Funcionario retornarSecretario()
+   {
+      return secretario;
+   }//Fim do método que retorna o objeto do tipo Funcionario do objeto do tipo Gabinete;
+   
+   public Funcionario retornarSubSecretatio()
+   {
+      return subSecretario;
+   }//Fim do método que retorna o objeto do tipo Funcionario do objeto do tipo Gabinete;
+   
 }//Fim da classe Gabinete;

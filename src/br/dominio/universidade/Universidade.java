@@ -26,7 +26,7 @@ import br.dominio.api.Empresa;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Universidade extends Empresa
+public final class Universidade extends Empresa
 {   
    private Funcionario reitor,
            viceReitor;
@@ -46,14 +46,13 @@ public class Universidade extends Empresa
    public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
    { 
       super(cnpj, razaoSocial, nomeFantasia, endereco, telefone);    
-      //Fim do método Super da classe mãe ou superclasse Empresa, inicializando um de seus construtores;
+      //Fim do método Super da classe mãe ou superclasse Empresa, inicializando o primeiro método construtor personalizado;
         
       this.reitor = reitor;
         
       this.viceReitor = viceReitor;
         
-      this.orcamentoPedagogicoTrimestre = orcamentoPedagogicoTrimestre;
-    
+      this.orcamentoPedagogicoTrimestre = orcamentoPedagogicoTrimestre;  
    }//Fim do método construtor personalizado;
     
    public Funcionario retornarReitor()

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Predio 
+public final class Predio 
 {
    private String nome;
    
@@ -47,5 +47,15 @@ public class Predio
    {
       nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Predio;
+   
+   public double retornarArea()
+   {
+      return area;
+   }//Fim do método que retorna a área do objeto do tipo Predio;
+   
+   public void alterarArea(double novaArea)
+   {
+      area = novaArea;
+   }//Fim do método que altera a área do objeto do tipo Predio;
    
 }//Fim da classe Predio;

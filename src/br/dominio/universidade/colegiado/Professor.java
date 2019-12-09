@@ -40,7 +40,8 @@ public final class Professor extends Funcionario
       MESTRE,
       DOUTOR,
       DOUTORA,
-      GRADUADO
+      GRADUADO,
+      GRADUADA;
    }//Fim do enum Titulacao do objeto do tipo Professor;
    
    public Professor()
@@ -52,7 +53,7 @@ public final class Professor extends Funcionario
    {    
       super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta);
       
-      //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o segundo construtor personalizado; 
+      //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o segundo método construtor personalizado; 
         
       this.salarioHora = salarioHora;    
    }//Fim do método construtor personalizado;

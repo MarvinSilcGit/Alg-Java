@@ -11,7 +11,7 @@ package br.dominio.tabelaperiodica;
  * @author belogo
  */
 
-public class MainTabelaPeriodica 
+public final class MainTabelaPeriodica 
 {
    
    public static void main(String [] args)

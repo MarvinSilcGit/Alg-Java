@@ -31,9 +31,9 @@ public class Presidente extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public Presidente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public Presidente(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, conta);      
+      super(nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta);      
       
       //Fim do método super da classe mãe ou superclasse Funcionario, inicializando seu terceiro construtor personalizado;
       

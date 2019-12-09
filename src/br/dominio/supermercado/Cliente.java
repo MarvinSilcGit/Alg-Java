@@ -40,7 +40,7 @@ public final class Cliente extends Pessoa
    {     
       super(nome, nascimento, cpf, email, telefone, endereco);
       
-      //Fim do método super da classe mãe o super classe Pessoa, inicializando seu construtor personalizado; 
+      //Fim do método super da classe mãe o super classe Pessoa, inicializando seu método construtor personalizado; 
        
       this.cartaoCredito = cartaoCredito; 
       

@@ -12,7 +12,7 @@ import br.dominio.api.Pessoa;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 //Nem todo cidadão tem o Sus;
 
-public class Cidadao extends Pessoa 
+public final class Cidadao extends Pessoa 
 {
    private int numeroSus;
    
@@ -28,7 +28,7 @@ public class Cidadao extends Pessoa
    {
       super(nome, nascimento, cpf, email, telefone, endereco);
       
-      //Fim do método super da classe mãe ou super classe Pessoa, inicializando seu construtor personalizado;
+      //Fim do método super da classe mãe ou super classe Pessoa, inicializando o método construtor personalizado;
       
       this.numeroSus = numeroSus;
    }//Fim do método construtor personalizado;

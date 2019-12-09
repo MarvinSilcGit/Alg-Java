@@ -11,7 +11,7 @@ package br.dominio.universidade.colegiado;
  * @author belogo
  */
 
-public class MainColegiado 
+public final class MainColegiado 
 {
    
    public static void main()

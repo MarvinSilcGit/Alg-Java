@@ -19,7 +19,7 @@ import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-
+//Tirar a classe ProfissionalMedicina, é abstrata;
 public final class Paciente extends Pessoa
 { 
    private Date dataEntrada,
@@ -33,6 +33,7 @@ public final class Paciente extends Pessoa
 
    //Fim do campo de declaração de atributos;
  
+   
    public Paciente()
    {
         
@@ -42,7 +43,7 @@ public final class Paciente extends Pessoa
    {   
       super(nome, nascimento, cpf, email, telefone, endereco);
        
-      //Fim do método super da classe mãe ou superclasse Pessoa, inicializando seu construtor personalizado;
+      //Fim do método super da classe mãe ou superclasse Pessoa, inicializando o método construtor personalizado;
        
       this.dataEntrada=dataEntrada;
         
@@ -51,55 +52,55 @@ public final class Paciente extends Pessoa
     
    public Date retornarDataEntrada()
    {     
-      return this.dataEntrada;
-   }
+      return dataEntrada;
+   }//Fim do método que retorna a data de entrada do objeto do tipo Paciente;
     
    public Date retornarDataAlta()
    {
-      return this.dataAlta;
-   }      
+      return dataAlta;
+   }//Fim do método que retorna a data de alta do objeto do tipo Paciente;
     
    public ArrayList retornarListaRemedios()
    { 
-      return this.listaRemedios;
-   }
+      return listaRemedios;
+   }//Fim do método que retorna a lista de remédios do objeto do tipo Paciente;
     
    public void inserirRemedioListaPaciente(Remedio novoRemedio)
    { 
-      this.listaRemedios.add(novoRemedio);
-   }
+      listaRemedios.add(novoRemedio);
+   }//Fim do método que insere na lista de remédios o objeto do tipo Remedio do objeto do tipo Paciente;
     
    public void removerRemedioListaPaciente(Remedio removerRemedio)
    { 
-        this.listaRemedios.remove(removerRemedio);
-   }
+        listaRemedios.remove(removerRemedio);
+   }//Fim do método que remove da lista de remédios objeto do tipo Remedio do objeto do tipo Paciente;
     
    public ArrayList retornarListaMedicos()
    {
-      return this.listaMedicos;
-   }
+      return listaMedicos;
+   }//Fim do método que retorna a lista de objetos do tipo ProfissionalMedicina do objeto do tipo Paciente;
      
    public void alterarListaMedicos(ProfissionalMedicina novoMedico, ProfissionalMedicina novoMedico2, ProfissionalMedicina novoMedico3)
    { 
-      this.listaMedicos.add(novoMedico);    
+      listaMedicos.add(novoMedico);    
       
-      this.listaMedicos.add(novoMedico2);
+      listaMedicos.add(novoMedico2);
         
-      this.listaMedicos.add(novoMedico3);
-   }
+      listaMedicos.add(novoMedico3);
+   }//Fim do método que altera a lista de objetos do tipo ProfisionalMedicina do objeto do tipo Paciente;
   
    public ArrayList retornarListaEnfermeiras()
    {       
-      return this.listasEnfermeiras;
-   }
+      return listasEnfermeiras;
+   }//Fim do método que retorna a lista de objetos do tipo ProfissionalEnfermagem do objeto do tipo Paciente;
     
    public void alterarListaEnfermeiras(ProfissionalEnfermagem novoProfissionalEnfermagem, ProfissionalEnfermagem novoProfissionalEnfermagem2, ProfissionalEnfermagem novoProfissionalEnfermagem3)
    {  
-      this.listasEnfermeiras.add(novoProfissionalEnfermagem);
+      listasEnfermeiras.add(novoProfissionalEnfermagem);
         
-      this.listasEnfermeiras.add(novoProfissionalEnfermagem2);
+      listasEnfermeiras.add(novoProfissionalEnfermagem2);
         
-      this.listasEnfermeiras.add(novoProfissionalEnfermagem3);
-   }
+      listasEnfermeiras.add(novoProfissionalEnfermagem3);
+   }//Fim do método que altera a lista de objetos do tipo ProfissionalEnfermagem do objeto do tipo Paciente;
     
 }//Fim da classe Paciente;

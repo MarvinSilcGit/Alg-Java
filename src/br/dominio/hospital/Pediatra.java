@@ -23,11 +23,16 @@ import br.dominio.api.Telefone;
 public class Pediatra  extends ProfissionalMedicina
 {
    
+   public Pediatra()
+   {
+      
+   }//Fim do método construtor padrão;
+   
    public Pediatra(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
    {     
       super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);   
          
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando seu construtor personalizado;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o método construtor personalizado;
    
    }//Fim do método construtor personalizado;
    

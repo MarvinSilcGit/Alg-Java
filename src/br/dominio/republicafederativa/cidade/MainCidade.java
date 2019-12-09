@@ -11,7 +11,7 @@ package br.dominio.republicafederativa.cidade;
  * @author belogo
  */
 
-public class MainCidade 
+public final class MainCidade 
 {
    
    public static void main(String[]args)

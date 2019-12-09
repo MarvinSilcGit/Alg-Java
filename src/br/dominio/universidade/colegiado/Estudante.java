@@ -54,7 +54,7 @@ public final class Estudante extends Pessoa
    {    
       super(nome, nascimento, cpf, email, telefone, endereco);
         
-      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu construtore personalizado;
+      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu método construtor personalizado;
      
       this.horasExtras = horasExtras;
         

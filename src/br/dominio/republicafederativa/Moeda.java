@@ -41,4 +41,14 @@ public class Moeda
       this.dataCriacao = dataCriacao;
    }//Fim do método construtor personalizado;
    
+   public String retornarNome()
+   {
+      return nome;
+   }//Fim do método que retorna o nome do objeto do tipo Moeda;
+   
+   public Date retornarDataCriacao()
+   {
+      return dataCriacao;
+   }//Fim do método que retorna a data de criação do objeto do tipo Moeda;
+   
 }//Fim da classe Moeda;

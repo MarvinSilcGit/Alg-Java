@@ -67,4 +67,14 @@ public class Estado extends Pais
       listaCidades.remove(cidade);
    }//Fim do método que remove objeto do tipo Cidade da lista do objeto do tipo Estado;
    
+   public Governador retornarGovernador()
+   {
+      return governador;
+   }//Fim do método que retorna o objeto do tipo Governador do objeto do tipo Estado;
+   
+   public ViceGovernador retornarViceGovernador()
+   {
+      return viceGovernador;
+   }//Fim do método que retorna o Vice-Governador do objeto do tipo Estado;
+   
 }//Fim da classe Estado;

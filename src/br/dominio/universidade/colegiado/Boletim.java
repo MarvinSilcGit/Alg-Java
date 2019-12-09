@@ -14,7 +14,7 @@ import java.util.Dictionary;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Boletim
+public final class Boletim
 {    
    private int codigo;
  
