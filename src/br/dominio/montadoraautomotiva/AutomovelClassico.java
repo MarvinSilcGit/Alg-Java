@@ -11,8 +11,9 @@ package br.dominio.montadoraautomotiva;
  * @author belogo
  */
 
-public class AutomovelClassico extends Automovel
+public abstract class AutomovelClassico extends Automovel
 {
+
    
    public enum QuantidadeDescarga
    {
@@ -27,9 +28,9 @@ public class AutomovelClassico extends Automovel
       
    }//Fim do método construtor padrão;
    
-   public AutomovelClassico(double peso, double altura, double largura, double comprimento, String cor)
+   public AutomovelClassico(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica)
    {
-      super(peso, altura, largura, comprimento, cor);
+      super(peso, altura, largura, comprimento, cor, cavalosPotencia, torque, velocidadeMaximaEletronica);
       
       //Fim do método super da classe mãe ou super classe Automovel;
       

@@ -11,7 +11,7 @@ package br.dominio.montadoraautomotiva;
  * @author belogo
  */
 
-public class Automovel 
+public abstract class Automovel 
 {
    private double peso,
            altura,
@@ -19,6 +19,10 @@ public class Automovel
            comprimento;
    
    private String cor;  
+   
+   private double cavalosPotencia,
+           torque,
+           velocidadeMaximaEletronica;
    
    //Fim do campo de declaração de atributos;
    
@@ -57,7 +61,7 @@ public class Automovel
       
    }//Fim do método construtor padrão;
    
-   public Automovel(double peso, double altura, double largura, double comprimento, String cor)
+   public Automovel(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica)
    {
       this.peso = peso;
       
@@ -68,6 +72,12 @@ public class Automovel
       this.comprimento = comprimento;
       
       this.cor = cor;
+      
+      this.cavalosPotencia = cavalosPotencia;
+      
+      this.torque = torque;
+      
+      this.velocidadeMaximaEletronica = velocidadeMaximaEletronica;
    }//Fim do método construtor personalizado;
    
    public double retornarPeso()

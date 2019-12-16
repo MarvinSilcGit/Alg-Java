@@ -4,7 +4,9 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.montadoraautomotiva;
+package br.dominio.montadoraautomotiva.tipoa;
+
+import br.dominio.montadoraautomotiva.AutomovelEletrico;
 
 /**
  *

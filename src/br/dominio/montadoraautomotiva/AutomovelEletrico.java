@@ -11,7 +11,7 @@ package br.dominio.montadoraautomotiva;
  * @author belogo
  */
 
-public class AutomovelEletrico extends Automovel
+public abstract class AutomovelEletrico extends Automovel
 {
    
    public AutomovelEletrico()
@@ -19,9 +19,9 @@ public class AutomovelEletrico extends Automovel
       
    }//Fim do método construtor padrão;
    
-   public AutomovelEletrico(double peso, double largura, double altura, double comprimento, String cor)
+   public AutomovelEletrico(double peso, double largura, double altura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica)
    {
-      super(peso, largura, altura, comprimento, cor);
+      super(peso, largura, altura, comprimento, cor, cavalosPotencia, torque, velocidadeMaximaEletronica);
       
    }//Fim do método construtor personalizado;
    
