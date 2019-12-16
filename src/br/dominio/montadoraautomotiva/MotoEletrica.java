@@ -11,12 +11,14 @@ package br.dominio.montadoraautomotiva;
  * @author belogo
  */
 
-public final class MainMontadoraAutomotiva 
+public class MotoEletrica extends AutomovelEletrico
 {
    
-   public static void main(String [] agrs)
+   public MotoEletrica()
    {
       
-   }//Fim do método main;
+   }//Fim do método construtor padrão;
    
-}//Fim da classe Main MontadoraAutomotiva;
+   
+   
+}//Fim da classe MotoEletrica;

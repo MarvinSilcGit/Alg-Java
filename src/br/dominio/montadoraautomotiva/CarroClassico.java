@@ -11,12 +11,12 @@ package br.dominio.montadoraautomotiva;
  * @author belogo
  */
 
-public final class MainMontadoraAutomotiva 
+public class CarroClassico extends AutomovelClassico
 {
    
-   public static void main(String [] agrs)
+   public CarroClassico()
    {
       
-   }//Fim do método main;
+   }//Fim do método construtor padrão;
    
-}//Fim da classe Main MontadoraAutomotiva;
+}//Fim da classe CarroClassico;
