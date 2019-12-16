@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.montadoraautomotiva;
+package br.dominio.api;
 
 /**
  *

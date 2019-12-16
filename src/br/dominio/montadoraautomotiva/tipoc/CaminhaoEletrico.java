@@ -3,12 +3,20 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.montadoraautomotiva.tipoc;
 
 /**
  *
  * @author belogo
  */
-public class CaminhaoEletrico {
-   
-}
+
+import br.dominio.api.AutomovelEletrico;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
+
+public class CaminhaoEletrico extends AutomovelEletrico
+{   
+
+}//Fim da classe CaminhaoEletrico;

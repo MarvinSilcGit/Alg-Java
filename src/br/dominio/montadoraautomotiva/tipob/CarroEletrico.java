@@ -6,7 +6,7 @@
 
 package br.dominio.montadoraautomotiva.tipob;
 
-import br.dominio.montadoraautomotiva.AutomovelEletrico;
+import br.dominio.api.AutomovelEletrico;
 
 /**
  *

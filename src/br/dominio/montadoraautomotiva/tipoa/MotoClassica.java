@@ -6,7 +6,7 @@
 
 package br.dominio.montadoraautomotiva.tipoa;
 
-import br.dominio.montadoraautomotiva.AutomovelClassico;
+import br.dominio.api.AutomovelClassico;
 
 /**
  *

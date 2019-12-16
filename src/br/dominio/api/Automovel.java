@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.montadoraautomotiva;
+package br.dominio.api;
 
 /**
  *
@@ -104,5 +104,20 @@ public abstract class Automovel
    {
       return cor;
    }//Fim do método que retorna a cor do objeto do tipo Automovel;
+   
+   public double retornarCavalosPotencia()
+   {
+      return cavalosPotencia;
+   }//Fim do método que retorna os cavalos de potência do objeto do tipo Automovel;
+   
+   public double retornarTorque()
+   {
+      return torque;
+   }//Fim do método que retorna o torque do do objeto do tipo Automovel;
+   
+   public double retornarVelocidadeMaximaEletronica()
+   {
+      return velocidadeMaximaEletronica;
+   }//Fim do método que retorna a velocidade máxima eletrônica do objeto do tipo Automovel;
    
 }//Fim da classe Automovel;
