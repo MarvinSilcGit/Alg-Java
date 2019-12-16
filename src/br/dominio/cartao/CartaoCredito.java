@@ -22,9 +22,9 @@ public final class CartaoCredito extends Cartao
     
    }//Fim do método construtor padrão;
     
-   public CartaoCredito(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, Date vencimentoCartao, double limite, Date vencimentoFatura)
+   public CartaoCredito(long numeroCartao, int codeSeguranca,int senhaNumero, String nomeGravado, Date vencimentoCartao, double limite, Date vencimentoFatura)
    {     
-      super(numeroCartao, codeSeguranca, categoria, senhaNumero, nomeGravado, vencimentoCartao);
+      super(numeroCartao, codeSeguranca, senhaNumero, nomeGravado, vencimentoCartao);
       
       //Fim do método super da classe mãe ou super classe Cartao;
         

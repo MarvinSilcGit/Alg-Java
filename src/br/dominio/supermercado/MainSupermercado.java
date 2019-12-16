@@ -20,9 +20,7 @@ public final class MainSupermercado
       Departamento dp1 = new Departamento();
        
       Estoque es1 = new Estoque(1);
-      
-      CartaoCredito cd = new CartaoCredito(0,0,0,0,"",null,1000,null);
-      
+ 
       Acesso ac1 = new Acesso();
     }//Fim do método main;
     

@@ -8,11 +8,11 @@ import java.util.Date;
 
 public abstract class Cartao
 {     
-   private int numeroCartao,
-           codeSeguranca,
-           categoria,
+   private long numeroCartao;
+   
+   private int codeSeguranca,
            senhaNumero;
-    
+   
    private String nomeGravado;
     
    private Date vencimentoCartao;
@@ -26,19 +26,26 @@ public abstract class Cartao
       VISA,
       ELO;
    }
+   
+   public enum Categoria
+   {
+      BRONZE,
+      PRATA,
+      OURO,
+      PLATINA,
+      DIAMANTE;
+   }
     
    public Cartao()
    {   
 
    }//Fim do método construtor padrão;
     
-   public Cartao(int numeroCartao, int codeSeguranca, int categoria, int senhaNumero, String nomeGravado, Date vencimentoCartao)
+   public Cartao(long numeroCartao, int codeSeguranca, int senhaNumero, String nomeGravado, Date vencimentoCartao)
    {     
       this.numeroCartao=numeroCartao;
         
       this.codeSeguranca=codeSeguranca;
-        
-      this.categoria=categoria;
         
       this.senhaNumero=senhaNumero;
         
@@ -47,7 +54,7 @@ public abstract class Cartao
       this.vencimentoCartao=vencimentoCartao;
    }//Fim do método construtor personalizado;
     
-   public int retornarNumeroCartao()
+   public long retornarNumeroCartao()
    {    
       return this.numeroCartao;
    }//Fim do método que retornao o número do objeto do tipo Cartão;
@@ -56,11 +63,6 @@ public abstract class Cartao
    { 
       return this.codeSeguranca;
    }//Fim do método que retorna o código de segunrança do objeto do tipo Cartão;
-    
-   public int retornarCategoria()
-   { 
-      return this.categoria;
-   }//Fim do método que retorna a categoria do objeto do tipo Cartão;
     
    public int retornarSenhaNumero()
    { 
