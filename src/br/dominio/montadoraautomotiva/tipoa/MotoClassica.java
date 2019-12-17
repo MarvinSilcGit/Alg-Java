@@ -25,6 +25,8 @@ public class MotoClassica extends AutomovelClassico
    {
       super(peso, altura, largura, comprimento, cor, cavalosPotencia, torque, velocidadeMaximaEletronica);
       
+      //Fim do método super da classe mãe ou super classe AutomovelClassico;
+      
    }//Fim do método construtor personalizado;
    
 }//Fim da classe MotoClassica;

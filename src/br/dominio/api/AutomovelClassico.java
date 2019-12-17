@@ -13,7 +13,7 @@ package br.dominio.api;
 
 public abstract class AutomovelClassico extends Automovel
 {
-
+   private double capacidadeTanque;
    
    public enum QuantidadeDescarga
    {

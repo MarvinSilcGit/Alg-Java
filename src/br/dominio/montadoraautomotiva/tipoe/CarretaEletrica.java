@@ -3,12 +3,15 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.montadoraautomotiva.tipoe;
 
 /**
  *
  * @author belogo
  */
-public class CarretaEletrica {
+
+public class CarretaEletrica
+{
    
-}
+}//Fim da classe CarretaEletrica;

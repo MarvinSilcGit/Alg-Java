@@ -21,6 +21,13 @@ public class MotoEletrica extends AutomovelEletrico
       
    }//Fim do método construtor padrão;
    
-   
+   public MotoEletrica(double peso, double largura, double altura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica)
+   {
+      super();
+      
+      //Fim do método super da classe mãe ou super classe AutomovelEletrico;
+      
+      
+   }//Fim do método construtor personalizado;
    
 }//Fim da classe MotoEletrica;
