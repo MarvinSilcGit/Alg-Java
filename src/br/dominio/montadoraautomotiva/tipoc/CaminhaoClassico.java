@@ -24,9 +24,9 @@ public class CaminhaoClassico extends AutomovelClassico
       
    }//Fim do método construtor padrão;
    
-   public CaminhaoClassico(double peso, double largura, double altura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica)
+   public CaminhaoClassico(double peso, double largura, double altura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica, double autonomiaMedia, double capacidadeTanque)
    {
-      super(peso, largura, altura, comprimento, cor, cavalosPotencia, torque, velocidadeMaximaEletronica);
+      super(peso, largura, altura, comprimento, cor, cavalosPotencia, torque, velocidadeMaximaEletronica, autonomiaMedia, capacidadeTanque);
          
       //Fim do método super da classe mãe ou super classe AutomovelClassico;
       

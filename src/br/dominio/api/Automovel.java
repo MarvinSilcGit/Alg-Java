@@ -22,7 +22,8 @@ public abstract class Automovel
    
    private double cavalosPotencia,
            torque,
-           velocidadeMaximaEletronica;
+           velocidadeMaximaEletronica,
+           autonomiaMedia;
    
    //Fim do campo de declaração de atributos;
    
@@ -61,7 +62,7 @@ public abstract class Automovel
       
    }//Fim do método construtor padrão;
    
-   public Automovel(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica)
+   public Automovel(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica, double autonomiaMedia)
    {
       this.peso = peso;
       
@@ -78,6 +79,8 @@ public abstract class Automovel
       this.torque = torque;
       
       this.velocidadeMaximaEletronica = velocidadeMaximaEletronica;
+      
+      this.autonomiaMedia = autonomiaMedia;
    }//Fim do método construtor personalizado;
    
    public double retornarPeso()
@@ -119,5 +122,10 @@ public abstract class Automovel
    {
       return velocidadeMaximaEletronica;
    }//Fim do método que retorna a velocidade máxima eletrônica do objeto do tipo Automovel;
+   
+   public double retornarAutonomiaMedia()
+   {
+      return autonomiaMedia;
+   }//Fim do método que retorna a autonomia média do objeto do tipo Automovel;
    
 }//Fim da classe Automovel;
