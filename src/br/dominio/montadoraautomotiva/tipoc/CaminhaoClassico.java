@@ -30,6 +30,6 @@ public class CaminhaoClassico extends AutomovelClassico
          
       //Fim do método super da classe mãe ou super classe AutomovelClassico;
       
-   }//Fim do método construtor padrão;
+   }//Fim do método construtor personalizado;
    
 }//Fim da classe CaminhaoClassico;

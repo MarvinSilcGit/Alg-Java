@@ -3,12 +3,15 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.montadoraautomotiva.tipod;
 
 /**
  *
  * @author belogo
  */
-public class Onibus {
+
+public class Onibus 
+{
    
-}
+}//Fim da classe Onibus;

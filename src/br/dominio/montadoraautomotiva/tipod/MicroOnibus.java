@@ -3,12 +3,15 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.montadoraautomotiva.tipod;
 
 /**
  *
  * @author belogo
  */
-public class MicroOnibus {
+
+public class MicroOnibus
+{
    
-}
+}//Fim da classe MicroOnibus;
