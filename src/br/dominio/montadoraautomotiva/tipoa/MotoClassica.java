@@ -6,12 +6,16 @@
 
 package br.dominio.montadoraautomotiva.tipoa;
 
-import br.dominio.api.AutomovelClassico;
 
 /**
  *
  * @author belogo
  */
+
+import br.dominio.api.AutomovelClassico;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class MotoClassica extends AutomovelClassico
 {
@@ -25,12 +29,18 @@ public class MotoClassica extends AutomovelClassico
       
    }//Fim do método construtor padrão;
    
-   public MotoClassica(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica, double autonomiaMedia, double capacidadeTanque)
+   public MotoClassica(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica, double autonomiaMedia, double capacidadeTanque, double cilindradas)
    {
       super(peso, altura, largura, comprimento, cor, cavalosPotencia, torque, velocidadeMaximaEletronica, autonomiaMedia, capacidadeTanque);
       
       //Fim do método super da classe mãe ou super classe AutomovelClassico;
       
+      this.cilindradas = cilindradas;   
    }//Fim do método construtor personalizado;
+   
+   public double retornarCilindradas()
+   {
+      return cilindradas;
+   }//Fim do método que retorna as cilindradas do objeto do tipo MotoClassica;
    
 }//Fim da classe MotoClassica;

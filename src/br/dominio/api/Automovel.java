@@ -56,6 +56,16 @@ public abstract class Automovel
       QUATRO;
    }
    
+   public enum QuantidadeMarchas
+   {
+      UM,
+      QUATRO,
+      CINCO,
+      SEIS,
+      SETE,
+      OITO;
+   }
+   
    
    public Automovel()
    {
