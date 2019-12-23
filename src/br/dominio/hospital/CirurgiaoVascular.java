@@ -14,7 +14,7 @@ import br.dominio.api.Telefone;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class CirurgiaoVascular extends ProfissionalMedicina
+public final class CirurgiaoVascular extends ProfissionalMedicina
 {  
    private double valorCirurgia;
      
@@ -32,7 +32,7 @@ public class CirurgiaoVascular extends ProfissionalMedicina
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o método construtor personalizado;
          
-      this.valorCirurgia=valorCirurgia;
+      this.valorCirurgia = valorCirurgia;
    }//Fim do método construtor personalizado;
     
    @Override

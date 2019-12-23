@@ -4,7 +4,7 @@ package br.dominio.hospital;
 import br.dominio.api.Endereco;
 
 
-public class MainHospital
+public final class MainHospital
 {    
    public static void main(String[] args)
    {

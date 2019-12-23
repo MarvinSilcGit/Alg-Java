@@ -20,7 +20,7 @@ import br.dominio.api.Telefone;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Pediatra  extends ProfissionalMedicina
+public final class Pediatra  extends ProfissionalMedicina
 {
    
    public Pediatra()
