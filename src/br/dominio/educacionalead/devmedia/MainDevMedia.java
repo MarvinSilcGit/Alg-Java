@@ -3,15 +3,13 @@
  * 
  *  Autor: MVSC 
  */
-
-package br.dominio.montadoracomputacional;
+package br.dominio.educacionalead.devmedia;
 
 /**
  *
  * @author belogo
  */
-
-public final class MainMontadoraComputacional 
+public class MainDevMedia
 {
    
    public static void main(String [] args)
@@ -19,4 +17,4 @@ public final class MainMontadoraComputacional
       
    }//Fim do método main;
    
-}//Fim da classe MainMontadoraComputacional;
+}//Fim da classe MainDevMedia;
