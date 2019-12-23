@@ -32,7 +32,7 @@ public final class Estudante extends Pessoa
            matricula,
            horasExtrasMinimas;
     
-   private double  descontoFiesProUni;
+   private double descontoFiesProUni;
     
    private Acesso conta;
     
@@ -41,6 +41,8 @@ public final class Estudante extends Pessoa
    private ArrayList disciplinasCursando = new ArrayList(6);
     
    private ArrayList disciplinasCursadas = new ArrayList(40);
+   
+   private Date anoMatricula;
     
    //Fim do campo de declaração de atributos;
     
@@ -50,7 +52,7 @@ public final class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Acesso conta)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, int horasExtras, int matricula, int horasExtrasMinimas, double descontoFiesProUni, Acesso conta, Date anoMatricula)
    {    
       super(nome, nascimento, cpf, email, telefone, endereco);
         
@@ -60,9 +62,13 @@ public final class Estudante extends Pessoa
         
       this.matricula = matricula;
         
+      this.horasExtrasMinimas = horasExtrasMinimas;
+      
       this.descontoFiesProUni = descontoFiesProUni; 
         
       this.conta = conta;
+      
+      this.anoMatricula = anoMatricula;
    }//Fim do método construtor personalizado;
     
    public int retornarHorasExtras()
@@ -70,8 +76,10 @@ public final class Estudante extends Pessoa
       return horasExtras;
    }//Fim do método que retorna as horas extras do objeto do tipo Estudante;
     
-   public void aumentarHorasExtras(int novoValor)
+   public void aumentarHorasExtras(int novoValor, long codigoCertificado)
    {
+    //  if (this.)
+      
       horasExtras+= novoValor;
    }//Fim do método que aumenta as horas extras do objeto do tipo Estudante;
     
@@ -85,6 +93,11 @@ public final class Estudante extends Pessoa
       return matricula;
    }//Fim do método que retorna a matrícula do objeto do tipo Estudante;
     
+   public int retornarHorasExtrasMinimas()
+   {
+      return horasExtrasMinimas;
+   }//Fim do método que retorna as horas extras mínimas do objeto do tipo Estudante;
+   
    public double retornarDescontoFiesProUni()
    {
       return descontoFiesProUni;
@@ -94,12 +107,12 @@ public final class Estudante extends Pessoa
    {
       return conta;
    }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Estudante;
-   
-   public int retornarHorasExtrasMinimas()
+  
+   public Date retornarAnoMatricula()
    {
-      return horasExtrasMinimas;
-   }//Fim do método que retorna as horas extras mínimas do objeto do tipo Estudante;
-    
+      return anoMatricula;
+   }//Fim do método que retorna o ano de matrícula do objeto do tipo Estudante;
+   
    public ArrayList retornarDisciplinasCursando()
    {      
       return disciplinasCursando;

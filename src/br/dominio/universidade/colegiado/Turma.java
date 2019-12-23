@@ -13,16 +13,16 @@ package br.dominio.universidade.colegiado;
 
 import java.util.ArrayList;
 
+import java.util.Date;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public final class Turma 
 {  
-   private ArrayList listaEstudantes = new ArrayList();
+   private ArrayList listaEstudantes = new ArrayList(20);
    
-   private Professor professorResponsavel;
-   
-   private SalaAula sala;
+   private Date anoTurma;
    
    //Fim do campo de declaração de atributos;
    
@@ -46,32 +46,15 @@ public final class Turma
       
    }//Fim do método construtor padrão;
    
-   public Turma(Professor professorResponsavel, SalaAula sala)
-   {  
-      this.professorResponsavel = professorResponsavel;
-      
-      this.sala = sala;
+   public Turma(Date anoTurma)
+   {
+      this.anoTurma = anoTurma;
    }//Fim do método construtor personalizado;
    
-   public Professor retornarProfessorResponsavel()
-   { 
-      return professorResponsavel;
-   }//Fim do método que retorna o professor Responsavel do objeto do tipo Turma;
-    
-   public void alterarProfessorResponsavel(Professor novoProfessor)
+   public Date retornarAnoTurma()
    {
-      professorResponsavel = novoProfessor;
-   }//Fim do método que altera o professor Responsavel do objeto do tipo Turma;
-   
-   public SalaAula retornarSalaTurma()
-   {
-      return sala;
-   }//Fim do método que retorna um objeto do tipo Sala para o objeto do tipo Turma;
-   
-   public void alterarSalaTurma(SalaAula novaSala)
-   {
-      sala = novaSala;
-   }//Fim do método que altera o objeto do tipo Sala do objeto do tipo Turma;
+      return anoTurma;
+   }//Fim do método que retorna o ano da turma do objeto do tipo Turma;
    
    public ArrayList retornarListaEstudantesTurma()
    {
