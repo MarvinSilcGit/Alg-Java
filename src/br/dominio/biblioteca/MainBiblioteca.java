@@ -1,7 +1,7 @@
 package br.dominio.biblioteca;
 
 
-public class MainBiblioteca
+public final class MainBiblioteca
 { 
    
    public static void main(String[] args)

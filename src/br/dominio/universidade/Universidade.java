@@ -23,6 +23,8 @@ import java.util.ArrayList;
 
 import br.dominio.api.Empresa;
 
+import br.dominio.empresa.departamento.Orcamento;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -32,6 +34,8 @@ public final class Universidade extends Empresa
            viceReitor;
     
    private float orcamentoPedagogicoTrimestre;
+   
+   private Orcamento orcamento;
     
    private ArrayList listaColegiados = new ArrayList(50);
     
@@ -43,9 +47,10 @@ public final class Universidade extends Empresa
         
    }//Fim do método construtor padrão;
     
-   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
+   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, double capitalSocial, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
    { 
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone);    
+      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, capitalSocial);
+      
       //Fim do método Super da classe mãe ou superclasse Empresa, inicializando o primeiro método construtor personalizado;
         
       this.reitor = reitor;
@@ -82,7 +87,12 @@ public final class Universidade extends Empresa
     
    public void alterarOrcamentoPedagogicoTrimestre(float novoOrcamentoPedagogicoTrimestre)
    {   
-      orcamentoPedagogicoTrimestre = novoOrcamentoPedagogicoTrimestre;      
+      orcamentoPedagogicoTrimestre = novoOrcamentoPedagogicoTrimestre; 
+      
+      if (this.orcamentoPedagogicoTrimestre > this.orcamento.retornarOrcamentoGeralTrimestre())
+      {
+         System.out.println("Orçamento pedagógico excede o limite");
+      }
    }//Fim do método que altera o orcamento pedagogico trimestral para o objeto do tipo Universidade;
     
    public ArrayList retornarListaColegiados()

@@ -11,7 +11,7 @@ package br.dominio.empresa.departamento;
  * @author belogo
  */
 
-public class MainDepartamento 
+public final class MainDepartamento 
 {
    
    public static void main(String[]args)

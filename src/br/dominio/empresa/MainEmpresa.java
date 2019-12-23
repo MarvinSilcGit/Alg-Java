@@ -1,7 +1,7 @@
 package br.dominio.empresa;
 
 
-public class MainEmpresa 
+public final class MainEmpresa 
 {   
     public static void main(String[] args) 
     {

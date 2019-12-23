@@ -11,7 +11,7 @@ package br.dominio.montadoramoveis;
  * @author belogo
  */
 
-public class MainMontadoraMoveis 
+public final class MainMontadoraMoveis 
 {
    
    public static void main(String [] args)

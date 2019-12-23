@@ -37,9 +37,9 @@ public class Editora extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public Editora(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente)
+   public Editora(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente);
+      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

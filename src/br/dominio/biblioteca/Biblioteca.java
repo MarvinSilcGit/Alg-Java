@@ -14,7 +14,7 @@ import br.dominio.api.Telefone;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Biblioteca extends Empresa
+public final class Biblioteca extends Empresa
 {  
    private ArrayList listaPratileiras = new ArrayList();
    
@@ -26,9 +26,9 @@ public class Biblioteca extends Empresa
     
    }//Fim do método contrutor padrão;
     
-   public Biblioteca(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente)
+   public Biblioteca(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {     
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente);
+      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

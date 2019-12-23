@@ -30,25 +30,25 @@ public final class ClienteJuridico extends Empresa
    
    }//Fim do método construtor padrão;
     
-   public ClienteJuridico(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, ContaCorrente contaCorrente, Acesso conta)
+   public ClienteJuridico(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, ContaCorrente contaCorrente, Acesso conta)
    {      
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente);
+      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
         
       //Fim do método super da classe mãe ou super classe Empresa;
       
-      this.contaCorrente=contaCorrente;
+      this.contaCorrente = contaCorrente;
         
-      this.conta=conta;
+      this.conta = conta;
    }//Fim do método construtor personalizado;
 
    public ContaCorrente acessarContaCorrente()
    {     
-      return this.contaCorrente;
+      return contaCorrente;
    }//Fim do método que dá acesso ao objeto do tipo ContaCorrente no objeto do tipo ClienteJuridico;
 
    public Acesso acessarContaAcesso()
    {     
-      return this.conta;
+      return conta;
    }//Fim do método que dá acesso ao objeto do tipo Acesso no objeto do tipo ClienteJuridico;
    
 }//Fim da classe ClienteJuridoco;

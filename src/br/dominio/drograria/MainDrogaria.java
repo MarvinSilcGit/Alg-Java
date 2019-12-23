@@ -1,7 +1,7 @@
 package br.dominio.drograria;
 
 
-public class MainDrogaria
+public final class MainDrogaria
 {
      
    public static void main(String[] args)

@@ -6,14 +6,17 @@
 
 package br.dominio.montadoraautomotiva.tipob;
 
-import br.dominio.api.AutomovelEletrico;
-
 /**
  *
  * @author belogo
  */
 
-public class CarroEletrico extends AutomovelEletrico
+import br.dominio.api.AutomovelEletrico;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
+
+public final class CarroEletrico extends AutomovelEletrico
 {
    
    public CarroEletrico()

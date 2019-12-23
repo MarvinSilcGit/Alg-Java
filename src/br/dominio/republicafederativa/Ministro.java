@@ -16,7 +16,7 @@ import br.dominio.api.Telefone;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Ministro extends Funcionario
+public final class Ministro extends Funcionario
 {    
    private ArrayList equipe =  new ArrayList();
  

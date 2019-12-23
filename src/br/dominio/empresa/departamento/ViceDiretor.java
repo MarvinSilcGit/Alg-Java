@@ -23,24 +23,24 @@ import br.dominio.api.Acesso;
 
 public final class ViceDiretor extends Diretor
 {
-   private Diretor chefe;
-   //Fazer atributo derivado para chefe;
+   private Departamento chefe;
+   
    //Fim do campo de declaração de atributos;
    
    
    public ViceDiretor()
    {
-      //alterar o tipo do atributo sexo para um imutável;
+    
    }//Fim do método construtor padrão;
    
-   public ViceDiretor(String nome, Date nascimento, String cpf, String email, Telefone telefone, char sexo, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, Assistente assistente, Diretor chefe)
+   public ViceDiretor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
    {
-      this.chefe=chefe;
+      this.chefe = chefe;
    }//Fim do método construtor personalizado;
   
    public Diretor retornaChefeDiretor()
    {
-      return this.chefe;
+      return this.chefe.retornarDiretor();
    }//Fim do método que retorna o chefe do objeto do tipo ViceDiretor;
    
 }//Fim da classe ViceDiretor;

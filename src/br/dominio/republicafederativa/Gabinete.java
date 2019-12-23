@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import br.dominio.api.Funcionario;
 
 
-public class Gabinete 
+public final class Gabinete 
 {
    private Funcionario chefe,
            secretario,

@@ -1,7 +1,7 @@
 package br.dominio.cartao;
 
 
-public class MainCartao
+public final class MainCartao
 {
    
    public static void main(String[] args)

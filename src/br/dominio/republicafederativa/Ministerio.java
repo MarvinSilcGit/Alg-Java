@@ -8,7 +8,7 @@ import br.dominio.api.Funcionario;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 //Criar classe Servidor;
 
-public class Ministerio
+public final class Ministerio
 {     
    private String nome;
 

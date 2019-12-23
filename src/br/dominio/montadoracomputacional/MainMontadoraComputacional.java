@@ -11,7 +11,7 @@ package br.dominio.montadoracomputacional;
  * @author belogo
  */
 
-public class MainMontadoraComputacional 
+public final class MainMontadoraComputacional 
 {
    
    public static void main(String [] args)

@@ -1,10 +1,9 @@
 package br.dominio.empresa.departamento;
 
 
-public class Orcamento
+public final class Orcamento
 { 
-   private float orcamentoGeralTrimestre,
-           
+   private float orcamentoGeralTrimestre,        
             orcamentoAdministrativoTrimestre;
      
    //Fim do campo de declaração de atributos;
@@ -17,10 +16,10 @@ public class Orcamento
     
    public Orcamento(float orcamentoGeralTrimestre, float orcamentoAdministrativoTrimestre)
    {         
-      this.orcamentoGeralTrimestre=orcamentoGeralTrimestre;
+      this.orcamentoGeralTrimestre = orcamentoGeralTrimestre;
         
-      this.orcamentoAdministrativoTrimestre=orcamentoAdministrativoTrimestre;
-   }//Fim do método construtor padrão;
+      this.orcamentoAdministrativoTrimestre = orcamentoAdministrativoTrimestre;
+   }//Fim do método construtor personalizado;
      
    public float retornarOrcamentoGeralTrimestre()
    {    
@@ -29,7 +28,7 @@ public class Orcamento
      
    public void alterarOrcamentoGeralTrimestre(float novoOrcamentoGeral)
    {    
-      this.orcamentoGeralTrimestre=novoOrcamentoGeral;
+      this.orcamentoGeralTrimestre = novoOrcamentoGeral;
    }//Fim do método que altera o orcamento do objeto do tipo Departamento;
      
    public float retornarOrcamentoAdministrativoTrimestre()
@@ -39,7 +38,7 @@ public class Orcamento
     
    public void alterarOrcamentoAdministrativoTrimestre(float novoOrcamentoAdministrativo)
    {     
-      this.orcamentoAdministrativoTrimestre=novoOrcamentoAdministrativo;
+      this.orcamentoAdministrativoTrimestre = novoOrcamentoAdministrativo;
    }//Fim do método que altera orçament administrativo do objeto do tipo Departamento;
    
 }//Fim da classe Orcamento;

@@ -21,8 +21,8 @@ import br.dominio.api.Telefone;
 
 import br.dominio.api.Acesso;
 
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public class RevisorTecnico extends Funcionario
 {

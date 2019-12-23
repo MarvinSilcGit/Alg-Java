@@ -16,7 +16,7 @@ import br.dominio.api.AutomovelEletrico;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class CaminhaoEletrico extends AutomovelEletrico
+public final class CaminhaoEletrico extends AutomovelEletrico
 {   
    
    public CaminhaoEletrico()

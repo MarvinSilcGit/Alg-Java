@@ -36,11 +36,10 @@ public class Autor extends Pessoa
    public Autor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String cnpj)
    {
       super(nome, nascimento, cpf, email, telefone, endereco);
-      
-      this.cnpj = cnpj;
-      
+   
       //Fim do método super da classe mãe ou super classe Autor;
       
+      this.cnpj = cnpj;      
    }//Fim do método construtor personalizado;
    
 }//Fim da classe Autor;

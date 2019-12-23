@@ -17,7 +17,7 @@ import br.dominio.api.AutomovelClassico;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class MotoClassica extends AutomovelClassico
+public final class MotoClassica extends AutomovelClassico
 {
    private double cilindradas;
    
