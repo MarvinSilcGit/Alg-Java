@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import br.dominio.republicafederativa.estado.Estado;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-//Método que somente pode ser utilizado pela variável do tipo da classe, mesmo que fora dela, para os método de estado;
+
 
 public class Pais
 {   
@@ -23,7 +23,7 @@ public class Pais
    private VicePresidente vicePresidente;
     
    private ArrayList <Estado> listaEstados = new ArrayList();
-   
+  
    //Fim do campo de declaração de atributos;
     
    
