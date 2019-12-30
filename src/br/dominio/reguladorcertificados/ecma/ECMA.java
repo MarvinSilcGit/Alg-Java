@@ -25,7 +25,11 @@ import br.dominio.api.Empresa;
 
         
 public class ECMA extends Empresa
-{
+{  
+   private ArrayList listaEmissoresCertificadosQualificados = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
+   
    
    public ECMA()
    {
@@ -39,5 +43,10 @@ public class ECMA extends Empresa
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado;
+   
+   public ArrayList retornarEmissoresCertificadosQualificados()
+   {
+      return listaEmissoresCertificadosQualificados;
+   }//Fim do método que retorna os emissores de certificados qualificados do objeto do tipo ECMA;
    
 }//Fim da classe ECMA;

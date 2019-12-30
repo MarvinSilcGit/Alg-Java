@@ -26,9 +26,11 @@ public class Curso
    
    private Funcionario coordenador;
    
-   private ArrayList listaProfessores = new ArrayList(20);
+   private ArrayList <Professor> listaProfessores = new ArrayList(20);
    
-   private ArrayList listaDisciplinas = new ArrayList();
+   private ArrayList <Disciplina> listaDisciplinas = new ArrayList();
+   
+   private ArrayList <Estudante> listaEstudantes = new ArrayList();
    
    //Fim do campo de declaração de atributos;
    
@@ -100,31 +102,46 @@ public class Curso
    public ArrayList retornarListaProfessores()
    {    
        return listaProfessores;
-   }//Fim do método que retorna a lista de professores do objeto do tipo Cursoo;
+   }//Fim do método que retorna o objeto do tipo Professor da lista do objeto do tipo Cursoo;
     
    public void inserirProfessorColegiado(Professor novoProfessor)
    {    
        listaProfessores.add(novoProfessor);
-   }//Fim do método que insere um objeto do tipo Professor na lista do objeto do tipo Curso;
+   }//Fim do método que insere o objeto do tipo Professor na lista do objeto do tipo Curso;
     
    public void removerProfessorColegiado(Professor removerProfessor)
    {   
        listaProfessores.remove(removerProfessor);
-   }//Fim do método que remove um objeto do tipo Professor da lista do objeto do tipo Curso; 
+   }//Fim do método que remove o objeto do tipo Professor da lista do objeto do tipo Curso; 
    
    public ArrayList retornarListaDisciplinasCurso()
    {   
       return listaDisciplinas;
-   }//Fim do método que retorna a lista de disciplinas do objeto do tipo Curso;
+   }//Fim do método que retorna o objeto do tipo Disciplina da lista do objeto do tipo Curso;
     
    public void inserirDisciplinaCurso(Disciplina novaDisciplina)
    {   
       listaDisciplinas.add(novaDisciplina);
-   }//Fim do método que insere um objeto do tipo Disciplina na lista do objeto do tipo Curso;
+   }//Fim do método que insere o objeto do tipo Disciplina na lista do objeto do tipo Curso;
     
    public void removerDisciplinaCurso(Disciplina removerDisciplina)
    {       
       listaDisciplinas.remove(removerDisciplina);
-   }//Fim do método que remove um objeto do tipo disciplina da lista do objeto do tipo Curso;
+   }//Fim do método que remove o objeto do tipo Disciplina da lista do objeto do tipo Curso;
+   
+   public ArrayList retornarListaEstudantes()
+   {
+      return listaEstudantes;
+   }//Fim do método que retorna objeto do tipo Estudante da lista do objeto do Curso;
+   
+   public void inserirEstudanteLista(Estudante novoEstudante)
+   {
+      listaEstudantes.add(novoEstudante);
+   }//Fim do método que insere estudante na lista do objeto do tipo Curso;
+   
+   public void removerEstudanteLista(Estudante removerEstudante)
+   {
+      
+   }//Fim do método que remove o objeto do tipo Estudante da lista do objeto do tipo Curso;
    
 }//Fim da classe Curso;

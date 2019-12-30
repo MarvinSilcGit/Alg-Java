@@ -32,7 +32,7 @@ public final class Colegiado
    
    //Fim do campo de declaração de atributos;
     
-   
+   //Corrigir comentários de acordo com a classe curso;
    public enum AreaCientifica
    {
       CIENCIAS_EXATAS,

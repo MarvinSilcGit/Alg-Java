@@ -41,9 +41,10 @@ public class Alura extends Empresa //implements IValidaCertificados, ICadastraEm
    
    public Alura(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, Orcamento orcamento, double capitalSocial)
    {
-      super();
+      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
       
-      //Fim do método super da classe mãe ou super classe Empresa;
+     //Fim do método super da classe mãe ou super classe Empresa;
+   
    }//Fim do método construtor personalizado;
    
  /*  @Override
@@ -52,6 +53,4 @@ public class Alura extends Empresa //implements IValidaCertificados, ICadastraEm
       return 
    }*/
    
-   
-   //Criar interface para cadastrar aluno;
 }//Fim da classe Alura;

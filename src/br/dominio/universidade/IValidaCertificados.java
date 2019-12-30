@@ -18,12 +18,10 @@ import br.dominio.universidade.colegiado.Estudante;
 
 public interface IValidaCertificados 
 {  
-   Estudante retornarCpfEstudante();
+   Estudante retornarEstudante();
    
    int retornarCargaHoraria();
    
    long retornarCodigoCertificado();
-   
-   long retornarCodigoEq();
 
 }//Fim da interface IValidaCertificados;
