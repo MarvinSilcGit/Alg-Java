@@ -28,13 +28,13 @@ import br.dominio.universidade.colegiado.Estudante;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public class Udemy extends Empresa implements IValidaCertificados// ICadastraCertificadores
+public class Udemy extends Empresa// ICadastraCertificadores
 {         
    private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
    
    private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
    
-   private Estudante estudante;
+   private ArrayList <Curso> listaCursos = new ArrayList();
    
    //Fim do campo de declaração de atributos;
    
@@ -51,23 +51,5 @@ public class Udemy extends Empresa implements IValidaCertificados// ICadastraCer
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado
-   
-   @Override
-   public String retornarCpfEstudante()
-   {
-      return estudante.retornarCpf();
-   }
-   
-   @Override
-   public int retornarCargaHoraria()
-   {
-      return 1;
-   }
-   
-   @Override
-   public long retornarCodigoCertificado()
-   {
-      return 12;
-   }
    
 }//Fim da classe Udemy;

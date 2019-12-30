@@ -39,6 +39,14 @@ public class Curso
       this.professor = professor;
    }//Fim do método construtor personalizado;
    
-   //public 
+   public String retornarNome()
+   {
+      return nome;
+   }//Fim do método que retorna o nome do objeto do tipo Curso;
+   
+   public Professor retornarProfessorResponsaveal()
+   {
+      return professor;
+   }//Fim do método que retorna o objeto do tipo Professor do objeto do tipo Curso;
    
 }//Fim da classe Curso

@@ -26,6 +26,8 @@ public class Certificado
    
    private Estudante beneficiario;
    
+   private Curso nomeCurso;
+   
    //Fim do campo de declaração de atributos;
    
   
@@ -34,7 +36,7 @@ public class Certificado
       
    }//Fim do método construtor padrão;
    
-   public Certificado(long codigo, Funcionario responsavel, int cargaHoraria, Estudante beneficiario)
+   public Certificado(long codigo, Funcionario responsavel, int cargaHoraria, Estudante beneficiario, Curso nomeCurso)
    {
       this.codigo = codigo;
       
@@ -43,6 +45,8 @@ public class Certificado
       this.cargaHoraria = cargaHoraria;
       
       this.beneficiario = beneficiario;
+      
+      this.nomeCurso = nomeCurso;
    }//Fim do método construtor personalizado;
    
    public long retornarCodigoCertificado()
@@ -65,4 +69,9 @@ public class Certificado
       return beneficiario;
    }//Fim do método que retorna o beneficiário do objeto do tipo Certificado;
    
+   public String retornarNomeCurso()
+   {
+      return nomeCurso.retornarNome();
+   }//Fim do método que retorna o nome do objeto do tipo Curso do objeto do Tipo Certificado;
+    
 }//Fim da classe Certificado;
