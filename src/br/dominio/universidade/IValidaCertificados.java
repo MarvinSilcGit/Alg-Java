@@ -26,6 +26,4 @@ public interface IValidaCertificados
    
    long retornarCodigoEq();
 
-   
-
 }//Fim da interface IValidaCertificados;
