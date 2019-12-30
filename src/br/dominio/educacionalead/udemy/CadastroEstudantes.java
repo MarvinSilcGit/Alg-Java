@@ -21,7 +21,8 @@ public class CadastroEstudantes
    private String cpf,
            nome,
            login,
-           senha;
+           senha,
+           email;
    
    private Date nascimento;
    
@@ -32,7 +33,7 @@ public class CadastroEstudantes
       
    }//Fim do método construtor padrão;
    
-   public CadastroEstudantes(String cpf, String nome, String login, String senha, Date nascimento)
+   public CadastroEstudantes(String cpf, String nome, String login, String senha, String email, Date nascimento)
    {
       this.cpf = cpf;
       
@@ -44,5 +45,36 @@ public class CadastroEstudantes
       
       this.nascimento = nascimento;
    }//Fim do método construtor personalizado;
+   
+   
+   public String retornarNome()
+   {
+      return nome;
+   }
+   
+   public String retornarCpf()
+   {
+      return cpf;
+   }
+   
+   public String retornarLogin()
+   {
+      return login;
+   }
+   
+   public String retornarSenha()
+   {
+      return senha;
+   }
+   
+   public String retornarEmail()
+   {
+      return email;
+   }
+   
+   public Date retornarDataNascimento()
+   {
+      return nascimento;
+   }
    
 }//Fim da classe CadastroEstudante;
