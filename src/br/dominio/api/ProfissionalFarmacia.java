@@ -24,7 +24,7 @@ public abstract class ProfissionalFarmacia extends Funcionario
         
       //Fim do método super da classe mãe ou super classe Funcionario;
       
-      this.crf=crf;
+      this.crf = crf;
    }//Fim do método construtor personalizado;
     
    public String retornarCrf()

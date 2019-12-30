@@ -34,6 +34,8 @@ public class Udemy extends Empresa implements IValidaCertificados// ICadastraCer
    
    private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
    
+   private Estudante estudante;
+   
    //Fim do campo de declaração de atributos;
    
            
@@ -53,7 +55,7 @@ public class Udemy extends Empresa implements IValidaCertificados// ICadastraCer
    @Override
    public String retornarCpfEstudante()
    {
-      return "";
+      return estudante.retornarCpf();
    }
    
    @Override

@@ -18,6 +18,11 @@ public final class Telefone
            dddLongaDistancia,
            numero;
    
+   private String operadora;
+   
+   //Criar classe para operadoras;
+   //Colocar enum para os ddds
+   
    //Fim do campo de declaração de atributos;
    
    
@@ -56,23 +61,7 @@ public final class Telefone
    {
       return this.numero;
    }//Fim do método que retorna o numero do objeto do tipo Telefone;
-   
-   public void alterarNumero(int novoNumero)
-   {
-      this.numero=novoNumero;
-   }//Fim do método que altera o numero do objeto do tipo Telefone;
-   
-   public void alterarTelefoneCompleto(int novoDdi, int novoDddCurtaDistancia, int novoDddLongaDistancia, int novoNumero)
-   {
-      ddi = novoDdi;
-      
-      dddCurtaDistancia = novoDddCurtaDistancia;
-      
-      dddLongaDistancia = novoDddLongaDistancia;
-      
-      numero = novoNumero;
-   }//Fim do método que altera todos os atributos do objeto do tipo Telefone;
-   
+  
    public String retornarTelefoneCompleto()
    {
       return "DDI: " + ddi + ", DDD de curta distância: " + dddCurtaDistancia + ", DDD de longa distância: " + dddLongaDistancia + ", Número: " + numero;

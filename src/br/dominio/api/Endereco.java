@@ -89,29 +89,11 @@ public final class Endereco
    {
       return "Rua: " + rua + ", Número: " + numero +", Bairro: " + bairro + ", CEP: " + cep + ", Rua: " + ", Cidade: " + cidade + ", Estado:  Bahia" + ", Pais: Brasil";
    }//Fim do método que retorna todos os atributos do objeto do tipo Endereco;
-   
-   public void alterarEndereco(String novoNumero, String novoBairro, String novoCEP, String novaRua, Cidade novaCidade)
-   {    
-      numero = novoNumero;
-        
-      bairro = novoBairro;
-        
-      cep = novoCEP;
-        
-      rua = novaRua;
-        
-      cidade = novaCidade;
-   }//Fim do método que altera todos os atributos do objeto do tipo Endereco;
     
    public String retornarNumero()
    {
       return numero;
    }//Fim do método que retorna o número do objeto do tipo Endereco;
-    
-   public void alterarNumero(String novoNumero)
-   {
-      numero = novoNumero;
-   }//Fim do método que altera o número do objeto do tipo Endereco;
    
    public String retornarBairro()
    { 
@@ -127,13 +109,6 @@ public final class Endereco
    { 
       return rua;
    }//Fim do método que retorna a rua do objeto do tipo Endereco;
-   
-   public void alterarRua(String novaRua)
-   {
-      rua = novaRua;
-      
-     // this.numero; Pedir entrada de dados para o novo número do endereco;
-   }//Fim do método que altera a rua do objeto do tipo Rua;
     
    public Cidade retornarCidade()
    { 

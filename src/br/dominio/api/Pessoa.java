@@ -13,10 +13,6 @@ package br.dominio.api;
 
 import java.util.Date;
 
-import br.dominio.republicafederativa.cidade.Cidade;
-
-import br.dominio.republicafederativa.Pais;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -99,20 +95,10 @@ public abstract class Pessoa
    {  
       return telefone.retornarTelefoneCompleto();
    }//Fim do método que retorna o telefone do objeto do tipo Pessoa;
-    
-   public void alterarTelefone(int novoDdi, int novoDddCurtaDistancia, int novoDddLongaDistancia, int novoNumero)
-   {  
-      telefone.alterarTelefoneCompleto(novoDdi, novoDddCurtaDistancia, novoDddLongaDistancia, novoNumero);
-   }//Fim do método que altera o telefone do objeto do tipo Pessoa;
-    
+ 
    public String retornarEndereco()
    {    
       return endereco.retornarEnderecoCompleto();
    }//Fim do método que retorna o objeto do tipo Endereco;
-   
-   public void alterarEndereco(String numero, String bairro, String cep, String rua, Cidade cidade, Pais pais)
-   {
-      endereco.alterarEndereco(numero, bairro, cep, rua, cidade);
-   }//Fim do método que altera o endereco do objeto do tipo Pessoa;
    
 }//Fim da classe Pessoa; 

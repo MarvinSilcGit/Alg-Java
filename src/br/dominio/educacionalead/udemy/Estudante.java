@@ -13,7 +13,7 @@ package br.dominio.educacionalead.udemy;
 
 import java.util.Date;
 
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+//Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
 public class Estudante

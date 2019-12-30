@@ -37,7 +37,7 @@ public class Autor extends Pessoa
    {
       super(nome, nascimento, cpf, email, telefone, endereco);
    
-      //Fim do método super da classe mãe ou super classe Autor;
+      //Fim do método super da classe mãe ou super classe Pessoa;
       
       this.cnpj = cnpj;      
    }//Fim do método construtor personalizado;

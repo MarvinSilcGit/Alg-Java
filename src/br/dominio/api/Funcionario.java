@@ -77,32 +77,36 @@ public abstract class Funcionario extends Pessoa
     
    public double retornarSalario()
    { 
-      return this.salario;
+      return salario;
    }//Fim do método que retorna o salario do objeto do tipo Funcionario;
     
-   public void alterarSalario(double alterarSalario)
+   public void alterarSalario(double valorParaAumentar)
    { 
-      this.salario=alterarSalario;
+      salario+= valorParaAumentar;
    }//Fim do método que altera o salario do objeto do tipo Funcionario;
-    
+   
+   public void diminuirSalario(double valorParaDiminuir)
+   {
+      salario-= valorParaDiminuir;
+   }
    public String retornarSetor()
    {
-      return this.setor;
+      return setor;
    }//Fim do método que retorna o setor do objeto do tipo Funcionario;
     
-   public void alterarSetor(String alterarSetor)
+   public void alterarSetor(String setor)
    {   
-      this.setor=alterarSetor;
+      setor = setor;
    }//Fim do método que altera o setor do objeto do tipo Funcionario;
     
    public Date retornarDataAdmissão()
    {   
-      return this.dataAdmissao;
+      return dataAdmissao;
    }//Fim do método que retorna a data admissão do objeto do tipo Funcionario;
     
    public Acesso acessarContaAcesso()
    {  
-      return this.conta;
+      return conta;
    }//Fim do método que da acesso ao objeto do tipo Conta no objeto do tipo Funcionario;
    
 }//Fim da classe Funcionario;
