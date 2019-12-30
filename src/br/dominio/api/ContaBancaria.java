@@ -52,16 +52,6 @@ public abstract class ContaBancaria
       }
    }//Fim do método que retorna o saldo do objeto do tipo ContaBancaria;
    
-   public void aumentarSaldo(double novoValor)
-   {
-      this.saldo+=novoValor;
-   }//Fim do método que aumenta o saldo do objeto do tipo ContaBancaria;
-   
-   public void diminuirSaldo(double novoValor)
-   {
-      this.saldo-=novoValor;
-   }//Fim do método que diminui o saldo do objeto do tipo ContaBancaria
-   
    public CartaoDebito retornarCartaoDebito()
    {
       return this.cartaoDebito;

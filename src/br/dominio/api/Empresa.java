@@ -103,21 +103,11 @@ public abstract class Empresa
       return presidente;
    }//Fim do método que retorna o presidente do objeto do tipo Empresa;
     
-   public void alterarPresidente(Funcionario novoPresidente)
-   {      
-      presidente = novoPresidente;
-   }//Fim do método que altera o presidente do objeto do tipo Empresa;
-    
    public Funcionario retornarVicePresidente()
    {     
       return vicePresidente;
    }//Fim do método que retorna o vice presidente do objeto do tipo Empresa;
-    
-   public void alterarVicePresidente(Funcionario novoVicePresidente)
-   {     
-      vicePresidente = novoVicePresidente;
-   }//Fim do método que altera o vice presidente do objeto do tipo Empresa;
-    
+ 
    public Orcamento acessarOrcamento()
    {     
       return orcamento;

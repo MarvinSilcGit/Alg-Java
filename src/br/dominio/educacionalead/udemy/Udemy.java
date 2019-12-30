@@ -25,7 +25,7 @@ import br.dominio.api.Funcionario;
 
 import br.dominio.universidade.colegiado.Estudante;
 
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+//Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
 public class Udemy extends Empresa implements IValidaCertificados// ICadastraCertificadores

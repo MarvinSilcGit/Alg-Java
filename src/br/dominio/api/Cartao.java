@@ -69,11 +69,6 @@ public abstract class Cartao
       return this.senhaNumero;
    }//Fim do método que retorna a senha do objeto do tipo Cartao;
     
-   public void alterarSenhaNumero(int alterar)
-   { 
-      this.senhaNumero=alterar;
-   }//Fim do método que altera o objeto do tipo Cartao;
-    
    public String retornarNomeGravado()
    { 
       return this.nomeGravado;

@@ -32,9 +32,4 @@ public abstract class Conta
       return this.empresaPrestadora;
    }//Fim do método que retorna a empresa prestadora do objeto do tipo Conta;
    
-   public void alterarEmpresaPrestadora(Empresa novaEmpresa)
-   {
-      this.empresaPrestadora=novaEmpresa;
-   }//Fim do método que altera a empresa prestadora do objeto do tipo Conta;
-   
 }//Fim da classe Conta;

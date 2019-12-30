@@ -20,7 +20,31 @@ public class MainUdemy
    {
       Scanner scan = new Scanner(System.in);
       
+      String nome,
+              cpf,
+              login,
+              senha,
+              email;
       
+      System.out.println("Digite seu nome: ");
+      nome = scan.next();
+      
+      System.out.println("Digite seu cpf: ");
+      cpf = scan.next();
+      
+      System.out.println("Digite seu login: ");
+      login = scan.next();
+      
+      System.out.println("Digite sua senha: ");
+      senha = scan.next();
+      
+      System.out.println("Digite seu email: ");
+      email = scan.next();
+      
+      
+      Estudante estudante = new Estudante(nome, cpf, login, senha, email);
+      
+      System.out.println(estudante.retornarDados());
       
    }//Fim do método main;
    

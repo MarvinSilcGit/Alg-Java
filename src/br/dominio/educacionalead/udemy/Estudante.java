@@ -16,7 +16,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class CadastroEstudantes
+public class Estudante
 {
    private String cpf,
            nome,
@@ -28,12 +28,13 @@ public class CadastroEstudantes
    
    //Fim do campo de declaração de atributos;
    
-   public CadastroEstudantes()
+   
+   public Estudante()
    {
       
    }//Fim do método construtor padrão;
    
-   public CadastroEstudantes(String cpf, String nome, String login, String senha, String email, Date nascimento)
+   public Estudante(String cpf, String nome, String login, String senha, String email)
    {
       this.cpf = cpf;
       
@@ -44,8 +45,9 @@ public class CadastroEstudantes
       this.senha = senha;
       
       this.nascimento = nascimento;
+      
+      this.email = email;
    }//Fim do método construtor personalizado;
-   
    
    public String retornarNome()
    {
@@ -56,12 +58,12 @@ public class CadastroEstudantes
    {
       return cpf;
    }
-   
+
    public String retornarLogin()
    {
       return login;
    }
-   
+     
    public String retornarSenha()
    {
       return senha;
@@ -70,6 +72,11 @@ public class CadastroEstudantes
    public String retornarEmail()
    {
       return email;
+   }
+   
+   public String retornarDados()
+   {
+      return "Nome: " + nome + "; Cpf: " + cpf + "; Login: " + login + "; Senha: " + senha + "; Email: " + email;
    }
    
    public Date retornarDataNascimento()

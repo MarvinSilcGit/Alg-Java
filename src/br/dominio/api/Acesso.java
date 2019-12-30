@@ -31,16 +31,4 @@ public final class Acesso
       return this.senha+this.usuario;
    }//Fim do método que retorna a senha temporário do objeto do tipo Usuário;
    
-   public void alterarSenha(String alterar)
-   { 
-      if (alterar.length()<8)
-      {       
-         System.out.println("Senha muito pequena");
-      }
-      else
-      {      
-         this.senha=alterar;
-      }
-    }//Fim do método que altera a senha do objeto do tipo Acesso;
-   
 }//Fim da classe Acesso;
