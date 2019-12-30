@@ -28,11 +28,25 @@ import br.dominio.api.Telefone;
 
 import br.dominio.api.Funcionario;
 
+import br.dominio.educacionalead.udemy.Curso;
+
+import br.dominio.universidade.colegiado.Estudante;
+
+import java.util.ArrayList;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Alura extends Empresa //implements IValidaCertificados, ICadastraEmissor
+public class Alura extends Empresa
 {
+   private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
+   
+   private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
+   
+   private ArrayList <Curso> listaCursos = new ArrayList();
+   
+   //Fim do campo de declaração de atriabutos;
+   
    
    public Alura()
    {
@@ -46,11 +60,5 @@ public class Alura extends Empresa //implements IValidaCertificados, ICadastraEm
      //Fim do método super da classe mãe ou super classe Empresa;
    
    }//Fim do método construtor personalizado;
-   
- /*  @Override
-   Estudante retornarEstudante()
-   {
-      return 
-   }*/
    
 }//Fim da classe Alura;

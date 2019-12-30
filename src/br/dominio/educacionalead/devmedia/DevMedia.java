@@ -11,6 +11,8 @@ package br.dominio.educacionalead.devmedia;
  * @author belogo
  */
 
+import java.util.ArrayList;
+
 import br.dominio.universidade.IValidaCertificados;
 
 import br.dominio.api.Empresa;
@@ -21,11 +23,23 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
+import br.dominio.educacionalead.udemy.Curso;
+
+import br.dominio.universidade.colegiado.Estudante;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class DevMedia extends Empresa //implements IValidaCertificados
+public final class DevMedia extends Empresa
 {
+   private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
+   
+   private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
+   
+   private ArrayList <Curso> listaCursos = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
+   
    
    public DevMedia()
    {

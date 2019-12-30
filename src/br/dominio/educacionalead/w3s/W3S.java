@@ -11,6 +11,8 @@ package br.dominio.educacionalead.w3s;
  * @author belogo
  */
 
+import java.util.ArrayList;
+
 import br.dominio.api.Empresa;
 
 import br.dominio.api.Endereco;
@@ -19,11 +21,23 @@ import br.dominio.api.Telefone;
 
 import br.dominio.api.Funcionario;
 
+import br.dominio.universidade.colegiado.Estudante;
+
+import br.dominio.educacionalead.udemy.Curso;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public class W3S extends Empresa
-{
+{ 
+   private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
+   
+   private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
+   
+   private ArrayList <Curso> listaCursos = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
+   
    
    public W3S()
    {
