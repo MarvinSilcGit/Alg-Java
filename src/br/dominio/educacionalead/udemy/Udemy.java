@@ -11,7 +11,9 @@ package br.dominio.educacionalead.udemy;
  * @author belogo
  */
 
-//import br.dominio.universidade.IValidaCertificados;
+import java.util.ArrayList;
+
+import br.dominio.universidade.IValidaCertificados;
 
 import br.dominio.api.Empresa;
 
@@ -21,12 +23,20 @@ import br.dominio.api.Telefone;
 
 import br.dominio.api.Funcionario;
 
+import br.dominio.universidade.colegiado.Estudante;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Udemy extends Empresa // implements ICadastraEmissor IValidaCertificados
-{
+public class Udemy extends Empresa implements IValidaCertificados// ICadastraCertificadores
+{         
+   private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
    
+   private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
+   
+   //Fim do campo de declaração de atributos;
+   
+           
    public Udemy()
    {
       
@@ -39,5 +49,23 @@ public class Udemy extends Empresa // implements ICadastraEmissor IValidaCertifi
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado
+   
+   @Override
+   public String retornarCpfEstudante()
+   {
+      return "";
+   }
+   
+   @Override
+   public int retornarCargaHoraria()
+   {
+      return 1;
+   }
+   
+   @Override
+   public long retornarCodigoCertificado()
+   {
+      return 12;
+   }
    
 }//Fim da classe Udemy;
