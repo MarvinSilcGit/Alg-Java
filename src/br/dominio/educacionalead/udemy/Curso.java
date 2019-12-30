@@ -15,7 +15,7 @@ import br.dominio.universidade.colegiado.Professor;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public class Curso
+public final class Curso
 {
    private int cargaHoraria;
    

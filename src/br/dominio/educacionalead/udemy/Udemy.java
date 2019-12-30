@@ -28,7 +28,7 @@ import br.dominio.universidade.colegiado.Estudante;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public class Udemy extends Empresa// ICadastraCertificadores
+public final class Udemy extends Empresa// ICadastraCertificadores
 {         
    private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
    

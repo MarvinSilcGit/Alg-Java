@@ -16,7 +16,7 @@ import br.dominio.universidade.IValidaCertificados;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;s
 
 
-public class AutenticarCertificado implements IValidaCertificados
+public final class AutenticarCertificado implements IValidaCertificados
 {  
    private Certificado certificado;
    
@@ -27,23 +27,22 @@ public class AutenticarCertificado implements IValidaCertificados
       
    }//Fim do método construtor padrão;
    
-      
    @Override
    public String retornarCpfEstudante()
    {
       return certificado.retornarBeneficiario().retornarCpf();
-   }
+   }//Fim do método que retorna o cpf do objeto do tipo Estudante para a interface IValidaCertificados;
    
    @Override
    public int retornarCargaHoraria()
    {
-      return 1;
-   }
+      return certificado.retornarCargaHoraria();
+   }//Fim do método que retorna a carga Horária do objeto do tipo Certificado para a interface IValidaCertificados;
    
    @Override
    public long retornarCodigoCertificado()
    {
-      return 12;
-   }
+      return certificado.retornarCodigoCertificado();
+   }//Fim do método que retorna o codigo do objeto do tipo Certificado para a interface IValidadeCertifcados;
    
 }//Fim da classe AunteticarCertificado;

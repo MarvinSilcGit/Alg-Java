@@ -4,40 +4,38 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.educacionalead.devmedia;
+package br.dominio.educacionalead.w3s;
 
 /**
  *
  * @author belogo
  */
 
-import br.dominio.universidade.IValidaCertificados;
-
 import br.dominio.api.Empresa;
-
-import br.dominio.api.Funcionario;
 
 import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
+import br.dominio.api.Funcionario;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class DevMedia extends Empresa //implements IValidaCertificados
+public class W3S extends Empresa
 {
    
-   public DevMedia()
+   public W3S()
    {
       
    }//Fim do método construtor padrão;
    
-   public DevMedia(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public W3S(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
       super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
-   }//Fim do método construtror personalizado; 
+   }//Fim do método construtor personalizado;
    
-}//Fim da classe DevMedia;
+}//Fim da classe W3S;

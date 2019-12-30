@@ -9,7 +9,7 @@ package br.dominio.educacionalead.devmedia;
  *
  * @author belogo
  */
-public class MainDevMedia
+public final class MainDevMedia
 {
    
    public static void main(String [] args)

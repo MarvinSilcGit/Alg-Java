@@ -16,7 +16,7 @@ import br.dominio.api.Funcionario;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public class Certificado
+public final class Certificado
 {
    private long codigo;
    
