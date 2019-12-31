@@ -13,7 +13,7 @@ package br.dominio.educacionalead.udemy;
 
 import br.dominio.universidade.IValidaCertificados;
 
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;s
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
 public final class AutenticarCertificado implements IValidaCertificados
@@ -22,11 +22,6 @@ public final class AutenticarCertificado implements IValidaCertificados
    
    //Fim do campo de declaração de atributos;
    
-   
-   public AutenticarCertificado()
-   {
-      
-   }//Fim do método construtor padrão;
    
    @Override
    public String retornarCpfEstudante()

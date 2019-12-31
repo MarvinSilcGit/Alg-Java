@@ -18,7 +18,7 @@ import br.dominio.universidade.IValidaCertificados;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class AutenticarCertificado implements IValidaCertificados
+public final class AutenticarCertificado implements IValidaCertificados
 {
    private Certificado certificado;
    

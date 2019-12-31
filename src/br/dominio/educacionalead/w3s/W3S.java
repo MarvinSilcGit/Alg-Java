@@ -28,7 +28,7 @@ import br.dominio.educacionalead.udemy.Curso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class W3S extends Empresa
+public final class W3S extends Empresa
 { 
    private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
    

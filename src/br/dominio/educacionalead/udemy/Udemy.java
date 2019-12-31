@@ -13,8 +13,6 @@ package br.dominio.educacionalead.udemy;
 
 import java.util.ArrayList;
 
-import br.dominio.universidade.IValidaCertificados;
-
 import br.dominio.api.Empresa;
 
 import br.dominio.api.Endereco;

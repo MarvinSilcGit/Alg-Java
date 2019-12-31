@@ -3,12 +3,14 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.republicafederativa.estado;
 
 /**
  *
  * @author belogo
  */
+
 public final class MainEstado 
 {
    

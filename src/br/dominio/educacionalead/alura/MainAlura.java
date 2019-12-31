@@ -11,7 +11,7 @@ package br.dominio.educacionalead.alura;
  * @author belogo
  */
 
-public class MainAlura 
+public final class MainAlura 
 {
   
    public static void main(String[] args) 

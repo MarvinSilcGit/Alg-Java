@@ -26,7 +26,7 @@ public class Pais
   
    //Fim do campo de declaração de atributos;
     
-   
+   //Colocar interfaces para aumentar ou diminuir o tesouro;
    public Pais()
    {     
    

@@ -16,7 +16,7 @@ import java.util.Scanner;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public class MainUdemy 
+public final class MainUdemy 
 {
 
    public static void main (String [] args)

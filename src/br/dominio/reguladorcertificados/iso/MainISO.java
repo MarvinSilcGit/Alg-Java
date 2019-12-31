@@ -4,14 +4,14 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.montadora.moveis;
+package br.dominio.reguladorcertificados.iso;
 
 /**
  *
  * @author belogo
  */
 
-public class MainMontadoraMoveis 
+public class MainISO 
 {
    
    public static void main (String [] args)
@@ -19,4 +19,4 @@ public class MainMontadoraMoveis
       
    }//Fim do método main;
    
-}//Fim da classe MainMontadoraMoveis;
+}//Fim da classe MainISO;

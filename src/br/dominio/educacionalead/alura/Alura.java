@@ -11,13 +11,6 @@ package br.dominio.educacionalead.alura;
  * @author belogo
  */
 
-/*import br.dominio.universidade.IValidaCertificados;
-
-import br.dominio.emissorescertificados.ICadastraEmissor;
-
-import br.dominio.universidade.colegiado.Estudante;
-*/
-
 import br.dominio.api.Empresa;
 
 import br.dominio.empresa.departamento.Orcamento;
@@ -37,7 +30,7 @@ import java.util.ArrayList;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Alura extends Empresa
+public final class Alura extends Empresa
 {
    private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
    

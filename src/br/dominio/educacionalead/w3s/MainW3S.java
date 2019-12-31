@@ -11,7 +11,7 @@ package br.dominio.educacionalead.w3s;
  * @author belogo
  */
 
-public class MainW3S 
+public final class MainW3S 
 {
    
    public static void main (String [] args)

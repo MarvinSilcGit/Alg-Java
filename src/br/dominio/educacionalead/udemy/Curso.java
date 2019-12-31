@@ -3,6 +3,7 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.educacionalead.udemy;
 
 /**
@@ -38,6 +39,11 @@ public final class Curso
       
       this.professor = professor;
    }//Fim do método construtor personalizado;
+   
+   public int retornarCargaHoraria()
+   {
+      return cargaHoraria;
+   }//Fim do método que retorna a carga horária do objeto do tipo Curso;
    
    public String retornarNome()
    {

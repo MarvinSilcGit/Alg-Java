@@ -16,7 +16,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public class Estudante
+public final class Estudante
 {
    private String cpf,
            nome,
