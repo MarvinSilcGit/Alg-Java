@@ -22,6 +22,7 @@ public final class AutenticarCertificado implements IValidaCertificados
    
    //Fim do campo de declaração de atributos;
    
+   
    public AutenticarCertificado()
    {
       

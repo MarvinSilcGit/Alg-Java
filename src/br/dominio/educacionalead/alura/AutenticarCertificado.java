@@ -11,8 +11,36 @@ package br.dominio.educacionalead.alura;
  * @author belogo
  */
 
+import br.dominio.educacionalead.udemy.Certificado;
 
-public class AutenticarCertificado 
+import br.dominio.universidade.IValidaCertificados;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
+
+public class AutenticarCertificado implements IValidaCertificados
 {
+   private Certificado certificado;
+   
+   //Fim do campo de declaração de atributos;
+   
+   
+   @Override
+   public String retornarCpfEstudante()
+   {
+      return certificado.retornarBeneficiario().retornarCpf();
+   }//Fim do método que retorna o cpf do objeto do tipo Estudante para a interface IValidaCertificados;
+   
+   @Override
+   public int retornarCargaHoraria()
+   {
+      return certificado.retornarCargaHoraria();
+   }//Fim do método que retorna a carga Horária do objeto do tipo Certificado para a interface IValidaCertificados;
+   
+   @Override
+   public long retornarCodigoCertificado()
+   {
+      return certificado.retornarCodigoCertificado();
+   }//Fim do método que retorna o codigo do objeto do tipo Certificado para a interface IValidadeCertifcados;
    
 }//Fim da classe AutenticarCertificado;
