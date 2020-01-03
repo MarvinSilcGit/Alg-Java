@@ -23,13 +23,19 @@ public final class AutenticarCertificado implements IValidaCertificados
    private Certificado certificado;
    
    //Fim do campo de declaração de atributos;
-   
-   
+      
+    
    @Override
    public String retornarCpfEstudante()
    {
-      return certificado.retornarBeneficiario().retornarCpf();
-   }//Fim do método que retorna o cpf do objeto do tipo Estudante para a interface IValidaCertificados;
+      return certificado.retornarCpfBeneficiario();
+   }//Fim do método que retorna o cpf do beneficiário do objeto do tipo Certificado para a interface IValidaCertificados;
+   
+   @Override
+   public String retornarNomeEstudante()
+   {
+      return certificado.retornarNomeBeneficiario();
+   }//Fim do método que retorna o nome do beneficiário do objeto do tipo Certificado para a interface IValidaCertificados; 
    
    @Override
    public int retornarCargaHoraria()
@@ -41,6 +47,6 @@ public final class AutenticarCertificado implements IValidaCertificados
    public long retornarCodigoCertificado()
    {
       return certificado.retornarCodigoCertificado();
-   }//Fim do método que retorna o codigo do objeto do tipo Certificado para a interface IValidadeCertifcados;
+   }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados;
    
 }//Fim da classe AutenticarCertificado;

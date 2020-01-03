@@ -11,22 +11,16 @@ package br.dominio.educacionalead.udemy;
  * @author belogo
  */
 
-import br.dominio.api.Funcionario;
-
-//Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
-
-
 public final class Certificado
 {
    private long codigo;
    
-   private Funcionario responsavel;
+   private String cpfResponsavel,
+           cpfBeneficiario,
+           nomeBeneficiario,
+           nomeCurso;
    
    private int cargaHoraria;
-   
-   private Estudante beneficiario;
-   
-   private Curso nomeCurso;
    
    //Fim do campo de declaração de atributos;
    
@@ -36,17 +30,19 @@ public final class Certificado
       
    }//Fim do método construtor padrão;
    
-   public Certificado(long codigo, Funcionario responsavel, int cargaHoraria, Estudante beneficiario, Curso nomeCurso)
+   public Certificado(long codigo, String cpfResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
    {
       this.codigo = codigo;
       
-      this.responsavel = responsavel;
+      this.cpfResponsavel = cpfResponsavel;
       
-      this.cargaHoraria = cargaHoraria;
+      this.cpfBeneficiario = cpfBeneficiario;
       
-      this.beneficiario = beneficiario;
+      this.nomeBeneficiario = nomeBeneficiario;
       
       this.nomeCurso = nomeCurso;
+      
+      this.cargaHoraria = cargaHoraria;
    }//Fim do método construtor personalizado;
    
    public long retornarCodigoCertificado()
@@ -54,24 +50,29 @@ public final class Certificado
       return codigo;
    }//Fim do método que retorna o código do objeto do tipo Certificado;
    
-   public Funcionario retornarResponsavelCertificado()
+   public String retornarCpfResponsavelCertificado()
    {
-      return responsavel;
+      return cpfResponsavel;
    }//Fim do método que retorna o responável do objeto do tipo Certificado;
+   
+   public String retornarCpfBeneficiario()
+   {
+      return cpfBeneficiario;
+   }//Fim do método que retorna o cpf do beneficiário do objeto do tipo Certificado;
+   
+   public String retornarNomeBeneficiario()
+   {
+      return nomeBeneficiario;
+   }//Fim do método que retorna o nome do beneficiário do objeto do tipo Certificado;
+   
+   public String retornarNomeCurso()
+   {
+      return nomeCurso;
+   }//Fim do método que retorna o nome do objeto do tipo Curso do objeto do Tipo Certificado;
    
    public int retornarCargaHoraria()
    {
       return cargaHoraria;
    }//Fim do método que retorna a carga horária do objeto do tipo Certificado;
-   
-   public Estudante retornarBeneficiario()
-   {
-      return beneficiario;
-   }//Fim do método que retorna o beneficiário do objeto do tipo Certificado;
-   
-   public String retornarNomeCurso()
-   {
-      return nomeCurso.retornarNome();
-   }//Fim do método que retorna o nome do objeto do tipo Curso do objeto do Tipo Certificado;
     
 }//Fim da classe Certificado;
