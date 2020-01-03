@@ -14,4 +14,6 @@ package br.dominio.universidade;
 public interface IValidaCertificadores
 {
    
+   long retornarCodigoCertificador();
+   
 }//Fim da interface IValidaCertificadores;

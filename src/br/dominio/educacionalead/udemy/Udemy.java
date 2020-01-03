@@ -28,9 +28,9 @@ import br.dominio.universidade.colegiado.Estudante;
 
 public final class Udemy extends Empresa// ICadastraCertificadores
 {         
-   private ArrayList <Estudante> listaEstudantesCursando = new ArrayList();
+   private ArrayList <Estudante> listaAlunosCursando = new ArrayList();
    
-   private ArrayList <Estudante> listaEstudantesConcluintes = new ArrayList();
+   private ArrayList <Estudante> listaAlunosConcluintes = new ArrayList();
    
    private ArrayList <Curso> listaCursos = new ArrayList();
    
@@ -48,6 +48,11 @@ public final class Udemy extends Empresa// ICadastraCertificadores
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
-   }//Fim do método construtor personalizado
+   }//Fim do método construtor personalizado;
+   
+   public ArrayList retornarListaCursos()
+   {
+      return listaCursos;
+   }//Fim do método que retorna a lista de cursos do objeto do tipo Udemy;
    
 }//Fim da classe Udemy;

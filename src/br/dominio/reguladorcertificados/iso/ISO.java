@@ -11,8 +11,6 @@ package br.dominio.reguladorcertificados.iso;
  * @author belogo
  */
 
-import java.util.ArrayList;
-
 import br.dominio.api.Empresa;
 
 import br.dominio.api.Endereco;
@@ -27,10 +25,7 @@ import br.dominio.api.Funcionario;
 public class ISO extends Empresa
 {//colocar a lista de qualificados para a emissão de certificados;
    
-   private ArrayList listaEmisorresCertificados = new ArrayList();
-   
-   private ArrayList listaEmissoresCertificadosQualificados = new ArrayList();
-   
+  
    //Fim do campo de declaração de atributos;
    
    

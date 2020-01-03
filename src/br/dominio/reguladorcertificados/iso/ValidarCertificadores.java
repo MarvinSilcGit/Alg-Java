@@ -13,21 +13,16 @@ package br.dominio.reguladorcertificados.iso;
 
 import java.util.ArrayList;
 
-import br.dominio.api.Endereco;
-
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
-
-public interface ICadastraEmissorCertificado
-{
-   String retornarNomeFantasia();
+ 
+        
+public class ValidarCertificadores
+{  
+   private ArrayList listaEmissoresCertificadosQualificados = new ArrayList();
+ 
+   //Fim do campo de declaração de atributos;
    
-   ArrayList retornarListaCursos();
    
-   Endereco retornarEndereco();
    
-   Telefone retornarTelefone(); 
    
-}//Fim da interface ICdastrasEmissor;
+}//Fim da classe ValidarCertificadores;
