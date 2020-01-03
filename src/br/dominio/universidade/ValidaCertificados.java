@@ -19,11 +19,11 @@ import br.dominio.universidade.colegiado.Estudante;
 public final class ValidaCertificados 
 {  
 
-   private IValidaCertificados certificados;
+   private IAutenticaCertificado certificados;
    
    private Estudante dadosEstudante;
    
-   private IValidaCertificadores reguladorCertificadores;
+   private IAutenticaCertificacao reguladorCertificadores;
    
    //Fim do campo de declaração de atributos;
    

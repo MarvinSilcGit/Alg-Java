@@ -16,7 +16,7 @@ import br.dominio.universidade.colegiado.Estudante;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public interface IValidaCertificados 
+public interface IAutenticaCertificado 
 {  
    
    String retornarCpfEstudante();

@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.educacionalead.devmedia;
+package br.dominio.educacionalead.alura;
 
 /**
  *
@@ -13,19 +13,20 @@ package br.dominio.educacionalead.devmedia;
 
 import br.dominio.educacionalead.udemy.Certificado;
 
-import br.dominio.universidade.IValidaCertificados;
-
 import br.dominio.universidade.colegiado.Estudante;
+
+import br.dominio.universidade.IAutenticaCertificado;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class AutenticarCertificado implements IValidaCertificados
+public final class AutenticaCertificado implements IAutenticaCertificado
 {
    private Certificado certificado;
    
-   //Fim do campo de declaraçaõ de atributos;
-   
+   //Fim do campo de declaração de atributos;
+      
+    
    @Override
    public String retornarCpfEstudante()
    {
@@ -55,5 +56,4 @@ public final class AutenticarCertificado implements IValidaCertificados
    {
       return certificado.retornarCodigoCertificado();
    }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados;
-   
 }//Fim da classe AutenticarCertificado;
