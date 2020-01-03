@@ -16,7 +16,7 @@ import br.dominio.universidade.colegiado.Estudante;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java
 
 
-public class ValidaCertificados 
+public final class ValidaCertificados 
 {  
 
    private IValidaCertificados validarCertificados;
@@ -33,7 +33,7 @@ public class ValidaCertificados
    
    public void validarCertificados()
    {
-      if (this.validarCertificados.retornarCpfEstudante().equals(dadosEstudante.retornarCpf()))
+      if (this.validarCertificados.retornarCpfEstudante().equals(dadosEstudante.retornarCpf()) || this.validarCertificados.retornarNomeEstudante().equals(dadosEstudante.retornarNome()))
       {
        
       }

@@ -41,7 +41,7 @@ public final class AutenticarCertificado implements IValidaCertificados
    public Estudante retornarEstudante()
    {
       return certificado.retornarEstudante();
-   }
+   }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado para a interface IValidaCertificados;
    
    @Override
    public int retornarCargaHoraria()
@@ -53,6 +53,6 @@ public final class AutenticarCertificado implements IValidaCertificados
    public long retornarCodigoCertificado()
    {
       return certificado.retornarCodigoCertificado();
-   }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados
+   }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados;
    
 }//Fim da classe AunteticarCertificado;
