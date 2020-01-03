@@ -20,7 +20,7 @@ import br.dominio.api.Telefone;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public interface ICadastraCertificadores
+public interface ICadastraCertificador
 {
    String retornarNomeFantasia();
    

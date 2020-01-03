@@ -13,16 +13,14 @@ package br.dominio.educacionalead.udemy;
 
 import java.util.ArrayList;
 
-import br.dominio.reguladorcertificados.iso.ICadastraCertificadores;
-
 import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+import br.dominio.reguladorcertificados.iso.ICadastraCertificador;
 
 
-public final class AutenticaCertificacao implements ICadastraCertificadores
+public final class AutenticaCertificacao implements ICadastraCertificador
 {
    private Udemy dadosUdemy;
    
