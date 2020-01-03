@@ -19,9 +19,11 @@ import br.dominio.universidade.colegiado.Estudante;
 public final class ValidaCertificados 
 {  
 
-   private IValidaCertificados validarCertificados;
+   private IValidaCertificados certificados;
    
    private Estudante dadosEstudante;
+   
+   private IValidaCertificadores reguladorCertificadores;
    
    //Fim do campo de declaração de atributos;
    
@@ -33,7 +35,7 @@ public final class ValidaCertificados
    
    public void validarCertificados()
    {
-      if (this.validarCertificados.retornarCpfEstudante().equals(dadosEstudante.retornarCpf()) || this.validarCertificados.retornarNomeEstudante().equals(dadosEstudante.retornarNome()))
+      if (certificados.retornarCpfEstudante().equals(dadosEstudante.retornarCpf()) || certificados.retornarNomeEstudante().equals(dadosEstudante.retornarNome()))
       {
        
       }
