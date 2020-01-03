@@ -11,6 +11,10 @@ package br.dominio.educacionalead.udemy;
  * @author belogo
  */
 
+import br.dominio.universidade.colegiado.Estudante;
+
+
+
 public final class Certificado
 {
    private long codigo;
@@ -21,6 +25,8 @@ public final class Certificado
            nomeCurso;
    
    private int cargaHoraria;
+   
+   private Estudante estudante;
    
    //Fim do campo de declaração de atributos;
    
@@ -74,5 +80,10 @@ public final class Certificado
    {
       return cargaHoraria;
    }//Fim do método que retorna a carga horária do objeto do tipo Certificado;
+   
+   public Estudante retornarEstudante()
+   {
+      return estudante;
+   }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado;
     
 }//Fim da classe Certificado;

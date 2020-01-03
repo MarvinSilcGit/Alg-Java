@@ -16,7 +16,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public final class Estudante
+public final class Aluno
 {
    private String cpf,
            nome,
@@ -29,12 +29,12 @@ public final class Estudante
    //Fim do campo de declaração de atributos;
    
    
-   public Estudante()
+   public Aluno()
    {
       
    }//Fim do método construtor padrão;
    
-   public Estudante(String cpf, String nome, String login, String senha, String email)
+   public Aluno(String cpf, String nome, String login, String senha, String email)
    {
       this.cpf = cpf;
       

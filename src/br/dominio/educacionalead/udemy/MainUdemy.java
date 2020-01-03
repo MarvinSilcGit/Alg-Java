@@ -45,7 +45,7 @@ public final class MainUdemy
       email = scan.next();
       
       
-      Estudante estudante = new Estudante(nome, cpf, login, senha, email);
+      Aluno estudante = new Aluno(nome, cpf, login, senha, email);
       
       System.out.println(estudante.retornarDados());
       

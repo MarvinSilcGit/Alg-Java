@@ -13,6 +13,8 @@ package br.dominio.educacionalead.udemy;
 
 import br.dominio.universidade.IValidaCertificados;
 
+import br.dominio.universidade.colegiado.Estudante;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -34,6 +36,12 @@ public final class AutenticarCertificado implements IValidaCertificados
    {
       return certificado.retornarNomeBeneficiario();
    }//Fim do método que retorna o nome do beneficiário do objeto do tipo Certificado para a interface IValidaCertificados; 
+   
+   @Override 
+   public Estudante retornarEstudante()
+   {
+      return certificado.retornarEstudante();
+   }
    
    @Override
    public int retornarCargaHoraria()
