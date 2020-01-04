@@ -51,4 +51,10 @@ public final class AutenticaCertificacao implements ICadastraCertificador
       return dadosUdemy.acessarTelefone();
    }//Fim do método que retorna o objeto do tipo Telefone do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
+   @Override
+   public String retornarCnpj()
+   {
+      return dadosUdemy.retornarCnpj();
+   }//Fim do método que retorna o cnpj do objeto do tipo Udemy para a interface ICadastraCertificadores;
+   
 }//Fim da classe AutenticarCertificacao;

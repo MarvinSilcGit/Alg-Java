@@ -15,10 +15,12 @@ import java.util.Map;
 
 import br.dominio.api.Empresa;
 
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java; 
+import br.dominio.universidade.IAutenticaCertificador;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
      
 
-public final class ValidaCertificador
+public final class ValidaCertificador implements IAutenticaCertificador
 {  
    private Map <String, String> emissoresCertificados;
    
@@ -27,11 +29,20 @@ public final class ValidaCertificador
    //Fim do campo de declaração de atributos;
    
    
+   @Override
+   public String retornarCnpj()
+   {
+      return dadosEmpresa.retornarCnpj();
+   }//Fim do método que retorna o cnpj do objeto do tipo Empresa para a interface IAutenticaCertificador;
+   
+   public Map retornarEmissoresCertificados()
+   {
+      return emissoresCertificados;
+   }//Fim do método que retorna o mapa de emissores de certificado;  
+   
    public void adcionarCertificador()
    {
-      emissoresCertificados.put(dadosEmpresa.retornarNomeFantasia(), dadosEmpresa.retornarCnpj());
+      emissoresCertificados.put(dadosEmpresa.retornarCnpj(), dadosEmpresa.retornarNomeFantasia());
    }
-           
-   //Fim do campo de declaração de atributos;
    
 }//Fim da classe ValidarCertificadores;

@@ -18,9 +18,7 @@ import br.dominio.universidade.colegiado.Estudante;
 
 public final class Certificado
 {
-   private String codigoCertificado;
-   
-   private String cpfResponsavel,
+   private String codigoCertificado,
            cpfBeneficiario,
            nomeBeneficiario,
            nomeCurso;
@@ -29,7 +27,8 @@ public final class Certificado
    
    private Estudante estudante;
    
-   private Udemy codigoCertificacaoUdemy;
+   private Udemy cnpjResponsavel,
+           dadosUdemy;
    
    //Fim do campo de declaração de atributos;
    
@@ -39,11 +38,9 @@ public final class Certificado
       
    }//Fim do método construtor padrão;
    
-   public Certificado(String codigoCertificado, String cpfResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
+   public Certificado(String codigoCertificado, Udemy cnpjResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
    {
-      this.codigoCertificado = codigoCertificacaoUdemy.retornarCodigoCertificacao() + codigoCertificado;
-      
-      this.cpfResponsavel = cpfResponsavel;
+      this.codigoCertificado = dadosUdemy.retornarCodigoCertificacao() + codigoCertificado;
       
       this.cpfBeneficiario = cpfBeneficiario;
       
@@ -52,17 +49,14 @@ public final class Certificado
       this.nomeCurso = nomeCurso;
       
       this.cargaHoraria = cargaHoraria;
+   
+      this.cnpjResponsavel = cnpjResponsavel;
    }//Fim do método construtor personalizado;
    
    public String retornarCodigoCertificado()
    {
       return codigoCertificado;
    }//Fim do método que retorna o código do objeto do tipo Certificado;
-   
-   public String retornarCpfResponsavelCertificado()
-   {
-      return cpfResponsavel;
-   }//Fim do método que retorna o responável do objeto do tipo Certificado;
    
    public String retornarCpfBeneficiario()
    {
@@ -89,4 +83,9 @@ public final class Certificado
       return estudante;
    }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado;
     
+   public String retornarCnpjResponsavelCertificado()
+   {
+      return cnpjResponsavel.retornarCnpj();
+   }//Fim do método que retorna o responável do objeto do tipo Certificado;
+   
 }//Fim da classe Certificado;

@@ -19,10 +19,6 @@ import br.dominio.universidade.colegiado.Estudante;
 public interface IAutenticaCertificado 
 {  
    
-   String retornarCpfEstudante();
-   
-   String retornarNomeEstudante();
-   
    Estudante retornarEstudante();
    
    int retornarCargaHoraria();

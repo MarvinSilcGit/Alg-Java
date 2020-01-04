@@ -30,4 +30,6 @@ public interface ICadastraCertificador
    
    Telefone retornarTelefone();
    
+   String retornarCnpj();
+   
 }//Fim da interface ICdastrasEmissor;

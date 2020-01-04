@@ -27,18 +27,6 @@ public final class AutenticaCertificado implements IAutenticaCertificado
    //Fim do campo de declaração de atributos;
    
    
-   @Override
-   public String retornarCpfEstudante()
-   {
-      return certificado.retornarCpfBeneficiario();
-   }//Fim do método que retorna o cpf do beneficiário do objeto do tipo Certificado para a interface IValidaCertificados;
-   
-   @Override
-   public String retornarNomeEstudante()
-   {
-      return certificado.retornarNomeBeneficiario();
-   }//Fim do método que retorna o nome do beneficiário do objeto do tipo Certificado para a interface IValidaCertificados; 
-   
    @Override 
    public Estudante retornarEstudante()
    {

@@ -16,4 +16,4 @@ public interface IAutenticaCertificador
    
    String retornarCnpj();
    
-}//Fim da interface IValidaCertificadores;
+}//Fim da interface IValidaCertificador;
