@@ -13,11 +13,12 @@ package br.dominio.educacionalead.udemy;
 
 import br.dominio.universidade.colegiado.Estudante;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
 public final class Certificado
 {
-   private long codigo;
+   private String codigoCertificado;
    
    private String cpfResponsavel,
            cpfBeneficiario,
@@ -28,6 +29,8 @@ public final class Certificado
    
    private Estudante estudante;
    
+   private Udemy codigoCertificacaoUdemy;
+   
    //Fim do campo de declaração de atributos;
    
   
@@ -36,9 +39,9 @@ public final class Certificado
       
    }//Fim do método construtor padrão;
    
-   public Certificado(long codigo, String cpfResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
+   public Certificado(String codigoCertificado, String cpfResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
    {
-      this.codigo = codigo;
+      this.codigoCertificado = codigoCertificacaoUdemy.retornarCodigoCertificacao() + codigoCertificado;
       
       this.cpfResponsavel = cpfResponsavel;
       
@@ -51,9 +54,9 @@ public final class Certificado
       this.cargaHoraria = cargaHoraria;
    }//Fim do método construtor personalizado;
    
-   public long retornarCodigoCertificado()
+   public String retornarCodigoCertificado()
    {
-      return codigo;
+      return codigoCertificado;
    }//Fim do método que retorna o código do objeto do tipo Certificado;
    
    public String retornarCpfResponsavelCertificado()

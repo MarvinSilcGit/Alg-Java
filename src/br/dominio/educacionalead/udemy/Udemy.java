@@ -26,13 +26,15 @@ import br.dominio.universidade.colegiado.Estudante;
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
-public final class Udemy extends Empresa// ICadastraCertificadores
+public final class Udemy extends Empresa
 {         
    private ArrayList <Estudante> listaAlunosCursando = new ArrayList();
    
    private ArrayList <Estudante> listaAlunosConcluintes = new ArrayList();
    
    private ArrayList <Curso> listaCursos = new ArrayList();
+   
+   private String codigoCertificacao;
    
    //Fim do campo de declaração de atributos;
    
@@ -42,13 +44,19 @@ public final class Udemy extends Empresa// ICadastraCertificadores
       
    }//Fim do método construtor padrão;
    
-   public Udemy(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public Udemy(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, String codigoCertificacao)
    {
       super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
+      this.codigoCertificacao = codigoCertificacao;
    }//Fim do método construtor personalizado;
+   
+   public String retornarCodigoCertificacao()
+   {
+      return codigoCertificacao;
+   }//Fim do método que retorna o código de certificação do objeto do tipo Udemy;
    
    public ArrayList retornarListaCursos()
    {

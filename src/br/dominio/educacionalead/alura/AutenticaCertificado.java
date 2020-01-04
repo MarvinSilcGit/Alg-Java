@@ -52,7 +52,7 @@ public final class AutenticaCertificado implements IAutenticaCertificado
    }//Fim do método que retorna a carga Horária do objeto do tipo Certificado para a interface IValidaCertificados;
    
    @Override
-   public long retornarCodigoCertificado()
+   public String retornarCodigoCertificado()
    {
       return certificado.retornarCodigoCertificado();
    }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados;

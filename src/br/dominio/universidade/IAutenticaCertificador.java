@@ -11,9 +11,9 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-public interface IAutenticaCertificacao
+public interface IAutenticaCertificador
 {
    
-   long retornarCodigoCertificador();
+   String retornarCnpj();
    
 }//Fim da interface IValidaCertificadores;

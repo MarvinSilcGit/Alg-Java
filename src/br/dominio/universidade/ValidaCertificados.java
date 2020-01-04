@@ -23,7 +23,7 @@ public final class ValidaCertificados
    
    private Estudante dadosEstudante;
    
-   private IAutenticaCertificacao reguladorCertificadores;
+   private IAutenticaCertificador reguladorCertificadores;
    
    //Fim do campo de declaração de atributos;
    
