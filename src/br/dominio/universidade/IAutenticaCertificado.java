@@ -24,5 +24,7 @@ public interface IAutenticaCertificado
    int retornarCargaHoraria();
    
    String retornarCodigoCertificado();
+   
+   String retornarCategoriaCertificado();
 
 }//Fim da interface IValidaCertificados;

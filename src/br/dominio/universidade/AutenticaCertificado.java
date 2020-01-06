@@ -24,7 +24,7 @@ public final class AutenticaCertificado
    
    private Estudante estudante;
    
-   private Turma listaEstudante;
+   private Turma turma;
    
    //Fim do campo de declaração de atributos;
    
@@ -36,7 +36,7 @@ public final class AutenticaCertificado
    
    public boolean validarCertificado()
    {
-      if (listaEstudante.retornarListaEstudantesTurma().contains(estudante) || certificado.retornarEstudante().equals(estudante))
+      if (turma.retornarListaEstudantesTurma().contains(estudante) || certificado.retornarEstudante().equals(estudante))
       {
          return true;
       }

@@ -20,7 +20,7 @@ import java.util.Date;
 
 public final class Turma 
 {  
-   private ArrayList listaEstudantes = new ArrayList(20);
+   private ArrayList listaEstudantes = new ArrayList(30);
    
    private Date anoTurma;
    
@@ -61,14 +61,14 @@ public final class Turma
       return listaEstudantes;
    }//Fim do método que retorna a lista do objeto do tipo Turma;
    
-   public void inserirEstudanteTurma(Estudante novoEstudante)
+   public void inserirEstudanteTurma (Estudante novoEstudante)
    {
-      listaEstudantes.add(novoEstudante);
+      listaEstudantes.add (novoEstudante);
    }//Fim do método que insere um objeto do tipo Estudante na lista do objeto do tipo Turma;
    
-   public void removerEstudanteTurma(Estudante removerEstudante)
+   public void removerEstudanteTurma (Estudante removerEstudante)
    {
-      listaEstudantes.remove(removerEstudante);
+      listaEstudantes.remove (removerEstudante);
    }//Fim do método que remove um objeto do tipo Estudante da lista do objeto do tipo Turma;
    
 }//Fim da classe Turma;

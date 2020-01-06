@@ -30,7 +30,7 @@ public class Curso
    
    private ArrayList <Disciplina> listaDisciplinas = new ArrayList();
    
-   private ArrayList <Estudante> listaEstudantes = new ArrayList();
+   private ArrayList <Turma> listaTurmas = new ArrayList();
    
    //Fim do campo de declaração de atributos;
    
@@ -84,7 +84,7 @@ public class Curso
       return mensalidade;
    }//Fim do método que retorna a mensalidade para o objeto do tipo Curso;
    
-   public void alterarMensalidade(double alterarMensalidade)
+   public void alterarMensalidade (double alterarMensalidade)
    {
       mensalidade = alterarMensalidade;
    }//Fim do método que altera a mensalidade do objeto do tipo Curso;
@@ -94,7 +94,7 @@ public class Curso
       return coordenador;
    }//Fim do método que retorna o coordenador do objeto do tipo Curso;
    
-   public void alterarCoordenadorCurso(Funcionario novoCoordenador)
+   public void alterarCoordenadorCurso (Funcionario novoCoordenador)
    {
       coordenador = novoCoordenador;
    }//Fim do método que altera o coordenador do objeto do tipo Curso;
@@ -104,14 +104,14 @@ public class Curso
        return listaProfessores;
    }//Fim do método que retorna o objeto do tipo Professor da lista do objeto do tipo Cursoo;
     
-   public void inserirProfessorColegiado(Professor novoProfessor)
+   public void inserirProfessorColegiado (Professor novoProfessor)
    {    
-       listaProfessores.add(novoProfessor);
+       listaProfessores.add (novoProfessor);
    }//Fim do método que insere o objeto do tipo Professor na lista do objeto do tipo Curso;
     
-   public void removerProfessorColegiado(Professor removerProfessor)
+   public void removerProfessorColegiado (Professor removerProfessor)
    {   
-       listaProfessores.remove(removerProfessor);
+       listaProfessores.remove (removerProfessor);
    }//Fim do método que remove o objeto do tipo Professor da lista do objeto do tipo Curso; 
    
    public ArrayList retornarListaDisciplinasCurso()
@@ -119,27 +119,27 @@ public class Curso
       return listaDisciplinas;
    }//Fim do método que retorna o objeto do tipo Disciplina da lista do objeto do tipo Curso;
     
-   public void inserirDisciplinaCurso(Disciplina novaDisciplina)
+   public void inserirDisciplinaCurso (Disciplina novaDisciplina)
    {   
-      listaDisciplinas.add(novaDisciplina);
+      listaDisciplinas.add (novaDisciplina);
    }//Fim do método que insere o objeto do tipo Disciplina na lista do objeto do tipo Curso;
     
-   public void removerDisciplinaCurso(Disciplina removerDisciplina)
+   public void removerDisciplinaCurso (Disciplina removerDisciplina)
    {       
-      listaDisciplinas.remove(removerDisciplina);
+      listaDisciplinas.remove (removerDisciplina);
    }//Fim do método que remove o objeto do tipo Disciplina da lista do objeto do tipo Curso;
    
    public ArrayList retornarListaEstudantes()
    {
-      return listaEstudantes;
-   }//Fim do método que retorna objeto do tipo Estudante da lista do objeto do Curso;
+      return listaTurmas;
+   }//Fim do método que retorna objeto do tipo Turma da lista do objeto do Curso;
    
-   public void inserirEstudanteLista(Estudante novoEstudante)
+   public void inserirTurmaLista (Turma turma)
    {
-      listaEstudantes.add(novoEstudante);
-   }//Fim do método que insere estudante na lista do objeto do tipo Curso;
+      listaTurmas.add (turma);
+   }//Fim do método que insere o objeto do tipo Turma na lista do objeto do tipo Curso;
    
-   public void removerEstudanteLista(Estudante removerEstudante)
+   public void removerEstudanteLista (Estudante removerEstudante)
    {
       
    }//Fim do método que remove o objeto do tipo Estudante da lista do objeto do tipo Curso;

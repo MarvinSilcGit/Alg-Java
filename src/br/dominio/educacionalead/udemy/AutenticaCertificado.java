@@ -43,4 +43,10 @@ public final class AutenticaCertificado implements IAutenticaCertificado
       return certificado.retornarCodigoCertificado();
    }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados;
    
+   @Override
+   public String retornarCategoriaCertificado()
+   {
+      return "Ead";
+   }
+   
 }//Fim da classe AunteticarCertificado;
