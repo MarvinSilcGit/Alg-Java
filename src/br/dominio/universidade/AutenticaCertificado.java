@@ -17,7 +17,7 @@ import br.dominio.universidade.colegiado.Turma;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java
 
-//Falta inserir a carga horária para Estudante;
+
 public final class AutenticaCertificado
 {  
    private IAutenticaCertificado certificado;

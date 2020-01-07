@@ -11,30 +11,43 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-import br.dominio.reguladorcertificados.iso.ValidaCertificador;
+import java.util.ArrayList;
+
+import br.dominio.api.Empresa;
+import br.dominio.reguladorcertificados.iso.IAutenticaCertificador;
+
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+     
 
-
-public class AutenticaCertificador 
+public final class AutenticaCertificador implements IAutenticaCertificador
 {  
-   private IAutenticaCertificador autenticacao;
+   private ArrayList <String> listaEmissoresCertificados = new ArrayList();
    
-   private ValidaCertificador certificador;
+   private Empresa dadosEmpresa;
    
    //Fim do campo de declaração de atributos;
    
    
-   public boolean retornarValidadeAutenticacao()
+   @Override
+   public String retornarCnpj()
    {
-      if (certificador.retornarEmissoresCertificados().containsKey(autenticacao.retornarCnpj()))
-      {
-         return true;
-      }
-      else
-      {
-         return false;
-      }
-   }
+      return dadosEmpresa.retornarCnpj();
+   }//Fim do método que retorna o cnpj do objeto do tipo Empresa para a interface IAutenticaCertificador;
    
-}//Fim da classe AutenticaCertificador;
+   public ArrayList retornarEmissoresCertificados()
+   {
+      return listaEmissoresCertificados;
+   }//Fim do método que retorna o lista de emissores de certificado;  
+   
+   public void adcionarCertificador(String cnpj)
+   {
+      listaEmissoresCertificados.add (cnpj);
+   }//Fim do método que adiciona na lista um certificador do objeto do tipo;
+   
+   public void removerCertificador(String cnpj)
+   {
+      listaEmissoresCertificados.remove (cnpj);
+   }//Fim do método que remove da lista um certificador do objeto do tipo;
+   
+}//Fim da classe ValidarCertificadores;

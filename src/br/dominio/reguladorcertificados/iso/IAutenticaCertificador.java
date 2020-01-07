@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.universidade;
+package br.dominio.reguladorcertificados.iso;
 
 /**
  *
