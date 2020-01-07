@@ -18,7 +18,7 @@ import br.dominio.universidade.colegiado.Turma;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java
 
 //Falta inserir a carga horária para Estudante;
-public final class AutenticaCertificado 
+public final class AutenticaCertificado
 {  
    private IAutenticaCertificado certificado;
    
@@ -35,7 +35,7 @@ public final class AutenticaCertificado
    }//Fim do campo de decalração de atributos;
    
    public boolean validarCertificado()
-   {
+   {  
       if (turma.retornarListaEstudantesTurma().contains(estudante) || certificado.retornarEstudante().equals(estudante))
       {
          return true;

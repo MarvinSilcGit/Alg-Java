@@ -29,24 +29,24 @@ public final class AutenticaCertificado implements IAutenticaCertificado
    public Estudante retornarEstudante()
    {
       return certificado.retornarEstudante();
-   }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado para a interface IValidaCertificados;
+   }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado para a interface IValidaCertificado;
    
    @Override
    public int retornarCargaHoraria()
    {
       return certificado.retornarCargaHoraria();
-   }//Fim do método que retorna a carga Horária do objeto do tipo Certificado para a interface IValidaCertificados;
+   }//Fim do método que retorna a carga Horária do objeto do tipo Certificado para a interface IValidaCertificado;
    
    @Override
    public String retornarCodigoCertificado()
    {
       return certificado.retornarCodigoCertificado();
-   }//Fim do método que retorna o codigo do certificado do objeto do tipo Certificado para a interface IValidadeCertifcados;
+   }//Fim do método que retorna o codigo do objeto do tipo Certificado para a interface IValidadeCertifcado;
    
    @Override
    public String retornarCategoriaCertificado()
    {
       return "Ead";
-   }
+   }//Fim do método que retorna a categoria do objeto do tipo Certificado para a interface IValidaCertificado;
    
 }//Fim da classe AunteticarCertificado;

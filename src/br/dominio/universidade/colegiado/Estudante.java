@@ -38,8 +38,6 @@ public final class Estudante extends Pessoa
     
    private Acesso conta;
     
-   private ArrayList listaBoletins = new ArrayList();
-    
    private ArrayList disciplinasCursando = new ArrayList(6);
     
    private ArrayList disciplinasCursadas = new ArrayList(40);
@@ -157,7 +155,7 @@ public final class Estudante extends Pessoa
    public ArrayList RetornarListaCertificados()
    {
       return listaCertificados;
-   }
+   }//Fim do método que retorna a lista de certificados do objeto do tipo Estudante;
    
    public void adicionarCertificado (AutenticaCertificado novoCertificado)
    {
@@ -169,11 +167,11 @@ public final class Estudante extends Pessoa
       {
          System.out.println ("Certificado inválido");
       }
-   }
+   }//Fim do método que adciona um certificado na lista do objeto do tipo Estudante;
    
    public void removerCertificado (AutenticaCertificado certificado)
    {
       listaCertificados.remove (certificado);
-   }
+   }//Fim do método que remove um certificado da lista do objeto do tipo Estudante;
    
 }//Fim da classe Estudante;
