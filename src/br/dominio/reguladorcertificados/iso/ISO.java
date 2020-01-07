@@ -11,6 +11,8 @@ package br.dominio.reguladorcertificados.iso;
  * @author belogo
  */
 
+import java.util.ArrayList;
+
 import br.dominio.api.Empresa;
 
 import br.dominio.api.Endereco;
@@ -23,9 +25,11 @@ import br.dominio.api.Funcionario;
 
 
 public class ISO extends Empresa
-{//colocar a lista de qualificados para a emissão de certificados;
+{  
+   private ArrayList listaEmissoresCertificados = new ArrayList();
    
-  
+   private ICadastraCertificador autenticacao;
+     
    //Fim do campo de declaração de atributos;
    
    
@@ -41,5 +45,20 @@ public class ISO extends Empresa
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado;
+   
+   public ArrayList retornarEmissoresCertificados()
+   {
+      return listaEmissoresCertificados;
+   }//Fim do método que retorna o lista de emissores de certificado;  
+   
+   public void adcionarCertificador(String cnpj)
+   {
+      listaEmissoresCertificados.add (cnpj);
+   }//Fim do método que adiciona na lista um certificador do objeto do tipo;
+   
+   public void removerCertificador(String cnpj)
+   {
+      listaEmissoresCertificados.remove (cnpj);
+   }//Fim do método que remove da lista um certificador do objeto do tipo;
    
 }//Fim da classe ISO;

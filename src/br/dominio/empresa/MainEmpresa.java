@@ -3,7 +3,8 @@ package br.dominio.empresa;
 
 public final class MainEmpresa 
 {   
-    public static void main(String[] args) 
+   
+    public static void main (String [] args) 
     {
        
     }//Fim do método main;
