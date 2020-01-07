@@ -11,6 +11,8 @@ package br.dominio.educacionalead.udemy;
  * @author belogo
  */
 
+import br.dominio.api.Certificado;
+
 import br.dominio.universidade.colegiado.Estudante;
 
 import br.dominio.universidade.IAutenticaCertificado;

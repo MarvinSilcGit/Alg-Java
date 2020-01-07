@@ -15,6 +15,10 @@ import java.util.Date;
 
 import java.util.ArrayList;
 
+import java.util.HashMap;
+
+import java.util.Map;
+
 import br.dominio.api.Pessoa;
 
 import br.dominio.api.Endereco;
@@ -42,9 +46,9 @@ public final class Estudante extends Pessoa
     
    private ArrayList disciplinasCursadas = new ArrayList(40);
    
-   private ArrayList listaCertificados = new ArrayList();
+   private Map <String, Integer> certificados = new HashMap <String, Integer>();
    
-   private AutenticaCertificado certificado;
+   private AutenticaCertificado validacao;
    
    private Date anoMatricula;
     
@@ -124,7 +128,7 @@ public final class Estudante extends Pessoa
    {
       if(disciplinasCursadas.contains (novaDisciplina))
       {
-         System.out.println("Esta disciplina já foi cursada");
+         System.out.println ("Esta disciplina já foi cursada");
       }
       else
       {
@@ -152,26 +156,26 @@ public final class Estudante extends Pessoa
       disciplinasCursadas.remove (removerDisciplina);
    }//Fim do método que remove o objeto do tipo Disciplina da lista de disciplinas cursadas do objeto do tipo Estudante;
    
-   public ArrayList RetornarListaCertificados()
+   public Map RetornarListaCertificados()
    {
-      return listaCertificados;
+      return certificados;
    }//Fim do método que retorna a lista de certificados do objeto do tipo Estudante;
    
-   public void adicionarCertificado (AutenticaCertificado novoCertificado)
+   public void adicionarCertificado (String nomeCurso, int cargaHoraria)
    {
-      if (certificado.validarCertificado() == true)
+      if (validacao.validarCertificado() == true)
       {
-         listaCertificados.add (novoCertificado);
+         certificados.put (nomeCurso, cargaHoraria);
       }
       else
       {
          System.out.println ("Certificado inválido");
       }
-   }//Fim do método que adciona um certificado na lista do objeto do tipo Estudante;
+   }//Fim do método que adciona informações do certificado do HashMap do objeto do tipo Estudante;
    
-   public void removerCertificado (AutenticaCertificado certificado)
+   public void removerCertificado (String nomeCurso)
    {
-      listaCertificados.remove (certificado);
-   }//Fim do método que remove um certificado da lista do objeto do tipo Estudante;
+      certificados.remove (nomeCurso);
+   }//Fim do método que remove informações do certificado do HashMap do objeto do tipo Estudante;
    
 }//Fim da classe Estudante;

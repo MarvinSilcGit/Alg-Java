@@ -29,11 +29,6 @@ public final class AutenticaCertificado
    //Fim do campo de declaração de atributos;
    
    
-   public AutenticaCertificado()
-   {
-      
-   }//Fim do campo de decalração de atributos;
-   
    public boolean validarCertificado()
    {  
       if (turma.retornarListaEstudantesTurma().contains(estudante) || certificado.retornarEstudante().equals(estudante))
@@ -45,5 +40,5 @@ public final class AutenticaCertificado
          return false;
       }
    }
-
+   
 }//Fim da clasee ValidaCertificados;

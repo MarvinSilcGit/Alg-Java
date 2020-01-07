@@ -4,12 +4,14 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.educacionalead.udemy;
+package br.dominio.api;
 
 /**
  *
  * @author belogo
  */
+
+import br.dominio.educacionalead.udemy.Udemy;
 
 import br.dominio.universidade.colegiado.Estudante;
 

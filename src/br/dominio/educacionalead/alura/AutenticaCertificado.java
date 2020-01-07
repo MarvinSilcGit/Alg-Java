@@ -11,7 +11,7 @@ package br.dominio.educacionalead.alura;
  * @author belogo
  */
 
-import br.dominio.educacionalead.udemy.Certificado;
+import br.dominio.api.Certificado;
 
 import br.dominio.universidade.colegiado.Estudante;
 
