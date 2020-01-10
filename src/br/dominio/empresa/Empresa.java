@@ -4,7 +4,7 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Funcionario;
 
-import br.dominio.cadastroempresarial.ICadastroEmpresarial;
+import br.dominio.cadastropessoajuridica.ICadastroEmpresarial;
 
 import java.util.ArrayList;
 

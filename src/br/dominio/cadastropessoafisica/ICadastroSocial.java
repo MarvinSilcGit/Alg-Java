@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.api;
+package br.dominio.cadastropessoafisica;
 
 /**
  *
