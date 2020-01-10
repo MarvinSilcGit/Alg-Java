@@ -1,5 +1,7 @@
 package br.dominio.api;
 
+import br.dominio.empresa.Empresa;
+
 
 public abstract class Conta
 {  

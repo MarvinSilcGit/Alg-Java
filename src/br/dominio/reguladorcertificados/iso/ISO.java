@@ -13,7 +13,7 @@ package br.dominio.reguladorcertificados.iso;
 
 import java.util.ArrayList;
 
-import br.dominio.api.Empresa;
+import br.dominio.empresa.Empresa;
 
 import br.dominio.api.Endereco;
 
@@ -38,9 +38,9 @@ public class ISO extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public ISO(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
+   public ISO(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
    {
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
+      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

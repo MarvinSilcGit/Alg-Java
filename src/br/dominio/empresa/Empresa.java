@@ -1,35 +1,33 @@
-package br.dominio.api;
+package br.dominio.empresa;
 
+import br.dominio.api.Endereco;
+
+import br.dominio.api.Funcionario;
+
+import br.dominio.cadastroempresarial.ICadastroEmpresarial;
 
 import java.util.ArrayList;
 
 import br.dominio.empresa.departamento.Departamento;
 
-import br.dominio.empresa.departamento.Orcamento;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public abstract class Empresa
+public abstract class Empresa implements ICadastroEmpresarial
 {     
-   private String cnpj,         
-           razaoSocial,
+   private String razaoSocial,
            nomeFantasia;
  
    private Endereco endereco;
-    
-   private Telefone telefone;
-     
-   private ArrayList listaConselho = new ArrayList(20);
        
    private ArrayList listaDepartamentos = new ArrayList(10);
         
    private Funcionario presidente,
            vicePresidente;
-    
-   private Orcamento orcamento;
    
    private double capitalSocial;
+   
+   private IRecebeCnpj dadosCnpj;
    
    //Fim do campo de declaração de atributos;
     
@@ -39,32 +37,24 @@ public abstract class Empresa
    
    }//Fim do método construtor padrão;
      
-   public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, double capitalSocial)
-   {  
-      this.cnpj = cnpj;
-      
+   public Empresa(String razaoSocial, String nomeFantasia, Endereco endereco, double capitalSocial)
+   {    
       this.razaoSocial = razaoSocial;
         
       this.nomeFantasia = nomeFantasia;
         
       this.endereco = endereco;
-        
-      this.telefone = telefone;
       
       this.capitalSocial = capitalSocial;
    }//Fim do primeiro método construtor personalizado;    
    
-   public Empresa(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
-   {     
-      this.cnpj = cnpj;
-        
+   public Empresa(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   {           
       this.razaoSocial = razaoSocial;
         
       this.nomeFantasia = nomeFantasia;
         
       this.endereco = endereco;
-      
-      this.telefone = telefone;
       
       this.presidente = presidente;
             
@@ -72,66 +62,47 @@ public abstract class Empresa
       
       this.capitalSocial = capitalSocial;
    }//Fim do segundo método construtor personalizado;
-    
-   public String retornarCnpj()  
-   {     
-      return cnpj;
-   }//Fim do método que retorna o Cnpj do objeto do tipo Empresa;
-    
+   
+   @Override
    public String retornarRazaoSocial()
    {     
       return razaoSocial;
-   }//Fim do método que retorna razão social do objeto do tipo Empresa;
-    
+   }//Fim do método que retorna razão social do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   
+   @Override
    public String retornarNomeFantasia()
    {     
       return nomeFantasia;
-   }//Fim do método que retorna o nome fantasia do objeto do tipo Empresa;
+   }//Fim do método que retorna o nome fantasia do objeto do tipo Empresa para a interface ICadastroEmpresarial;
     
-   public Endereco acessarEndereco()
-   {     
-      return endereco;
-   }//Fim do método que dá acesso ao objeto do tipo Endereco no objeto do tipo Empresa;
-    
-   public Telefone acessarTelefone()
+   @Override
+   public Endereco retornarEndereco()
    {
-      return telefone;
-   }//Fim do método que dá acessa o objeto do tipo Telefone no objeto do tipo Empresa;
-    
+      return endereco;
+   }//Fim do método que retorna o objeto do tipo Endereco do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   
+   @Override
    public Funcionario retornarPresidente()
    {     
       return presidente;
-   }//Fim do método que retorna o presidente do objeto do tipo Empresa;
-    
+   }//Fim do método que retorna o presidente do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   
+   @Override
    public Funcionario retornarVicePresidente()
    {     
       return vicePresidente;
-   }//Fim do método que retorna o vice presidente do objeto do tipo Empresa;
- 
-   public Orcamento acessarOrcamento()
-   {     
-      return orcamento;
-   }//Fim do método que dá acesso ao objeto do tipo Orcamento do objeto do tipo Empresa;
-    
+   }//Fim do método que retorna o vice presidente do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   
+   @Override
    public double retornarCapitalSocial()
    {
       return capitalSocial;
-   }//Fim do método que retorna o capital social do objeto do tipo Empresa;
+   }//Fim do método que retorna o capital social do objeto do tipo Empresa para a interface ICadastroEmpresarial;
    
-   public ArrayList retornarListaConselheiros()
-   {     
-      return listaConselho;
-   }//Fim do método que retorna a lista do objeto do tipo Empresa;
-    
-   public void inserirConselheiroLista(Funcionario novoConselheiro)
-   {     
-      listaConselho.add(novoConselheiro);
-   }//Fim do método que insere conselheiro na lista do objeto do tipo Empresa;
-    
-   public void removerConselheiroLista(Funcionario removerConselheiro)
-   {     
-      listaConselho.remove(removerConselheiro);
-   }//Fim do método que remove conselheiro da lista do objeto do tipo Empresa;
+   public Long retornarCnpj()
+   {
+      return dadosCnpj.retornarCnpj();
+   }
         
    public ArrayList retornarListaDepartamentos()
    {     

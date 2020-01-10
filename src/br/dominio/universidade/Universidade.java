@@ -17,11 +17,9 @@ import br.dominio.api.Funcionario;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import java.util.ArrayList;
 
-import br.dominio.api.Empresa;
+import br.dominio.empresa.Empresa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -41,9 +39,9 @@ public final class Universidade extends Empresa
         
    }//Fim do método construtor padrão;
     
-   public Universidade(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, double capitalSocial, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
+   public Universidade(String razaoSocial, String nomeFantasia, Endereco endereco, double capitalSocial, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
    { 
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, capitalSocial);
+      super(razaoSocial, nomeFantasia, endereco, capitalSocial);
       
       //Fim do método Super da classe mãe ou superclasse Empresa, inicializando o primeiro método construtor personalizado;
         

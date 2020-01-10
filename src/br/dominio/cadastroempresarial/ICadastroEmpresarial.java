@@ -4,21 +4,22 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.api;
+package br.dominio.cadastroempresarial;
 
 /**
  *
  * @author belogo
  */
 
+import br.dominio.api.Endereco;
+
+import br.dominio.api.Funcionario;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 public interface ICadastroEmpresarial
 {    
    Endereco retornarEndereco();
-   
-   Telefone retornarTelefone();
    
    String retornarRazaoSocial();
    

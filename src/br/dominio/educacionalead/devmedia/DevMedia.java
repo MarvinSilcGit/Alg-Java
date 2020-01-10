@@ -13,13 +13,11 @@ package br.dominio.educacionalead.devmedia;
 
 import java.util.ArrayList;
 
-import br.dominio.api.Empresa;
+import br.dominio.empresa.Empresa;
 
 import br.dominio.api.Funcionario;
 
 import br.dominio.api.Endereco;
-
-import br.dominio.api.Telefone;
 
 import br.dominio.educacionalead.udemy.Curso;
 
@@ -44,9 +42,9 @@ public final class DevMedia extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public DevMedia(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public DevMedia(String razaoSocial, String nomeFantasia, Endereco endereco,Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
+      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

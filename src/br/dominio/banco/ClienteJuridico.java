@@ -7,11 +7,9 @@ import br.dominio.conta.ContaCorrente;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Empresa;
+import br.dominio.empresa.Empresa;
 
 import br.dominio.api.Funcionario;
-
-import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -30,9 +28,9 @@ public final class ClienteJuridico extends Empresa
    
    }//Fim do método construtor padrão;
     
-   public ClienteJuridico(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, ContaCorrente contaCorrente, Acesso conta)
+   public ClienteJuridico(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, ContaCorrente contaCorrente, Acesso conta)
    {      
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
+      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
         
       //Fim do método super da classe mãe ou super classe Empresa;
       

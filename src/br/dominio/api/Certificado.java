@@ -85,7 +85,7 @@ public final class Certificado
       return estudante;
    }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado;
     
-   public String retornarCnpjResponsavelCertificado()
+   public long retornarCnpjResponsavelCertificado()
    {
       return cnpjResponsavel.retornarCnpj();
    }//Fim do método que retorna o responável do objeto do tipo Certificado;
