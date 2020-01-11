@@ -15,8 +15,6 @@ import java.util.ArrayList;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -28,8 +26,8 @@ public interface ICadastraCertificador
    
    Endereco retornarEndereco();
    
-   Telefone retornarTelefone();
-   
    long retornarCnpj();
+   
+   long retornarTelefone();
    
 }//Fim da interface ICdastrasEmissor;

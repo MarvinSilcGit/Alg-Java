@@ -29,6 +29,8 @@ public abstract class Empresa implements ICadastroEmpresarial
    
    private IRecebeCnpj cnpj;
    
+   private IRecebeTelefone telefone;
+   
    //Fim do campo de declaração de atributos;
     
      
@@ -102,7 +104,12 @@ public abstract class Empresa implements ICadastroEmpresarial
    public Long retornarCnpj()
    {
       return cnpj.retornarCnpj();
-   }
+   }//Fim do método que retorna o cnpj do objeto do tipo Empresa;
+   
+   public long retornarTelefone()
+   {
+      return telefone.retornarTelefone();
+   }//Fim do método que retorna o telefone do objeto do tipo Empresa;
         
    public ArrayList retornarListaDepartamentos()
    {     
