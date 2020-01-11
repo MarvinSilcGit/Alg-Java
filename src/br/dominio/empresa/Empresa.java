@@ -27,7 +27,7 @@ public abstract class Empresa implements ICadastroEmpresarial
    
    private double capitalSocial;
    
-   private IRecebeCnpj dadosCnpj;
+   private IRecebeCnpj cnpj;
    
    //Fim do campo de declaração de atributos;
     
@@ -101,7 +101,7 @@ public abstract class Empresa implements ICadastroEmpresarial
    
    public Long retornarCnpj()
    {
-      return dadosCnpj.retornarCnpj();
+      return cnpj.retornarCnpj();
    }
         
    public ArrayList retornarListaDepartamentos()

@@ -14,4 +14,6 @@ package br.dominio.empresa;
 public interface IRecebeTelefone 
 {
    
+   long retornarTelefone();
+   
 }//Fim da interface IRecebeTelefone;

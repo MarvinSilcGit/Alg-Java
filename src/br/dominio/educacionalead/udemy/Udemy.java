@@ -13,11 +13,9 @@ package br.dominio.educacionalead.udemy;
 
 import java.util.ArrayList;
 
-import br.dominio.api.Empresa;
+import br.dominio.empresa.Empresa;
 
 import br.dominio.api.Endereco;
-
-import br.dominio.api.Telefone;
 
 import br.dominio.api.Funcionario;
 
@@ -44,9 +42,9 @@ public final class Udemy extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public Udemy(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, String codigoCertificacao)
+   public Udemy(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, String codigoCertificacao)
    {
-      super(cnpj, razaoSocial, nomeFantasia, endereco, telefone, presidente, vicePresidente, capitalSocial);
+      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

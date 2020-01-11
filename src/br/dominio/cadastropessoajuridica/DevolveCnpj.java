@@ -22,11 +22,11 @@ import br.dominio.empresa.IRecebeCnpj;
 
 public class DevolveCnpj implements IRecebeCnpj
 {
-   private Random contador;
+   private Random random;
    
    private long cnpj;
    
-   private boolean senti;
+   private static final boolean sentinela = true;
    
    private ArrayList listaCnpj = new ArrayList();
 
@@ -35,12 +35,10 @@ public class DevolveCnpj implements IRecebeCnpj
    
    @Override
    public long retornarCnpj()
-   {
-      senti = true;
-      
-      while (senti == true)
+   {  
+      while (sentinela == true)
       {
-         cnpj = contador.nextLong();
+         cnpj = random.nextLong();
       
          if (listaCnpj.contains(cnpj) == false)
          { 
@@ -49,7 +47,6 @@ public class DevolveCnpj implements IRecebeCnpj
             return cnpj;
          }  
       }
-      return 0;
      
    }//Fim do método que retorna o cnpj para a interface IRecebeCnpj;
    
