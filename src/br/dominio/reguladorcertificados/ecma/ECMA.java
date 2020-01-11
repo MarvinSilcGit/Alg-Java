@@ -22,7 +22,7 @@ import br.dominio.empresa.Empresa;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
         
-public class ECMA extends Empresa
+public final class ECMA extends Empresa
 {  
    private ArrayList listaEmissoresCertificadosQualificados = new ArrayList();
    

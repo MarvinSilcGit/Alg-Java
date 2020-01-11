@@ -4,14 +4,14 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.montadora.moveis;
+package br.dominio.cadastropessoafisica;
 
 /**
  *
  * @author belogo
  */
 
-public final class MainMontadoraMoveis 
+public class MainCadastroPessoaFisica
 {
    
    public static void main (String [] args)
@@ -19,4 +19,4 @@ public final class MainMontadoraMoveis
       
    }//Fim do método main;
    
-}//Fim da classe MainMontadoraMoveis;
+}//Fim da classe MainCadastroPessoaFisica;

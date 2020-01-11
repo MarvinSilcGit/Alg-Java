@@ -11,7 +11,7 @@ package br.dominio.reguladorcertificados.ecma;
  * @author belogo
  */
 
-public class MainECMA
+public final class MainECMA
 {
    
    public static void main (String [] args)

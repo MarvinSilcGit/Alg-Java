@@ -11,7 +11,12 @@ package br.dominio.cadastropessoajuridica;
  * @author belogo
  */
 
-public class MainCadastroEmpresarial 
+public final class MainCadastroEmpresarial 
 {
+   
+   public static void main (String [] args)
+   {
+      
+   }//Fim do método main;
    
 }//Fim da classe MainCadastroEmpresarial;

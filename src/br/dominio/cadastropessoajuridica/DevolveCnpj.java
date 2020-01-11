@@ -20,7 +20,7 @@ import br.dominio.empresa.IRecebeCnpj;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class DevolveCnpj implements IRecebeCnpj
+public final class DevolveCnpj implements IRecebeCnpj
 {
    private Random random;
    
@@ -40,9 +40,9 @@ public class DevolveCnpj implements IRecebeCnpj
       {
          cnpj = random.nextLong();
       
-         if (listaCnpj.contains(cnpj) == false)
+         if (listaCnpj.contains (cnpj) == false)
          { 
-            listaCnpj.add(cnpj);
+            listaCnpj.add (cnpj);
          
             return cnpj;
          }  

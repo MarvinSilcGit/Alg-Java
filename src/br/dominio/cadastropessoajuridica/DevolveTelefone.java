@@ -20,7 +20,7 @@ import br.dominio.empresa.IRecebeTelefone;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class DevolveTelefone implements IRecebeTelefone
+public final class DevolveTelefone implements IRecebeTelefone
 {
    private long telefone;
    
@@ -40,9 +40,9 @@ public class DevolveTelefone implements IRecebeTelefone
       {
          telefone = random.nextLong();
          
-         if (listaTelefones.contains(telefone) == false)
+         if (listaTelefones.contains (telefone) == false)
          {
-            listaTelefones.add(telefone);
+            listaTelefones.add (telefone);
             
             return telefone;
          }        
