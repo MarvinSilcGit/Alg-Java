@@ -50,9 +50,4 @@ public class DevolveCnpj implements IRecebeCnpj
      
    }//Fim do método que retorna o cnpj para a interface IRecebeCnpj;
    
-   public ArrayList retornarListaCnpj()
-   {
-      return listaCnpj;
-   }//Fim do método que retorna a lista de cnpj do objeto do tipo DevolveCnpj;
-   
 }//Fim da classe DevolveCnpj;
