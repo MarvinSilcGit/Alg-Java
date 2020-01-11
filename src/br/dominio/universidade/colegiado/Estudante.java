@@ -27,8 +27,6 @@ import br.dominio.api.Telefone;
 
 import br.dominio.api.Acesso;
 
-import br.dominio.universidade.AutenticaCertificado;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -47,8 +45,6 @@ public final class Estudante extends Pessoa
    private ArrayList disciplinasCursadas = new ArrayList(40);
    
    private Map <String, Integer> certificados = new HashMap <String, Integer>();
-   
-   private AutenticaCertificado validacao;
    
    private Date anoMatricula;
     
@@ -160,18 +156,6 @@ public final class Estudante extends Pessoa
    {
       return certificados;
    }//Fim do método que retorna a lista de certificados do objeto do tipo Estudante;
-   
-   public void adicionarCertificado (String nomeCurso, int cargaHoraria)
-   {
-      if (validacao.validarCertificado() == true)
-      {
-         certificados.put (nomeCurso, cargaHoraria);
-      }
-      else
-      {
-         System.out.println ("Certificado inválido");
-      }
-   }//Fim do método que adciona informações do certificado do HashMap do objeto do tipo Estudante;
    
    public void removerCertificado (String nomeCurso)
    {

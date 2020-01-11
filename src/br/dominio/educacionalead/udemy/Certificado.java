@@ -11,6 +11,13 @@ package br.dominio.educacionalead.udemy;
  * @author belogo
  */
 
+import java.util.Random;
+
+import java.util.ArrayList;
+
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
+
 public final class Certificado
 {
    private String cpfBeneficiario,
@@ -20,6 +27,14 @@ public final class Certificado
    private int cargaHoraria;
    
    private Udemy dadosUdemy;
+   
+   private long codigoCertificado;
+   
+   private Random random;
+   
+   private static final boolean sentinela = true;
+   
+   private ArrayList listaCodigosCertificado = new ArrayList();
    
    //Fim do campo de declaração de atributos;
    
@@ -69,5 +84,25 @@ public final class Certificado
    {
       return dadosUdemy.retornarCodigoCertificador();
    }//Fim do método que retorna o código de certificador do objeto do tipo Udemy;
+   
+   private long calcularCodigoCertificado()
+   {
+      while (sentinela == true)
+      {
+         codigoCertificado = random.nextLong();
+         
+         if (listaCodigosCertificado.contains (codigoCertificado) == false)
+         {
+            listaCodigosCertificado.add (codigoCertificado);
+            
+            return codigoCertificado;
+         }
+      }
+   }//Fim do método que calcula o código do objeto do tipo Certificado;
+   
+   public long retornarCodigoCertificado()
+   {
+      return this.calcularCodigoCertificado();
+   }//Fim do método que retorna o código do objeto do tipo Certificado;
    
 }//Fim da classe Certificado;
