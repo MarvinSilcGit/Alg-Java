@@ -22,6 +22,8 @@ public final class DevolveValidadeCertificador implements IRecebeValidacao
    
    private ISO iso;
    
+   //Fim do campo de declaração de atributos;
+   
    
    @Override
    public boolean retornarValidadeCertificador()
