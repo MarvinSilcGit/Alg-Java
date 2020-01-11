@@ -20,8 +20,7 @@ import br.dominio.reguladorcertificados.iso.IValidaCertificador;
 
 public final class ValidaCertificado implements IValidaCertificador
 {
-   private long codigoCertificador,
-           codigoCertificado;
+   private long codigoCertificador;
    
    private Scanner input;
    
