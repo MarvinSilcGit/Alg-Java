@@ -22,7 +22,7 @@ import br.dominio.api.Funcionario;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ISO extends Empresa
+public final class ISO extends Empresa
 {  
    private ArrayList listaEmissoresCertificados = new ArrayList();
    
@@ -44,19 +44,19 @@ public class ISO extends Empresa
       
    }//Fim do método construtor personalizado;
    
-   public ArrayList retornarEmissoresCertificados()
+   public ArrayList retornarListEmissoresCertificados()
    {
       return listaEmissoresCertificados;
-   }//Fim do método que retorna o lista de emissores de certificado;  
+   }//Fim do método que retorna o lista de emissores de certificado do objeto do tipo ISO;  
    
-   public void adcionarCertificador(String cnpj)
+   public void adcionarEmissorCertificados(long codigoCertificador)
    {
-      listaEmissoresCertificados.add (cnpj);
-   }//Fim do método que adiciona na lista um certificador do objeto do tipo;
+      listaEmissoresCertificados.add (codigoCertificador);
+   }//Fim do método que adiciona na lista um certificador do objeto do tipo ISO;
    
-   public void removerCertificador(String cnpj)
+   public void removerEmissorCertificador(long codigoCertificador)
    {
-      listaEmissoresCertificados.remove (cnpj);
-   }//Fim do método que remove da lista um certificador do objeto do tipo;
+      listaEmissoresCertificados.remove (codigoCertificador);
+   }//Fim do método que remove da lista um certificador do objeto do tipo ISO;
    
 }//Fim da classe ISO;

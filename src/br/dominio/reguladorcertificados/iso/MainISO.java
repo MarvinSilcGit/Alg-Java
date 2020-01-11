@@ -11,7 +11,7 @@ package br.dominio.reguladorcertificados.iso;
  * @author belogo
  */
 
-public class MainISO 
+public final class MainISO 
 {
    
    public static void main (String [] args)

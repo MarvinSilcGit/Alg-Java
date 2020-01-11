@@ -18,7 +18,7 @@ import br.dominio.reguladorcertificados.iso.IValidaCertificador;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ValidaCertificado implements IValidaCertificador
+public final class ValidaCertificado implements IValidaCertificador
 {
    private long codigoCertificador,
            codigoCertificado;
@@ -30,12 +30,10 @@ public class ValidaCertificado implements IValidaCertificador
    
    @Override
    public long retornarCodigoCertificador()
-   {
-       System.out.println("Digite o código do certificador: ");
+   { 
+      System.out.println("Digite o código do certificador: ");
          
-       codigoCertificador = input.nextLong();
-       
-       return codigoCertificador;
+      return codigoCertificador = input.nextLong();
    }//Fim do método que retorna o código do certificador para a interface IValidaCertificador;
       
 }//Fim da classe ValidaCertificado;

@@ -20,17 +20,20 @@ import br.dominio.educacionalead.udemy.IRecebeCodigoCertificador;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class DevolveCodigoCertificador implements IRecebeCodigoCertificador
+public final class DevolveCodigoCertificador implements IRecebeCodigoCertificador
 {  
    private static final boolean sentinela = true;
    
-   private ArrayList listaCodigosCertificadores = new ArrayList ();
+   private ArrayList listaCodigosCertificadores = new ArrayList();
    
    private Random random;
    
    private long codigoCertificador;
    
+   private ISO iso;
+   
    //Fim do campo de declaração de atributos;
+   
    
    @Override
    public long retornarCodigoCertificador()
@@ -39,9 +42,11 @@ public class DevolveCodigoCertificador implements IRecebeCodigoCertificador
       
       while (sentinela == true)
       {
-         if (listaCodigosCertificadores.contains(codigoCertificador) == false)
+         if (listaCodigosCertificadores.contains (codigoCertificador) == false)
          {
-            listaCodigosCertificadores.add(codigoCertificador);
+            listaCodigosCertificadores.add (codigoCertificador);
+            
+            iso.adcionarEmissorCertificados(codigoCertificador);
             
             return codigoCertificador;
          }
