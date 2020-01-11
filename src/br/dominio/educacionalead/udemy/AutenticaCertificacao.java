@@ -15,8 +15,6 @@ import java.util.ArrayList;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.reguladorcertificados.iso.ICadastraCertificador;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -44,19 +42,19 @@ public final class AutenticaCertificacao implements ICadastraCertificador
    @Override
    public Endereco retornarEndereco()
    {
-      return udemy.acessarEndereco();
+      return udemy.retornarEndereco();
    }//Fim do método que retorna o objeto do tipo Endereco do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
    @Override
-   public Telefone retornarTelefone()
-   {
-      return udemy.acessarTelefone();
-   }//Fim do método que retorna o objeto do tipo Telefone do objeto do tipo Udemy para a interface ICadastraCertificadores;
-   
-   @Override
-   public String retornarCnpj()
+   public long retornarCnpj()
    {
       return udemy.retornarCnpj();
    }//Fim do método que retorna o cnpj do objeto do tipo Udemy para a interface ICadastraCertificadores;
+   
+   @Override
+   public long retornarTelefone()
+   {
+      return udemy.retornarTelefone();
+   }//Fim do métod que retorna o telefoen do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
 }//Fim da classe AutenticarCertificacao;

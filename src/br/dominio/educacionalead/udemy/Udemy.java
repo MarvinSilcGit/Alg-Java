@@ -32,7 +32,7 @@ public final class Udemy extends Empresa
    
    private ArrayList <Curso> listaCursos = new ArrayList();
    
-   private String codigoCertificacao;
+   private IRecebeCodigoCertificador codigoCertificador;
    
    //Fim do campo de declaração de atributos;
    
@@ -42,23 +42,22 @@ public final class Udemy extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public Udemy(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, String codigoCertificacao)
+   public Udemy(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
       super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
-      this.codigoCertificacao = codigoCertificacao;
    }//Fim do método construtor personalizado;
-   
-   public String retornarCodigoCertificacao()
-   {
-      return codigoCertificacao;
-   }//Fim do método que retorna o código de certificação do objeto do tipo Udemy;
    
    public ArrayList retornarListaCursos()
    {
       return listaCursos;
    }//Fim do método que retorna a lista de cursos do objeto do tipo Udemy;
+   
+   public long retornarCodigoCertificador()
+   {
+      return codigoCertificador.retornarCodigoCertificador();
+   }//Fim do método que retorna o código certificador do objeto do tipo Udemy;
    
 }//Fim da classe Udemy;

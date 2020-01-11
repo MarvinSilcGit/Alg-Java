@@ -11,21 +11,13 @@ package br.dominio.educacionalead.udemy;
  * @author belogo
  */
 
-import br.dominio.universidade.colegiado.Estudante;
-
-//Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
-
-
 public final class Certificado
 {
-   private String codigoCertificado,
-           cpfBeneficiario,
+   private String cpfBeneficiario,
            nomeBeneficiario,
            nomeCurso;
    
    private int cargaHoraria;
-   
-   private Estudante estudante;
    
    private Udemy dadosUdemy;
    
@@ -37,10 +29,8 @@ public final class Certificado
       
    }//Fim do método construtor padrão;
    
-   public Certificado(String codigoCertificado, Udemy cnpjResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
+   public Certificado(Udemy cnpjResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
    {
-      this.codigoCertificado = dadosUdemy.retornarCodigoCertificacao() + codigoCertificado;
-      
       this.cpfBeneficiario = cpfBeneficiario;
       
       this.nomeBeneficiario = nomeBeneficiario;
@@ -49,11 +39,6 @@ public final class Certificado
       
       this.cargaHoraria = cargaHoraria;
    }//Fim do método construtor personalizado;
-   
-   public String retornarCodigoCertificado()
-   {
-      return codigoCertificado;
-   }//Fim do método que retorna o código do objeto do tipo Certificado;
    
    public String retornarCpfBeneficiario()
    {
@@ -74,15 +59,15 @@ public final class Certificado
    {
       return cargaHoraria;
    }//Fim do método que retorna a carga horária do objeto do tipo Certificado;
-   
-   public Estudante retornarEstudante()
-   {
-      return estudante;
-   }//Fim do método que retorna o objeto do tipo Estudante do objeto do tipo Certificado;
     
    public long retornarCnpjResponsavelCertificado()
    {
       return dadosUdemy.retornarCnpj();
-   }//Fim do método que retorna o responável do objeto do tipo Certificado;
+   }//Fim do método que retorna o responável do objeto do tipo Udemy;
+
+   public long retornarCodigoCertificador()
+   {
+      return dadosUdemy.retornarCodigoCertificador();
+   }//Fim do método que retorna o código de certificador do objeto do tipo Udemy;
    
 }//Fim da classe Certificado;
