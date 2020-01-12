@@ -26,8 +26,6 @@ public final class Colegiado
         
    private ArrayList <SalaAula> listaSalasAula = new ArrayList();
    
-   private ArrayList <Turma> listaTurmas = new ArrayList();
-   
    private ArrayList <Curso> listaCursos = new ArrayList();
    
    //Fim do campo de declaração de atributos;
@@ -83,21 +81,6 @@ public final class Colegiado
    {   
       listaSalasAula.remove (removerSala);     
    }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Colegiado;
-    
-   public ArrayList retornarListaTurmas()
-   {
-      return listaTurmas;
-   }//Fim do método que retorna a lista de objetos do tipo Turma da lista do objeto do tipo Colegiado;
-   
-   public void inserirTurmaLista(Turma novaTurma)
-   {
-      listaTurmas.add (novaTurma);
-   }//Fim do método que insere um objeto do tipo Turma na lista do objeto do tipo Colegiado
-   
-   public void removerTurmaLista(Turma TurmaEscolhida)
-   {
-      listaTurmas.remove (TurmaEscolhida);
-   }//Fim do método que remove um objeto do tipo Turma da lista do objeto do tipo Colegiado;
    
    public ArrayList retornarListaCursos()
    {

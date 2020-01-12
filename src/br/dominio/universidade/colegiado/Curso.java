@@ -67,11 +67,13 @@ public class Curso
       
    }//Fim do método construtor padrão;
    
-   public Curso(String nome, double mensalidade)
+   public Curso(String nome, double mensalidade, Funcionario coordenador)
    {
       this.nome = nome;
       
       this.mensalidade = mensalidade;
+      
+      this.coordenador = coordenador;
    }//Fim do método construtor personalizado;
    
    public String retornarNome()
@@ -109,9 +111,9 @@ public class Curso
        listaProfessores.add (novoProfessor);
    }//Fim do método que insere o objeto do tipo Professor na lista do objeto do tipo Curso;
     
-   public void removerProfessorColegiado (Professor removerProfessor)
+   public void removerProfessorColegiado (Professor professor)
    {   
-       listaProfessores.remove (removerProfessor);
+       listaProfessores.remove (professor);
    }//Fim do método que remove o objeto do tipo Professor da lista do objeto do tipo Curso; 
    
    public ArrayList retornarListaDisciplinasCurso()
@@ -124,24 +126,23 @@ public class Curso
       listaDisciplinas.add (novaDisciplina);
    }//Fim do método que insere o objeto do tipo Disciplina na lista do objeto do tipo Curso;
     
-   public void removerDisciplinaCurso (Disciplina removerDisciplina)
+   public void removerDisciplinaCurso (Disciplina disciplina)
    {       
-      listaDisciplinas.remove (removerDisciplina);
+      listaDisciplinas.remove (disciplina);
    }//Fim do método que remove o objeto do tipo Disciplina da lista do objeto do tipo Curso;
    
-   public ArrayList retornarListaEstudantes()
+   public ArrayList retornarListaTurmas()
    {
       return listaTurmas;
-   }//Fim do método que retorna objeto do tipo Turma da lista do objeto do Curso;
+   }//Fim do método que retorna a lista de objetos do tipo Turma da lista do objeto do tipo Curso;
    
-   public void inserirTurmaLista (Turma turma)
+   public void inserirTurmaLista(Turma novaTurma)
    {
-      listaTurmas.add (turma);
-   }//Fim do método que insere o objeto do tipo Turma na lista do objeto do tipo Curso;
+      listaTurmas.add (novaTurma);
+   }//Fim do método que insere um objeto do tipo Turma na lista do objeto do tipo Curso;
    
-   public void removerEstudanteLista (Estudante removerEstudante)
+   public void removerTurmaLista(Turma turma)
    {
-      
-   }//Fim do método que remove o objeto do tipo Estudante da lista do objeto do tipo Curso;
-   
+      listaTurmas.remove (turma);
+   }//Fim do método que remove um objeto do tipo Turma da lista do objeto do tipo Curso;
 }//Fim da classe Curso;
