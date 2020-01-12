@@ -106,27 +106,27 @@ public class Curso
        return listaProfessores;
    }//Fim do método que retorna o objeto do tipo Professor da lista do objeto do tipo Cursoo;
     
-   public void inserirProfessorColegiado (Professor novoProfessor)
+   public void inserirProfessorCurso (Professor novoProfessor)
    {    
        listaProfessores.add (novoProfessor);
    }//Fim do método que insere o objeto do tipo Professor na lista do objeto do tipo Curso;
     
-   public void removerProfessorColegiado (Professor professor)
+   public void removerProfessorCurso (Professor professor)
    {   
        listaProfessores.remove (professor);
    }//Fim do método que remove o objeto do tipo Professor da lista do objeto do tipo Curso; 
    
-   public ArrayList retornarListaDisciplinasCurso()
+   public ArrayList retornarListaDisciplinas()
    {   
       return listaDisciplinas;
    }//Fim do método que retorna o objeto do tipo Disciplina da lista do objeto do tipo Curso;
     
-   public void inserirDisciplinaCurso (Disciplina novaDisciplina)
+   public void inserirDisciplinaLista (Disciplina novaDisciplina)
    {   
       listaDisciplinas.add (novaDisciplina);
    }//Fim do método que insere o objeto do tipo Disciplina na lista do objeto do tipo Curso;
     
-   public void removerDisciplinaCurso (Disciplina disciplina)
+   public void removerDisciplinaLista (Disciplina disciplina)
    {       
       listaDisciplinas.remove (disciplina);
    }//Fim do método que remove o objeto do tipo Disciplina da lista do objeto do tipo Curso;
@@ -145,4 +145,5 @@ public class Curso
    {
       listaTurmas.remove (turma);
    }//Fim do método que remove um objeto do tipo Turma da lista do objeto do tipo Curso;
+   
 }//Fim da classe Curso;
