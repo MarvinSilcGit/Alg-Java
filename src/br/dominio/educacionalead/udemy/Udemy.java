@@ -42,20 +42,20 @@ public final class Udemy extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public Udemy(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public Udemy (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado;
    
-   public ArrayList retornarListaCursos()
+   public final ArrayList retornarListaCursos()
    {
       return listaCursos;
    }//Fim do método que retorna a lista de cursos do objeto do tipo Udemy;
    
-   public long retornarCodigoCertificador()
+   public final long retornarCodigoCertificador()
    {
       return codigoCertificador.retornarCodigoCertificador();
    }//Fim do método que retorna o código certificador do objeto do tipo Udemy;

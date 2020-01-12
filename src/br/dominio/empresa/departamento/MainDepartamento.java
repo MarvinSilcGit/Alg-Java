@@ -14,7 +14,7 @@ package br.dominio.empresa.departamento;
 public final class MainDepartamento 
 {
    
-   public static void main(String[]args)
+   public static final void main(String[]args)
    {
       
    }//Fim do método main;

@@ -33,14 +33,16 @@ public final class ViceDiretor extends Diretor
     
    }//Fim do método construtor padrão;
    
-   public ViceDiretor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, String cargo, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
+   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
    {
+      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta, assistente);
+      
       this.chefe = chefe;
    }//Fim do método construtor personalizado;
   
-   public Diretor retornaChefeDiretor()
+   public final Diretor retornaChefeDiretor()
    {
-      return this.chefe.retornarDiretor();
+      return chefe.retornarDiretor();
    }//Fim do método que retorna o chefe do objeto do tipo ViceDiretor;
    
 }//Fim da classe ViceDiretor;

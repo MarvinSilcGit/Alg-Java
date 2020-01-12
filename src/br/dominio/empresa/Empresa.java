@@ -39,7 +39,7 @@ public abstract class Empresa implements ICadastroEmpresarial
    
    }//Fim do método construtor padrão;
      
-   public Empresa(String razaoSocial, String nomeFantasia, Endereco endereco, double capitalSocial)
+   public Empresa (String razaoSocial, String nomeFantasia, Endereco endereco, double capitalSocial)
    {    
       this.razaoSocial = razaoSocial;
         
@@ -50,7 +50,7 @@ public abstract class Empresa implements ICadastroEmpresarial
       this.capitalSocial = capitalSocial;
    }//Fim do primeiro método construtor personalizado;    
    
-   public Empresa(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public Empresa (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {           
       this.razaoSocial = razaoSocial;
         
@@ -66,57 +66,57 @@ public abstract class Empresa implements ICadastroEmpresarial
    }//Fim do segundo método construtor personalizado;
    
    @Override
-   public String retornarRazaoSocial()
+   public final String retornarRazaoSocial()
    {     
       return razaoSocial;
    }//Fim do método que retorna razão social do objeto do tipo Empresa para a interface ICadastroEmpresarial;
    
    @Override
-   public String retornarNomeFantasia()
+   public final String retornarNomeFantasia()
    {     
       return nomeFantasia;
    }//Fim do método que retorna o nome fantasia do objeto do tipo Empresa para a interface ICadastroEmpresarial;
     
    @Override
-   public Endereco retornarEndereco()
+   public final Endereco retornarEndereco()
    {
       return endereco;
    }//Fim do método que retorna o objeto do tipo Endereco do objeto do tipo Empresa para a interface ICadastroEmpresarial;
    
    @Override
-   public Funcionario retornarPresidente()
+   public final Funcionario retornarPresidente()
    {     
       return presidente;
    }//Fim do método que retorna o presidente do objeto do tipo Empresa para a interface ICadastroEmpresarial;
    
    @Override
-   public Funcionario retornarVicePresidente()
+   public final Funcionario retornarVicePresidente()
    {     
       return vicePresidente;
    }//Fim do método que retorna o vice presidente do objeto do tipo Empresa para a interface ICadastroEmpresarial;
    
    @Override
-   public double retornarCapitalSocial()
+   public final double retornarCapitalSocial()
    {
       return capitalSocial;
    }//Fim do método que retorna o capital social do objeto do tipo Empresa para a interface ICadastroEmpresarial;
    
-   public Long retornarCnpj()
+   public final long retornarCnpj()
    {
       return cnpj.retornarCnpj();
    }//Fim do método que retorna o cnpj do objeto do tipo Empresa;
    
-   public long retornarTelefone()
+   public final long retornarTelefone()
    {
       return telefone.retornarTelefone();
    }//Fim do método que retorna o telefone do objeto do tipo Empresa;
         
-   public ArrayList retornarListaDepartamentos()
+   public final ArrayList retornarListaDepartamentos()
    {     
       return listaDepartamentos;
    }//Fim do método que retorna a lista do objeto do tipo Empresa;
     
-   public void inserirDepartamentoLista(Departamento novoDepartamento)
+   public final void inserirDepartamentoLista(Departamento novoDepartamento)
    {     
       if (listaDepartamentos.size() == 8)
       {  
@@ -128,7 +128,7 @@ public abstract class Empresa implements ICadastroEmpresarial
       }
    }//Fim do método que insere departamento na lista do objeto do tipo Empresa;
     
-   public void removerDepartamentoLista(Departamento removerDepartamento)
+   public final void removerDepartamentoLista(Departamento removerDepartamento)
    {     
       if (listaDepartamentos.size() == 1)
       {

@@ -44,7 +44,7 @@ public final class Certificado
       
    }//Fim do método construtor padrão;
    
-   public Certificado(Udemy cnpjResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
+   public Certificado (Udemy cnpjResponsavel, String cpfBeneficiario, String nomeBeneficiario, String nomeCurso, int cargaHoraria)
    {
       this.cpfBeneficiario = cpfBeneficiario;
       
@@ -55,32 +55,32 @@ public final class Certificado
       this.cargaHoraria = cargaHoraria;
    }//Fim do método construtor personalizado;
    
-   public String retornarCpfBeneficiario()
+   public final String retornarCpfBeneficiario()
    {
       return cpfBeneficiario;
    }//Fim do método que retorna o cpf do beneficiário do objeto do tipo Certificado;
    
-   public String retornarNomeBeneficiario()
+   public final String retornarNomeBeneficiario()
    {
       return nomeBeneficiario;
    }//Fim do método que retorna o nome do beneficiário do objeto do tipo Certificado;
    
-   public String retornarNomeCurso()
+   public final String retornarNomeCurso()
    {
       return nomeCurso;
    }//Fim do método que retorna o nome do objeto do tipo Curso do objeto do Tipo Certificado;
    
-   public int retornarCargaHoraria()
+   public final int retornarCargaHoraria()
    {
       return cargaHoraria;
    }//Fim do método que retorna a carga horária do objeto do tipo Certificado;
     
-   public long retornarCnpjResponsavelCertificado()
+   public final long retornarCnpjResponsavelCertificado()
    {
       return dadosUdemy.retornarCnpj();
    }//Fim do método que retorna o responável do objeto do tipo Udemy;
 
-   public long retornarCodigoCertificador()
+   public final long retornarCodigoCertificador()
    {
       return dadosUdemy.retornarCodigoCertificador();
    }//Fim do método que retorna o código de certificador do objeto do tipo Udemy;
@@ -100,7 +100,7 @@ public final class Certificado
       }
    }//Fim do método que calcula o código do objeto do tipo Certificado;
    
-   public long retornarCodigoCertificado()
+   public final long retornarCodigoCertificado()
    {
       return this.calcularCodigoCertificado();
    }//Fim do método que retorna o código do objeto do tipo Certificado;

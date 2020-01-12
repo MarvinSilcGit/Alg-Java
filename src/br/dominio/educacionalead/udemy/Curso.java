@@ -26,12 +26,13 @@ public final class Curso
    
    //Fim do campo de declaração de atributos;
    
+   
    public Curso()
    {
       
    }//Fim do método construtor padrão;
    
-   public Curso(int cargaHoraria, String nome, Professor professor)
+   public Curso (int cargaHoraria, String nome, Professor professor)
    {
       this.cargaHoraria = cargaHoraria;
       
@@ -40,17 +41,17 @@ public final class Curso
       this.professor = professor;
    }//Fim do método construtor personalizado;
    
-   public int retornarCargaHoraria()
+   public final int retornarCargaHoraria()
    {
       return cargaHoraria;
    }//Fim do método que retorna a carga horária do objeto do tipo Curso;
    
-   public String retornarNome()
+   public final String retornarNome()
    {
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Curso;
    
-   public Professor retornarProfessorResponsaveal()
+   public final Professor retornarProfessorResponsaveal()
    {
       return professor;
    }//Fim do método que retorna o objeto do tipo Professor do objeto do tipo Curso;

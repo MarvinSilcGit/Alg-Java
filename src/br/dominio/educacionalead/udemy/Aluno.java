@@ -34,7 +34,7 @@ public final class Aluno
       
    }//Fim do método construtor padrão;
    
-   public Aluno(String cpf, String nome, String login, String senha, String email)
+   public Aluno (String cpf, String nome, String login, String senha, String email, Date nascimento)
    {
       this.cpf = cpf;
       
@@ -49,39 +49,29 @@ public final class Aluno
       this.email = email;
    }//Fim do método construtor personalizado;
    
-   public String retornarNome()
+   public final String retornarNome()
    {
       return nome;
-   }
+   }//Fim do método que retorna o nome do objeto do tipo Aluno;
    
-   public String retornarCpf()
+   public final String retornarCpf()
    {
       return cpf;
-   }
+   }//Fim do método que retorna o cpf do objeto do tipo Aluno;
 
-   public String retornarLogin()
+   public final String retornarLogin()
    {
       return login;
-   }
+   }//Fim do método que retorna o login do objeto do tipo Aluno;
      
-   public String retornarSenha()
-   {
-      return senha;
-   }
-   
-   public String retornarEmail()
+   public final String retornarEmail()
    {
       return email;
-   }
+   }//Fim do método que retorna o email do objeto do tipo Aluno;
    
-   public String retornarDados()
-   {
-      return "Nome: " + nome + "; Cpf: " + cpf + "; Login: " + login + "; Senha: " + senha + "; Email: " + email;
-   }
-   
-   public Date retornarDataNascimento()
+   public final Date retornarDataNascimento()
    {
       return nascimento;
-   }
+   }//Fim do método que retorna a data de nascimento do objeto do tipo Aluno;
    
 }//Fim da classe CadastroEstudante;

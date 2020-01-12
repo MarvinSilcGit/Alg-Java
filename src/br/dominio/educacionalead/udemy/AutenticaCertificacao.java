@@ -28,31 +28,31 @@ public final class AutenticaCertificacao implements ICadastraCertificador
    
    
    @Override
-   public String retornarNomeFantasia()
+   public final String retornarNomeFantasia()
    {
       return udemy.retornarNomeFantasia();
    }//Fim do método que retorna o nome fantasia do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
    @Override
-   public ArrayList retornarListaCursos()
+   public final ArrayList retornarListaCursos()
    {
       return udemy.retornarListaCursos();
    }//Fim do método que retorna a lista de objetos do tipo Curso do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
    @Override
-   public Endereco retornarEndereco()
+   public final Endereco retornarEndereco()
    {
       return udemy.retornarEndereco();
    }//Fim do método que retorna o objeto do tipo Endereco do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
    @Override
-   public long retornarCnpj()
+   public final long retornarCnpj()
    {
       return udemy.retornarCnpj();
    }//Fim do método que retorna o cnpj do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
    @Override
-   public long retornarTelefone()
+   public final long retornarTelefone()
    {
       return udemy.retornarTelefone();
    }//Fim do métod que retorna o telefoen do objeto do tipo Udemy para a interface ICadastraCertificadores;

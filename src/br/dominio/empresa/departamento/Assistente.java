@@ -38,7 +38,7 @@ public class Assistente extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Assistente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Assistente (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
    {
       super (nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);
       

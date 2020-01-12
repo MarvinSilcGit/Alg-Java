@@ -36,52 +36,52 @@ public final class Departamento
         
    }//Fim do método construtor padrão;
     
-   public Departamento(String nome, Diretor diretor, ViceDiretor viceDiretor)
+   public Departamento (String nome, Diretor diretor, ViceDiretor viceDiretor)
    {     
-      this.nome=nome;
+      this.nome = nome;
         
-      this.diretor=diretor;
+      this.diretor = diretor;
         
-      this.viceDiretor=viceDiretor;
+      this.viceDiretor = viceDiretor;
         
    }//Fim do método construtor personalizado;
     
-   public String retornarNomeDepartamento()
+   public final String retornarNomeDepartamento()
    {    
-      return this.nome;
+      return nome;
    }//Fim do método que retorna o nome do objeto do tipo Departamento;
     
-   public void alterarNomeDepartamento(String novoNome)
+   public final void alterarNomeDepartamento (String novoNome)
    {     
-      this.nome=novoNome;
+      nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Departamento;
     
-   public Diretor retornarDiretor()
+   public final Diretor retornarDiretor()
    {
-      return this.diretor;
+      return diretor;
    }//Fim do método que retorna o diretor
     
-   public void alterarDiretor(Diretor novoDiretor)
+   public final void alterarDiretor(Diretor novoDiretor)
    {
-      this.diretor=novoDiretor;
+      diretor = novoDiretor;
    }// Fim do método que altera o diretor do objeto do tipo Departamento;
     
-   public ViceDiretor retornarViceDiretor()
+   public final ViceDiretor retornarViceDiretor()
    {   
-      return this.viceDiretor;
+      return viceDiretor;
    }//Fim do método que retorna o vice diretor do objeto do tipo Departamento;
     
-   public void alterarViceDiretor(ViceDiretor novoViceDiretor)
+   public final void alterarViceDiretor(ViceDiretor novoViceDiretor)
    {      
-      this.viceDiretor=novoViceDiretor;
+      viceDiretor = novoViceDiretor;
    }//Fim do método que altera o vice diretor do objetod do tipo Departamento;
     
-   public ArrayList retornarListaFuncionarios()
+   public final ArrayList retornarListaFuncionarios()
    {
       return this.listaFuncionarios;
    }//Fim do método que retorna os funcionarios da lista do objeto do tipo Departamento;
     
-   public void inserirFuncionarioDepartamento(Funcionario novoFuncionario)
+   public final void inserirFuncionarioDepartamento(Funcionario novoFuncionario)
    { 
       if (this.listaFuncionarios.size()==40)
       {    
@@ -94,7 +94,7 @@ public final class Departamento
       
    }//Fim do método que insere funcionario na lista do objeto do tipo Departamento;
     
-   public void removerFuncionarioDepartamento(Funcionario removerFuncionario)
+   public final void removerFuncionarioDepartamento(Funcionario removerFuncionario)
    {     
       if (this.listaFuncionarios.isEmpty())
       {    
