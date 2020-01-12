@@ -28,16 +28,16 @@ public final class Pediatra  extends ProfissionalMedicina
       
    }//Fim do método construtor padrão;
    
-   public Pediatra(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+   public Pediatra (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);   
+      super (nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);   
          
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o método construtor personalizado;
    
    }//Fim do método construtor personalizado;
    
    @Override
-   public void realizarConsulta()
+   public final void realizarConsulta()
    {
    
    }//Terminar esse polimorfismo;

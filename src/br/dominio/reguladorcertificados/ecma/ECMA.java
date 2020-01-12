@@ -34,15 +34,15 @@ public final class ECMA extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public ECMA(String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public ECMA (String cnpj, String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado;
    
-   public ArrayList retornarEmissoresCertificadosQualificados()
+   public final ArrayList retornarEmissoresCertificadosQualificados()
    {
       return listaEmissoresCertificadosQualificados;
    }//Fim do método que retorna os emissores de certificados qualificados do objeto do tipo ECMA;

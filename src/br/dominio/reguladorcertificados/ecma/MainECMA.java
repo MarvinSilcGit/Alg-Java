@@ -14,7 +14,7 @@ package br.dominio.reguladorcertificados.ecma;
 public final class MainECMA
 {
    
-   public static void main (String [] args)
+   public final static void main (String [] args)
    {
       
    }//Fim do método main;

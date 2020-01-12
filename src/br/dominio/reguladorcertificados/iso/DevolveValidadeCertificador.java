@@ -26,7 +26,7 @@ public final class DevolveValidadeCertificador implements IRecebeValidacao
    
    
    @Override
-   public boolean retornarValidadeCertificador()
+   public final boolean retornarValidadeCertificador()
    {
       if (iso.retornarListEmissoresCertificados().contains (validadeCertificador.retornarCodigoCertificador()) == true)
       {
@@ -36,6 +36,6 @@ public final class DevolveValidadeCertificador implements IRecebeValidacao
       {
          return false;
       }
-   }
+   }//Fim do método que retorna a validade do certificador para a interface IRecebeValidacao;
    
 }//Fim da classe DevolveValidadeCertificador;

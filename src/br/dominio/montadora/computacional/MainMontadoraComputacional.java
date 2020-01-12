@@ -14,7 +14,7 @@ package br.dominio.montadora.computacional;
 public final class MainMontadoraComputacional 
 {
    
-   public static void main (String [] args)
+   public static final void main (String [] args)
    {
       
    }//Fim do método main;

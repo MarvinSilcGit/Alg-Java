@@ -14,7 +14,7 @@ package br.dominio.montadora.automotiva;
 public final class MainMontadoraAutomotiva 
 {   
 
-   public static void main(String[] args) 
+   public static final void main(String[] args) 
    {     
    
    }//Fim do método main;

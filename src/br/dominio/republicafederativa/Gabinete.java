@@ -15,6 +15,8 @@ import java.util.ArrayList;
 
 import br.dominio.api.Funcionario;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public final class Gabinete 
 {
@@ -32,7 +34,7 @@ public final class Gabinete
       
    }//Fim do método construtor padrão;
    
-   public Gabinete(Funcionario chefe, Funcionario secretario, Funcionario subSecretario)
+   public Gabinete (Funcionario chefe, Funcionario secretario, Funcionario subSecretario)
    {
       this.chefe = chefe;
       
@@ -41,17 +43,17 @@ public final class Gabinete
       this.subSecretario = subSecretario;
    }//Fim do método construtor personalizado;
    
-   public Funcionario retornarChefeGabinete()
+   public final Funcionario retornarChefeGabinete()
    {
       return chefe;
    }//Fim do método que retorna o objeto do tipo Funcionario do objeto do tipo Gabinete;
    
-   public Funcionario retornarSecretario()
+   public final Funcionario retornarSecretario()
    {
       return secretario;
    }//Fim do método que retorna o objeto do tipo Funcionario do objeto do tipo Gabinete;
    
-   public Funcionario retornarSubSecretatio()
+   public final Funcionario retornarSubSecretatio()
    {
       return subSecretario;
    }//Fim do método que retorna o objeto do tipo Funcionario do objeto do tipo Gabinete;

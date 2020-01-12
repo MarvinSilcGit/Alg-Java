@@ -14,7 +14,7 @@ package br.dominio.montadora.moveis;
 public final class MainMontadoraMoveis 
 {
    
-   public static void main (String [] args)
+   public final static void main (String [] args)
    {
       
    }//Fim do método main;

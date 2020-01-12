@@ -36,7 +36,7 @@ public final class DevolveCodigoCertificador implements IRecebeCodigoCertificado
    
    
    @Override
-   public long retornarCodigoCertificador()
+   public final long retornarCodigoCertificador()
    {
       codigoCertificador = random.nextLong();
       

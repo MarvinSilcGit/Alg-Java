@@ -36,25 +36,25 @@ public final class ISO extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public ISO(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
+   public ISO (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
    {
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado;
    
-   public ArrayList retornarListEmissoresCertificados()
+   public final ArrayList retornarListEmissoresCertificados()
    {
       return listaEmissoresCertificados;
    }//Fim do método que retorna o lista de emissores de certificado do objeto do tipo ISO;  
    
-   public void adcionarEmissorCertificados(long codigoCertificador)
+   public final void adcionarEmissorCertificados (long codigoCertificador)
    {
       listaEmissoresCertificados.add (codigoCertificador);
    }//Fim do método que adiciona na lista um certificador do objeto do tipo ISO;
    
-   public void removerEmissorCertificador(long codigoCertificador)
+   public final void removerEmissorCertificador (long codigoCertificador)
    {
       listaEmissoresCertificados.remove (codigoCertificador);
    }//Fim do método que remove da lista um certificador do objeto do tipo ISO;

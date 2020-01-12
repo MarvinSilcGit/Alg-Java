@@ -32,7 +32,7 @@ public class Pais
    
    }//Fim do método construtor padrão;
     
-   public Pais(String nome, Moeda moeda, double tesouro, double pib, double idh, Presidente presidente, VicePresidente vicePresidente)
+   public Pais (String nome, Moeda moeda, double tesouro, double pib, double idh, Presidente presidente, VicePresidente vicePresidente)
    {   
       this.nome = nome;
         
@@ -49,7 +49,7 @@ public class Pais
       this.vicePresidente = vicePresidente;
    }//Fim do primeiro método construtor personalizado;
     
-   public Pais(String nome, Moeda moeda, double tesouro, double pib, double idh)
+   public Pais (String nome, Moeda moeda, double tesouro, double pib, double idh)
    {
       this.nome = nome;
       
@@ -62,17 +62,17 @@ public class Pais
       this.idh = idh;
    }//Fim do segundo método construtor personalizado;
    
-   public String retornarNome()
+   public final String retornarNome()
    {     
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Pais;
    
-   public void alterarNome(String novoNome)
+   public final void alterarNome(String novoNome)
    {
       nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Pais;
     
-   public Moeda retornarMoedaOficial()
+   public final Moeda retornarMoedaOficial()
    { 
       return moeda;
    }//Fim do método que retorna o objeto do tipo Moeda do objeto do tipo Pais;
@@ -82,27 +82,27 @@ public class Pais
       moeda = alterarMoedaOficial;
    }//Fim do método que altera o objeto do tipo Moeda do objeto do tipo Pais;
     
-   public double retornarTesouro()
+   public final double retornarTesouro()
    { 
       return tesouro;
    }//Fim do método que retorna o tesouro do objeto do tipo Pais;
     
-   public void aumentarTesouro(double aumentarValor)
+   public final void aumentarTesouro(double aumentarValor)
    { 
-      tesouro+= aumentarValor; 
+      tesouro += aumentarValor; 
    }//Fim do método que aumenta o tesouro do objeto do tipo Pais;
    
-   public void diminuirTesouro(double diminuirValor)
+   public final void diminuirTesouro(double diminuirValor)
    {
-      tesouro-= diminuirValor;
+      tesouro -= diminuirValor;
    }//Fim do método que diminui o tesouro do objeto do tipo Pais;
     
-   public double retornarPib()
+   public final double retornarPib()
    { 
       return pib;
    }//Fim do método que retorna o pib do objeto do tipo Pais;
     
-   public double retornarIdh()
+   public final double retornarIdh()
    { 
       return idh;
    }//Fim do método que retorna o idh do objeto do tipo Pais;
@@ -122,12 +122,12 @@ public class Pais
       listaEstados.add(removerEstado);
    }//Fim do método que remove o objeto do tipo Estado da lista do objeto do tipo Pais;
    
-   public Presidente retornarPresidente()
+   public final Presidente retornarPresidente()
    {
       return presidente;
    }//Fim do método que retorna o objeto do tipo Presidente do objeto do tipo Pais;
    
-   public VicePresidente retornarVicePresidente()
+   public final VicePresidente retornarVicePresidente()
    {
       return vicePresidente;
    }//Fim do método que retorna o objeto do tipo VicePresidente do objeto do tipo Pais;

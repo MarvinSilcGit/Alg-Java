@@ -26,7 +26,7 @@ public final class Ministerio
       
    }//Fim do método construtor padrão;
     
-   public Ministerio(String nome, Ministro ministro, double orcamentoAnual)
+   public Ministerio (String nome, Ministro ministro, double orcamentoAnual)
    {     
       this.nome = nome;
 
@@ -35,47 +35,47 @@ public final class Ministerio
       this.orcamentoAnual = orcamentoAnual;
    }//Fim do método construtor personalizado;
     
-   public String retornarNome()
+   public final String retornarNome()
    {
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Ministerio;
 
-   public void alterarNome(String novoNome)
+   public final void alterarNome(String novoNome)
    {  
       nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Ministerio;
 
-   public Ministro retornarMinistro()
+   public final Ministro retornarMinistro()
    {  
       return  ministro;
    }//Fim do método que retorna o objeto do tipo Ministro do objeto do tipo Ministerio;
 
-   public void alterarMinistro(Ministro novoMinistro)
+   public final void alterarMinistro(Ministro novoMinistro)
    {  
       ministro = novoMinistro;
    }//Fim do método que altera o objeto to tipo Ministro do objeto do tipo Ministerio;
 
-   public double retornarOrcamentoAnual()
+   public final double retornarOrcamentoAnual()
    {
       return orcamentoAnual;
    }//Fim do método que retorna o orçamento anual;
 
-   public void alterarOrcamentoAnual(double novoOrcamento)
+   public final void alterarOrcamentoAnual(double novoOrcamento)
    {
       orcamentoAnual=novoOrcamento;
    }//Fim do método que altera o orçamento anual do objeto do tipo Ministerio;
    
-   public ArrayList retornarListaServidores()
+   public final ArrayList retornarListaServidores()
    {
       return listaServidores;
    }//Fim do método que retorna a lista servidores do objeto do tipo Ministerio;
 
-   public void inserirServidor(Funcionario novoServidor)
+   public final void inserirServidor(Funcionario novoServidor)
    {
       listaServidores.add(novoServidor);
    }//Fim do método que insere o objeto do tipo Servidor na lista do objeto do tipo Ministerio;
 
-   public void removerServidor(Funcionario removerServidor)
+   public final void removerServidor(Funcionario removerServidor)
    {
       listaServidores.remove(removerServidor);
    }//Fim do método que remove o objeto do tipo Servidor da lista do objeto do tipo Ministerio;

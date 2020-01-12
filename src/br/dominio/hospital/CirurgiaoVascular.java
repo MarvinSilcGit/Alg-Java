@@ -26,9 +26,9 @@ public final class CirurgiaoVascular extends ProfissionalMedicina
    
    }//Fim do método construtor padrão;
      
-   public CirurgiaoVascular(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
+   public CirurgiaoVascular (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
+      super (nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o método construtor personalizado;
          
@@ -36,19 +36,19 @@ public final class CirurgiaoVascular extends ProfissionalMedicina
    }//Fim do método construtor personalizado;
     
    @Override
-   public void realizarConsulta()
+   public final void realizarConsulta()
    {
       
    }//Terminar esse polimorfismo;
    
-   public double retornarValorCirurgia()
+   public final double retornarValorCirurgia()
    {    
-      return this.valorCirurgia; 
+      return valorCirurgia; 
    }//Fim do método que retorna o valor da cirurgia do objeto do tipo CirurgiaoVascular;
      
-   public void alterarValorCirurgia(double novoValorCirurgia)
+   public final void alterarValorCirurgia (double valor)
    {    
-      this.valorCirurgia=novoValorCirurgia; 
+      valorCirurgia = valor; 
    }//Fim do método que altera o valor da cirurgia do objeto do tipo CirurgiaoVascular;
     
 }//Fim da classe CirurgiaoVascular;
