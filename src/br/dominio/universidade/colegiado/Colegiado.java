@@ -37,8 +37,8 @@ public final class Colegiado
    {
       CIENCIAS_EXATAS,
       CIENCIAS_TERRA,
-      CIENCIA_HUMANAS,
-      CIENCIA_SOCIAS,
+      CIENCIAS_HUMANAS,
+      CIENCIAS_SOCIAS,
       SAUDE,
    }//Fim do enum AreaCientifica;
     
