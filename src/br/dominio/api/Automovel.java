@@ -72,7 +72,7 @@ public abstract class Automovel
       
    }//Fim do método construtor padrão;
    
-   public Automovel(double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica, double autonomiaMedia)
+   public Automovel (double peso, double altura, double largura, double comprimento, String cor, double cavalosPotencia, double torque, double velocidadeMaximaEletronica, double autonomiaMedia)
    {
       this.peso = peso;
       
@@ -93,47 +93,47 @@ public abstract class Automovel
       this.autonomiaMedia = autonomiaMedia;
    }//Fim do método construtor personalizado;
    
-   public double retornarPeso()
+   public final double retornarPeso()
    {
       return peso;
    }//Fim do método que retorna o peso do objeto do tipo Automovel;
    
-   public double retornarAltura()
+   public final double retornarAltura()
    {
       return altura;
    }//Fim do método que retorna a altura da objeto do tipo Automovel;
    
-   public double retornarLargura()
+   public final double retornarLargura()
    {
       return largura;
    }//Fim do método que retorna a largura do objeto do tipo Automovel;
    
-   public double retornarComprimento()
+   public final double retornarComprimento()
    {
       return comprimento;
    }//Fim do método que retorna o comprimento do objeto do tipo Automovel;
    
-   public String retornarCor()
+   public final String retornarCor()
    {
       return cor;
    }//Fim do método que retorna a cor do objeto do tipo Automovel;
    
-   public double retornarCavalosPotencia()
+   public final double retornarCavalosPotencia()
    {
       return cavalosPotencia;
    }//Fim do método que retorna os cavalos de potência do objeto do tipo Automovel;
    
-   public double retornarTorque()
+   public final double retornarTorque()
    {
       return torque;
    }//Fim do método que retorna o torque do do objeto do tipo Automovel;
    
-   public double retornarVelocidadeMaximaEletronica()
+   public final double retornarVelocidadeMaximaEletronica()
    {
       return velocidadeMaximaEletronica;
    }//Fim do método que retorna a velocidade máxima eletrônica do objeto do tipo Automovel;
    
-   public double retornarAutonomiaMedia()
+   public final double retornarAutonomiaMedia()
    {
       return autonomiaMedia;
    }//Fim do método que retorna a autonomia média do objeto do tipo Automovel;

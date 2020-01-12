@@ -28,16 +28,16 @@ public abstract class ProdutoComValidade extends Produto
       
    }//Fim do método construtor padrão;
    
-   public ProdutoComValidade(int codigo, int quantidade, String categoria, String nome, Date dataFabricacao, Date dataValidade)
+   public ProdutoComValidade (int codigo, int quantidade, String categoria, String nome, Date dataFabricacao, Date dataValidade)
    {
-      super(codigo, quantidade, dataFabricacao, categoria, nome);
+      super (codigo, quantidade, dataFabricacao, categoria, nome);
       
       //Fim do método super da classe mãe ou super classe Produto;
       
       this.dataValidade = dataValidade;
    }//Fim do método construtor personalizado;
    
-   public Date retornarDataValidade()
+   public final Date retornarDataValidade()
    {
       return dataValidade;
    }//Fim do método que retorna a dataValidade do objeto do tipo ProdutoComValidade;

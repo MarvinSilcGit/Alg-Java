@@ -31,30 +31,30 @@ public abstract class ContaBancaria
       
    }//Fim do método construtor padrão;
 
-   public ContaBancaria(double saldo, double valorInicial, CartaoDebito cartaoDebito)
+   public ContaBancaria (double saldo, double valorInicial, CartaoDebito cartaoDebito)
    {
-      this.saldo=saldo;
+      this.saldo = saldo;
       
-      this.valorInicial=valorInicial;
+      this.valorInicial = valorInicial;
       
-      this.cartaoDebito=cartaoDebito;    
+      this.cartaoDebito = cartaoDebito;    
    }//Fim do método construtor personalizado;
    
-   public double retornarSaldo()
+   public final double retornarSaldo()
    {
-      if (this.valorInicial != 0)
+      if (valorInicial != 0)
       {
-         return this.valorInicial;
+         return valorInicial;
       }
       else
       {
-         return this.saldo;
+         return saldo;
       }
    }//Fim do método que retorna o saldo do objeto do tipo ContaBancaria;
    
-   public CartaoDebito retornarCartaoDebito()
+   public final CartaoDebito retornarCartaoDebito()
    {
-      return this.cartaoDebito;
+      return cartaoDebito;
    }//Fim do método que dá acesso ao objeto do tipo CartaoDebito no objeto do tipo ContaBancaria;
    
 }//Fim da classe ContaBancaria;

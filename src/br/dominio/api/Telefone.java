@@ -31,38 +31,38 @@ public final class Telefone
      
    }//Fim do método construtor padrão;
    
-   public Telefone(int ddi, int dddCurtaDistancia, int dddLongaDistancia, int numero)
+   public Telefone  (int ddi, int dddCurtaDistancia, int dddLongaDistancia, int numero)
    {
-      this.ddi=ddi;
+      this.ddi = ddi;
       
-      this.dddCurtaDistancia=dddCurtaDistancia;
+      this.dddCurtaDistancia = dddCurtaDistancia;
       
-      this.dddLongaDistancia=dddLongaDistancia;
+      this.dddLongaDistancia = dddLongaDistancia;
       
-      this.numero=numero;
+      this.numero = numero;
    }//Fim do método construtor personalizado;
    
-   public int retornarDdi()
+   public final int retornarDdi()
    {
       return this.ddi;
    }//Fim do método que retorna o ddi do objeto do tipo Telefone;
    
-   public int retornarDddCurtaDistancia()
+   public final int retornarDddCurtaDistancia()
    {
       return this.dddCurtaDistancia;
    }//Fim do método que retorna o ddd de curta distância do objeto do tipo Telefone;
    
-   public int retornarDddLongaDistancia()
+   public final int retornarDddLongaDistancia()
    {
       return this.dddLongaDistancia;
    }//Fim do método que retorna o ddd de longa distância do objeto do tipo Telefone;
    
-   public int retornarNumero()
+   public final int retornarNumero()
    {
       return this.numero;
    }//Fim do método que retorna o numero do objeto do tipo Telefone;
   
-   public String retornarTelefoneCompleto()
+   public final String retornarTelefoneCompleto()
    {
       return "DDI: " + ddi + ", DDD de curta distância: " + dddCurtaDistancia + ", DDD de longa distância: " + dddLongaDistancia + ", Número: " + numero;
    }

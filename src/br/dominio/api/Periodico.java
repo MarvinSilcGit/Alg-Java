@@ -46,9 +46,9 @@ public abstract class Periodico extends Produto
     
    }//Fim do método construtor padrão;
     
-   public Periodico(int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, long isbn, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora)
+   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, long isbn, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora)
    {     
-      super(codigoBarras, quantidade, dataFabricacao, categoria);
+      super (codigoBarras, quantidade, dataFabricacao, categoria);
       
       //Fim do método super da classe mãe ou super classe Produto, inicializando o segundo método construtor personalizado;
       
@@ -71,9 +71,9 @@ public abstract class Periodico extends Produto
       this.nomeEditora = nomeEditora;
    }//Fim do primeiro método construtor personalizado;
    
-   public Periodico(int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora)
+   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora)
    {
-      super(codigoBarras, quantidade, dataFabricacao, categoria);
+      super (codigoBarras, quantidade, dataFabricacao, categoria);
       
       //Fim do método super da classe mãe ou superclasse Produto, inicializando o segundo método construtor personalizao;
     
@@ -94,47 +94,47 @@ public abstract class Periodico extends Produto
       this.nomeEditora = nomeEditora;
    }//Fim do segundo método construtor personalizado;
     
-   public String retornarTitulo()
+   public final String retornarTitulo()
    {
       return titulo;
    }//Fim do método que retorna o título do objeto do tipo Periodico;
 
-   public String retornarSubTitulo()
+   public final String retornarSubTitulo()
    {
       return subTitulo;
    }//Fim do método que retorna o subtítulo do objeto do tipo Periodico;
 
-   public String retornarGenero()
+   public final String retornarGenero()
    {
       return genero;
    }//Fim do método que retorna o gênero do objeto do tipo Periodico;
 
-   public int retornarQuantidadePaginas()
+   public final int retornarQuantidadePaginas()
    {
       return quantidadePaginas;
    }//Fim do método que retorna a quantidade de páginas do objeto do tipo Periodico;
 
-   public int retornarEdicao()
+   public final int retornarEdicao()
    {
       return edicao;
    }//Fim do método que retorna a edição do objeto do tipo Periodico;
    
-   public long retornarIsbn()
+   public final long retornarIsbn()
    {
       return isbn;
    }//Fim do método que retorna o ISBN do objeto do tipo Periodico;
    
-   public Date retornarAnoPublicacao()
+   public final Date retornarAnoPublicacao()
    {
       return anoPublicacao;
    }//Fim do método que retorna o ano publicação do objeto do tipo Periodico;
    
-   public String retornarNomeAutor()
+   public final String retornarNomeAutor()
    {
       return nomeAutor.retornarNome();
    }//Fim do método que retorna o nome do autor do objeto do tipo Livros;
 
-   public String retornarEditora()
+   public final String retornarEditora()
    {
       return nomeEditora.retornarNomeFantasia();
    }//Fim do método que retorna a nome da editora do objeto do tipo Periodico;

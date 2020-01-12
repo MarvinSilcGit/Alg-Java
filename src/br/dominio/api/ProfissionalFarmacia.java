@@ -18,16 +18,16 @@ public abstract class ProfissionalFarmacia extends Funcionario
    
    }//Fim do método construtor padrão;
     
-   public ProfissionalFarmacia(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String crf)
+   public ProfissionalFarmacia (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String crf)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);
         
       //Fim do método super da classe mãe ou super classe Funcionario;
       
       this.crf = crf;
    }//Fim do método construtor personalizado;
     
-   public String retornarCrf()
+   public final String retornarCrf()
    {   
       return crf;
    }//Fim do método que retorna o crf do objeto do tipo ProfissionalFarmacia;

@@ -14,19 +14,19 @@ public final class Acesso
    
    }//Fim do método construtor padrão;
  
-   public Acesso(String usuario, String senha)
+   public Acesso (String usuario, String senha)
    {     
       this.usuario=usuario;
         
       this.senha=senha;
    }//Fim do método construtor personalizado;
     
-   public String retornarUsuario()
+   public final String retornarUsuario()
    {      
       return this.usuario;
    }//Fim do método que retorna o usuário do objeto do tipo Acesso;
     
-   public String retornarSenhaTemporaria()
+   public final String retornarSenhaTemporaria()
    {     
       return this.senha+this.usuario;
    }//Fim do método que retorna a senha temporário do objeto do tipo Usuário;

@@ -20,9 +20,9 @@ public abstract class Cliente extends Pessoa
    
    }//Fim do método construtor padrão;    
        
-   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente)
+   public Cliente (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco);
+      super (nome, nascimento, cpf, email, telefone, endereco);
         
       //Fim do método super da classe mãe ou super classe Pessoa;
       
@@ -31,12 +31,12 @@ public abstract class Cliente extends Pessoa
       this.dataFidelizacaoCliente = dataFidelizacaoCliente;      
    }//Fim do método construtor personalizado;
   
-   public Acesso acessarContaAcesso()
+   public final Acesso acessarContaAcesso()
    {    
       return conta;
    }//Fim do método que permite acesso ao objeto do tipo Conta no objeto do tipo Cliente;
     
-   public Date retornarDataFidelizacao()
+   public final Date retornarDataFidelizacao()
    { 
       return dataFidelizacaoCliente;//Alterar o comportamento do método
    }//Fim do método que retorna a data de fidelização do objeto do tipo Cliente;

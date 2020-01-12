@@ -14,7 +14,7 @@ package br.dominio.api;
 public final class MainApi 
 {
   
-   public static void main(String[]args)
+   public static final void main(String[]args)
    {  
 
    }//Fim do método main;

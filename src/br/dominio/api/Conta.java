@@ -17,19 +17,19 @@ public abstract class Conta
   
    }//Fim do método construtor padrão;
    
-   public Conta(long numeroContrato, Empresa empresaPrestadora)
+   public Conta (long numeroContrato, Empresa empresaPrestadora)
    {
-      this.numeroContrato=numeroContrato;
+      this.numeroContrato = numeroContrato;
       
-      this.empresaPrestadora=empresaPrestadora;
+      this.empresaPrestadora = empresaPrestadora;
    }//Fim do método construtor personalizado;
 
-   public long retornarNumeroContrato()
+   public final long retornarNumeroContrato()
    {
       return this.numeroContrato;
    }//Fim do método que retorna o número do contrato do objeto do tipo Conta;
    
-   public Empresa retornarEmpresaPrestadora()
+   public final Empresa retornarEmpresaPrestadora()
    {
       return this.empresaPrestadora;
    }//Fim do método que retorna a empresa prestadora do objeto do tipo Conta;

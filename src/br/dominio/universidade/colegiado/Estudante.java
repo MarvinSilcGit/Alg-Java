@@ -33,10 +33,13 @@ import br.dominio.api.Acesso;
 public final class Estudante extends Pessoa
 { 
    private int horasExtras,
-           matricula,
-           horasExtrasMinimas;
+           matricula;
+   
+   private static final int horasExtrasMinimas = 300;
     
    private double descontoFiesProUni;
+   
+   private Turma turma;
     
    private Acesso conta;
     
@@ -56,7 +59,7 @@ public final class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, int horasExtras, int matricula, int horasExtrasMinimas, double descontoFiesProUni, Acesso conta, Date anoMatricula)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Acesso conta, Date anoMatricula)
    {    
       super(nome, nascimento, cpf, email, telefone, endereco);
         
@@ -65,10 +68,10 @@ public final class Estudante extends Pessoa
       this.horasExtras = horasExtras;
         
       this.matricula = matricula;
-        
-      this.horasExtrasMinimas = horasExtrasMinimas;
       
       this.descontoFiesProUni = descontoFiesProUni; 
+      
+      this.turma = turma;
         
       this.conta = conta;
       
@@ -80,9 +83,9 @@ public final class Estudante extends Pessoa
       return horasExtras;
    }//Fim do método que retorna as horas extras do objeto do tipo Estudante;
     
-   public void aumentarHorasExtras (int novoValor, long codigoCertificado)
+   public void aumentarHorasExtras (int valor)
    {  
-      horasExtras+= novoValor;
+      horasExtras+= valor;
    }//Fim do método que aumenta as horas extras do objeto do tipo Estudante;
     
    public void diminuirHorasExtras (int valor)
@@ -98,12 +101,17 @@ public final class Estudante extends Pessoa
    public int retornarHorasExtrasMinimas()
    {
       return horasExtrasMinimas;
-   }//Fim do método que retorna as horas extras mínimas do objeto do tipo Estudante;
+   }//Fim do método que retorna as horas extras mínimas da classe Estudante;
    
    public double retornarDescontoFiesProUni()
    {
       return descontoFiesProUni;
    }//Fim do método que retorna o desconto Fies ou ProUni do objeto do tipo Estudante;
+   
+   public Turma retornarTurma()
+   {
+      return turma;
+   }//Fim do método que retorna o objeto do tipo Turma do objeto do tipo Estudante;
     
    public Acesso acessarContaAcesso()
    {

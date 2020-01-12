@@ -60,19 +60,15 @@ public final class Endereco
       AMAPA,
       AMAZONAS,
       BAHIA,
-   }
+   }//Fim do enum Estado;
    
-   public enum Pais
-   {
-      BRASIL;
-   }
    
    public Endereco()
    {     
     
    }//Fim do método construtor padrão;
     
-   public Endereco(String numero, String bairro, String cep, String complemento, String rua, Cidade cidade)
+   public Endereco (String numero, String bairro, String cep, String complemento, String rua, Cidade cidade)
    {    
       this.numero = numero;
        
@@ -85,32 +81,32 @@ public final class Endereco
       this.cidade = cidade;
    }//Fim do método construtor personalizado;
     
-   public String retornarEnderecoCompleto()
+   public final String retornarEnderecoCompleto()
    {
-      return "Rua: " + rua + ", Número: " + numero +", Bairro: " + bairro + ", CEP: " + cep + ", Rua: " + ", Cidade: " + cidade + ", Estado:  Bahia" + ", Pais: Brasil";
+      return "Rua: " + rua + ", Número: " + numero +", Bairro: " + bairro + ", CEP: " + cep + ", Rua: " + ", Cidade: " + cidade + ", Estado: " + ", Pais: Brasil";
    }//Fim do método que retorna todos os atributos do objeto do tipo Endereco;
     
-   public String retornarNumero()
+   public final String retornarNumero()
    {
       return numero;
    }//Fim do método que retorna o número do objeto do tipo Endereco;
    
-   public String retornarBairro()
+   public final String retornarBairro()
    { 
       return bairro;
    }//Fim do método que retorna o bairro do objeto do tipo Endereco;
     
-   public String retornarCep()
+   public final String retornarCep()
    { 
       return cep;
    }//Fim do método que retorna o cep do objeto do tipo Endereco;
     
-   public String retornarRua()
+   public final String retornarRua()
    { 
       return rua;
    }//Fim do método que retorna a rua do objeto do tipo Endereco;
     
-   public Cidade retornarCidade()
+   public final Cidade retornarCidade()
    { 
       return cidade;
    }//Fim do método que retorna o objeto do tipo Cidade do objeto do tipo Endereco;

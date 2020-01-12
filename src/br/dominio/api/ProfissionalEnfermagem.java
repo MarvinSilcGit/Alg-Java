@@ -14,7 +14,7 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
 {  
    private ArrayList listaPacientes = new ArrayList(15);
    
-   private static int quantidadePlantoesSemana;
+   private static final int quantidadePlantoesSemana  = 2;
     
    private String coren;
    //Colocar lista de pacientes atendidos;
@@ -26,33 +26,31 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public ProfissionalEnfermagem(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, int quanitadePlantoesSemana, String coren, String especialidade)
+   public ProfissionalEnfermagem (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String coren)
    {  
-      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);        
+      super (nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);        
         
       //Fim do método super da classe mãe ou super classe Funcionario;
-      
-      ProfissionalEnfermagem.quantidadePlantoesSemana = quanitadePlantoesSemana;
        
       this.coren = coren;
    }//Fim do método construtor padrão;
     
-   public int retornarQuantidadePlantoesSemana()
+   public final int retornarQuantidadePlantoesSemana()
    {    
       return quantidadePlantoesSemana;
    }//Fim do método que retorna a quantidade de plantões do objeto do tipo ProfissionalEnfermagem;
     
-   public String retornarCoren()
+   public final String retornarCoren()
    { 
       return coren;
    }//Fim do método que retorna o Coren do objeto do tipo ProfissionalEnfermagem;
     
-   public ArrayList retornarListaPacientes()
+   public final ArrayList retornarListaPacientes()
    { 
       return listaPacientes;
    }//Fim do método que retorna a lista de pacientes do objeto do tipo ProfissionalEnfermagem;
     
-   public void inserirPacienteLista(Paciente inserir)
+   public final void inserirPacienteLista (Paciente inserir)
    {     
       if (listaPacientes.size() >= 15)
       {
@@ -64,7 +62,7 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
       }
    }//Fim do método que insere paciente na lista do objeto do tipo ProfissionalEnfermagem;
     
-   public void removerPacienteLista(Paciente remover)
+   public final void removerPacienteLista (Paciente remover)
    {     
       listaPacientes.remove(remover);
    }//Fim do método que remove paciente da lista do objeto do tipo ProfisionalEnfermagem;

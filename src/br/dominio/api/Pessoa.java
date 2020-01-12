@@ -51,7 +51,7 @@ public abstract class Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Pessoa(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco)
+   public Pessoa (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco)
    {     
       this.nome = nome;
         
@@ -66,37 +66,37 @@ public abstract class Pessoa
       this.endereco = endereco;
    }//Fim do método construtor personalizado;
     
-   public String retornarNome()
+   public final String retornarNome()
    {      
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Pessoa;
     
-   public Date retornarDataNascimento()
+   public final Date retornarDataNascimento()
    { 
       return dataNascimento;
    }//Fim do método que retorna o nascimento do objeto do tipo Pessoa;
     
-   public String retornarCpf()
+   public final String retornarCpf()
    { 
       return cpf;
    }//Fim do método que retorna o cpf do objeto do tipo Pessoa
     
-   public String retornarEmail()
+   public final String retornarEmail()
    { 
       return email;
    }//Fim do método que retorna o email do objeto do tipo Pessoa;
     
-   public void alterarEmail(String novoEmail)
+   public final void alterarEmail (String novoEmail)
    { 
       email = novoEmail;
    }//Fim do método que altera o email do objeto do tipo Pessoa;
     
-   public String retornarTelefone()
+   public final String retornarTelefone()
    {  
       return telefone.retornarTelefoneCompleto();
    }//Fim do método que retorna o telefone do objeto do tipo Pessoa;
  
-   public String retornarEndereco()
+   public final String retornarEndereco()
    {    
       return endereco.retornarEnderecoCompleto();
    }//Fim do método que retorna o objeto do tipo Endereco;

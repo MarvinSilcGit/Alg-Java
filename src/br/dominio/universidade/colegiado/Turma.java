@@ -22,7 +22,7 @@ public final class Turma
 {  
    private ArrayList listaEstudantes = new ArrayList(30);
    
-   private Date anoTurma;
+   private Date ano;
    
    //Fim do campo de declaração de atributos;
    
@@ -46,14 +46,14 @@ public final class Turma
       
    }//Fim do método construtor padrão;
    
-   public Turma(Date anoTurma)
+   public Turma (Date ano)
    {
-      this.anoTurma = anoTurma;
+      this.ano = ano;
    }//Fim do método construtor personalizado;
    
-   public Date retornarAnoTurma()
+   public Date retornarAno()
    {
-      return anoTurma;
+      return ano;
    }//Fim do método que retorna o ano da turma do objeto do tipo Turma;
    
    public ArrayList retornarListaEstudantesTurma()
