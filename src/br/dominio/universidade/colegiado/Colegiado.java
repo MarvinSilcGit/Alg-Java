@@ -111,7 +111,7 @@ public final class Colegiado
    
    public void removerCursoLista(Curso removerCurso)
    {
-      listaCursos.remove(removerCurso);
+      listaCursos.remove (removerCurso);
    }//Fim do método que remove um objeto do tipo Curso da lista do objeto do tipo Colegiado;
    
 }//Fim da classe Colegiado;
