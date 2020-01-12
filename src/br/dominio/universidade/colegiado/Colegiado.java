@@ -24,7 +24,7 @@ public final class Colegiado
     
    private Funcionario coordenador;
         
-   private ArrayList <SalaAula> listaSalas = new ArrayList();
+   private ArrayList <SalaAula> listaSalasAula = new ArrayList();
    
    private ArrayList <Turma> listaTurmas = new ArrayList();
    
@@ -62,51 +62,51 @@ public final class Colegiado
    public Funcionario retornarCoordenador()
    {   
       return coordenador;
-   }//Fim do método que retorna o coordenador do objeto do tipo Colegiado;
+   }//Fim do método que retorna o coordenador do tipo Funcionario do objeto do tipo Colegiado;
     
-   public void alterarCoordenadorColegiado(Funcionario novoCoordenador)
+   public void alterarCoordenador(Funcionario novoCoordenador)
    {     
       coordenador = novoCoordenador;
    }//Fim do método que altera o coordenador do objeto do tipo Colegiado;
     
-   public ArrayList retornarListaSalas()
+   public ArrayList retornarListaSalasAula()
    {
-      return listaSalas;       
-   }//Fim do método que retorna objetos do tipo Sala da lista do objeto do tipo Colegiado;
+      return listaSalasAula;       
+   }//Fim do método que retorna a lista de objetos do tipo Sala da lista do objeto do tipo Colegiado;
     
-   public void inserirSalaLista(SalaAula novaSala)
+   public void inserirSalaAulaLista(SalaAula novaSala)
    {   
-      listaSalas.add(novaSala);       
+      listaSalasAula.add (novaSala);       
    }//Final do método que insere um objeto do tipo Sala na lisa do objeto do tipo Colegiado;
     
-   public void removerSalaLista(SalaAula removerSala)
+   public void removerSalaAulaLista(SalaAula removerSala)
    {   
-      listaSalas.remove(removerSala);     
+      listaSalasAula.remove (removerSala);     
    }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Colegiado;
     
    public ArrayList retornarListaTurmas()
    {
       return listaTurmas;
-   }//Fim do método que retorna objetos do tipo Turma da lista do objeto do tipo Colegiado;
+   }//Fim do método que retorna a lista de objetos do tipo Turma da lista do objeto do tipo Colegiado;
    
    public void inserirTurmaLista(Turma novaTurma)
    {
-      listaTurmas.add(novaTurma);
+      listaTurmas.add (novaTurma);
    }//Fim do método que insere um objeto do tipo Turma na lista do objeto do tipo Colegiado
    
    public void removerTurmaLista(Turma TurmaEscolhida)
    {
-      listaTurmas.remove(TurmaEscolhida);
+      listaTurmas.remove (TurmaEscolhida);
    }//Fim do método que remove um objeto do tipo Turma da lista do objeto do tipo Colegiado;
    
    public ArrayList retornarListaCursos()
    {
       return listaCursos;
-   }//Fim do método que retorn objeto do tipo Curso da lista do objeto do tipo Colegiado;
+   }//Fim do método que retorna a lista de objetos do tipo Curso da lista do objeto do tipo Colegiado;
    
    public void inserirCursoLista(Curso novoCurso)
    {
-      listaCursos.add(novoCurso);
+      listaCursos.add (novoCurso);
    }//Fim do método que insere um objeto do tipo Curso na lista do objeto do tipo Colegiado;
    
    public void removerCursoLista(Curso removerCurso)
