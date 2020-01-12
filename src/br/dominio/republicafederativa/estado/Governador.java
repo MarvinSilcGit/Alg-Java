@@ -3,6 +3,7 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.republicafederativa.estado;
 
 /**
@@ -31,9 +32,9 @@ public class Governador extends Presidente
       
    }//Fim do método construtor padrão;
    
-   public Governador(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public Governador (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
+      super (nome, nascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
       
       //Fim do método super da classe mãe ou super classe Presidente, inicializando seu contrutor personalizado;
       

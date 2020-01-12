@@ -78,57 +78,57 @@ public final class Estudante extends Pessoa
       this.anoMatricula = anoMatricula;
    }//Fim do método construtor personalizado;
     
-   public int retornarHorasExtras()
+   public final int retornarHorasExtras()
    {
       return horasExtras;
    }//Fim do método que retorna as horas extras do objeto do tipo Estudante;
     
-   public void aumentarHorasExtras (int valor)
+   public final void aumentarHorasExtras (int valor)
    {  
       horasExtras+= valor;
    }//Fim do método que aumenta as horas extras do objeto do tipo Estudante;
     
-   public void diminuirHorasExtras (int valor)
+   public final void diminuirHorasExtras (int valor)
    {
       horasExtras-= valor;
    }//Fim do método que diminui as horas extras do objeto do tipo Estudante;
     
-   public int retornarMatrícula()
+   public final int retornarMatrícula()
    {
       return matricula;
    }//Fim do método que retorna a matrícula do objeto do tipo Estudante;
     
-   public int retornarHorasExtrasMinimas()
+   public final int retornarHorasExtrasMinimas()
    {
       return horasExtrasMinimas;
    }//Fim do método que retorna as horas extras mínimas da classe Estudante;
    
-   public double retornarDescontoFiesProUni()
+   public final double retornarDescontoFiesProUni()
    {
       return descontoFiesProUni;
    }//Fim do método que retorna o desconto Fies ou ProUni do objeto do tipo Estudante;
    
-   public Turma retornarTurma()
+   public final Turma retornarTurma()
    {
       return turma;
    }//Fim do método que retorna o objeto do tipo Turma do objeto do tipo Estudante;
     
-   public Acesso acessarContaAcesso()
+   public final Acesso acessarContaAcesso()
    {
       return conta;
    }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Estudante;
   
-   public Date retornarAnoMatricula()
+   public final Date retornarAnoMatricula()
    {
       return anoMatricula;
    }//Fim do método que retorna o ano de matrícula do objeto do tipo Estudante;
    
-   public ArrayList retornarDisciplinasCursando()
+   public final ArrayList retornarDisciplinasCursando()
    {      
       return disciplinasCursando;
    }//Fim do método que retorna o objeto do tipo Disciplinas cursando da lista do objeto do tipo Estudante;
     
-   public void inserirDisciplinaCursando (Disciplina novaDisciplina)
+   public final void inserirDisciplinaCursando (Disciplina novaDisciplina)
    {
       if(disciplinasCursadas.contains (novaDisciplina))
       {
@@ -140,32 +140,32 @@ public final class Estudante extends Pessoa
       }
    }//Fim do método que insere o objeto do tipo Disciplina na lista do objeto do tipo Estudante;
    
-   public void removerDisciplinaCursando (Disciplina disciplina)
+   public final void removerDisciplinaCursando (Disciplina disciplina)
    {
       disciplinasCursando.remove (disciplina);
    }//Fim do método que remove o objeto do tipo Disciplina da lista do objeto do tipo Estudante;
    
-   public ArrayList retornarDisciplinasCursadas()
+   public final ArrayList retornarDisciplinasCursadas()
    {   
       return disciplinasCursadas;
    }//Fim do método que retorna os objetos do tipo Disciplina da lista de disciplina cursadas do objeto do tipo Estudante;
     
-   public void inserirDisciplinasCursadas (Disciplina novaDisciplina)
+   public final void inserirDisciplinasCursadas (Disciplina novaDisciplina)
    {
       disciplinasCursadas.add (novaDisciplina);
    }//Fim do método que insere o objeto do tipo Disciplina na lista de disciplinas cursadas do objeto do tipo Estudante;
    
-   public void removerDisciplinasCursadas (Disciplina removerDisciplina)
+   public final void removerDisciplinasCursadas (Disciplina removerDisciplina)
    {
       disciplinasCursadas.remove (removerDisciplina);
    }//Fim do método que remove o objeto do tipo Disciplina da lista de disciplinas cursadas do objeto do tipo Estudante;
    
-   public Map RetornarListaCertificados()
+   public final Map RetornarListaCertificados()
    {
       return certificados;
    }//Fim do método que retorna a lista de certificados do objeto do tipo Estudante;
    
-   public void removerCertificado (String nomeCurso)
+   public final void removerCertificado (String nomeCurso)
    {
       certificados.remove (nomeCurso);
    }//Fim do método que remove informações do certificado do HashMap do objeto do tipo Estudante;

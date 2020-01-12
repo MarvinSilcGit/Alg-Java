@@ -32,9 +32,9 @@ public class Estado extends Pais
    
    }//Fim do método construtor padrão;
     
-   public Estado(String nome, Moeda moeda, double tesouro, double pib, double idh, Governador governador, ViceGovernador viceGovernador)
+   public Estado (String nome, Moeda moeda, double tesouro, double pib, double idh, Governador governador, ViceGovernador viceGovernador)
    {     
-      super(nome, moeda, tesouro, pib, idh);
+      super (nome, moeda, tesouro, pib, idh);
       
       //Fim do método construtor Super da classe mãe ou superclasse Pais;
       
@@ -44,35 +44,35 @@ public class Estado extends Pais
       
    }//Fim do método construtor personalizado;
    
-   public Estado(String nome, Moeda moeda, double tesouro, double pib, double idh)
+   public Estado (String nome, Moeda moeda, double tesouro, double pib, double idh)
    {     
-      super(nome, moeda, tesouro, pib, idh);
+      super (nome, moeda, tesouro, pib, idh);
       
       //Fim do método construtor Super da classe mãe ou superclasse Pais;
       
    }//Fim do método construtor personalizado;
    
-   public ArrayList retornarCidades()
+   public final ArrayList retornarCidades()
    {
       return listaCidades;
-   }//FIm do método que retorna lista de Cidades do objeto do tipo Estado;
+   }//Fim do método que retorna lista de Cidades do objeto do tipo Estado;
    
-   public void inserirCidadeLista(Cidade novaCidade)
+   public final void inserirCidadeLista (Cidade novaCidade)
    {
-      listaCidades.add(novaCidade);
+      listaCidades.add (novaCidade);
    }//Fim do método que insere objeto do tipo Cidade na lista do objeto do tipo Estado;
    
-   public void removerCidadeLista(Cidade cidade)
+   public final void removerCidadeLista (Cidade cidade)
    {
-      listaCidades.remove(cidade);
+      listaCidades.remove (cidade);
    }//Fim do método que remove objeto do tipo Cidade da lista do objeto do tipo Estado;
    
-   public Governador retornarGovernador()
+   public final Governador retornarGovernador()
    {
       return governador;
    }//Fim do método que retorna o objeto do tipo Governador do objeto do tipo Estado;
    
-   public ViceGovernador retornarViceGovernador()
+   public final ViceGovernador retornarViceGovernador()
    {
       return viceGovernador;
    }//Fim do método que retorna o Vice-Governador do objeto do tipo Estado;

@@ -14,7 +14,7 @@ package br.dominio.republicafederativa.estado;
 public final class MainEstado 
 {
    
-   public static void main(String[]args)
+   public final static void main(String[]args)
    {
       
    }//Fim do método main;

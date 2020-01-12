@@ -67,7 +67,7 @@ public class Pais
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Pais;
    
-   public final void alterarNome(String novoNome)
+   public final void alterarNome (String novoNome)
    {
       nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Pais;
@@ -77,7 +77,7 @@ public class Pais
       return moeda;
    }//Fim do método que retorna o objeto do tipo Moeda do objeto do tipo Pais;
     
-   public final void alterarMoedaOficial(Moeda alterarMoedaOficial)
+   public final void alterarMoedaOficial (Moeda alterarMoedaOficial)
    { 
       moeda = alterarMoedaOficial;
    }//Fim do método que altera o objeto do tipo Moeda do objeto do tipo Pais;
@@ -87,12 +87,12 @@ public class Pais
       return tesouro;
    }//Fim do método que retorna o tesouro do objeto do tipo Pais;
     
-   public final void aumentarTesouro(double aumentarValor)
+   public final void aumentarTesouro (double aumentarValor)
    { 
       tesouro += aumentarValor; 
    }//Fim do método que aumenta o tesouro do objeto do tipo Pais;
    
-   public final void diminuirTesouro(double diminuirValor)
+   public final void diminuirTesouro (double diminuirValor)
    {
       tesouro -= diminuirValor;
    }//Fim do método que diminui o tesouro do objeto do tipo Pais;
@@ -112,12 +112,12 @@ public class Pais
       return listaEstados;
    }//Fim do método que retorna a lista de objetos do tipo Estado do objeto do tipo Pais;
     
-   public final void inserirEstado(Estado novoEstado)
+   public final void inserirEstado (Estado novoEstado)
    { 
       listaEstados.add(novoEstado);
    }//Fim do método que insere o objeto do tipo Estado na lista do objeto do tipo Pais
     
-   public final void removerEstado(Estado removerEstado)
+   public final void removerEstado (Estado removerEstado)
    {     
       listaEstados.add(removerEstado);
    }//Fim do método que remove o objeto do tipo Estado da lista do objeto do tipo Pais;

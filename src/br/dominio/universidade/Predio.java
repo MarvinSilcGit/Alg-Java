@@ -31,29 +31,29 @@ public final class Predio
       
    }//Fim do método construtor padrão;
    
-   public Predio(String nome, double area)
+   public Predio (String nome, double area)
    {
       this.nome = nome;
       
       this.area = area;
    }//Fim do método construtor personalizado;
    
-   public String retornarNomePredio()
+   public final String retornarNomePredio()
    {
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Predio;
    
-   public void alterarNome(String novoNome)
+   public final void alterarNome (String novoNome)
    {
       nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Predio;
    
-   public double retornarArea()
+   public final double retornarArea()
    {
       return area;
    }//Fim do método que retorna a área do objeto do tipo Predio;
    
-   public void alterarArea(double novaArea)
+   public final void alterarArea (double novaArea)
    {
       area = novaArea;
    }//Fim do método que altera a área do objeto do tipo Predio;

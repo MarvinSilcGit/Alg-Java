@@ -50,7 +50,7 @@ public final class Ministerio
       return  ministro;
    }//Fim do método que retorna o objeto do tipo Ministro do objeto do tipo Ministerio;
 
-   public final void alterarMinistro(Ministro novoMinistro)
+   public final void alterarMinistro (Ministro novoMinistro)
    {  
       ministro = novoMinistro;
    }//Fim do método que altera o objeto to tipo Ministro do objeto do tipo Ministerio;
@@ -60,9 +60,9 @@ public final class Ministerio
       return orcamentoAnual;
    }//Fim do método que retorna o orçamento anual;
 
-   public final void alterarOrcamentoAnual(double novoOrcamento)
+   public final void alterarOrcamentoAnual (double novoOrcamento)
    {
-      orcamentoAnual=novoOrcamento;
+      orcamentoAnual = novoOrcamento;
    }//Fim do método que altera o orçamento anual do objeto do tipo Ministerio;
    
    public final ArrayList retornarListaServidores()
@@ -70,14 +70,14 @@ public final class Ministerio
       return listaServidores;
    }//Fim do método que retorna a lista servidores do objeto do tipo Ministerio;
 
-   public final void inserirServidor(Funcionario novoServidor)
+   public final void inserirServidor (Funcionario novoServidor)
    {
-      listaServidores.add(novoServidor);
+      listaServidores.add (novoServidor);
    }//Fim do método que insere o objeto do tipo Servidor na lista do objeto do tipo Ministerio;
 
-   public final void removerServidor(Funcionario removerServidor)
+   public final void removerServidor (Funcionario removerServidor)
    {
-      listaServidores.remove(removerServidor);
+      listaServidores.remove (removerServidor);
    }//Fim do método que remove o objeto do tipo Servidor da lista do objeto do tipo Ministerio;
    
 }//Fim da classe Ministerio;

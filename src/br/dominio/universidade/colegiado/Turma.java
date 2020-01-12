@@ -51,22 +51,22 @@ public final class Turma
       this.ano = ano;
    }//Fim do método construtor personalizado;
    
-   public Date retornarAno()
+   public final Date retornarAno()
    {
       return ano;
    }//Fim do método que retorna o ano da turma do objeto do tipo Turma;
    
-   public ArrayList retornarListaEstudantesTurma()
+   public final ArrayList retornarListaEstudantesTurma()
    {
       return listaEstudantes;
    }//Fim do método que retorna a lista do objeto do tipo Turma;
    
-   public void inserirEstudanteTurma (Estudante novoEstudante)
+   public final void inserirEstudanteTurma (Estudante novoEstudante)
    {
       listaEstudantes.add (novoEstudante);
    }//Fim do método que insere um objeto do tipo Estudante na lista do objeto do tipo Turma;
    
-   public void removerEstudanteTurma (Estudante removerEstudante)
+   public final void removerEstudanteTurma (Estudante removerEstudante)
    {
       listaEstudantes.remove (removerEstudante);
    }//Fim do método que remove um objeto do tipo Estudante da lista do objeto do tipo Turma;

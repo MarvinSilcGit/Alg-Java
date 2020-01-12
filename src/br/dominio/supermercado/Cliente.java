@@ -36,9 +36,9 @@ public final class Cliente extends Pessoa
    
    }//Fim do método construtor padrão;
    
-   public Cliente(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, CartaoCredito cartaoCredito, Acesso conta)
+   public Cliente (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, CartaoCredito cartaoCredito, Acesso conta)
    {     
-      super(nome, nascimento, cpf, email, telefone, endereco);
+      super (nome, nascimento, cpf, email, telefone, endereco);
       
       //Fim do método super da classe mãe o super classe Pessoa, inicializando seu método construtor personalizado; 
        
@@ -47,27 +47,27 @@ public final class Cliente extends Pessoa
       this.conta = conta;
     }//Fim do método construtor personlizado;
    
-   public ArrayList retornarCarrinho()
+   public final ArrayList retornarCarrinho()
    {  
       return carrinho;
    }//Fim do método que retorna o carrinho do objeto do tipo cliente;
 
-   public void inserirProdutoCarrinho(int inserir)
+   public final void inserirProdutoCarrinho (int inserir)
    {   
-      carrinho.add(inserir);
+      carrinho.add (inserir);
    }//Fim do método que insere um produto no carrinho do objeto do tipo Cliente;
 
-   public void removerProdutoCarrinho(int remover)
+   public final void removerProdutoCarrinho (int remover)
    {
-      carrinho.remove(remover); 
+      carrinho.remove (remover); 
    }//Fim do método que remove um produto do carrinho do objeto do tipo Cliente;
     
-   public CartaoCredito acessarCartaoCredito()
+   public final CartaoCredito acessarCartaoCredito()
    { 
        return cartaoCredito;
    }//Fim do método que acessa o objeto do tipo CartaoCredito do objeto do tipo cliente;
     
-   public Acesso acessarContaAcesso()
+   public final Acesso acessarContaAcesso()
    {     
       return conta;
    }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Cliente;

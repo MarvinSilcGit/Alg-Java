@@ -31,38 +31,38 @@ public class Presidente extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public Presidente(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public Presidente (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta);      
+      super (nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta);      
       
       //Fim do método super da classe mãe ou superclasse Funcionario, inicializando seu terceiro construtor personalizado;
       
-      this.dataPosse=dataPosse;
+      this.dataPosse = dataPosse;
       
-      this.dataDesposse=dataDesposse;
+      this.dataDesposse = dataDesposse;
    }//Fim do método construtor personalizado;
     
-   public Date retornarDataPosse()
+   public final Date retornarDataPosse()
    {
       return dataPosse;
    }//Fim do método que retorna a dataPosse do objeto do tipo Presidente;
    
-   public Date retornarDataDesposse()
+   public final Date retornarDataDesposse()
    {
       return dataDesposse;
    }//Fim do método que retorna a dataDesposse do objeto do tipo Presidente;
    
-   public ArrayList retornarGabinete()
+   public final ArrayList retornarGabinete()
    {
       return gabinete;
    }//Fim do método que retorna o gabinete do objeto do tipo Presidente;
     
-   public void inserirFuncionarioGabinete(Funcionario novoFuncionario)
+   public final void inserirFuncionarioGabinete (Funcionario novoFuncionario)
    {
       gabinete.add(novoFuncionario);
    }//Fim do método que insere o objeto do tipo Funcionario no gabinete do objeto do tipo Presidente;
    
-   public void removerFuncionarioGabinete(Funcionario removerFuncionario)
+   public final void removerFuncionarioGabinete (Funcionario removerFuncionario)
    {
       gabinete.remove(removerFuncionario);
    }//Fim do método que remove o objeto do tipo Funcionario do gabinete do objeto do tipo Presidente;

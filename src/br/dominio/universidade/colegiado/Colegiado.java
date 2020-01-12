@@ -45,54 +45,54 @@ public final class Colegiado
         
    }//Fim do método construtor padrão;
     
-   public Colegiado(String nome, Funcionario coordenador)
+   public Colegiado (String nome, Funcionario coordenador)
    {        
       this.nome = nome;
         
       this.coordenador = coordenador;
    }//Fim do método construtor personalisado da classe Colegiado
     
-   public String retornarNomeColegiado()
+   public final String retornarNomeColegiado()
    {
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Colegiado;
  
-   public Funcionario retornarCoordenador()
+   public final Funcionario retornarCoordenador()
    {   
       return coordenador;
    }//Fim do método que retorna o coordenador do tipo Funcionario do objeto do tipo Colegiado;
     
-   public void alterarCoordenador(Funcionario novoCoordenador)
+   public final void alterarCoordenador (Funcionario novoCoordenador)
    {     
       coordenador = novoCoordenador;
    }//Fim do método que altera o coordenador do objeto do tipo Colegiado;
     
-   public ArrayList retornarListaSalasAula()
+   public final ArrayList retornarListaSalasAula()
    {
       return listaSalasAula;       
    }//Fim do método que retorna a lista de objetos do tipo Sala da lista do objeto do tipo Colegiado;
     
-   public void inserirSalaAulaLista(SalaAula novaSala)
+   public final void inserirSalaAulaLista (SalaAula novaSala)
    {   
       listaSalasAula.add (novaSala);       
    }//Final do método que insere um objeto do tipo Sala na lisa do objeto do tipo Colegiado;
     
-   public void removerSalaAulaLista(SalaAula removerSala)
+   public final void removerSalaAulaLista (SalaAula removerSala)
    {   
       listaSalasAula.remove (removerSala);     
    }//Final do método que remove um objeto to tipo Sala da lista do objeto do tipo Colegiado;
    
-   public ArrayList retornarListaCursos()
+   public final ArrayList retornarListaCursos()
    {
       return listaCursos;
    }//Fim do método que retorna a lista de objetos do tipo Curso da lista do objeto do tipo Colegiado;
    
-   public void inserirCursoLista(Curso novoCurso)
+   public final void inserirCursoLista (Curso novoCurso)
    {
       listaCursos.add (novoCurso);
    }//Fim do método que insere um objeto do tipo Curso na lista do objeto do tipo Colegiado;
    
-   public void removerCursoLista(Curso removerCurso)
+   public final void removerCursoLista(Curso removerCurso)
    {
       listaCursos.remove (removerCurso);
    }//Fim do método que remove um objeto do tipo Curso da lista do objeto do tipo Colegiado;

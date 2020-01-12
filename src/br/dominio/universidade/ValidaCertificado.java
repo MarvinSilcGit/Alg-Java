@@ -28,7 +28,7 @@ public final class ValidaCertificado implements IValidaCertificador
 
    
    @Override
-   public long retornarCodigoCertificador()
+   public final long retornarCodigoCertificador()
    { 
       System.out.println("Digite o código do certificador: ");
          

@@ -14,7 +14,7 @@ package br.dominio.republicafederativa.cidade;
 public final class MainCidade 
 {
    
-   public static void main(String[]args)
+   public final static void main(String[]args)
    {
       
    }//Fim do método main;

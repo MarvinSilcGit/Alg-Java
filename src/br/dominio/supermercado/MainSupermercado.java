@@ -1,11 +1,7 @@
 package br.dominio.supermercado;
 
 
-import br.dominio.api.Endereco;
-
 import br.dominio.empresa.departamento.Departamento;
-
-import br.dominio.cartao.CartaoCredito;
 
 import br.dominio.api.Acesso;
 
@@ -15,7 +11,7 @@ import br.dominio.api.Acesso;
 public final class MainSupermercado
 {
     
-   public static void main(String[] args)
+   public static final void main(String[] args)
    {   
       Departamento dp1 = new Departamento();
        

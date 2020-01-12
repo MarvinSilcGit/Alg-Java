@@ -27,9 +27,9 @@ import br.dominio.api.Endereco;
 public final class VicePrefeito extends ViceGovernador
 {
    
-   public VicePrefeito(String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public VicePrefeito (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
    {
-      super(nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
+      super (nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
       
       //Fim do método super da classe mãe ou superclasse ViceGovernador, inicializando o método construtor personalizado;
       

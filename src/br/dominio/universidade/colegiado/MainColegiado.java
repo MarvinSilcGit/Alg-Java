@@ -14,7 +14,7 @@ package br.dominio.universidade.colegiado;
 public final class MainColegiado 
 {
    
-   public static void main()
+   public static final void main()
    {
       
    }//Fim do método main;

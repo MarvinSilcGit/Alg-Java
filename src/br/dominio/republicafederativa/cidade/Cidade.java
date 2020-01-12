@@ -32,9 +32,9 @@ public final class Cidade extends Estado
         
    }//Fim do método construtor padrão;
     
-   public Cidade(String nome, Moeda moeda, double tesouro, double pib, double idh, Prefeito prefeito, VicePrefeito vicePrefeito)
+   public Cidade (String nome, Moeda moeda, double tesouro, double pib, double idh, Prefeito prefeito, VicePrefeito vicePrefeito)
    {     
-      super(nome, moeda, tesouro, pib, idh); 
+      super (nome, moeda, tesouro, pib, idh); 
       
       //Fim do método Super da superclasse ou classe mãe Estado;
       
@@ -43,32 +43,32 @@ public final class Cidade extends Estado
       this.vicePrefeito = vicePrefeito;
    }//Fim do método construtor personalizado;
      
-   public ArrayList retornarListaSecretarias()
+   public final ArrayList retornarListaSecretarias()
    {
       return listaSecretarias;
    }//Fim do método que retorna a lista de secretarias do objeto do tipo Cidade;
    
-   public ArrayList retornarListaCidadaos()
+   public final ArrayList retornarListaCidadaos()
    { 
       return listaCidadaos;
    }//Fim do método que retorna a lista do objeto do tipo Cidade;
     
-   public void inserirCidadao(Cidadao inserir)
+   public final void inserirCidadao (Cidadao inserir)
    { 
       listaCidadaos.add(inserir);
    }//Fim do métdo que insere o objeto do tipo Cidadao na lista do objeto do tipo Cidade;
     
-   public void removerCidadao(Cidadao remover)
+   public final void removerCidadao (Cidadao remover)
    {
       listaCidadaos.remove(remover);
    }//Fim do método que remove o objeto do tipo Cidadao da lista do objeto do tipo Cidade;
    
-   public Prefeito retornarPrefeito()
+   public final Prefeito retornarPrefeito()
    {
       return prefeito;
    }//Fim do método que retorna o objeto do tipo Prefeito do objeto objeto do Cidade;
    
-   public VicePrefeito retornarVicePrefeito()
+   public final VicePrefeito retornarVicePrefeito()
    {
       return vicePrefeito;
    }//Fim do método que retorna o objeto do tipo VicePrefeito do objeto do tipo Cidade;

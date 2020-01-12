@@ -39,27 +39,27 @@ public final class SalaAula
       this.area = area;
    }//Fim do método construtor personalizado;
     
-   public String retornarCor()
+   public final String retornarCor()
    {
       return cor;
    }//Fim do método que retorna a cor do obejto do tipo Sala;
     
-   public void alterarCor (String novaCor)
+   public final void alterarCor (String novaCor)
    {
       cor = novaCor;
    }//Fim do método que altera a cor do objeto do tipo Sala;
     
-   public int retornarCapacidade()
+   public final int retornarCapacidade()
    {    
       return capacidade;
    }//Fim do método que retorna a capacidade do objeto do tipo Sala;
     
-   public int retornarNumeroSala()
+   public final int retornarNumeroSala()
    {   
       return numeroSala;
    }//Fim do método que retorna o número do objeto do tipo Sala;
    
-   public double retornarArea()
+   public final double retornarArea()
    {
       return area;
    }//Fim do método que retorna a area do objeto do tipo Sala;

@@ -60,7 +60,7 @@ public final class Disciplina
         
    }//Fim do método construtor padrão;
     
-   public Disciplina(String nome, String ementa)
+   public Disciplina (String nome, String ementa)
    {     
       this.nome = nome;
         
@@ -72,17 +72,17 @@ public final class Disciplina
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Disciplina;
     
-   public void alterarNome(String novoNome)
+   public final void alterarNome (String novoNome)
    {      
       nome = novoNome;
    }//Fim do método que altera o nome do objeto do tipo Disciplina;
     
-   public String retornarEmenta()
+   public final String retornarEmenta()
    {    
       return ementa;
    }//Fim do método que retorna a ementa do objeto do tipo Disciplina;
     
-   public void alterarEmenta(String novaEmenta)
+   public final void alterarEmenta (String novaEmenta)
    {    
      ementa = novaEmenta;
    }//Fim do método que altera a ementa do objeto do tipo Disciplina;

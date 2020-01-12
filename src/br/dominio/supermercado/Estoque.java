@@ -23,30 +23,30 @@ public final class Estoque
    
    }//Fim do método construtor padrão;
     
-   public Estoque(int numeroCategorias)
+   public Estoque (int numeroCategorias)
    {     
       this.numeroCategorias = numeroCategorias;
  
    }//Fim do método construtor personalizado; 
    
-   public int retornarNumeroCategorias()
+   public final int retornarNumeroCategorias()
    {
       return numeroCategorias;
    }//Fim do método que retorna a quantidade de categorias do objeto do tipo Estoque;
 
-   public ArrayList retornarListaProdutos()
+   public final ArrayList retornarListaProdutos()
    {
       return listaProdutos;
    }//Fim do método que retorna a lista do objeto do tipo Estoque;
 
-   public void inserirProdutoListaEstoque(Produto novoCodigo)
+   public final void inserirProdutoListaEstoque (Produto novoCodigo)
    {
-      listaProdutos.add(novoCodigo);
+      listaProdutos.add (novoCodigo);
    }//Fim do método que insere um objeto do tipo Produto na lista do objeto do tipo Estoque;
 
-   public void removerProdutoListaEstoque(Produto removerCodigo)
+   public final void removerProdutoListaEstoque (Produto removerCodigo)
    {
-      listaProdutos.remove(removerCodigo);
+      listaProdutos.remove (removerCodigo);
    }//Fim do método que remove um objeto do tipo Produto da lista do objeto do tipo Estoque;
    
 }//Fim da classe Estoque;

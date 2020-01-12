@@ -58,12 +58,12 @@ public final class Professor extends Funcionario
       this.salarioHora = salarioHora;    
    }//Fim do método construtor personalizado;
     
-   public double retornarSalarioHora()
+   public final double retornarSalarioHora()
    {    
       return salarioHora;
    }//Fim do método que retorna o salario hora do objeto do tipo Professor;
     
-   public void alterarSalarioHora(double novoSalarioHora)
+   public final void alterarSalarioHora(double novoSalarioHora)
    {  
       salarioHora = novoSalarioHora;
    }//Fim do método que altera o salario hora do objeto do tipo Professor;

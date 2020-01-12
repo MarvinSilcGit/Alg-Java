@@ -34,29 +34,29 @@ public final class Boletim
             
    }//Fim do método construtor padrão;
     
-   public Boletim(int codigo, double nota)
+   public Boletim (int codigo, double nota)
    {     
       this.codigo = codigo;
         
       this.nota = nota;
    }//Fim do método construtor personalizado;
     
-   public int retornarCodigo()
+   public final int retornarCodigo()
    {    
       return codigo;
    }//Fim do método que retorna o codigo do objeto do tipo Boletim;
     
-   public double retornarNotaBoletim()
+   public final double retornarNotaBoletim()
    {
       return nota;
    }//Fim do método que retorna a nota do objeto do tipo Boletim;
     
-   public void alterarNotaBoletim(double novaNota)
+   public final void alterarNotaBoletim (double novaNota)
    {
       nota = novaNota;
    }//Fim do método que altera a nota do objeto do tipo Boletim;
     
-   public void inserirNota(Disciplina nomeDisciplina, double novaNota)
+   public final void inserirNota (Disciplina nomeDisciplina, double novaNota)
    {     
       dicionario.put(nomeDisciplina, novaNota);
         
