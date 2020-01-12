@@ -44,9 +44,9 @@ public final class Alura extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public Alura(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, Orcamento orcamento, double capitalSocial)
+   public Alura (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, Orcamento orcamento, double capitalSocial)
    {
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
      //Fim do método super da classe mãe ou super classe Empresa;
    

@@ -24,28 +24,28 @@ public final class ContaCorrente extends ContaBancaria
    
    }//Fim do método construtor padrão;
     
-   public ContaCorrente(double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaMensal, CartaoCredito cartaoCredito)
+   public ContaCorrente (double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaMensal, CartaoCredito cartaoCredito)
    {     
-      super(saldo, valorInicial, cartaoDebito);
+      super (saldo, valorInicial, cartaoDebito);
     
       //Fim do método super da classe mãe ou super classe ContaBancaria;
       
-      this.taxaMensal=taxaMensal;  
+      this.taxaMensal = taxaMensal;  
       
-      this.cartaoCredito=cartaoCredito;
+      this.cartaoCredito = cartaoCredito;
     }//Fim do método construtor padrão;
     
-   public double retornarTaxaMensal()
+   public final double retornarTaxaMensal()
    {     
       return this.taxaMensal;
    }//Fim do método que retorna a taxa mensal do objeto do tipo ContaCorrente;
     
-   public void alterarTaxaMensal(double novaTaxaMensal)
+   public final void alterarTaxaMensal (double novaTaxaMensal)
    { 
-      this.taxaMensal=novaTaxaMensal;
+      taxaMensal = novaTaxaMensal;
    }//Fim do método que altera a taxa mensal do objeto do tipo ContaCorrente;
     
-   public CartaoCredito acessarCartaoCredito()
+   public final CartaoCredito acessarCartaoCredito()
    { 
       return this.cartaoCredito;
    }//Fim do método que da acesso o objeto do tipo CartaoCredito no objeto do tipo ContaCorrente;

@@ -14,7 +14,7 @@ package br.dominio.drograria;
 import br.dominio.empresa.Empresa;
 
 
-public class Drogaria extends Empresa
+public final class Drogaria extends Empresa
 {
    
    public Drogaria()

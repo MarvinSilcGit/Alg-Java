@@ -42,9 +42,9 @@ public final class DevMedia extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public DevMedia(String razaoSocial, String nomeFantasia, Endereco endereco,Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public DevMedia (String razaoSocial, String nomeFantasia, Endereco endereco,Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

@@ -20,21 +20,21 @@ public final class CartaoDebito extends Cartao
    
    }//Fim do método construtor padrão;
     
-   public CartaoDebito(long numeroCartao, int codeSeguranca, int senhaNumero, String nomeGravado, Date vencimentoCartao,  String senhaLetra)
+   public CartaoDebito (long numeroCartao, int codeSeguranca, int senhaNumero, String nomeGravado, Date vencimentoCartao,  String senhaLetra)
    {
-      super(numeroCartao, codeSeguranca, senhaNumero, nomeGravado, vencimentoCartao);
+      super (numeroCartao, codeSeguranca, senhaNumero, nomeGravado, vencimentoCartao);
       
       //Fim do método super da classe mãe ou super classe Cartão;
        
       this.senhaLetra=senhaLetra;
    }//Fim do método construtor padrão;
     
-   public String retornarSenhaLetra()
+   public final String retornarSenhaLetra()
    {     
       return this.senhaLetra;
    }//Fim do étodo que retorna a senha letra do objeto do tipo CartaoDebito;
     
-   public void alterarSenhaLetra(String alterar)
+   public final void alterarSenhaLetra(String alterar)
    { 
       this.senhaLetra=alterar;
    }//Fim do método que altera a senha letra do objeto do tipo CartaoDebito;

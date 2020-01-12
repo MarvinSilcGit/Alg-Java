@@ -22,30 +22,30 @@ public final class ContaPoupanca extends ContaBancaria
    
    }//Fim do método construtor Padrão;
     
-   public ContaPoupanca(double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaDividendosAno, int limiteSaquesMensais)
+   public ContaPoupanca (double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaDividendosAno, int limiteSaquesMensais)
    {        
-      super(saldo, valorInicial, cartaoDebito);
+      super (saldo, valorInicial, cartaoDebito);
       
       //Fim do método super da classe mãe ou super classe Conta;
 
-      this.taxaDividendosAno=taxaDividendosAno; 
+      this.taxaDividendosAno = taxaDividendosAno; 
 
-      this.limiteSaquesMensais=limiteSaquesMensais;
+      this.limiteSaquesMensais = limiteSaquesMensais;
    }//Fim do campo de declaração de atributos;
     
-   public double retornarTaxaDividendos()
+   public final double retornarTaxaDividendos()
    {
-      return this.taxaDividendosAno;
+      return taxaDividendosAno;
    }//Fim do método que retorna a taxa do objeto do tipo ContaPoupanca;
 
-   public void alterarTaxaDividendos(double alterar)
+   public final void alterarTaxaDividendos (double alterar)
    {
-      this.taxaDividendosAno=alterar;
+      taxaDividendosAno = alterar;
    }//Fim do método que altera a taxa do objeto do tipo ContaPoupanca;
 
-   public int retornarLimiteSaquesMensais()
+   public final int retornarLimiteSaquesMensais()
    {
-      return this.limiteSaquesMensais;
+      return limiteSaquesMensais;
    }//Fim do método que retorna limite saques do objeto do tipo ContaPoupanca;
    
 }//Fim da classe ContaPoupanca;

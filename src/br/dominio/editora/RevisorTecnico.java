@@ -32,7 +32,7 @@ public class RevisorTecnico extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public RevisorTecnico(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public RevisorTecnico (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta)
    {
       
    }//Fim do método construtor personalizado;

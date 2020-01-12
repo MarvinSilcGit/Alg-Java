@@ -24,29 +24,29 @@ public final class Pratileira
    
    }//Fim do método construtor padrão;
     
-   public Pratileira(String nome, int capacidade)
+   public Pratileira (String nome, int capacidade)
    {     
       this.nome = nome;
     
       this.capacidade = capacidade;
    }//Fim do método construtor personalizado;
     
-   public String retornarNomePratileira()
+   public final String retornarNomePratileira()
    {     
       return nome;
    }//Fim do método que retorna o nome do objeto do tipo Pratileira;
     
-   public int retornarCapacidadePratileira()
+   public final int retornarCapacidadePratileira()
    { 
       return capacidade;
    }//Fim do método que retorna a capacidade do objeto do tipo Pratileira;
     
-   public ArrayList retornarListaLivros()
+   public final ArrayList retornarListaLivros()
    { 
       return listaLivros;
    }//Fim do método que retorna a lista do objeto do tipo Pratileira;
     
-    public void inserirLivro(Periodico inserir)
+    public final void inserirLivro(Periodico inserir)
     {    
        if (listaLivros.size() >= capacidade)
        { 
@@ -56,7 +56,7 @@ public final class Pratileira
           
           if (listaLivros.contains(inserir))
           {       
-             System.out.println("O livro " + inserir.retornarTitulo()+", com o códido ISBN " + inserir.retornarCodigoBarras() + ", já está na pratileira");
+             System.out.println("O livro " + inserir.retornarTitulo() + ", com o códido ISBN " + inserir.retornarCodigoBarras() + ", já está na pratileira");
           }  
           else
           {
@@ -70,7 +70,7 @@ public final class Pratileira
        }
     }//Fim do método que insere livro na lista do objeto do tipo Pratileira;
    
-    public void removerLivro(Periodico remover)
+    public final void removerLivro(Periodico remover)
     {
        if (this.listaLivros.contains(remover))
        {        

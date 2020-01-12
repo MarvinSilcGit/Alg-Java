@@ -27,16 +27,16 @@ public final class ClientePro extends Cliente
     
    }//Fim do método construtor personalizado;
     
-   public ClientePro(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente, ContaCorrente contaCorrente)
+   public ClientePro (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente, ContaCorrente contaCorrente)
    { 
-      super(nome, nascimento, cpf, email, telefone, endereco, conta, dataFidelizacaoCliente);
+      super (nome, nascimento, cpf, email, telefone, endereco, conta, dataFidelizacaoCliente);
       
       //Fim do método super da classe mãe ou super classe Cliente;
       
       this.contaCorrente = contaCorrente;
    }//Fim do método construtor personalizado;
     
-   public ContaCorrente acessarContaCorrente()
+   public final ContaCorrente acessarContaCorrente()
    {
       return contaCorrente;
    }

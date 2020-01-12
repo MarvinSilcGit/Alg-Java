@@ -24,27 +24,27 @@ public final class Biblioteca extends Empresa
     
    }//Fim do método contrutor padrão;
     
-   public Biblioteca(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public Biblioteca (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {     
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       
    }//Fim do método construtor personalizado;
     
-   public ArrayList retornarPratileiras()
+   public final ArrayList retornarPratileiras()
    {
-      return this.listaPratileiras;
+      return listaPratileiras;
    }//Fim do método que retorna a pratileira do objeto do tipo Biblioteca;
 
-   public void adicionarPratileira(Pratileira add)
+   public final void adicionarPratileira (Pratileira add)
    {
-      this.listaPratileiras.add(add);
+      listaPratileiras.add (add);
    }//Fim do método que adicona livros na pratileira do objeto do tipo Biblioteca;
 
-   public void removerPratileira(Pratileira remover)
+   public final void removerPratileira (Pratileira remover)
    {
-      this.listaPratileiras.remove(remover);
+      listaPratileiras.remove (remover);
    }//Fim do método que remove livros da pratileira do objeto do tipo Biblioteca;
     
 }//Fim da classe Biblioteca;

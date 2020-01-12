@@ -4,7 +4,7 @@ package br.dominio.biblioteca;
 public final class MainBiblioteca
 { 
    
-   public static void main(String[] args)
+   public static final void main(String[] args)
    {     
       Pratileira romance = new Pratileira("romance",2);
         

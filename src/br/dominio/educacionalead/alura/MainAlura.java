@@ -14,7 +14,7 @@ package br.dominio.educacionalead.alura;
 public final class MainAlura 
 {
   
-   public static void main(String[] args) 
+   public static final void main(String[] args) 
    {
   
    }//Fim do método main;

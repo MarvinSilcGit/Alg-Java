@@ -4,7 +4,7 @@ package br.dominio.cartao;
 public final class MainCartao
 {
    
-   public static void main(String[] args)
+   public static final void main(String[] args)
    {        
       
       CartaoDebito cd1 = new CartaoDebito();
