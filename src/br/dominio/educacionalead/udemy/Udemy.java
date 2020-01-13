@@ -19,18 +19,18 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Funcionario;
 
-import br.dominio.universidade.colegiado.Estudante;
+import br.dominio.universidade.colegiado.Professor;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
 
 public final class Udemy extends Empresa
 {         
-   private ArrayList <Estudante> listaAlunosCursando = new ArrayList();
-   
-   private ArrayList <Estudante> listaAlunosConcluintes = new ArrayList();
-   
    private ArrayList <Curso> listaCursos = new ArrayList();
+   
+   private ArrayList <Professor> listaProfessores = new ArrayList(listaCursos.size()/2);
+   
+   private ArrayList <Aluno> listaAlunos = new ArrayList(listaProfessores.size()*20);
    
    private IRecebeCodigoCertificador codigoCertificador;
    
@@ -53,7 +53,17 @@ public final class Udemy extends Empresa
    public final ArrayList retornarListaCursos()
    {
       return listaCursos;
-   }//Fim do método que retorna a lista de cursos do objeto do tipo Udemy;
+   }//Fim do método que retorna a lista de objetos do tipo Curso do objeto do tipo Udemy;
+   
+   public final ArrayList retornarListaProfessores()
+   {
+      return listaProfessores;
+   }//Fim do método que retorna a lista de objetos do tipo Professor do objeto do tipo Udemy;
+   
+   public final ArrayList retornarListaAlunos()
+   {
+      return listaAlunos;
+   }//Fim do método que retorna a lista de objeto do tipo Aluno do objeto do tipo Udemy;
    
    public final long retornarCodigoCertificador()
    {
