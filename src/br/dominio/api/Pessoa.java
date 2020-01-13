@@ -51,7 +51,7 @@ public abstract class Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Pessoa (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco)
+   public Pessoa (String nome, Date dataNascimento, String cpf, String email, Endereco endereco)
    {     
       this.nome = nome;
         
@@ -61,10 +61,20 @@ public abstract class Pessoa
         
       this.email = email;
         
-      this.telefone = telefone;
-        
       this.endereco = endereco;
-   }//Fim do método construtor personalizado;
+   }//Fim do primeiro método construtor personalizado;
+   
+   
+   public Pessoa (String nome, Date dataNascimento, String cpf, String email)
+   {     
+      this.nome = nome;
+        
+      this.dataNascimento = dataNascimento;
+        
+      this.cpf = cpf;
+        
+      this.email = email;
+   }//Fim do segundo método construtor personalizado;
     
    public final String retornarNome()
    {      

@@ -9,8 +9,6 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Funcionario;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -27,9 +25,9 @@ public final class Correntista extends Funcionario
     
    }//Fim do método construtor padrão;
     
-   public Correntista (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Correntista (String nome, Date nascimento, String cpf, String email,Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
    {     
-      super  (nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
    
       //Fim do método super da classe mãe ou super classe Funcionário;
    
@@ -45,24 +43,24 @@ public final class Correntista extends Funcionario
       return this.listaClienteJuridico;
    }//Fim do método que retorna a lista do objeto do tipo Correntista;
     
-   public final void inserirCLienteFisico(String inserirCPF)
+   public final void inserirCLienteFisico (String inserirCPF)
    { 
       this.listaClienteFisico.add(inserirCPF);
    }//Fim do método que insere ClienteFisico na lista do objeto do tipo Correntista;
     
-   public final void removerClienteFisico(String removerCPF)
+   public final void removerClienteFisico (String removerCPF)
    { 
-      this.listaClienteFisico.remove(removerCPF);
+      this.listaClienteFisico.remove (removerCPF);
    }//Fim do método que remove ClienteFisico da lista do objeto do tipo Correntista;
     
-   public final void inserirClienteJuridico(String inserirCNPJ)
+   public final void inserirClienteJuridico (String inserirCNPJ)
    { 
-      this.listaClienteJuridico.add(inserirCNPJ);
+      this.listaClienteJuridico.add (inserirCNPJ);
    }//Fim do método que insere ClienteJuridico na lista do objeto do tipo Correntista;
     
-   public final void removerClienteJuridico(String removerCNPJ)
+   public final void removerClienteJuridico (String removerCNPJ)
    { 
-      this.listaClienteJuridico.remove(removerCNPJ);
+      this.listaClienteJuridico.remove (removerCNPJ);
    }//Fim do método que remove ClienteJuridico da lista do objeto do tipo Correntista;
     
 }//Fim da classe Correntista;

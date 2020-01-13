@@ -15,8 +15,6 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Acesso;
 
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -28,9 +26,9 @@ public final class Pediatra  extends ProfissionalMedicina
       
    }//Fim do método construtor padrão;
    
-   public Pediatra (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+   public Pediatra (String nome, Date nascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
    {     
-      super (nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta, crm, valorConsulta);   
+      super (nome, nascimento, cpf, email, endereco, setor, dataAdmissao, conta, crm, valorConsulta);   
          
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o método construtor personalizado;
    

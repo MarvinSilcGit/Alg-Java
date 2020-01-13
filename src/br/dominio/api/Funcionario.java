@@ -34,9 +34,9 @@ public abstract class Funcionario extends Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
    {    
-      super (nome, dataNascimento, cpf, email, telefone, endereco);          
+      super (nome, dataNascimento, cpf, email, endereco);          
     
       //Fim do método super da classe mãe ou superclasse Pessoa;
       
@@ -49,9 +49,9 @@ public abstract class Funcionario extends Pessoa
       this.conta = conta;
    }//Fim do primeiro método construtor personalizado;
     
-   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta)
+   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta)
    {    
-      super (nome, dataNascimento, cpf, email, telefone, endereco);
+      super (nome, dataNascimento, cpf, email, endereco);
        
       //Fim do método super da classe mãe ou superclasse Pessoa;
       
@@ -62,9 +62,9 @@ public abstract class Funcionario extends Pessoa
       this.conta = conta;     
    }//Fim do segundo método construtor personalizado;
     
-   public Funcionario (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta)
+   public Funcionario (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta)
    {    
-      super (nome, nascimento, cpf, email, telefone, endereco);          
+      super (nome, nascimento, cpf, email, endereco);          
     
       //Fim do método super da classe mãe ou superclasse Pessoa;
       

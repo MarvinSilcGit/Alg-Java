@@ -14,8 +14,6 @@ import java.util.Date;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -33,9 +31,9 @@ public final class ViceDiretor extends Diretor
     
    }//Fim do método construtor padrão;
    
-   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
+   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
    {
-      super(nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta, assistente);
+      super(nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, assistente);
       
       this.chefe = chefe;
    }//Fim do método construtor personalizado;

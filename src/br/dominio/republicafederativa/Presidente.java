@@ -11,18 +11,14 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Acesso;
 
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Presidente extends Funcionario
+public final class Presidente extends Funcionario
 {    
    private ArrayList gabinete =  new ArrayList(20);
    
-   private Date dataPosse,
-           dataDesposse;
-    
+   private Date dataPosse;
    //Fim do campo de declaração de atributos;
    
    
@@ -31,26 +27,19 @@ public class Presidente extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public Presidente (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public Presidente (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
    {
-      super (nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta);      
+      super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);      
       
       //Fim do método super da classe mãe ou superclasse Funcionario, inicializando seu terceiro construtor personalizado;
       
       this.dataPosse = dataPosse;
-      
-      this.dataDesposse = dataDesposse;
    }//Fim do método construtor personalizado;
     
    public final Date retornarDataPosse()
    {
       return dataPosse;
    }//Fim do método que retorna a dataPosse do objeto do tipo Presidente;
-   
-   public final Date retornarDataDesposse()
-   {
-      return dataDesposse;
-   }//Fim do método que retorna a dataDesposse do objeto do tipo Presidente;
    
    public final ArrayList retornarGabinete()
    {

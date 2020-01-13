@@ -7,8 +7,6 @@ import br.dominio.conta.ContaCorrente;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Cliente;
 
 import br.dominio.api.Acesso;
@@ -27,9 +25,9 @@ public final class ClientePro extends Cliente
     
    }//Fim do método construtor personalizado;
     
-   public ClientePro (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente, ContaCorrente contaCorrente)
+   public ClientePro (String nome, Date nascimento, String cpf, String email, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente, ContaCorrente contaCorrente)
    { 
-      super (nome, nascimento, cpf, email, telefone, endereco, conta, dataFidelizacaoCliente);
+      super (nome, nascimento, cpf, email, endereco, conta, dataFidelizacaoCliente);
       
       //Fim do método super da classe mãe ou super classe Cliente;
       

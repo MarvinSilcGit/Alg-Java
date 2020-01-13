@@ -3,10 +3,6 @@ package br.dominio.api;
 
 import java.util.Date;
 
-import br.dominio.editora.Autor;
-
-import br.dominio.editora.Editora;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -22,10 +18,6 @@ public abstract class Periodico extends Produto
    private Date anoPublicacao;
    
    private long isbn;
-   
-   private Autor nomeAutor;
-   
-   private Editora nomeEditora;
    
    //Fim do campo de declaração de atributos;
     
@@ -46,7 +38,7 @@ public abstract class Periodico extends Produto
     
    }//Fim do método construtor padrão;
     
-   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, long isbn, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora)
+   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, long isbn, Date anoPublicacao)
    {     
       super (codigoBarras, quantidade, dataFabricacao, categoria);
       
@@ -65,13 +57,9 @@ public abstract class Periodico extends Produto
       this.isbn = isbn;
       
       this.anoPublicacao = anoPublicacao;
-      
-      this.nomeAutor = nomeAutor;
-
-      this.nomeEditora = nomeEditora;
    }//Fim do primeiro método construtor personalizado;
    
-   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora)
+   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao)
    {
       super (codigoBarras, quantidade, dataFabricacao, categoria);
       
@@ -88,10 +76,6 @@ public abstract class Periodico extends Produto
       this.edicao = edicao;
       
       this.anoPublicacao = anoPublicacao;
-      
-      this.nomeAutor = nomeAutor;
-      
-      this.nomeEditora = nomeEditora;
    }//Fim do segundo método construtor personalizado;
     
    public final String retornarTitulo()
@@ -128,15 +112,5 @@ public abstract class Periodico extends Produto
    {
       return anoPublicacao;
    }//Fim do método que retorna o ano publicação do objeto do tipo Periodico;
-   
-   public final String retornarNomeAutor()
-   {
-      return nomeAutor.retornarNome();
-   }//Fim do método que retorna o nome do autor do objeto do tipo Livros;
-
-   public final String retornarEditora()
-   {
-      return nomeEditora.retornarNomeFantasia();
-   }//Fim do método que retorna a nome da editora do objeto do tipo Periodico;
     
 }//Fim da classe Periodico;

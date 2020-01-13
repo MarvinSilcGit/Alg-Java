@@ -15,8 +15,6 @@ import br.dominio.api.Funcionario;
 
 import java.util.Date;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Endereco;
 
 import java.util.ArrayList;
@@ -38,9 +36,9 @@ public class Assistente extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Assistente (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Assistente (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
    {
-      super (nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
       
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando seu primeiro construtor personalizado;
       

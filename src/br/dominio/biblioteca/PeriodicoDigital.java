@@ -15,10 +15,6 @@ import java.util.Date;
 
 import br.dominio.api.Periodico;
 
-import br.dominio.editora.Autor;
-
-import br.dominio.editora.Editora;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -34,9 +30,9 @@ public class PeriodicoDigital extends Periodico
       
    }//Fim do método construtor padrão;
    
-   public PeriodicoDigital (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao, Autor nomeAutor, Editora nomeEditora, long issn)
+   public PeriodicoDigital (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao,long issn)
    {
-      super (codigoBarras, quantidade, dataFabricacao, categoria, titulo, subTitulo, genero, quantidadePaginas, edicao, anoPublicacao, nomeAutor, nomeEditora);
+      super (codigoBarras, quantidade, dataFabricacao, categoria, titulo, subTitulo, genero, quantidadePaginas, edicao, anoPublicacao);
       
       //Fim do método super da classe mãe ou super classe Periodico, inicializando o segundo método construtor personalizado;
       

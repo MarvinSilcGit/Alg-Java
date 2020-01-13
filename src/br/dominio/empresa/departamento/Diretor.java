@@ -20,8 +20,6 @@ import br.dominio.api.Acesso;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -40,9 +38,9 @@ public class Diretor extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Diretor (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente)
+   public Diretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente)
    {
-      super (nome, nascimento, cpf, email, telefone, endereco, salario, setor, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
       
       //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando seu primeiro construtor;
       
@@ -55,7 +53,7 @@ public class Diretor extends Funcionario
       return assistente;
    }//Fim do método que retorna o objeto do tipo Assistente do objeto do tipo Diretor;
    
-   public final void alterarAssistente(Assistente novoAssistente)
+   public final void alterarAssistente (Assistente novoAssistente)
    {
       assistente = novoAssistente;
    }//Fim do método que altera o objeto do tipo Assisnte do objeto do tipo Diretor;

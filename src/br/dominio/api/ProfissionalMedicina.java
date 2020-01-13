@@ -34,9 +34,9 @@ public abstract class ProfissionalMedicina extends Funcionario
         
    }//Fim do método construtor padrão;
      
-   public ProfissionalMedicina (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
+   public ProfissionalMedicina (String nome, Date nascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta)
    {    
-      super (nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, endereco, setor, dataAdmissao, conta);
         
       this.crm = crm;
         

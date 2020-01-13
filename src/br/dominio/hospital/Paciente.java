@@ -13,8 +13,6 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Pessoa;
 
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 //Alterar o tipo de enfermeiro e medico para o paciente: tem que descobrir antes qual a especialidade necessária;
@@ -35,9 +33,9 @@ public final class Paciente extends Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Paciente (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, Date dataEntrada, Date dataAlta)
+   public Paciente (String nome, Date nascimento, String cpf, String email, Endereco endereco, Date dataEntrada, Date dataAlta)
    {   
-      super (nome, nascimento, cpf, email, telefone, endereco);
+      super (nome, nascimento, cpf, email, endereco);
        
       //Fim do método super da classe mãe ou superclasse Pessoa, inicializando o método construtor personalizado;
        

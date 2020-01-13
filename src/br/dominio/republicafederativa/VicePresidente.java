@@ -16,16 +16,18 @@ import java.util.Date;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Acesso;
+
+import br.dominio.api.Funcionario;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class VicePresidente extends Presidente
+public final class VicePresidente extends Funcionario
 {
    private ArrayList gabinete = new ArrayList(20);
+   
+   private Date dataPosse;
    
    //Fim do campo de declaração de atributos;
    
@@ -35,12 +37,19 @@ public class VicePresidente extends Presidente
       
    }//Fim do método construtor padrão;
    
-   public VicePresidente (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   public VicePresidente (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
    {
-      super (nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
+      super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);
       
-      //Fim do método super da classe mãe ou super classe Presidente, inicializando seu construtor personalizado;
+      //Fim do método super da classe mãe ou super classe Presidente, inicializando o seu terceiro método construtor personalizado;
+      
+      this.dataPosse = dataPosse;
       
    }//Fim do método construtor personalizado;
+   
+   public final Date retornarDataPosse()
+   {
+      return dataPosse;
+   }//Fim do método que retorna a dataPosse do objeto do tipo VicePresidente;
    
 }//Fim da classeVicePresidente;
