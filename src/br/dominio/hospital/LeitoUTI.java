@@ -3,12 +3,15 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.hospital;
 
 /**
  *
  * @author belogo
  */
-public class ClinicoGeral {
+
+public class LeitoUTI 
+{
    
-}
+}//Fim da classe LeitoUTI;

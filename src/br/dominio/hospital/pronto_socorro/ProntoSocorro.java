@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.hospital;
+package br.dominio.hospital.pronto_socorro;
 
 /**
  *

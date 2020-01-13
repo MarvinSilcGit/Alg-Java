@@ -1,4 +1,4 @@
-package br.dominio.hospital;
+package br.dominio.hospital.profissionais_medicina;
 
 
 import java.util.Date;
@@ -12,19 +12,19 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class CirurgiaoVascular extends ProfissionalMedicina
+public final class CirurgiaoCardiologia extends ProfissionalMedicina
 {  
    private double valorCirurgia;
      
    //Fim do campo de declaração de atributos;
    
    
-   public CirurgiaoVascular()
+   public CirurgiaoCardiologia()
    {    
    
    }//Fim do método construtor padrão;
      
-   public CirurgiaoVascular (String nome, Date nascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
+   public CirurgiaoCardiologia (String nome, Date nascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
    {     
       super (nome, nascimento, cpf, email, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
       

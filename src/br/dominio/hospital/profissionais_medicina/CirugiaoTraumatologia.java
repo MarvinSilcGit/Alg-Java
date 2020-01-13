@@ -3,12 +3,12 @@
  * 
  *  Autor: MVSC 
  */
-package br.dominio.hospital;
+package br.dominio.hospital.profissionais_medicina;
 
 /**
  *
  * @author belogo
  */
-public class UTI {
+public class CirugiaoTraumatologia {
    
 }

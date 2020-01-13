@@ -4,7 +4,7 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.hospital;
+package br.dominio.hospital.profissionais_medicina;
 
 
 import java.util.Date;
