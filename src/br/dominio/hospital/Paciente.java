@@ -13,8 +13,6 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Pessoa;
 
-import br.dominio.drograria.Remedio;
-
 import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -24,8 +22,6 @@ public final class Paciente extends Pessoa
 { 
    private Date dataEntrada,
             dataAlta;
-   
-   private ArrayList <Remedio> listaRemedios = new ArrayList();
     
    private ArrayList <ProfissionalMedicina> listaMedicos = new ArrayList(3);
     
@@ -59,21 +55,6 @@ public final class Paciente extends Pessoa
    {
       return dataAlta;
    }//Fim do método que retorna a data de alta do objeto do tipo Paciente;
-    
-   public final ArrayList retornarListaRemedios()
-   { 
-      return listaRemedios;
-   }//Fim do método que retorna a lista de remédios do objeto do tipo Paciente;
-    
-   public final void inserirRemedioListaPaciente (Remedio novoRemedio)
-   { 
-      listaRemedios.add (novoRemedio);
-   }//Fim do método que insere na lista de remédios o objeto do tipo Remedio do objeto do tipo Paciente;
-    
-   public final void removerRemedioListaPaciente (Remedio removerRemedio)
-   { 
-       listaRemedios.remove (removerRemedio);
-   }//Fim do método que remove da lista de remédios objeto do tipo Remedio do objeto do tipo Paciente;
     
    public final ArrayList retornarListaMedicos()
    {
