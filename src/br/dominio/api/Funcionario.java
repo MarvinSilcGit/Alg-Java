@@ -40,13 +40,13 @@ public abstract class Funcionario extends Pessoa
     
       //Fim do método super da classe mãe ou superclasse Pessoa;
       
-      this.salario=salario;
+      this.salario = salario;
         
-      this.setor=setor;
+      this.setor = setor;
         
-      this.dataAdmissao=dataAdmissao;
+      this.dataAdmissao = dataAdmissao;
         
-      this.conta=conta;
+      this.conta = conta;
    }//Fim do primeiro método construtor personalizado;
     
    public Funcionario (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta)
@@ -55,11 +55,11 @@ public abstract class Funcionario extends Pessoa
        
       //Fim do método super da classe mãe ou superclasse Pessoa;
       
-      this.setor=setor;
+      this.setor = setor;
         
-      this.dataAdmissao=dataAdmissao;
+      this.dataAdmissao = dataAdmissao;
         
-      this.conta=conta;     
+      this.conta = conta;     
    }//Fim do segundo método construtor personalizado;
     
    public Funcionario (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta)
@@ -68,11 +68,11 @@ public abstract class Funcionario extends Pessoa
     
       //Fim do método super da classe mãe ou superclasse Pessoa;
       
-      this.salario=salario;
+      this.salario = salario;
         
-      this.setor=setor;
+      this.setor = setor;
         
-      this.conta=conta;
+      this.conta = conta;
    }//Fim do terceiro método construtor personalizado;
     
    public final double retornarSalario()
