@@ -19,8 +19,6 @@ import br.dominio.api.Funcionario;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -49,11 +47,11 @@ public final class Professor extends Funcionario
     
    }//Fim do método construtor padrão;
     
-   public Professor(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, double salarioHora)
+   public Professor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, double salarioHora)
    {    
-      super(nome, nascimento, cpf, email, telefone, endereco, setor, dataAdmissao, conta);
+      super (nome, nascimento, cpf, email, endereco, setor, dataAdmissao, conta);
       
-      //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o segundo método construtor personalizado; 
+      //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o seu segundo método construtor personalizado; 
         
       this.salarioHora = salarioHora;    
    }//Fim do método construtor personalizado;
@@ -63,7 +61,7 @@ public final class Professor extends Funcionario
       return salarioHora;
    }//Fim do método que retorna o salario hora do objeto do tipo Professor;
     
-   public final void alterarSalarioHora(double novoSalarioHora)
+   public final void alterarSalarioHora (double novoSalarioHora)
    {  
       salarioHora = novoSalarioHora;
    }//Fim do método que altera o salario hora do objeto do tipo Professor;

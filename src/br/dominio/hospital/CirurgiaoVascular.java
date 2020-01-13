@@ -28,7 +28,7 @@ public final class CirurgiaoVascular extends ProfissionalMedicina
    {     
       super (nome, nascimento, cpf, email, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o método construtor personalizado;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o seu método construtor personalizado;
          
       this.valorCirurgia = valorCirurgia;
    }//Fim do método construtor personalizado;

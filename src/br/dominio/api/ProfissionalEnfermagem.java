@@ -30,7 +30,7 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
    {  
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);        
         
-      //Fim do método super da classe mãe ou super classe Funcionario, inicializado seu primeiro método construtor;
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor;
        
       this.coren = coren;
    }//Fim do método construtor padrão;

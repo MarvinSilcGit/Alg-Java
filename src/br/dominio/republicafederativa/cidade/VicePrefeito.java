@@ -13,26 +13,35 @@ package br.dominio.republicafederativa.cidade;
 
 import java.util.Date;
 
-import br.dominio.republicafederativa.estado.ViceGovernador;
-
 import br.dominio.api.Acesso;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Endereco;
+
+import br.dominio.api.Funcionario;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class VicePrefeito extends ViceGovernador
+public final class VicePrefeito extends Funcionario
 {
+   private Date dataPosse;
    
-   public VicePrefeito (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse, Date dataDesposse)
+   //Fim do campo de declaração de atributos;
+   
+   
+   public VicePrefeito (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
    {
-      super (nome, dataNascimento, cpf, email, telefone, endereco, salario, setor, conta, dataPosse, dataDesposse);
+      super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);
       
-      //Fim do método super da classe mãe ou superclasse ViceGovernador, inicializando o método construtor personalizado;
+      //Fim do método super da classe mãe ou superclasse ViceGovernador, inicializando o seu terceiro método construtor personalizado;
       
+      this.dataPosse = dataPosse;
    }//Fim do método construtor padrão;
+   
+   public final Date retornarDataPosse()
+   {
+      return dataPosse;
+   }//Fim do método que retorna a dataPosse do objeto do tipo VicePrefeito;
+   
    
 }//Fim da classe VicePrefeito;

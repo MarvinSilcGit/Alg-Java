@@ -33,7 +33,9 @@ public final class ViceDiretor extends Diretor
    
    public ViceDiretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
    {
-      super(nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, assistente);
+      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, assistente);
+      
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor;
       
       this.chefe = chefe;
    }//Fim do método construtor personalizado;

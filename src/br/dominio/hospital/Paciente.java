@@ -37,7 +37,7 @@ public final class Paciente extends Pessoa
    {   
       super (nome, nascimento, cpf, email, endereco);
        
-      //Fim do método super da classe mãe ou superclasse Pessoa, inicializando o método construtor personalizado;
+      //Fim do método super da classe mãe ou superclasse Pessoa, inicializando o seu primeiro método construtor personalizado;
        
       this.dataEntrada = dataEntrada;
         

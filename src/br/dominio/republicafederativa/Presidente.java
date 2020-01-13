@@ -19,6 +19,7 @@ public final class Presidente extends Funcionario
    private ArrayList gabinete =  new ArrayList(20);
    
    private Date dataPosse;
+   
    //Fim do campo de declaração de atributos;
    
    
@@ -31,7 +32,7 @@ public final class Presidente extends Funcionario
    {
       super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);      
       
-      //Fim do método super da classe mãe ou superclasse Funcionario, inicializando seu terceiro construtor personalizado;
+      //Fim do método super da classe mãe ou superclasse Funcionario, inicializando o seu terceiro método construtor personalizado;
       
       this.dataPosse = dataPosse;
    }//Fim do método construtor personalizado;

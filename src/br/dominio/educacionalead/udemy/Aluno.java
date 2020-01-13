@@ -35,6 +35,8 @@ public final class Aluno extends Pessoa
    {
       super(nome, nascimento, cpf, email);
       
+      //Fim do método super da classe mãe ou super classe Pessoa, inicializando o seu segundo método construtor personalizado;
+      
       this.login = login;
       
       this.senha = senha;

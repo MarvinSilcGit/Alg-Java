@@ -13,8 +13,6 @@ import br.dominio.cartao.CartaoCredito;
 
 import br.dominio.api.Acesso;
 
-import br.dominio.api.Telefone;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -36,11 +34,11 @@ public final class Cliente extends Pessoa
    
    }//Fim do método construtor padrão;
    
-   public Cliente (String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, CartaoCredito cartaoCredito, Acesso conta)
+   public Cliente (String nome, Date nascimento, String cpf, String email, Endereco endereco, CartaoCredito cartaoCredito, Acesso conta)
    {     
-      super (nome, nascimento, cpf, email, telefone, endereco);
+      super (nome, nascimento, cpf, email, endereco);
       
-      //Fim do método super da classe mãe o super classe Pessoa, inicializando seu método construtor personalizado; 
+      //Fim do método super da classe mãe o super classe Pessoa, inicializando o seu primeiro método construtor personalizado; 
        
       this.cartaoCredito = cartaoCredito; 
       

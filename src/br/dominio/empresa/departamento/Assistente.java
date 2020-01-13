@@ -40,7 +40,7 @@ public class Assistente extends Funcionario
    {
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
       
-      //Fim do método super da classe mãe ou super classe Funcionario, inicializando seu primeiro construtor personalizado;
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro construtor personalizado;
       
    }//Fim do método construtor personalizado;
    

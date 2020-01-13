@@ -5,8 +5,6 @@ import java.util.Date;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Pessoa;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -24,11 +22,11 @@ public final class Cidadao extends Pessoa
       
    }//Fim do método construtor padrão;
    
-   public Cidadao (String nome, Date nascimento,String cpf, String email, Telefone telefone, Endereco endereco, int numeroSus)
+   public Cidadao (String nome, Date nascimento,String cpf, String email, Endereco endereco, int numeroSus)
    {
-      super (nome, nascimento, cpf, email, telefone, endereco);
+      super (nome, nascimento, cpf, email, endereco);
       
-      //Fim do método super da classe mãe ou super classe Pessoa, inicializando o método construtor personalizado;
+      //Fim do método super da classe mãe ou super classe Pessoa, inicializando o seu primeiro método construtor personalizado;
       
       this.numeroSus = numeroSus;
    }//Fim do método construtor personalizado;

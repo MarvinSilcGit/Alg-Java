@@ -24,7 +24,7 @@ public abstract class Cliente extends Pessoa
    {     
       super (nome, nascimento, cpf, email, endereco);
         
-      //Fim do método super da classe mãe ou super classe Pessoa;
+      //Fim do método super da classe mãe ou super classe Pessoa, inicializando o seu primeiro método construtor personalizado;
       
       this.conta = conta;
       

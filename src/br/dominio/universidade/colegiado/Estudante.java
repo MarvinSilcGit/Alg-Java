@@ -23,8 +23,6 @@ import br.dominio.api.Pessoa;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Telefone;
-
 import br.dominio.api.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -59,11 +57,11 @@ public final class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Telefone telefone, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Acesso conta, Date anoMatricula)
+   public Estudante(String nome, Date nascimento, String cpf, String email, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Acesso conta, Date anoMatricula)
    {    
-      super(nome, nascimento, cpf, email, telefone, endereco);
+      super(nome, nascimento, cpf, email, endereco);
         
-      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu método construtor personalizado;
+      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu primeiro método construtor personalizado;
      
       this.horasExtras = horasExtras;
         

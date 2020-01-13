@@ -22,7 +22,7 @@ public abstract class ProfissionalFarmacia extends Funcionario
    {     
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
         
-      //Fim do método super da classe mãe ou super classe Funcionario;
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor personalizado;
       
       this.crf = crf;
    }//Fim do método construtor personalizado;

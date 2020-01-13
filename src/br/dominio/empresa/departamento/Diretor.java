@@ -42,7 +42,7 @@ public class Diretor extends Funcionario
    {
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
       
-      //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando seu primeiro construtor;
+      //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o seu primeiro construtor;
       
       this.assistente = assistente;
       

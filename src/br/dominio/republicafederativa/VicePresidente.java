@@ -41,7 +41,7 @@ public final class VicePresidente extends Funcionario
    {
       super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);
       
-      //Fim do método super da classe mãe ou super classe Presidente, inicializando o seu terceiro método construtor personalizado;
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu terceiro método construtor personalizado;
       
       this.dataPosse = dataPosse;
       

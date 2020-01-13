@@ -38,7 +38,7 @@ public abstract class Funcionario extends Pessoa
    {    
       super (nome, dataNascimento, cpf, email, endereco);          
     
-      //Fim do método super da classe mãe ou superclasse Pessoa;
+      //Fim do método super da classe mãe ou superclasse Pessoa, inicializando o seu primeiro método construtor personalizado;
       
       this.salario = salario;
         
@@ -80,12 +80,12 @@ public abstract class Funcionario extends Pessoa
       return salario;
    }//Fim do método que retorna o salario do objeto do tipo Funcionario;
     
-   public final void alterarSalario(double valorParaAumentar)
+   public final void alterarSalario (double valorParaAumentar)
    { 
       salario += valorParaAumentar;
    }//Fim do método que altera o salario do objeto do tipo Funcionario;
    
-   public final void diminuirSalario(double valorParaDiminuir)
+   public final void diminuirSalario (double valorParaDiminuir)
    {
       salario -= valorParaDiminuir;
    }
@@ -94,7 +94,7 @@ public abstract class Funcionario extends Pessoa
       return setor;
    }//Fim do método que retorna o setor do objeto do tipo Funcionario;
     
-   public final void alterarSetor(String novosetor)
+   public final void alterarSetor (String novosetor)
    {   
       setor = novosetor;
    }//Fim do método que altera o setor do objeto do tipo Funcionario;

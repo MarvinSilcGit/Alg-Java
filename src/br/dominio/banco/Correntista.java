@@ -29,7 +29,7 @@ public final class Correntista extends Funcionario
    {     
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
    
-      //Fim do método super da classe mãe ou super classe Funcionário;
+      //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor personalizaado;
    
    }//Fim do método que construtor personalizado;
     
@@ -45,7 +45,7 @@ public final class Correntista extends Funcionario
     
    public final void inserirCLienteFisico (String inserirCPF)
    { 
-      this.listaClienteFisico.add(inserirCPF);
+      this.listaClienteFisico.add (inserirCPF);
    }//Fim do método que insere ClienteFisico na lista do objeto do tipo Correntista;
     
    public final void removerClienteFisico (String removerCPF)
