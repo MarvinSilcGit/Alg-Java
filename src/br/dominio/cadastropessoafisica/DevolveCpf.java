@@ -11,12 +11,8 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-public class DevolveCpf 
+public final class DevolveCpf 
 {
-   
-   public DevolveCpf()
-   {
-      
-   }//Fim do método construtor padrão;
+
    
 }//Fim da classe DevolveCpf;

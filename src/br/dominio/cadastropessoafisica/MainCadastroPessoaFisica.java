@@ -11,10 +11,10 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-public class MainCadastroPessoaFisica
+public final class MainCadastroPessoaFisica
 {
    
-   public static void main (String [] args)
+   public static final void main (String [] args)
    {
       
    }//Fim do método main;

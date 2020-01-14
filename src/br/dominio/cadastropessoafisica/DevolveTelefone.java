@@ -11,12 +11,8 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-public class DevolveTelefone 
+public final class DevolveTelefone 
 {
-   
-   public DevolveTelefone()
-   {
-      
-   }//Fim do método construtor padrão;
+
    
 }//Fim da classe DevolveTelefone;

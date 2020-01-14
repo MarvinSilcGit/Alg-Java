@@ -3,12 +3,15 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.hospital.profissionais_medicina;
 
 /**
  *
  * @author belogo
  */
-public class Anestesita {
+
+public class Anestesita
+{
    
 }

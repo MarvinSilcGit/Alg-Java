@@ -22,5 +22,9 @@ public interface ICadastroSocial
    String retornarNome();
    
    Date retornarDataNascimento();
+   
+   String retornarNomePai();
+   
+   String retornarNomeMae();
      
 }//Fim da interface ICadastroSocial;
