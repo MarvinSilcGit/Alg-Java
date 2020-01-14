@@ -14,4 +14,4 @@ package br.dominio.cadastropessoafisica;
 public class DevolveRG
 {
    
-}
+}///Troca, onde for possível, int por shot;
