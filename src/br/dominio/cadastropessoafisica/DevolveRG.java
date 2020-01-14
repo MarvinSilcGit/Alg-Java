@@ -11,8 +11,7 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-public final class DevolveTelefone 
+public class DevolveRG
 {
-
    
-}//Fim da classe DevolveTelefone;
+}

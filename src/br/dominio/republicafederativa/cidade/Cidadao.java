@@ -10,7 +10,7 @@ import br.dominio.api.Pessoa;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 //Nem todo cidadão tem o Sus;
 
-public final class Cidadao extends Pessoa 
+public class Cidadao extends Pessoa 
 {
    private int numeroSus;
    

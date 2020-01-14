@@ -4,15 +4,16 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.cadastropessoafisica;
+package br.dominio.api;
 
 /**
  *
  * @author belogo
  */
 
-public final class DevolveCpf 
+public interface IRecebeCpf
 {
-
    
-}//Fim da classe DevolveCpf;
+   long retornarCpf();
+   
+}//Fim da interface IRecebeCpf;

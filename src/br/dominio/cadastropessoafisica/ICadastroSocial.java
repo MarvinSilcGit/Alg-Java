@@ -19,9 +19,9 @@ import java.util.Date;
 public interface ICadastroSocial 
 {
    
-   String retornarNome();
+   String retornarNomePessoa();
    
-   Date retornarDataNascimento();
+   Date retornarDataNascimentoPessoa();
    
    String retornarNomePai();
    
