@@ -3,12 +3,16 @@
  * 
  *  Autor: MVSC 
  */
+
 package br.dominio.hospital.profissionais_medicina;
 
 /**
  *
  * @author belogo
  */
-public class CirurgiaoGeral {
+
+
+public class CirurgiaoGeral 
+{
    
 }

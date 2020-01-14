@@ -4,14 +4,14 @@
  *  Autor: MVSC 
  */
 
-package br.dominio.hospital.profissionais_medicina;
+package br.dominio.hospital.farmacia;
 
 /**
  *
  * @author belogo
  */
 
-public class Ortopedista
+public class FarmceuticoChefe
 {
    
 }

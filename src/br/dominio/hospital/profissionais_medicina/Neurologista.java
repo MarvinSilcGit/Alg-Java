@@ -11,7 +11,7 @@ package br.dominio.hospital.profissionais_medicina;
  * @author belogo
  */
 
-public class Ortopedista
+public class Neurologista 
 {
    
 }
