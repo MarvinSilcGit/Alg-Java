@@ -30,7 +30,7 @@ public class ProfissionalEnfermagem_Neonatal_Pediatrica extends ProfissionalEnfe
       
    }//Fim do método construtor padrão;
    
-   public ProfissionalEnfermagem_Neonatal_Pediatrica (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String coren)
+   public ProfissionalEnfermagem_Neonatal_Pediatrica (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
    {
       super(nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, coren);
       

@@ -38,7 +38,7 @@ public class Diretor extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Diretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente)
+   public Diretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente)
    {
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
       

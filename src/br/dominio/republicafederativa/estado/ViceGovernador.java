@@ -23,7 +23,7 @@ import br.dominio.api.Funcionario;
 
 public class ViceGovernador extends Funcionario
 {
-   private Date dataṔosse;
+   private Date dataPosse;
    
    //Fim do campo de declaração de atributos;
    
@@ -33,13 +33,18 @@ public class ViceGovernador extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public ViceGovernador (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
+   public ViceGovernador (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta, Date dataPosse)
    {
       super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);
       
       //Fim do método super da classe mãe ou super classe VicePresidente, inicializando o seu terceiro método construtor personalizado;
       
-      this.dataṔosse = dataPosse;
+      this.dataPosse = dataPosse;
    }//Fim do método construtor personalizado;
    
+   public Date retornaDataPoss()
+   {
+      return dataPosse;
+   }//Fim do método que retorna a data de posse do objeto do tipo ViceGovernador;
+  
 }//Fim da classe ViceGovernador;

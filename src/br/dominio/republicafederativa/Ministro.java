@@ -28,7 +28,7 @@ public final class Ministro extends Funcionario
    
    }//Fim do método construtor padrão;
     
-   public Ministro (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
+   public Ministro (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta, Date dataPosse)
    {     
       super (nome, nascimento, cpf, email, endereco, salario, setor, conta);
         

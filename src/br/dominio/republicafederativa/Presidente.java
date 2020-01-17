@@ -28,7 +28,7 @@ public final class Presidente extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public Presidente (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
+   public Presidente (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta, Date dataPosse)
    {
       super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);      
       

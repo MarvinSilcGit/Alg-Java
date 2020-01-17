@@ -30,9 +30,9 @@ public class Farmaceutico extends Funcionario
    public Farmaceutico()
    {
       
-   }
+   }//Fim do método construtor padrão;
    
-   public Farmaceutico(String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String crf)
+   public Farmaceutico(String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String crf)
    {
       super(nome,dataNascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
       
@@ -40,5 +40,10 @@ public class Farmaceutico extends Funcionario
       
       this.crf = crf;
    }//Fim do método construtor personalizado;
+   
+   public String retornarCrf()
+   {
+      return crf;
+   }//Fim do método que retorna o crf do objeto do tipo Farmaceutico;
    
 }//Fim da classe Farmaceutico;

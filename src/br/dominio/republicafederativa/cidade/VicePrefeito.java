@@ -29,7 +29,7 @@ public final class VicePrefeito extends Funcionario
    //Fim do campo de declaração de atributos;
    
    
-   public VicePrefeito (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
+   public VicePrefeito (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta, Date dataPosse)
    {
       super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);
       

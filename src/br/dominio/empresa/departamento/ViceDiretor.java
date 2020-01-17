@@ -31,7 +31,7 @@ public final class ViceDiretor extends Diretor
     
    }//Fim do método construtor padrão;
    
-   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String condicaoCivil, double salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
+   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String condicaoCivil, float salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
    {
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, assistente);
       

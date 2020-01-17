@@ -34,7 +34,7 @@ public final class Governador extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Governador (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
+   public Governador (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta, Date dataPosse)
    {
       super (nome, nascimento, cpf, email, endereco, salario, setor, conta);
       
@@ -42,5 +42,10 @@ public final class Governador extends Funcionario
       
       this.dataPosse = dataPosse;
    }//Fim do método construtor personalizado;
+   
+   public Date retornarDataPosse()
+   {
+      return dataPosse;
+   }//Fim do método que retorna a data de posso do objeto do tipo Governador;
    
 }//Fim da classe Governador;

@@ -30,7 +30,7 @@ public final class Prefeito extends Funcionario
    //Fim do campo de declaração de atributos;
    
    
-   public Prefeito (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, double salario, String setor, Acesso conta, Date dataPosse)
+   public Prefeito (String nome, Date dataNascimento, String cpf, String email, Telefone telefone, Endereco endereco, float salario, String setor, Acesso conta, Date dataPosse)
    {
       super (nome, dataNascimento, cpf, email, endereco, salario, setor, conta);
       

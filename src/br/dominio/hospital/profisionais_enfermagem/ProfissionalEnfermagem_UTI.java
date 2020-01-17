@@ -30,7 +30,7 @@ public class ProfissionalEnfermagem_UTI extends ProfissionalEnfermagem
       
    }//Fim do método construtor padrão;
    
-   public ProfissionalEnfermagem_UTI (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String coren)
+   public ProfissionalEnfermagem_UTI (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
    {
       super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, coren);
       

@@ -30,7 +30,7 @@ public class ProfissionalEnfermagem_Urgencia_Trauma_Emergencia extends Profissio
       
    }//Fim do método construtor padrão;
    
-   public ProfissionalEnfermagem_Urgencia_Trauma_Emergencia (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String coren)
+   public ProfissionalEnfermagem_Urgencia_Trauma_Emergencia (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
    {
       super(nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, coren);
       

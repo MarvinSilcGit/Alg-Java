@@ -25,13 +25,12 @@ import br.dominio.api.Acesso;
 public class ProfissionalEnfermagem_Cardiologia_Hermodinamica extends ProfissionalEnfermagem
 {
    
-   
    public ProfissionalEnfermagem_Cardiologia_Hermodinamica()
    {
       
    }//Fim do método constutor padrão;
    
-   public ProfissionalEnfermagem_Cardiologia_Hermodinamica(String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta, String coren)
+   public ProfissionalEnfermagem_Cardiologia_Hermodinamica(String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
    {
       super(nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, coren);
       
