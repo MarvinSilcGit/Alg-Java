@@ -30,7 +30,7 @@ public class PeriodicoDigital extends Periodico
       
    }//Fim do método construtor padrão;
    
-   public PeriodicoDigital (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao,long issn)
+   public PeriodicoDigital (long codigoBarras, short quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, short quantidadePaginas, byte edicao, Date anoPublicacao, long issn)
    {
       super (codigoBarras, quantidade, dataFabricacao, categoria, titulo, subTitulo, genero, quantidadePaginas, edicao, anoPublicacao);
       

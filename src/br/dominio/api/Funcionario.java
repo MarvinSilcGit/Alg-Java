@@ -18,7 +18,7 @@ import java.util.Date;
 
 public abstract class Funcionario extends Pessoa
 {
-   private double salario;
+   private float salario;
     
    private String setor;
     
@@ -34,7 +34,7 @@ public abstract class Funcionario extends Pessoa
         
    }//Fim do método construtor padrão;
     
-   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, double salario, String setor, Date dataAdmissao, Acesso conta)
+   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta)
    {    
       super (nome, dataNascimento, cpf, email, endereco);          
     
@@ -62,7 +62,7 @@ public abstract class Funcionario extends Pessoa
       this.conta = conta;     
    }//Fim do segundo método construtor personalizado;
     
-   public Funcionario (String nome, Date nascimento, String cpf, String email, Endereco endereco, double salario, String setor, Acesso conta)
+   public Funcionario (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta)
    {    
       super (nome, nascimento, cpf, email, endereco);          
     
@@ -75,7 +75,7 @@ public abstract class Funcionario extends Pessoa
       this.conta = conta;
    }//Fim do terceiro método construtor personalizado;
     
-   public final double retornarSalario()
+   public final float retornarSalario()
    { 
       return salario;
    }//Fim do método que retorna o salario do objeto do tipo Funcionario;

@@ -10,7 +10,7 @@ public abstract class Cartao
 {     
    private long numeroCartao;
    
-   private int codeSeguranca,
+   private short codeSeguranca,
            senhaNumero;
    
    private String nomeGravado;
@@ -41,7 +41,7 @@ public abstract class Cartao
 
    }//Fim do método construtor padrão;
     
-   public Cartao (long numeroCartao, int codeSeguranca, int senhaNumero, String nomeGravado, Date vencimentoCartao)
+   public Cartao (long numeroCartao, short codeSeguranca, short senhaNumero, String nomeGravado, Date vencimentoCartao)
    {     
       this.numeroCartao = numeroCartao;
         
@@ -59,12 +59,12 @@ public abstract class Cartao
       return this.numeroCartao;
    }//Fim do método que retornao o número do objeto do tipo Cartão;
     
-   public final int retornarCodeSeguranca()
+   public final short retornarCodeSeguranca()
    { 
       return this.codeSeguranca;
    }//Fim do método que retorna o código de segunrança do objeto do tipo Cartão;
     
-   public final int retornarSenhaNumero()
+   public final short retornarSenhaNumero()
    { 
       return this.senhaNumero;
    }//Fim do método que retorna a senha do objeto do tipo Cartao;

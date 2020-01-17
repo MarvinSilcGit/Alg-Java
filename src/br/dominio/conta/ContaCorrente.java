@@ -12,7 +12,7 @@ import br.dominio.cartao.CartaoCredito;
 
 public final class ContaCorrente extends ContaBancaria
 {   
-   private double taxaMensal;
+   private float taxaMensal;
     
    private CartaoCredito cartaoCredito;
    
@@ -24,7 +24,7 @@ public final class ContaCorrente extends ContaBancaria
    
    }//Fim do método construtor padrão;
     
-   public ContaCorrente (double saldo, double valorInicial, CartaoDebito cartaoDebito, double taxaMensal, CartaoCredito cartaoCredito)
+   public ContaCorrente (float saldo, float valorInicial, CartaoDebito cartaoDebito, float taxaMensal, CartaoCredito cartaoCredito)
    {     
       super (saldo, valorInicial, cartaoDebito);
     
@@ -35,12 +35,12 @@ public final class ContaCorrente extends ContaBancaria
       this.cartaoCredito = cartaoCredito;
     }//Fim do método construtor padrão;
     
-   public final double retornarTaxaMensal()
+   public final float retornarTaxaMensal()
    {     
       return this.taxaMensal;
    }//Fim do método que retorna a taxa mensal do objeto do tipo ContaCorrente;
     
-   public final void alterarTaxaMensal (double novaTaxaMensal)
+   public final void alterarTaxaMensal (float novaTaxaMensal)
    { 
       taxaMensal = novaTaxaMensal;
    }//Fim do método que altera a taxa mensal do objeto do tipo ContaCorrente;

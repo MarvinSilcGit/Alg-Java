@@ -18,7 +18,7 @@ import br.dominio.cartao.CartaoDebito;
 
 public abstract class ContaBancaria
 {
-   private double saldo,
+   private float saldo,
            valorInicial; 
    
    private CartaoDebito cartaoDebito;
@@ -31,7 +31,7 @@ public abstract class ContaBancaria
       
    }//Fim do método construtor padrão;
 
-   public ContaBancaria (double saldo, double valorInicial, CartaoDebito cartaoDebito)
+   public ContaBancaria (float saldo, float valorInicial, CartaoDebito cartaoDebito)
    {
       this.saldo = saldo;
       

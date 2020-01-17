@@ -28,7 +28,7 @@ public abstract class ProdutoComValidade extends Produto
       
    }//Fim do método construtor padrão;
    
-   public ProdutoComValidade (int codigo, int quantidade, String categoria, String nome, Date dataFabricacao, Date dataValidade)
+   public ProdutoComValidade (long codigo, short quantidade, String categoria, String nome, Date dataFabricacao, Date dataValidade)
    {
       super (codigo, quantidade, dataFabricacao, categoria, nome);
       

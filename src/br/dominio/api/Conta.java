@@ -5,7 +5,7 @@ import br.dominio.empresa.Empresa;
 
 public abstract class Conta
 {  
-   private long numeroContrato;
+   private int numeroContrato;
    
    private Empresa empresaPrestadora;
 
@@ -17,14 +17,14 @@ public abstract class Conta
   
    }//Fim do método construtor padrão;
    
-   public Conta (long numeroContrato, Empresa empresaPrestadora)
+   public Conta (int numeroContrato, Empresa empresaPrestadora)
    {
       this.numeroContrato = numeroContrato;
       
       this.empresaPrestadora = empresaPrestadora;
    }//Fim do método construtor personalizado;
 
-   public final long retornarNumeroContrato()
+   public final int retornarNumeroContrato()
    {
       return this.numeroContrato;
    }//Fim do método que retorna o número do contrato do objeto do tipo Conta;

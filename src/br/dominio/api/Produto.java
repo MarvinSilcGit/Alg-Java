@@ -10,8 +10,9 @@ import java.util.ArrayList;
 
 public abstract class Produto
 {  
-   private int codigoBarras,
-           quantidade;
+   private long codigoBarras;
+   
+   private short quantidade;
 
    private Date dataFabricacao;
    
@@ -28,7 +29,7 @@ public abstract class Produto
         
    }//Fim do método construtor padrão;
 
-   public Produto (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String nome)   
+   public Produto (long codigoBarras, short quantidade, Date dataFabricacao, String categoria, String nome)   
    {        
       this.codigoBarras = codigoBarras;
        
@@ -42,7 +43,7 @@ public abstract class Produto
    }//Fim do primeiro método construtor personalizado;
     
    
-   public Produto (int codigoBarras, int quantidade, Date dataFabricacao, String categoria)   
+   public Produto (long codigoBarras, short quantidade, Date dataFabricacao, String categoria)   
    {        
       this.codigoBarras = codigoBarras;
        
@@ -53,12 +54,12 @@ public abstract class Produto
       this.dataFabricacao = dataFabricacao;
    }//Fim do segundo método construtor personalizado;
    
-   public final int retornarCodigoBarras() 
+   public final long retornarCodigoBarras() 
    {
       return codigoBarras;
    }//Fim do método que retorna o codigo do objeto do tipo Produto;
     
-   public final int retornarQuantidade()
+   public final short retornarQuantidade()
    {
       return quantidade;
    }//Fim do método que retorna a quantidade do objeto do tipo Produto;

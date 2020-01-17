@@ -12,8 +12,9 @@ public abstract class Periodico extends Produto
            subTitulo,
            genero;
           
-   private int quantidadePaginas,
-           edicao;
+   private short quantidadePaginas;
+   
+   private byte edicao;
 
    private Date anoPublicacao;
    
@@ -38,7 +39,7 @@ public abstract class Periodico extends Produto
     
    }//Fim do método construtor padrão;
     
-   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, long isbn, Date anoPublicacao)
+   public Periodico (long codigoBarras, short quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, short quantidadePaginas, byte edicao, long isbn, Date anoPublicacao)
    {     
       super (codigoBarras, quantidade, dataFabricacao, categoria);
       
@@ -59,7 +60,7 @@ public abstract class Periodico extends Produto
       this.anoPublicacao = anoPublicacao;
    }//Fim do primeiro método construtor personalizado;
    
-   public Periodico (int codigoBarras, int quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, int quantidadePaginas, int edicao, Date anoPublicacao)
+   public Periodico (long codigoBarras, short quantidade, Date dataFabricacao, String categoria, String titulo, String subTitulo, String genero, short quantidadePaginas, byte edicao, Date anoPublicacao)
    {
       super (codigoBarras, quantidade, dataFabricacao, categoria);
       
@@ -93,12 +94,12 @@ public abstract class Periodico extends Produto
       return genero;
    }//Fim do método que retorna o gênero do objeto do tipo Periodico;
 
-   public final int retornarQuantidadePaginas()
+   public final short retornarQuantidadePaginas()
    {
       return quantidadePaginas;
    }//Fim do método que retorna a quantidade de páginas do objeto do tipo Periodico;
 
-   public final int retornarEdicao()
+   public final byte retornarEdicao()
    {
       return edicao;
    }//Fim do método que retorna a edição do objeto do tipo Periodico;
