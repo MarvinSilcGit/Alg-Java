@@ -16,15 +16,15 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public interface ICadastroSocial 
+public interface IRecebeDadosCidadao 
 {
    
-   String retornarNomePessoa();
-   
-   Date retornarDataNascimentoPessoa();
+   String retornarNome();
    
    String retornarNomePai();
    
    String retornarNomeMae();
+   
+   Date retornarDataNascimento();
      
 }//Fim da interface ICadastroSocial;
