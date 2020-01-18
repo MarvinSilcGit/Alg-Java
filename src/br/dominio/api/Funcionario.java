@@ -16,63 +16,64 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public abstract class Funcionario extends Pessoa
+public abstract class Funcionario extends Cidadao
 {
    private float salario;
     
-   private String setor;
+   private String setor,
+           email;
     
    private Date dataAdmissao;
-    
-   private Acesso conta;
+   
+   private Endereco endereco;
+   
+   private Telefone telefone;
    
    //Fim do campo de declaração de atributos;
     
+  
+   public enum Sexo
+   {
+      MASCULINO,
+      FEMININO;
+   }//Fim do enum Sexo;
+   
+   public enum CondicaoCivil
+   {
+      SOLTEIRO,
+      CASADO,
+      DIVORCIADO,
+      VIUVO,
+      UNIAOESTAVEL;
+   }//Fim do enum CondicaoCivil;   
+   
    
    public Funcionario()
    {
         
    }//Fim do método construtor padrão;
     
-   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta)
-   {    
-      super (nome, dataNascimento, cpf, email, endereco);          
-    
-      //Fim do método super da classe mãe ou superclasse Pessoa, inicializando o seu primeiro método construtor personalizado;
-      
+   public Funcionario (IRecebeIdentidade registroGeral, String email, Endereco endereco, float salario, String setor, Date dataAdmissao)
+   {               
       this.salario = salario;
         
       this.setor = setor;
         
       this.dataAdmissao = dataAdmissao;
-        
-      this.conta = conta;
    }//Fim do primeiro método construtor personalizado;
     
-   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta)
+   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao)
    {    
-      super (nome, dataNascimento, cpf, email, endereco);
-       
-      //Fim do método super da classe mãe ou superclasse Pessoa;
-      
       this.setor = setor;
         
-      this.dataAdmissao = dataAdmissao;
-        
-      this.conta = conta;     
+      this.dataAdmissao = dataAdmissao;   
    }//Fim do segundo método construtor personalizado;
     
-   public Funcionario (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Acesso conta)
+   public Funcionario (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor)
    {    
-      super (nome, nascimento, cpf, email, endereco);          
-    
-      //Fim do método super da classe mãe ou superclasse Pessoa;
-      
       this.salario = salario;
         
       this.setor = setor;
-        
-      this.conta = conta;
    }//Fim do terceiro método construtor personalizado;
     
    public final float retornarSalario()
@@ -104,9 +105,24 @@ public abstract class Funcionario extends Pessoa
       return dataAdmissao;
    }//Fim do método que retorna a data admissão do objeto do tipo Funcionario;
     
-   public final Acesso acessarContaAcesso()
+   public final String retornarEmail()
+   { 
+      return email;
+   }//Fim do método que retorna o email do objeto do tipo Pessoa;
+    
+   public final void alterarEmail (String novoEmail)
+   { 
+      email = novoEmail;
+   }//Fim do método que altera o email do objeto do tipo Pessoa;
+    
+   public final String retornarTelefone()
    {  
-      return conta;
-   }//Fim do método que da acesso ao objeto do tipo Conta no objeto do tipo Funcionario;
+      return telefone.retornarTelefoneCompleto();
+   }//Fim do método que retorna o telefone do objeto do tipo Pessoa;
+ 
+   public final String retornarEndereco()
+   {    
+      return endereco.retornarEnderecoCompleto();
+   }//Fim do método que retorna o objeto do tipo Endereco;
    
 }//Fim da classe Funcionario;

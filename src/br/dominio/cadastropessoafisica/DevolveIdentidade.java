@@ -11,20 +11,18 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-import br.dominio.api.IRecebeRG;
-
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+import br.dominio.api.IRecebeIdentidade;
 
 
-public final class DevolveRG implements IRecebeRG
+public final class DevolveIdentidade implements IRecebeIdentidade
 {
-   private RG registroGeral;
+   private Identidade registroGeral;
    
    //Fim do campo de declaração de atributos;
    
    
    @Override
-   public  RG retornarRegistroGeral()
+   public  Identidade retornarIdentidade()
    {
       return registroGeral;
    }//Fim do método que retora o objeto do tipo RG para a interface IRecebeRG;

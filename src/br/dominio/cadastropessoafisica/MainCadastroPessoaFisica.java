@@ -16,6 +16,11 @@ public final class MainCadastroPessoaFisica
    
    public static final void main (String [] args)
    {
+    
+      Identidade rg = new Identidade();
+      
+      System.out.println(rg.retornarDataEmissao());
+      
       
    }//Fim do método main;
    

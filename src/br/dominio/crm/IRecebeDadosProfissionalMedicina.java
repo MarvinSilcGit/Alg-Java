@@ -15,17 +15,16 @@ import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
 
-import br.dominio.cadastropessoafisica.RG;
+import br.dominio.cadastropessoafisica.Identidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
 
 public interface IRecebeDadosProfissionalMedicina
 {
   
    String retornarEmail();
    
-   RG retornarRG();
+   Identidade retornarRG();
    
    Endereco retornarEndereco();
    

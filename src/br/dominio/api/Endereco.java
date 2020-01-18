@@ -9,21 +9,15 @@ package br.dominio.api;
 /**
  *
  * @author belogo
- */
-
-import br.dominio.republicafederativa.cidade.Cidade;
-
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-        
+ */     
 
 public final class Endereco 
 {
    private String numero,
            bairro,
            cep,
-           rua;
-   
-   private Cidade cidade;
+           rua,
+           cidade;
    
    //Fim do campo de declaração de atributos;
    
@@ -68,7 +62,7 @@ public final class Endereco
     
    }//Fim do método construtor padrão;
     
-   public Endereco (String numero, String bairro, String cep, String complemento, String rua, Cidade cidade)
+   public Endereco (String numero, String bairro, String cep, String complemento, String rua, String cidade)
    {    
       this.numero = numero;
        
@@ -77,7 +71,7 @@ public final class Endereco
       this.cep = cep;
         
       this.rua = rua;
-        
+      
       this.cidade = cidade;
    }//Fim do método construtor personalizado;
     
@@ -106,9 +100,9 @@ public final class Endereco
       return rua;
    }//Fim do método que retorna a rua do objeto do tipo Endereco;
     
-   public final Cidade retornarCidade()
+   public final String retornarCidade()
    { 
       return cidade;
-   }//Fim do método que retorna o objeto do tipo Cidade do objeto do tipo Endereco;
+   }//Fim do método que retorna a cidade do objeto do tipo Endereco;
    
 }//Fim da classe Endereco
