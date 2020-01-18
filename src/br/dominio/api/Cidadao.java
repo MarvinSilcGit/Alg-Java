@@ -19,6 +19,7 @@ import br.dominio.cadastropessoafisica.Identidade;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
+
 public abstract class Cidadao implements IRecebeDadosCidadao
 {      
    private String nome,

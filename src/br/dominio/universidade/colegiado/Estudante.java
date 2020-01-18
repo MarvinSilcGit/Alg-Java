@@ -19,7 +19,7 @@ import java.util.HashMap;
 
 import java.util.Map;
 
-import br.dominio.api.Pessoa;
+import br.dominio.api.Cidadao;
 
 import br.dominio.api.Endereco;
 
@@ -28,8 +28,10 @@ import br.dominio.api.Acesso;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class Estudante extends Pessoa
+public final class Estudante extends Cidadao
 { 
+   private String email;
+   
    private int horasExtras,
            matricula;
    
@@ -57,9 +59,9 @@ public final class Estudante extends Pessoa
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, Date nascimento, String cpf, String email, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Acesso conta, Date anoMatricula)
+   public Estudante(String email, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Acesso conta, Date anoMatricula)
    {    
-      super(nome, nascimento, cpf, email, endereco);
+      super();
         
       //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu primeiro método construtor personalizado;
      
