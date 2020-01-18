@@ -6,7 +6,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
    
-public abstract class Cliente extends Pessoa
+public abstract class Cliente extends Cidadao
 {        
    private Acesso conta;
   
@@ -22,7 +22,7 @@ public abstract class Cliente extends Pessoa
        
    public Cliente (String nome, Date nascimento, String cpf, String email, Endereco endereco, Acesso conta, Date dataFidelizacaoCliente)
    {     
-      super (nome, nascimento, cpf, email, endereco);
+      super ();
         
       //Fim do método super da classe mãe ou super classe Pessoa, inicializando o seu primeiro método construtor personalizado;
       
