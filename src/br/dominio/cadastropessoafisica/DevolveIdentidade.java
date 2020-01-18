@@ -13,6 +13,8 @@ package br.dominio.cadastropessoafisica;
 
 import br.dominio.api.IRecebeIdentidade;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
+
 
 public final class DevolveIdentidade implements IRecebeIdentidade
 {
@@ -25,6 +27,6 @@ public final class DevolveIdentidade implements IRecebeIdentidade
    public  Identidade retornarIdentidade()
    {
       return registroGeral;
-   }//Fim do método que retora o objeto do tipo RG para a interface IRecebeRG;
+   }//Fim do método que retora o objeto do tipo Identidade para a interface IRecebeRG;
    
 }///Troca, onde for possível, int por shot;

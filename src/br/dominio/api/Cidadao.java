@@ -11,7 +11,9 @@ package br.dominio.api;
  * @author belogo
  */
 
-import java.util.Date;
+import java.time.LocalDateTime;
+
+import java.util.Scanner;
 
 import br.dominio.cadastropessoafisica.IRecebeDadosCidadao;
 
@@ -26,12 +28,34 @@ public abstract class Cidadao implements IRecebeDadosCidadao
            nomePai,
            nomeMae;
    
-   private Date dataNascimento;
+   private LocalDateTime dataNascimento;
    
    private IRecebeIdentidade registroGeral;
    
+   private Scanner recebe;
+   
    //Fim do campo de declaração de atributos;
    
+   
+   
+   public void receberDadosCidadao()
+   {
+      System.out.println("Digite o nome: ");
+      
+      nome = recebe.next();
+      
+      System.out.println("Digite o nome do pai: ");
+      
+      nomePai = recebe.next();
+      
+      System.out.println("Digite o nome da mãe: ");
+      
+      nomeMae = recebe.next();
+      
+      System.out.println("Digite a data de nascimento: ");
+      
+     // dataNascimento = 
+   }//Fim do método que recebe o nome do cidadao;
    
    @Override
    public final String retornarNome()
@@ -52,7 +76,7 @@ public abstract class Cidadao implements IRecebeDadosCidadao
    }//Fim do método que retorna o nome da mãe do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
    
    @Override
-   public final Date retornarDataNascimento()
+   public final LocalDateTime retornarDataNascimento()
    {
       return dataNascimento;
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;

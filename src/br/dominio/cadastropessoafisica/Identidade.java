@@ -30,7 +30,7 @@ public final class Identidade
    //Fim do campo de declaraçãoa de atributos;  
  
    
-   private String retornarNome()
+   public String retornarNome()
    {
       return dadosCidadao.retornarNome();
    }//Fim do método que retorna o nome do objeto do tipo Cidadao do objeto do tipo RG;
@@ -45,7 +45,7 @@ public final class Identidade
       return dadosCidadao.retornarNomeMae();
    }//Fim do método que retorna o nome da mãe do objeto do tipo Cidadao do objeto do tipo RG;
    
-   public final Date retornarDataNascimento()
+   public final LocalDateTime retornarDataNascimento()
    {
       return dadosCidadao.retornarDataNascimento();
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao do objeto do tipo RG;
