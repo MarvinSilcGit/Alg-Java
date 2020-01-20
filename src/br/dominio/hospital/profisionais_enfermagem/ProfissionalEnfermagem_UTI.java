@@ -17,8 +17,6 @@ import br.dominio.api.ProfissionalEnfermagem;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Acesso;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -30,12 +28,11 @@ public class ProfissionalEnfermagem_UTI extends ProfissionalEnfermagem
       
    }//Fim do método construtor padrão;
    
-   public ProfissionalEnfermagem_UTI (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
+   public ProfissionalEnfermagem_UTI (String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String coren)
    {
-      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, coren);
+      super ();
       
-      //Fim do método super da classe mãe ou super classe ProfissionalEnfermagem, inicializando o seu método construtor personalizado;
-      
+      //Fim do método super da classe mãe ou super classe ProfissionalEnfermagem, inicializando o seu método construtor personalizado; 
       
    }//Fim do método construtor personalizado;
    

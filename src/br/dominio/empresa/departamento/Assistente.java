@@ -38,7 +38,7 @@ public class Assistente extends Funcionario
    
    public Assistente (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta)
    {
-      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
+      super ();
       
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro construtor personalizado;
       

@@ -7,8 +7,6 @@ import br.dominio.api.ProfissionalMedicina;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Acesso;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -24,9 +22,9 @@ public final class CirurgiaoCardiologia extends ProfissionalMedicina
    
    }//Fim do método construtor padrão;
      
-   public CirurgiaoCardiologia (String nome, Date nascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao, Acesso conta, String crm, double valorConsulta, double valorCirurgia)
+   public CirurgiaoCardiologia (String email, Endereco endereco, String setor, Date dataAdmissao, String crm, double valorConsulta, double valorCirurgia)
    {     
-      super (nome, nascimento, cpf, email, endereco, setor, dataAdmissao, conta, crm, valorConsulta);  
+      super ();  
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o seu método construtor personalizado;
          

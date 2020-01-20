@@ -1,29 +1,23 @@
 package br.dominio.supermercado;
 
 
-import java.util.Date;
-
 import java.util.ArrayList;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Pessoa;
+import br.dominio.api.Cidadao;
 
 import br.dominio.cartao.CartaoCredito;
-
-import br.dominio.api.Acesso;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class Cliente extends Pessoa
+public final class Cliente extends Cidadao
 {       
    private ArrayList carrinho = new ArrayList();
 
    private CartaoCredito cartaoCredito;
 
-   private Acesso conta;
-   
    //Fim do campo de declaração de atributos;
     
    
@@ -34,15 +28,13 @@ public final class Cliente extends Pessoa
    
    }//Fim do método construtor padrão;
    
-   public Cliente (String nome, Date nascimento, String cpf, String email, Endereco endereco, CartaoCredito cartaoCredito, Acesso conta)
+   public Cliente (String email, Endereco endereco, CartaoCredito cartaoCredito)
    {     
-      super (nome, nascimento, cpf, email, endereco);
+      super ();
       
       //Fim do método super da classe mãe o super classe Pessoa, inicializando o seu primeiro método construtor personalizado; 
        
       this.cartaoCredito = cartaoCredito; 
-      
-      this.conta = conta;
     }//Fim do método construtor personlizado;
    
    public final ArrayList retornarCarrinho()
@@ -64,10 +56,5 @@ public final class Cliente extends Pessoa
    { 
        return cartaoCredito;
    }//Fim do método que acessa o objeto do tipo CartaoCredito do objeto do tipo cliente;
-    
-   public final Acesso acessarContaAcesso()
-   {     
-      return conta;
-   }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Cliente;
     
 }//Fim da classe Cliente;

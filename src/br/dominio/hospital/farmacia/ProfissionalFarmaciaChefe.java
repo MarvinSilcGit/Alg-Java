@@ -11,12 +11,14 @@ package br.dominio.hospital.farmacia;
  * @author belogo
  */
 
-import br.dominio.empresa.Empresa;
+import br.dominio.api.Funcionario;
+
+import br.dominio.api.Endereco;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Farmacia extends Empresa 
+public class ProfissionalFarmaciaChefe extends Funcionario
 {
    
-}//Fim da classe Farmacia;
+}//Fim da classe ProfissionalFarmaciaChefe;

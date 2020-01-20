@@ -30,9 +30,9 @@ public class ProfissionalEnfermagem_Cardiologia_Hermodinamica extends Profission
       
    }//Fim do método constutor padrão;
    
-   public ProfissionalEnfermagem_Cardiologia_Hermodinamica(String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
+   public ProfissionalEnfermagem_Cardiologia_Hermodinamica(String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String coren)
    {
-      super(nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, coren);
+      super();
       
       //Fim do método super da classe mãe ou super classe ProfissionalEnfermagem, inicializando o seu método construtor personalizado;
       

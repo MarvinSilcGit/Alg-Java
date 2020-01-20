@@ -15,26 +15,26 @@ import java.util.Date;
 
 import br.dominio.api.Funcionario;
 
-import br.dominio.api.Acesso;
-
 import br.dominio.api.Endereco;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class Farmaceutico extends Funcionario
+
+public class ProfissionalFarmacia extends Funcionario
 {
    private String crf;
    
    //Fim do campo de declaração de atributos;
    
    
-   public Farmaceutico()
+   public ProfissionalFarmacia()
    {
       
    }//Fim do método construtor padrão;
    
-   public Farmaceutico(String nome, Date dataNascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, String crf)
+   public ProfissionalFarmacia(String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String crf)
    {
-      super(nome,dataNascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
+      super();
       
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método contrutor personalizado;
       
@@ -46,4 +46,4 @@ public class Farmaceutico extends Funcionario
       return crf;
    }//Fim do método que retorna o crf do objeto do tipo Farmaceutico;
    
-}//Fim da classe Farmaceutico;
+}//Fim da classe ProfissionalFarmacia;

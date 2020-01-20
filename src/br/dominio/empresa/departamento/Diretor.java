@@ -40,7 +40,7 @@ public class Diretor extends Funcionario
    
    public Diretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente)
    {
-      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta);
+      super ();
       
       //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o seu primeiro construtor;
       
