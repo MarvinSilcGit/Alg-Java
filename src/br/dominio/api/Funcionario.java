@@ -13,10 +13,6 @@ package br.dominio.api;
 
 import java.util.Date;
 
-import br.dominio.cadastropessoafisica.IRecebeDadosCidadao;
-
-import br.dominio.cadastropessoafisica.Identidade;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -32,8 +28,6 @@ public abstract class Funcionario extends Cidadao
    private Endereco endereco;
    
    private Telefone telefone;
-   
-   private Identidade identidade;
    
    //Fim do campo de declaração de atributos;
     
@@ -59,7 +53,7 @@ public abstract class Funcionario extends Cidadao
         
    }//Fim do método construtor padrão;
     
-   public Funcionario (IRecebeIdentidade registroGeral, String email, Endereco endereco, float salario, String setor, Date dataAdmissao)
+   public Funcionario (String email, Endereco endereco, float salario, String setor, Date dataAdmissao)
    {               
       this.salario = salario;
         

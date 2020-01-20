@@ -13,6 +13,8 @@ package br.dominio.cadastropessoafisica;
 
 import java.time.LocalDateTime;
 
+import java.util.Scanner;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -24,6 +26,12 @@ public final class Identidade
            rg;
    
    private IRecebeDadosCidadao dadosCidadao;
+   
+   private Scanner scanner;
+   
+   private int mes,
+           dia,
+           ano;
    
    //Fim do campo de declaraçãoa de atributos;  
  
@@ -47,6 +55,15 @@ public final class Identidade
    {
       return dadosCidadao.retornarDataNascimento();
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao do objeto do tipo RG;
+   
+   private void receberDataEmissao()
+   {
+      dia = dataEmissao.getDayOfMonth();
+      
+      mes = dataEmissao.getMonthValue();
+      
+      ano = dataEmissao.getYear();
+   }
    
    public final LocalDateTime retornarDataEmissao()
    {

@@ -13,12 +13,11 @@ package br.dominio.educacionalead.udemy;
 
 import java.util.Date;
 
-import br.dominio.api.Pessoa;
+import br.dominio.api.Cidadao;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application's Programming Interfaces) Java;
 
-
-public final class Aluno extends Pessoa
+public final class Aluno extends Cidadao
 {
    private String login,
            senha;
@@ -33,7 +32,7 @@ public final class Aluno extends Pessoa
    
    public Aluno (String nome, String cpf, String email, Date nascimento, String login, String senha)
    {
-      super(nome, nascimento, cpf, email);
+      super();
       
       //Fim do método super da classe mãe ou super classe Pessoa, inicializando o seu segundo método construtor personalizado;
       

@@ -17,6 +17,10 @@ public final class MainApi
    public static final void main (String [] args)
    {  
       
+      Cidadao cid = new Cidadao();
+      
+      System.out.println(cid);
+      
    }//Fim do método main;
    
 }//Fim da classe MainApi;

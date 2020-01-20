@@ -13,8 +13,6 @@ package br.dominio.api;
 
 import java.time.LocalDateTime;
 
-import java.util.Scanner;
-
 import br.dominio.cadastropessoafisica.IRecebeDadosCidadao;
 
 import br.dominio.cadastropessoafisica.Identidade;
@@ -30,11 +28,9 @@ public class Cidadao implements IRecebeDadosCidadao
    
    private LocalDateTime dataNascimento;
    
-   private IRecebeIdentidade rg;
+   private IRecebeIdentidade registroGeral;
    
    private Identidade identidade;
-   
-   private Scanner recebe;
    
    private int dia,
            mes,
@@ -43,7 +39,7 @@ public class Cidadao implements IRecebeDadosCidadao
    //Fim do campo de declaração de atributos;
    
    
-   public void receberDadosCidadao(String nomePessoa, String nomePaiPessoa, String nomeMaePessoa, int diaNascimento, int mesNascimento, int anoNascimento)
+   public void receberDadosCidadao (String nomePessoa, String nomePaiPessoa, String nomeMaePessoa, int diaNascimento, int mesNascimento, int anoNascimento)
    { 
       nome = nomePessoa;
       
@@ -82,9 +78,11 @@ public class Cidadao implements IRecebeDadosCidadao
       return dataNascimento;
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
    
-   public Identidade retornarRegistroGeral()
+   private Identidade retornarRegistroGeral()
    {
-      return rg.retornarIdentidade();
+      identidade = registroGeral.retornarIdentidade();
+      
+      return identidade;
    }//Fim do método que retorna o objeto do tipo RG do objeto do tipo Cidadao;
    
 }//Fim da classe Pessoa; 
