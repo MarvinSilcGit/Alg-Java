@@ -11,8 +11,6 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-import java.util.Date;
-
 import java.time.LocalDateTime;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -50,9 +48,9 @@ public final class Identidade
       return dadosCidadao.retornarDataNascimento();
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao do objeto do tipo RG;
    
-   public final int retornarDataEmissao()
+   public final LocalDateTime retornarDataEmissao()
    {
-      return dataEmissao.getDayOfYear();
+      return dataEmissao;
    }
    
    public int retornarCpf()

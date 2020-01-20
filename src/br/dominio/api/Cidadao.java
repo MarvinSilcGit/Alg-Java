@@ -22,7 +22,7 @@ import br.dominio.cadastropessoafisica.Identidade;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public abstract class Cidadao implements IRecebeDadosCidadao
+public class Cidadao implements IRecebeDadosCidadao
 {      
    private String nome,
            nomePai,
@@ -30,31 +30,32 @@ public abstract class Cidadao implements IRecebeDadosCidadao
    
    private LocalDateTime dataNascimento;
    
-   private IRecebeIdentidade registroGeral;
+   private IRecebeIdentidade rg;
+   
+   private Identidade identidade;
    
    private Scanner recebe;
+   
+   private int dia,
+           mes,
+           ano;
    
    //Fim do campo de declaração de atributos;
    
    
-   
-   public void receberDadosCidadao()
-   {
-      System.out.println("Digite o nome: ");
+   public void receberDadosCidadao(String nomePessoa, String nomePaiPessoa, String nomeMaePessoa, int diaNascimento, int mesNascimento, int anoNascimento)
+   { 
+      nome = nomePessoa;
       
-      nome = recebe.next();
+      nomePai = nomePaiPessoa;
       
-      System.out.println("Digite o nome do pai: ");
+      nomeMae = nomeMaePessoa;
       
-      nomePai = recebe.next();
+      dia = diaNascimento;
       
-      System.out.println("Digite o nome da mãe: ");
+      mes = mesNascimento;
       
-      nomeMae = recebe.next();
-      
-      System.out.println("Digite a data de nascimento: ");
-      
-     // dataNascimento = 
+      ano = anoNascimento;
    }//Fim do método que recebe o nome do cidadao;
    
    @Override
@@ -83,7 +84,7 @@ public abstract class Cidadao implements IRecebeDadosCidadao
    
    public Identidade retornarRegistroGeral()
    {
-      return registroGeral.retornarIdentidade();
-   }//Fim do método que retorna o objeto do tipo RG da interface IRecebeRG do objeto do tipo Cidadao;
+      return rg.retornarIdentidade();
+   }//Fim do método que retorna o objeto do tipo RG do objeto do tipo Cidadao;
    
 }//Fim da classe Pessoa; 
