@@ -73,10 +73,22 @@ public class Cidadao implements IRecebeDadosCidadao
    }//Fim do método que retorna o nome da mãe do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
    
    @Override
-   public final LocalDateTime retornarDataNascimento()
+   public final int retornarDiaNascimento()
    {
-      return dataNascimento;
-   }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
+      return dia;
+   }//Fim do método que retorna o dia de nascimento do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
+   
+   @Override
+   public final int retornarMesNascimento()
+   {
+      return mes;
+   }//Fim do método que retorna o mês de nascimento do objeto do tipo Cidadao para a interface IReecebeDadosCidadao;
+   
+   @Override
+   public final int retornarAnoNascimento()
+   {
+      return ano;
+   }//Fim do método que retorna o ano de nascimento do objeto do tipo Cidadao para a interface IRecebeDadosCidadao;
    
    private Identidade retornarRegistroGeral()
    {

@@ -11,11 +11,6 @@ package br.dominio.cadastropessoafisica;
  * @author belogo
  */
 
-import java.time.LocalDateTime;
-
-//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
-
-
 public interface IRecebeDadosCidadao 
 {
    
@@ -25,6 +20,10 @@ public interface IRecebeDadosCidadao
    
    String retornarNomeMae();
    
-   LocalDateTime retornarDataNascimento();
+   int retornarDiaNascimento();
      
+   int retornarMesNascimento();
+   
+   int retornarAnoNascimento();
+   
 }//Fim da interface ICadastroSocial;

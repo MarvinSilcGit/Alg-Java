@@ -19,7 +19,7 @@ public final class MainApi
       
       Cidadao cid = new Cidadao();
       
-      System.out.println(cid);
+      System.out.println(cid.retornarNome().isEmpty());
       
    }//Fim do método main;
    

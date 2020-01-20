@@ -36,6 +36,15 @@ public final class Identidade
    //Fim do campo de declaraçãoa de atributos;  
  
    
+   private void receberDataEmissao()
+   {
+      dia = dataEmissao.getDayOfMonth();
+      
+      mes = dataEmissao.getMonthValue();
+      
+      ano = dataEmissao.getYear();
+   }
+   
    public String retornarNome()
    {
       return dadosCidadao.retornarNome();
@@ -51,24 +60,12 @@ public final class Identidade
       return dadosCidadao.retornarNomeMae();
    }//Fim do método que retorna o nome da mãe do objeto do tipo Cidadao do objeto do tipo RG;
    
-   public final LocalDateTime retornarDataNascimento()
+   public final int asdasd()
    {
-      return dadosCidadao.retornarDataNascimento();
+      dia = scanner.nextInt(dadosCidadao.retornarDiaNascimento());
+      
+      return dadosCidadao.retornarAnoNascimento();
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao do objeto do tipo RG;
-   
-   private void receberDataEmissao()
-   {
-      dia = dataEmissao.getDayOfMonth();
-      
-      mes = dataEmissao.getMonthValue();
-      
-      ano = dataEmissao.getYear();
-   }
-   
-   public final LocalDateTime retornarDataEmissao()
-   {
-      return dataEmissao;
-   }
    
    public int retornarCpf()
    {

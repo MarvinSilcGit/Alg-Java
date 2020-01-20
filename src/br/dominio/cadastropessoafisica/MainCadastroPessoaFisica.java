@@ -19,8 +19,6 @@ public final class MainCadastroPessoaFisica
     
       Identidade rg = new Identidade();
       
-      System.out.println(rg.retornarDataEmissao());
-      
       
    }//Fim do método main;
    
