@@ -14,8 +14,6 @@ import java.util.Date;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Acesso;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -31,9 +29,9 @@ public final class ViceDiretor extends Diretor
     
    }//Fim do método construtor padrão;
    
-   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String condicaoCivil, float salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente, Departamento chefe)
+   public ViceDiretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, String condicaoCivil, float salario, String setor, Date dataAdmissao, Assistente assistente, Departamento chefe)
    {
-      super (nome, nascimento, cpf, email, endereco, salario, setor, dataAdmissao, conta, assistente);
+      super ();
       
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor;
       

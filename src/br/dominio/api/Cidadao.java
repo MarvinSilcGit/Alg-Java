@@ -11,8 +11,6 @@ package br.dominio.api;
  * @author belogo
  */
 
-import java.time.LocalDateTime;
-
 import br.dominio.cadastropessoafisica.IRecebeDadosCidadao;
 
 import br.dominio.cadastropessoafisica.Identidade;
@@ -25,8 +23,6 @@ public class Cidadao implements IRecebeDadosCidadao
    private String nome,
            nomePai,
            nomeMae;
-   
-   private LocalDateTime dataNascimento;
    
    private IRecebeIdentidade registroGeral;
    

@@ -17,9 +17,6 @@ public final class ElementoQuimico
            configuracaoEletronica;
    
    private double massaAtomica;
-
-   private String periodo,
-           simbolo;
    
    //Fim do campo de declaração de atributos;
    

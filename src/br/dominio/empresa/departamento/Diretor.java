@@ -10,13 +10,11 @@ package br.dominio.empresa.departamento;
  * @author belogo
  */
 
-import br.dominio.api.Funcionario;
-
 import java.util.ArrayList;
 
 import java.util.Date;
 
-import br.dominio.api.Acesso;
+import br.dominio.api.Funcionario;
 
 import br.dominio.api.Endereco;
 
@@ -29,7 +27,6 @@ public class Diretor extends Funcionario
    
    private Assistente assistente;
     
-   
    //Fim do campo de declaração de atributos;        
            
    
@@ -38,7 +35,7 @@ public class Diretor extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Diretor (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta, Assistente assistente)
+   public Diretor (String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Assistente assistente)
    {
       super ();
       

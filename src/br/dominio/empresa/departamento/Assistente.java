@@ -19,8 +19,6 @@ import br.dominio.api.Endereco;
 
 import java.util.ArrayList;
 
-import br.dominio.api.Acesso;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -36,7 +34,7 @@ public class Assistente extends Funcionario
       
    }//Fim do método construtor padrão;
    
-   public Assistente (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao, Acesso conta)
+   public Assistente (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor, Date dataAdmissao)
    {
       super ();
       

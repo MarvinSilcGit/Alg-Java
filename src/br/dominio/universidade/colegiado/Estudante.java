@@ -23,8 +23,6 @@ import br.dominio.api.Cidadao;
 
 import br.dominio.api.Endereco;
 
-import br.dominio.api.Acesso;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -40,8 +38,6 @@ public final class Estudante extends Cidadao
    private double descontoFiesProUni;
    
    private Turma turma;
-    
-   private Acesso conta;
     
    private ArrayList disciplinasCursando = new ArrayList(6);
     
@@ -59,7 +55,7 @@ public final class Estudante extends Cidadao
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String email, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Acesso conta, Date anoMatricula)
+   public Estudante(String email, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Date anoMatricula)
    {    
       super();
         
@@ -72,9 +68,7 @@ public final class Estudante extends Cidadao
       this.descontoFiesProUni = descontoFiesProUni; 
       
       this.turma = turma;
-        
-      this.conta = conta;
-      
+             
       this.anoMatricula = anoMatricula;
    }//Fim do método construtor personalizado;
     
@@ -112,11 +106,6 @@ public final class Estudante extends Cidadao
    {
       return turma;
    }//Fim do método que retorna o objeto do tipo Turma do objeto do tipo Estudante;
-    
-   public final Acesso acessarContaAcesso()
-   {
-      return conta;
-   }//Fim do método que acessa o objeto do tipo Conta do objeto do tipo Estudante;
   
    public final Date retornarAnoMatricula()
    {

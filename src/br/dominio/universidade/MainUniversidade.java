@@ -11,10 +11,6 @@ package br.dominio.universidade;
  * @author belogo
  */
 
-import br.dominio.api.Endereco;
-
-import br.dominio.api.Acesso;
-
 import java.sql.*;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
