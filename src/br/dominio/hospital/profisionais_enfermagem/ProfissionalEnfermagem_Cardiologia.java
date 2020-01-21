@@ -20,15 +20,15 @@ import br.dominio.api.Endereco;;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ProfissionalEnfermagem_Cardiologia_Hermodinamica extends ProfissionalEnfermagem
+public class ProfissionalEnfermagem_Cardiologia extends ProfissionalEnfermagem
 {
    
-   public ProfissionalEnfermagem_Cardiologia_Hermodinamica()
+   public ProfissionalEnfermagem_Cardiologia()
    {
       
    }//Fim do método constutor padrão;
    
-   public ProfissionalEnfermagem_Cardiologia_Hermodinamica(String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String coren)
+   public ProfissionalEnfermagem_Cardiologia(String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String coren)
    {
       super();
       
