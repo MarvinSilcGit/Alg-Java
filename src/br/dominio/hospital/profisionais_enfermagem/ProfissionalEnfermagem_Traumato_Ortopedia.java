@@ -14,4 +14,4 @@ package br.dominio.hospital.profisionais_enfermagem;
 public class ProfissionalEnfermagem_Traumato_Ortopedia 
 {
    
-}
+}//Fim da classe ProfissionalEnfermagem_Traumato_Ortopedia;
