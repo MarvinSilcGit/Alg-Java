@@ -26,7 +26,7 @@ import br.dominio.api.ProfissionalEnfermagem;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class HospitalCardial extends Empresa
+public final class HospitalCardial extends Empresa
 {   
    private ArrayList <Leito> listaLeitos = new ArrayList(50);
    

@@ -17,8 +17,10 @@ import br.dominio.api.ProfissionalEnfermagem;
 
 import br.dominio.api.Endereco;
 
+//Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
-public class ProfissionalEnfermagem_Esterelizacao extends ProfissionalEnfermagem
+
+public final class ProfissionalEnfermagem_Esterelizacao extends ProfissionalEnfermagem
 {
  
    public ProfissionalEnfermagem_Esterelizacao()

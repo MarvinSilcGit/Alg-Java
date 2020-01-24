@@ -11,7 +11,7 @@ package br.dominio.hospital.profisionais_enfermagem;
  * @author belogo
  */
 
-public class ProfissionalEnfermagem_TerapiaItensiva
+public final class ProfissionalEnfermagem_TerapiaItensiva
 {
    
 }//Fim da classe ProfissionalEnfermagem_TerapiaItensicva;

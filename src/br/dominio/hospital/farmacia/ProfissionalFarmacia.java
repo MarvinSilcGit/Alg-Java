@@ -20,7 +20,7 @@ import br.dominio.api.Endereco;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ProfissionalFarmacia extends Funcionario
+public final class ProfissionalFarmacia extends Funcionario
 {
    private String crf;
    

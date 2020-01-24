@@ -11,7 +11,7 @@ package br.dominio.hospital.profisionais_enfermagem;
  * @author belogo
  */
 
-public class ProfissionalEnfermagem_Hemoterapia
+public final class ProfissionalEnfermagem_Hemoterapia
 {
    
 }//Fim da classe ProfissionalEnfermagem_Hemoterapia;

@@ -66,7 +66,7 @@ public final class Professor extends Funcionario
    
    public int rere()
    {
-      return 1;
+      return this.retornarRegistroGeral().retornarCpf();
    }
    
 }//Fim da classe Professor;

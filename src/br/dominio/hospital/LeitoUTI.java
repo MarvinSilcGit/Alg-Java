@@ -11,7 +11,7 @@ package br.dominio.hospital;
  * @author belogo
  */
 
-public class LeitoUTI 
+public final class LeitoUTI 
 {
    
 }//Fim da classe LeitoUTI;

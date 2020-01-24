@@ -86,7 +86,7 @@ public class Cidadao implements IRecebeDadosCidadao
       return ano;
    }//Fim do método que retorna o ano de nascimento do objeto do tipo Cidadao para a interface IRecebeDadosCidadao;
    
-   private Identidade retornarRegistroGeral()
+   public Identidade retornarRegistroGeral()
    {
       identidade = registroGeral.retornarIdentidade();
       

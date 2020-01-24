@@ -20,7 +20,7 @@ import br.dominio.api.ProfissionalEnfermagem;
 //Fim dos imports de biblioteca de classes ou APIs(Application Programming Interfaces) Java;
 
 
-public class ProfissionalEnfermagem_Urgencia_Trauma_Emergencia extends ProfissionalEnfermagem
+public final class ProfissionalEnfermagem_Urgencia_Trauma_Emergencia extends ProfissionalEnfermagem
 {
    
    public ProfissionalEnfermagem_Urgencia_Trauma_Emergencia()
