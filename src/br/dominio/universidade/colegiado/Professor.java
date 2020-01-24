@@ -64,9 +64,4 @@ public final class Professor extends Funcionario
       salarioHora = novoSalarioHora;
    }//Fim do método que altera o salario hora do objeto do tipo Professor;
    
-   public int rere()
-   {
-      return this.retornarRegistroGeral().retornarCpf();
-   }
-   
 }//Fim da classe Professor;

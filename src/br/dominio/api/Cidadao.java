@@ -28,14 +28,14 @@ public class Cidadao implements IRecebeDadosCidadao
    
    private Identidade identidade;
    
-   private int dia,
-           mes,
-           ano;
+   private int diaNascimento,
+           mesNascimento,
+           anoNascimento;
    
    //Fim do campo de declaração de atributos;
    
    
-   public void receberDadosCidadao (String nomePessoa, String nomePaiPessoa, String nomeMaePessoa, int diaNascimento, int mesNascimento, int anoNascimento)
+   public void receberDadosCidadao (String nomePessoa, String nomePaiPessoa, String nomeMaePessoa, int diaNascimentoPessoa, int mesNascimentoPessoa, int anoNascimentoPessoa)
    { 
       nome = nomePessoa;
       
@@ -43,11 +43,11 @@ public class Cidadao implements IRecebeDadosCidadao
       
       nomeMae = nomeMaePessoa;
       
-      dia = diaNascimento;
+      diaNascimento = diaNascimentoPessoa;
       
-      mes = mesNascimento;
+      mesNascimento = mesNascimentoPessoa;
       
-      ano = anoNascimento;
+      anoNascimento = anoNascimentoPessoa;
    }//Fim do método que recebe o nome do cidadao;
    
    @Override
@@ -71,26 +71,25 @@ public class Cidadao implements IRecebeDadosCidadao
    @Override
    public final int retornarDiaNascimento()
    {
-      return dia;
+      return diaNascimento;
    }//Fim do método que retorna o dia de nascimento do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
    
    @Override
    public final int retornarMesNascimento()
    {
-      return mes;
+      return mesNascimento;
    }//Fim do método que retorna o mês de nascimento do objeto do tipo Cidadao para a interface IReecebeDadosCidadao;
    
    @Override
    public final int retornarAnoNascimento()
    {
-      return ano;
+      return anoNascimento;
    }//Fim do método que retorna o ano de nascimento do objeto do tipo Cidadao para a interface IRecebeDadosCidadao;
    
-   public Identidade retornarRegistroGeral()
+   @Override
+   public int retornarHashCode()
    {
-      identidade = registroGeral.retornarIdentidade();
-      
-      return identidade;
-   }//Fim do método que retorna o objeto do tipo RG do objeto do tipo Cidadao;
+      return hashCode();
+   }
    
 }//Fim da classe Pessoa; 

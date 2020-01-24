@@ -26,4 +26,6 @@ public interface IRecebeDadosCidadao
    
    int retornarAnoNascimento();
    
+   int retornarHashCode();
+   
 }//Fim da interface ICadastroSocial;

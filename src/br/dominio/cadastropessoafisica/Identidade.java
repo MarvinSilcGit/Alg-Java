@@ -25,9 +25,9 @@ public final class Identidade
    
    private Scanner scanner;
    
-   private int mes,
-           dia,
-           ano;
+   private int mesNascimento,
+           diaNascimento,
+           anoNascimento;
    
    //Fim do campo de declaraçãoa de atributos;  
  
@@ -48,11 +48,11 @@ public final class Identidade
    
    public final void asdasd()
    {
-      dia = scanner.nextInt(dadosCidadao.retornarDiaNascimento());
+      diaNascimento = scanner.nextInt(dadosCidadao.retornarDiaNascimento());
       
-      mes = scanner.nextInt(dadosCidadao.retornarMesNascimento());
+      mesNascimento = scanner.nextInt(dadosCidadao.retornarMesNascimento());
       
-      ano = scanner.nextInt(dadosCidadao.retornarAnoNascimento());
+      anoNascimento = scanner.nextInt(dadosCidadao.retornarAnoNascimento());
    }//Fim do método que retorna a data de nascimento do objeto do tipo Cidadao do objeto do tipo RG;
    
    public int retornarCpf()

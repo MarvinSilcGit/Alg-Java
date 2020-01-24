@@ -16,7 +16,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public abstract class Funcionario extends Cidadao
+public class Funcionario extends Cidadao
 {
    private float salario;
     
@@ -53,28 +53,10 @@ public abstract class Funcionario extends Cidadao
         
    }//Fim do método construtor padrão;
     
-   public Funcionario (String email, Endereco endereco, float salario, String setor, Date dataAdmissao)
+   public Funcionario (String email, Endereco endereco)
    {               
-      this.salario = salario;
-        
-      this.setor = setor;
-        
-      this.dataAdmissao = dataAdmissao;
+      this.email = email;
    }//Fim do primeiro método construtor personalizado;
-    
-   public Funcionario (String nome, Date dataNascimento, String cpf, String email, Endereco endereco, String setor, Date dataAdmissao)
-   {    
-      this.setor = setor;
-        
-      this.dataAdmissao = dataAdmissao;   
-   }//Fim do segundo método construtor personalizado;
-    
-   public Funcionario (String nome, Date nascimento, String cpf, String email, Endereco endereco, float salario, String setor)
-   {    
-      this.salario = salario;
-        
-      this.setor = setor;
-   }//Fim do terceiro método construtor personalizado;
     
    public final float retornarSalario()
    { 
@@ -94,11 +76,6 @@ public abstract class Funcionario extends Cidadao
    {
       return setor;
    }//Fim do método que retorna o setor do objeto do tipo Funcionario;
-    
-   public final void alterarSetor (String novosetor)
-   {   
-      setor = novosetor;
-   }//Fim do método que altera o setor do objeto do tipo Funcionario;
     
    public final Date retornarDataAdmissão()
    {   

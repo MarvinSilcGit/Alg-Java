@@ -12,14 +12,11 @@ package br.dominio.cadastropessoafisica;
  */
 
 public final class MainCadastroPessoaFisica
-{
-   
+{     
+
    public static final void main (String [] args)
    {
-    
-      Identidade rg = new Identidade();
-      
-      
+
    }//Fim do método main;
    
 }//Fim da classe MainCadastroPessoaFisica;
