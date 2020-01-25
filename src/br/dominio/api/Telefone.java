@@ -26,36 +26,27 @@ public final class Telefone
    //Fim do campo de declaração de atributos;
    
    
+   public enum Ddi
+   {
+      BRASIL,
+      EUA,
+   }//Fim do enum Ddi;
+   
+   public enum DddCurtaDistancia
+   {
+      QUINZE;
+   }//Fim do enum DddCurtaDistancia;
+   
+   
    public Telefone()
    {
      
    }//Fim do método construtor padrão;
    
-   public Telefone  (int ddi, int dddCurtaDistancia, int dddLongaDistancia, int numero)
-   {
-      this.ddi = ddi;
-      
-      this.dddCurtaDistancia = dddCurtaDistancia;
-      
-      this.dddLongaDistancia = dddLongaDistancia;
-      
+   public Telefone (int numero, String operadora)
+   {  
       this.numero = numero;
    }//Fim do método construtor personalizado;
-   
-   public final int retornarDdi()
-   {
-      return this.ddi;
-   }//Fim do método que retorna o ddi do objeto do tipo Telefone;
-   
-   public final int retornarDddCurtaDistancia()
-   {
-      return this.dddCurtaDistancia;
-   }//Fim do método que retorna o ddd de curta distância do objeto do tipo Telefone;
-   
-   public final int retornarDddLongaDistancia()
-   {
-      return this.dddLongaDistancia;
-   }//Fim do método que retorna o ddd de longa distância do objeto do tipo Telefone;
    
    public final int retornarNumero()
    {

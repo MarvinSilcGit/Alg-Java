@@ -11,85 +11,37 @@ package br.dominio.api;
  * @author belogo
  */
 
-import br.dominio.cadastropessoafisica.IRecebeDadosCidadao;
-
-import br.dominio.cadastropessoafisica.Identidade;
+import java.util.Scanner;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class Cidadao implements IRecebeDadosCidadao
+public abstract class Cidadao
 {      
-   private String nome,
-           nomePai,
-           nomeMae;
+   private String nome;
    
-   private IRecebeIdentidade registroGeral;
+   private Endereco endereco;
    
-   private Identidade identidade;
+   private int cpf;
    
-   private int diaNascimento,
-           mesNascimento,
-           anoNascimento;
+   private Scanner scan;
    
    //Fim do campo de declaração de atributos;
    
    
-   public void receberDadosCidadao (String nomePessoa, String nomePaiPessoa, String nomeMaePessoa, int diaNascimentoPessoa, int mesNascimentoPessoa, int anoNascimentoPessoa)
-   { 
-      nome = nomePessoa;
-      
-      nomePai = nomePaiPessoa;
-      
-      nomeMae = nomeMaePessoa;
-      
-      diaNascimento = diaNascimentoPessoa;
-      
-      mesNascimento = mesNascimentoPessoa;
-      
-      anoNascimento = anoNascimentoPessoa;
-   }//Fim do método que recebe o nome do cidadao;
-   
-   @Override
    public final String retornarNome()
    {
       return nome;
-   }//Fim do método que retorna o nome do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
+   }//Fim do método que retorna o nome;
    
-   @Override
-   public final String retornarNomePai()
+   public final Endereco retornarEndereco()
    {
-      return nomePai;
-   }//Fim do método que retorna o nome do pai do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
+      return endereco;
+   }//Fim do método que retorna o objetivo do tipo Endereco;
    
-   @Override
-   public final String retornarNomeMae()
+   public final int retornarCpf()
    {
-      return nomeMae;
-   }//Fim do método que retorna o nome da mãe do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
+      return cpf;
+   }//Fim do método que retorna o cpf;
    
-   @Override
-   public final int retornarDiaNascimento()
-   {
-      return diaNascimento;
-   }//Fim do método que retorna o dia de nascimento do objeto do tipo Cidadao para a interface IRecebeDadoCidadao;
-   
-   @Override
-   public final int retornarMesNascimento()
-   {
-      return mesNascimento;
-   }//Fim do método que retorna o mês de nascimento do objeto do tipo Cidadao para a interface IReecebeDadosCidadao;
-   
-   @Override
-   public final int retornarAnoNascimento()
-   {
-      return anoNascimento;
-   }//Fim do método que retorna o ano de nascimento do objeto do tipo Cidadao para a interface IRecebeDadosCidadao;
-   
-   @Override
-   public int retornarHashCode()
-   {
-      return hashCode();
-   }
-   
-}//Fim da classe Pessoa; 
+}//Fim da classe Cidadao; 
