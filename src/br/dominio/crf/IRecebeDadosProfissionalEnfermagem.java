@@ -11,8 +11,6 @@ package br.dominio.crf;
  * @author belogo
  */
 
-import br.dominio.cadastropessoafisica.Identidade;
-
 import br.dominio.api.Endereco;
 
 import br.dominio.api.Telefone;
@@ -23,8 +21,6 @@ import br.dominio.api.Telefone;
 public interface IRecebeDadosProfissionalEnfermagem
 {
    String retornarEmail();
-   
-   Identidade retornarRG();
    
    Endereco retornarEndereco();
    

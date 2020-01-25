@@ -96,10 +96,5 @@ public class Funcionario extends Cidadao
    {  
       return telefone.retornarTelefoneCompleto();
    }//Fim do método que retorna o telefone do objeto do tipo Pessoa;
- 
-   public final String retornarEndereco()
-   {    
-      return endereco.retornarEnderecoCompleto();
-   }//Fim do método que retorna o objeto do tipo Endereco;
    
 }//Fim da classe Funcionario;

@@ -1,10 +1,9 @@
 package br.dominio.empresa;
 
+
 import br.dominio.api.Endereco;
 
 import br.dominio.api.Funcionario;
-
-import br.dominio.cadastropessoajuridica.ICadastroEmpresarial;
 
 import java.util.ArrayList;
 
@@ -13,7 +12,7 @@ import br.dominio.empresa.departamento.Departamento;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public abstract class Empresa implements ICadastroEmpresarial
+public abstract class Empresa
 {     
    private String razaoSocial,
            nomeFantasia;
@@ -65,41 +64,35 @@ public abstract class Empresa implements ICadastroEmpresarial
       this.capitalSocial = capitalSocial;
    }//Fim do segundo método construtor personalizado;
    
-   @Override
    public final String retornarRazaoSocial()
    {     
       return razaoSocial;
-   }//Fim do método que retorna razão social do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   }//Fim do método que retorna razão social do objeto do tipo Empresa;
    
-   @Override
    public final String retornarNomeFantasia()
    {     
       return nomeFantasia;
-   }//Fim do método que retorna o nome fantasia do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   }//Fim do método que retorna o nome fantasia do objeto do tipo Empresa;
     
-   @Override
    public final Endereco retornarEndereco()
    {
       return endereco;
-   }//Fim do método que retorna o objeto do tipo Endereco do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   }//Fim do método que retorna o objeto do tipo Endereco do objeto do tipo Empresa;
    
-   @Override
    public final Funcionario retornarPresidente()
    {     
       return presidente;
-   }//Fim do método que retorna o presidente do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   }//Fim do método que retorna o presidente do objeto do tipo Empresa;
    
-   @Override
    public final Funcionario retornarVicePresidente()
    {     
       return vicePresidente;
-   }//Fim do método que retorna o vice presidente do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   }//Fim do método que retorna o vice presidente do objeto do tipo Empresa;
    
-   @Override
    public final double retornarCapitalSocial()
    {
       return capitalSocial;
-   }//Fim do método que retorna o capital social do objeto do tipo Empresa para a interface ICadastroEmpresarial;
+   }//Fim do método que retorna o capital social do objeto do tipo Empresa;
    
    public final long retornarCnpj()
    {
