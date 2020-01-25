@@ -46,9 +46,9 @@ public final class HospitalCardial extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public HospitalCardial(String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, Funcionario diretor)
+   public HospitalCardial(String razaoSocial, String nomeFantasia, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, Funcionario diretor)
    {
-      super(razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super(razaoSocial, nomeFantasia, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa, inicializando o seu segundo método construtor personalizado;
       

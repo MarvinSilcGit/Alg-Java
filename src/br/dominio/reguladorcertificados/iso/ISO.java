@@ -15,8 +15,6 @@ import java.util.ArrayList;
 
 import br.dominio.empresa.Empresa;
 
-import br.dominio.api.Endereco;
-
 import br.dominio.api.Funcionario;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -36,9 +34,9 @@ public final class ISO extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public ISO (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
+   public ISO (String razaoSocial, String nomeFantasia, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
    {
-      super (razaoSocial, nomeFantasia, endereco, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, presidente, vicePresidente, capitalSocial);
       
       //Fim do método super da classe mãe ou super classe Empresa;
       

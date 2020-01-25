@@ -15,8 +15,6 @@ import br.dominio.universidade.colegiado.Colegiado;
 
 import br.dominio.api.Funcionario;
 
-import br.dominio.api.Endereco;
-
 import java.util.ArrayList;
 
 import br.dominio.empresa.Empresa;
@@ -39,9 +37,9 @@ public final class Universidade extends Empresa
         
    }//Fim do método construtor padrão;
     
-   public Universidade (String razaoSocial, String nomeFantasia, Endereco endereco, double capitalSocial, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
+   public Universidade (String razaoSocial, String nomeFantasia, double capitalSocial, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
    { 
-      super (razaoSocial, nomeFantasia, endereco, capitalSocial);
+      super (razaoSocial, nomeFantasia, capitalSocial);
       
       //Fim do método Super da classe mãe ou superclasse Empresa, inicializando o primeiro método construtor personalizado;
         

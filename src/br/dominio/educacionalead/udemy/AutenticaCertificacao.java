@@ -52,7 +52,7 @@ public final class AutenticaCertificacao implements ICadastraCertificador
    }//Fim do método que retorna o cnpj do objeto do tipo Udemy para a interface ICadastraCertificadores;
    
    @Override
-   public final long retornarTelefone()
+   public final String retornarTelefone()
    {
       return udemy.retornarTelefone();
    }//Fim do métod que retorna o telefoen do objeto do tipo Udemy para a interface ICadastraCertificadores;

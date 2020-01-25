@@ -28,6 +28,6 @@ public interface ICadastraCertificador
    
    long retornarCnpj();
    
-   long retornarTelefone();
+   String retornarTelefone();
    
 }//Fim da interface ICdastrasEmissor;

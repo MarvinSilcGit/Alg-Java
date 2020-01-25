@@ -1,13 +1,15 @@
 package br.dominio.empresa;
 
 
+import java.util.ArrayList;
+
 import br.dominio.api.Endereco;
 
 import br.dominio.api.Funcionario;
 
-import java.util.ArrayList;
-
 import br.dominio.empresa.departamento.Departamento;
+
+import br.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -26,9 +28,9 @@ public abstract class Empresa
    
    private double capitalSocial;
    
-   private IRecebeCnpj cnpj;
+   private Telefone telefone;
    
-   private IRecebeTelefone telefone;
+   private long cnpj;
    
    //Fim do campo de declaração de atributos;
     
@@ -38,24 +40,20 @@ public abstract class Empresa
    
    }//Fim do método construtor padrão;
      
-   public Empresa (String razaoSocial, String nomeFantasia, Endereco endereco, double capitalSocial)
+   public Empresa (String razaoSocial, String nomeFantasia, double capitalSocial)
    {    
       this.razaoSocial = razaoSocial;
         
       this.nomeFantasia = nomeFantasia;
-        
-      this.endereco = endereco;
       
       this.capitalSocial = capitalSocial;
    }//Fim do primeiro método construtor personalizado;    
    
-   public Empresa (String razaoSocial, String nomeFantasia, Endereco endereco, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public Empresa (String razaoSocial, String nomeFantasia, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
    {           
       this.razaoSocial = razaoSocial;
         
       this.nomeFantasia = nomeFantasia;
-        
-      this.endereco = endereco;
       
       this.presidente = presidente;
             
@@ -96,12 +94,12 @@ public abstract class Empresa
    
    public final long retornarCnpj()
    {
-      return cnpj.retornarCnpj();
+      return cnpj;
    }//Fim do método que retorna o cnpj do objeto do tipo Empresa;
    
-   public final long retornarTelefone()
+   public final String retornarTelefone()
    {
-      return telefone.retornarTelefone();
+      return telefone.retornarTelefoneCompleto();
    }//Fim do método que retorna o telefone do objeto do tipo Empresa;
         
    public final ArrayList retornarListaDepartamentos()
@@ -109,7 +107,7 @@ public abstract class Empresa
       return listaDepartamentos;
    }//Fim do método que retorna a lista do objeto do tipo Empresa;
     
-   public final void inserirDepartamentoLista(Departamento novoDepartamento)
+   public final void inserirDepartamentoLista (Departamento novoDepartamento)
    {     
       if (listaDepartamentos.size() == 8)
       {  
@@ -117,11 +115,11 @@ public abstract class Empresa
       }
       else
       {
-         listaDepartamentos.add(novoDepartamento);
+         listaDepartamentos.add (novoDepartamento);
       }
    }//Fim do método que insere departamento na lista do objeto do tipo Empresa;
     
-   public final void removerDepartamentoLista(Departamento removerDepartamento)
+   public final void removerDepartamentoLista (Departamento removerDepartamento)
    {     
       if (listaDepartamentos.size() == 1)
       {
@@ -129,7 +127,7 @@ public abstract class Empresa
       }
       else
       {        
-         listaDepartamentos.remove(removerDepartamento);   
+         listaDepartamentos.remove (removerDepartamento);   
       }
    }//Fim do método que remove departamento da lista do objeto do tipo Empresa;
     
