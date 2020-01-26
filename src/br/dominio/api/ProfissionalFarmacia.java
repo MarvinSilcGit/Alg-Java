@@ -8,7 +8,7 @@ import java.util.Date;
 
 public abstract class ProfissionalFarmacia extends Funcionario
 {   
-   private String crf;
+   private int crf;
     
    //Fim do campo de declaração de atributos;
    
@@ -18,16 +18,16 @@ public abstract class ProfissionalFarmacia extends Funcionario
    
    }//Fim do método construtor padrão;
     
-   public ProfissionalFarmacia (String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String crf)
+   public ProfissionalFarmacia (String nome, int cpf, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crf)
    {     
-      super ();
+      super (nome, cpf, salario, setor, dataAdmissao, email, endereco, telefone);
         
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor personalizado;
       
       this.crf = crf;
    }//Fim do método construtor personalizado;
     
-   public final String retornarCrf()
+   public final int retornarCrf()
    {   
       return crf;
    }//Fim do método que retorna o crf do objeto do tipo ProfissionalFarmacia;

@@ -20,11 +20,11 @@ public abstract class ProfissionalMedicina extends Funcionario
 {  
    private ArrayList listaPacientes = new ArrayList(15);
     
-   private String crm;
+   private int crm;
     
-   private double valorConsulta;
+   private float valorConsulta;
           
-   private static final int quantidadePlantoesSemana = 2;
+   private static final int QUANTIDADE_PLANTOES_SEMANA = 2;
    
    //Fim do campo de declaração de atributos;
     
@@ -34,9 +34,9 @@ public abstract class ProfissionalMedicina extends Funcionario
         
    }//Fim do método construtor padrão;
      
-   public ProfissionalMedicina (String email, Endereco endereco, String setor, Date dataAdmissao, String crm, double valorConsulta)
+   public ProfissionalMedicina (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta)
    {    
-      super ();
+      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone);
       
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu segundo método construtror personalizado;
         
@@ -45,24 +45,19 @@ public abstract class ProfissionalMedicina extends Funcionario
       this.valorConsulta = valorConsulta;
    }//Fim do método construtor personalizado;
     
-   public final String retornarCrm()
+   public final int retornarCrm()
    {  
       return crm;
    }//Fim do método que retorna o Crm do objeto do tipo ProfissionalMedicina;
 
-   public final double retornarValorConsulta()
+   public final float retornarValorConsulta()
    {    
       return valorConsulta;
    }//Fim do método que retorna o valor da consulta do objeto do tipo ProfissionalMedicina;
     
-   public final void alterarValorConsulta (double novoValorConsulta)
-   {     
-      valorConsulta = novoValorConsulta;
-   }//Fim do método que altera o valor da consulta do objeto do tipo ProfissionalMedicina;
-    
    public final int retornarQuantidadePlantoesSemana()
    {
-      return quantidadePlantoesSemana;
+      return QUANTIDADE_PLANTOES_SEMANA;
    }//Fim do método que retorna a quantidade de plantoes por semana do objeto do tipo ProfissionalMedicina;
    
    public final ArrayList retornarListaPacientes()
