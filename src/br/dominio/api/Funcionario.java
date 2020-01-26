@@ -53,10 +53,27 @@ public class Funcionario extends Cidadao
         
    }//Fim do método construtor padrão;
     
-   public Funcionario (String email, Endereco endereco)
-   {               
+   public Funcionario (String nome, int cpf, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone)
+   {                
       this.email = email;
+      
+      this.salario = salario;
+      
+      this.setor = setor;
+      
+      this.dataAdmissao = dataAdmissao;
+      
+      this.email = email;
+      
+      this.endereco = endereco;
+      
+      this.telefone = telefone;
    }//Fim do primeiro método construtor personalizado;
+   
+   public Funcionario (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone)
+   {
+      
+   }//Fim do segundo método construtor personalizado;
     
    public final float retornarSalario()
    { 

@@ -17,6 +17,9 @@ public final class MainApi
    public static final void main (String [] args)
    {  
 
+      Endereco en = new Endereco (1,"",1,"","","asa");
+      
+      System.out.println(en.retornarEnderecoCompleto());
       
    }//Fim do método main;
    

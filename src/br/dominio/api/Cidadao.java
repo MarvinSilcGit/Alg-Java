@@ -11,8 +11,6 @@ package br.dominio.api;
  * @author belogo
  */
 
-import java.util.Scanner;
-
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -24,21 +22,31 @@ public abstract class Cidadao
    
    private int cpf;
    
-   private Scanner scan;
-   
    //Fim do campo de declaração de atributos;
    
+   
+   public Cidadao ()
+   {
+      
+   }//Fim do método construtor padrão;
+   
+   public Cidadao (String nome, int cpf)
+   {
+      this.nome = nome;
+      
+      this.cpf = cpf;
+   }//Fim do método construtor personalizado;
    
    public final String retornarNome()
    {
       return nome;
    }//Fim do método que retorna o nome;
    
-   public final Endereco retornarEndereco()
+   public final String retornarEndereco()
    {
-      return endereco;
+      return endereco.retornarEnderecoCompleto();
    }//Fim do método que retorna o objetivo do tipo Endereco;
-   
+  
    public final int retornarCpf()
    {
       return cpf;
