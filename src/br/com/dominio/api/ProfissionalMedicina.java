@@ -24,7 +24,7 @@ public abstract class ProfissionalMedicina extends Funcionario
     
    private float valorConsulta;
           
-   private static final int QUANTIDADE_PLANTOES_SEMANA = 2;
+   private static final int QUANTIDADE_PLANTOES_SEMANA = 1;
    
    //Fim do campo de declaração de atributos;
     

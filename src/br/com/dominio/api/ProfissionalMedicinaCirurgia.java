@@ -27,8 +27,14 @@ public abstract class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
    {
       super(nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
       
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
       
       this.valorCirurgia = valorCirurgia;
-   }//Fim do método construotr personalizado; 
+   }//Fim do método construotr personalizado;
+   
+   public final float retornarValorCirurgia()
+   {
+      return valorCirurgia;
+   }//Fim do método que retorna a valor da cirurgia do objeto do tipo ProfissionalMedicinaCirurgia;
    
 }//Fim da clase ProfissionalMedicinaCirurgia;
