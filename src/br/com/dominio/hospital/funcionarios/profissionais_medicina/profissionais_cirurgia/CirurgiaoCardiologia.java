@@ -4,6 +4,7 @@ package br.com.dominio.hospital.funcionarios.profissionais_medicina.profissionai
 import java.util.Date;
 
 import br.com.dominio.api.ProfissionalMedicina;
+
 import br.com.dominio.api.Endereco;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -30,12 +31,12 @@ public final class CirurgiaoCardiologia extends ProfissionalMedicina
       this.valorCirurgia = valorCirurgia;
    }//Fim do método construtor personalizado;
     
-   @Override
+  /* @Override
    public final void realizarConsulta()
    {
       
    }//Terminar esse polimorfismo;
-   
+   */
    public final double retornarValorCirurgia()
    {    
       return valorCirurgia; 

@@ -82,6 +82,6 @@ public abstract class ProfissionalMedicina extends Funcionario
        listaPacientes.remove (removerPaciente);
    }//Fim do método que remover paciente da lista do objeto do tipo ProfissionalMedicina;
     
-   public abstract void realizarConsulta();//Fim do método abstrato que será implementado pelas sub classes;
+ //  public abstract void realizarConsulta();//Fim do método abstrato que será implementado pelas sub classes;
     
 }//Fim da classe ProfissionalMedicina;
