@@ -38,5 +38,4 @@ public class Traumatologista extends ProfissionalMedicina
       
    }//Fim do método construtor personalizado;
    
-   
 }//Fim da classe Traumatologista;

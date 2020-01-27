@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import br.com.dominio.api.Cidadao;
+
 import br.com.dominio.api.Endereco;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -32,7 +33,7 @@ public final class Estudante extends Cidadao
    private int horasExtras,
            matricula;
    
-   private static final int horasExtrasMinimas = 300;
+   private static final int HORAS_EXTRAS_MINIMAS = 300;
     
    private double descontoFiesProUni;
    
@@ -42,7 +43,7 @@ public final class Estudante extends Cidadao
     
    private ArrayList disciplinasCursadas = new ArrayList(40);
    
-   private Map <String, Integer> certificados = new HashMap <String, Integer>();
+   private Map <String, Integer> certificados = new HashMap();
    
    private Date anoMatricula;
     
@@ -54,12 +55,14 @@ public final class Estudante extends Cidadao
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String email, Endereco endereco, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Date anoMatricula)
+   public Estudante(String nome, int cpf, Endereco endereco, String email, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Date anoMatricula)
    {    
-      super();
+      super(nome, cpf);
         
-      //Fim do método Super da classe mãe ou superclasse Pessoa, inicializando o seu primeiro método construtor personalizado;
+      //Fim do método Super da classe mãe ou superclasse Cidadao;
      
+      this.email = email;
+      
       this.horasExtras = horasExtras;
         
       this.matricula = matricula;
@@ -71,20 +74,15 @@ public final class Estudante extends Cidadao
       this.anoMatricula = anoMatricula;
    }//Fim do método construtor personalizado;
     
+   public String retornarEmail()
+   {
+      return email;
+   }//Fim do método que retorna o email do objeto do tipo Estudante;
+   
    public final int retornarHorasExtras()
    {
       return horasExtras;
    }//Fim do método que retorna as horas extras do objeto do tipo Estudante;
-    
-   public final void aumentarHorasExtras (int valor)
-   {  
-      horasExtras+= valor;
-   }//Fim do método que aumenta as horas extras do objeto do tipo Estudante;
-    
-   public final void diminuirHorasExtras (int valor)
-   {
-      horasExtras-= valor;
-   }//Fim do método que diminui as horas extras do objeto do tipo Estudante;
     
    public final int retornarMatrícula()
    {
@@ -93,7 +91,7 @@ public final class Estudante extends Cidadao
     
    public final int retornarHorasExtrasMinimas()
    {
-      return horasExtrasMinimas;
+      return HORAS_EXTRAS_MINIMAS;
    }//Fim do método que retorna as horas extras mínimas da classe Estudante;
    
    public final double retornarDescontoFiesProUni()

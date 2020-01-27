@@ -14,7 +14,9 @@ package br.com.dominio.hospital.farmacia;
 import java.util.Date;
 
 import br.com.dominio.api.ProfissionalFarmacia;
+
 import br.com.dominio.api.Endereco;
+
 import br.com.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;

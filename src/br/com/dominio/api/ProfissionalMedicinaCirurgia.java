@@ -22,6 +22,10 @@ public class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
    
    //Fim do campo de declaração de atributos;
    
+   public ProfissionalMedicinaCirurgia()
+   {
+      
+   }//Fim do método construtor personalizado;
    
    public ProfissionalMedicinaCirurgia (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta, float valorCirurgia)
    {
@@ -32,7 +36,7 @@ public class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
       this.valorCirurgia = valorCirurgia;
    }//Fim do método construotr personalizado;
    
-   public final float retornarValorCirurgia()
+   public float retornarValorCirurgia()
    {
       return valorCirurgia;
    }//Fim do método que retorna a valor da cirurgia do objeto do tipo ProfissionalMedicinaCirurgia;
