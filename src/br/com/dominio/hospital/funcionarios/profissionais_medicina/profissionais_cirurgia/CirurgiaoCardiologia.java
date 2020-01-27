@@ -3,32 +3,29 @@ package br.com.dominio.hospital.funcionarios.profissionais_medicina.profissionai
 
 import java.util.Date;
 
-import br.com.dominio.api.ProfissionalMedicina;
+import br.com.dominio.api.ProfissionalMedicinaCirurgia;
 
 import br.com.dominio.api.Endereco;
+
+import br.com.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public final class CirurgiaoCardiologia extends ProfissionalMedicina
+public final class CirurgiaoCardiologia extends ProfissionalMedicinaCirurgia
 {  
-   private double valorCirurgia;
-     
-   //Fim do campo de declaração de atributos;
-   
    
    public CirurgiaoCardiologia()
    {    
    
    }//Fim do método construtor padrão;
      
-   public CirurgiaoCardiologia (String email, Endereco endereco, String setor, Date dataAdmissao, String crm, double valorConsulta, double valorCirurgia)
+   public CirurgiaoCardiologia (String nome, int cpf, String setor, Date dataAdmissao, Endereco endereco, Telefone telefone, String email, int crm, float valorConsulta, float valorCirurgia)
    {     
-      super ();  
+      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta, valorCirurgia);  
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicilizando o seu método construtor personalizado;
-         
-      this.valorCirurgia = valorCirurgia;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
+
    }//Fim do método construtor personalizado;
     
   /* @Override
@@ -37,14 +34,5 @@ public final class CirurgiaoCardiologia extends ProfissionalMedicina
       
    }//Terminar esse polimorfismo;
    */
-   public final double retornarValorCirurgia()
-   {    
-      return valorCirurgia; 
-   }//Fim do método que retorna o valor da cirurgia do objeto do tipo CirurgiaoVascular;
-     
-   public final void alterarValorCirurgia (double valor)
-   {    
-      valorCirurgia = valor; 
-   }//Fim do método que altera o valor da cirurgia do objeto do tipo CirurgiaoVascular;
     
 }//Fim da classe CirurgiaoVascular;
