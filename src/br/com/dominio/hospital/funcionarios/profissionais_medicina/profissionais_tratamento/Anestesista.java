@@ -36,7 +36,7 @@ public class Anestesista extends ProfissionalMedicina
    
    public Anestesista (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta, float valorCirurgia)
    {
-      super(nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
+      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
       
