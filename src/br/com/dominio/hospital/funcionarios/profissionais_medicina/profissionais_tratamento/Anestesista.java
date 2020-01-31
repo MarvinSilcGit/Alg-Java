@@ -42,4 +42,9 @@ public class Anestesista extends ProfissionalMedicina
       
    }//Fim do campo de declaação de atributos; 
    
+   public float retornarValorCirurgia()
+   {
+      return valorCirurgia;
+   }//Fim do método que retorna o valor da cirurgia do objeto do tipo Anestesista;
+   
 }//Fim da classe Anestesista;
