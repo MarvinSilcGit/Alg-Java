@@ -16,7 +16,7 @@ import java.util.Date;
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
-public class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
+public abstract class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
 {
    private float valorCirurgia;
    
@@ -40,5 +40,7 @@ public class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
    {
       return valorCirurgia;
    }//Fim do método que retorna a valor da cirurgia do objeto do tipo ProfissionalMedicinaCirurgia;
+   
+   public abstract void realizarCirurgia();
    
 }//Fim da clase ProfissionalMedicinaCirurgia;

@@ -28,11 +28,10 @@ public final class CirurgiaoCardiologia extends ProfissionalMedicinaCirurgia
 
    }//Fim do método construtor personalizado;
     
-  /* @Override
-   public final void realizarConsulta()
+   @Override
+   public void realizarCirurgia()
    {
       
-   }//Terminar esse polimorfismo;
-   */
-    
+   }
+
 }//Fim da classe CirurgiaoVascular;
