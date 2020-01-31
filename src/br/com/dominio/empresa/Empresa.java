@@ -4,6 +4,7 @@ package br.com.dominio.empresa;
 import java.util.ArrayList;
 
 import br.com.dominio.api.Endereco;
+
 import br.com.dominio.api.Funcionario;
 
 import br.com.dominio.empresa.departamento.Departamento;
@@ -39,16 +40,20 @@ public abstract class Empresa
    
    }//Fim do método construtor padrão;
      
-   public Empresa (String razaoSocial, String nomeFantasia, double capitalSocial)
+   public Empresa (String razaoSocial, String nomeFantasia, double capitalSocial, Endereco endereco, Telefone telefone)
    {    
       this.razaoSocial = razaoSocial;
         
       this.nomeFantasia = nomeFantasia;
       
       this.capitalSocial = capitalSocial;
+      
+      this.endereco = endereco;
+      
+      this.telefone = telefone;
    }//Fim do primeiro método construtor personalizado;    
    
-   public Empresa (String razaoSocial, String nomeFantasia, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)
+   public Empresa (String razaoSocial, String nomeFantasia, double capitalSocial, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente)
    {           
       this.razaoSocial = razaoSocial;
         
@@ -59,6 +64,10 @@ public abstract class Empresa
       this.vicePresidente = vicePresidente;
       
       this.capitalSocial = capitalSocial;
+      
+      this.endereco = endereco;
+      
+      this.telefone = telefone;
    }//Fim do segundo método construtor personalizado;
    
    public final String retornarRazaoSocial()

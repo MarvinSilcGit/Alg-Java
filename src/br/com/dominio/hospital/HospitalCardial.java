@@ -16,9 +16,14 @@ import java.util.ArrayList;
 import br.com.dominio.empresa.Empresa;
 
 import br.com.dominio.api.Funcionario;
+
 import br.com.dominio.api.Endereco;
+
 import br.com.dominio.api.ProfissionalMedicina;
+
 import br.com.dominio.api.ProfissionalEnfermagem;
+
+import br.com.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -43,11 +48,11 @@ public final class HospitalCardial extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public HospitalCardial(String razaoSocial, String nomeFantasia, Funcionario presidente, Funcionario vicePresidente, double capitalSocial, Funcionario diretor)
+   public HospitalCardial(String razaoSocial, String nomeFantasia, double capitalSocial,Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente, Funcionario diretor)
    {
-      super(razaoSocial, nomeFantasia, presidente, vicePresidente, capitalSocial);
+      super(razaoSocial, nomeFantasia, capitalSocial, endereco, telefone, presidente, vicePresidente);
       
-      //Fim do método super da classe mãe ou super classe Empresa, inicializando o seu segundo método construtor personalizado;
+      //Fim do método super da classe mãe ou super classe Empresa, inicializando o método construtor personalizado;
       
       this.diretor = diretor;
    }//Fim do método construtor personalizado;

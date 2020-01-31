@@ -19,6 +19,10 @@ import java.util.ArrayList;
 
 import br.com.dominio.empresa.Empresa;
 
+import br.com.dominio.api.Endereco;
+
+import br.com.dominio.api.Telefone;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -37,11 +41,11 @@ public final class Universidade extends Empresa
         
    }//Fim do método construtor padrão;
     
-   public Universidade (String razaoSocial, String nomeFantasia, double capitalSocial, Funcionario reitor, Funcionario viceReitor, float orcamentoPedagogicoTrimestre)
+   public Universidade (String razaoSocial, String nomeFantasia, double capitalSocial, Endereco endereco, Telefone telefone, Funcionario reitor, Funcionario viceReitor)
    { 
-      super (razaoSocial, nomeFantasia, capitalSocial);
+      super (razaoSocial, nomeFantasia, capitalSocial, endereco, telefone);
       
-      //Fim do método Super da classe mãe ou superclasse Empresa, inicializando o primeiro método construtor personalizado;
+      //Fim do método Super da classe mãe ou superclasse Empresa, inicializando o seu método construtor personalizado;
         
       this.reitor = reitor;
         

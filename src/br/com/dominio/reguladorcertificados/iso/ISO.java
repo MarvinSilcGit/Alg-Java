@@ -17,6 +17,10 @@ import br.com.dominio.empresa.Empresa;
 
 import br.com.dominio.api.Funcionario;
 
+import br.com.dominio.api.Telefone;
+
+import br.com.dominio.api.Endereco;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -34,11 +38,11 @@ public final class ISO extends Empresa
       
    }//Fim do método construtor padrão;
    
-   public ISO (String razaoSocial, String nomeFantasia, Funcionario presidente, Funcionario vicePresidente, double capitalSocial)    
+   public ISO (String razaoSocial, String nomeFantasia, double capitalSocial, Endereco endereco, Telefone telefone, Funcionario presidente, Funcionario vicePresidente)    
    {
-      super (razaoSocial, nomeFantasia, presidente, vicePresidente, capitalSocial);
+      super (razaoSocial, nomeFantasia, capitalSocial, endereco, telefone, presidente, vicePresidente);
       
-      //Fim do método super da classe mãe ou super classe Empresa;
+      //Fim do método super da classe mãe ou super classe Empresa, inicializando o seu construtor personalizado;
       
    }//Fim do método construtor personalizado;
    
