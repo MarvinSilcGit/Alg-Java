@@ -34,9 +34,9 @@ public class Anestesista extends ProfissionalMedicina
       
    }//Fim do método construtor personalizado;
    
-   public Anestesista (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta, float valorCirurgia)
+   public Anestesista (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, Endereco endereco, Telefone telefone, String email, int crm, float valorCirurgia)
    {
-      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
+      super (nome, cpf,dataNascimento, salario, setor, dataAdmissao, email, endereco, telefone, crm);
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o seu método construtor personalizado;
       

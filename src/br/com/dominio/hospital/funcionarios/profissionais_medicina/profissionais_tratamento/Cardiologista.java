@@ -30,9 +30,9 @@ public class Cardiologista extends ProfissionalMedicina
       
    }//Fim do método construtor padrão;
    
-   public Cardiologista (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta)
+   public Cardiologista (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm)
    {
-      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
+      super (nome, cpf,dataNascimento, salario, setor, dataAdmissao, email, endereco, telefone, crm);
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o seu método construtor personalizado;
       

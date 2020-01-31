@@ -30,9 +30,9 @@ public class CirurgiaoGeral extends ProfissionalMedicinaCirurgia
       
    }//Fim do método construtor padrão;
    
-   public CirurgiaoGeral (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta, float valorCirurgia)
+   public CirurgiaoGeral (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorCirurgia)
    {
-      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta, valorCirurgia);
+     super (nome, cpf, dataNascimento, salario, setor, dataAdmissao, email, endereco, telefone, crm, valorCirurgia);
       
       //Fim do método super da classe mãe ou super classe ProfissionalMedicinaCirurgia, inicializando seu método construtor personalizado;
       
