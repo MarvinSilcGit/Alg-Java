@@ -34,8 +34,14 @@ public class Traumatologista extends ProfissionalMedicina
    {
       super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, imicializando o seu método construtor personalizado;
       
    }//Fim do método construtor personalizado;
+   
+   @Override
+   public void realizarConsulta()
+   {
+      
+   }   
    
 }//Fim da classe Traumatologista;

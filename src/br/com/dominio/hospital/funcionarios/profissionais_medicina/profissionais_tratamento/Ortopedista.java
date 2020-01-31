@@ -37,5 +37,11 @@ public class Ortopedista extends ProfissionalMedicina
       //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
       
    }//Fim do método construtor personalizado;
-  
+   
+   @Override
+   public void realizarConsulta()
+   {
+      
+   }  
+   
 }//Fim da classe Ortopedista;

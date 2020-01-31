@@ -38,6 +38,12 @@ public class CirurgiaoObstetricia extends ProfissionalMedicinaCirurgia
    }//Fim do método construtor personalizado;
    
    @Override
+   public void realizarConsulta()
+   {
+      
+   }   
+   
+   @Override
    public void realizarCirurgia()
    {
       

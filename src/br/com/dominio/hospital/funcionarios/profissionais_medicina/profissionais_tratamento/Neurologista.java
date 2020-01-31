@@ -24,7 +24,8 @@ import br.com.dominio.api.ProfissionalMedicina;
 
 public class Neurologista extends ProfissionalMedicina
 {
-    public Neurologista()
+   
+   public Neurologista()
    {
       
    }//Fim do método construtor padrão;
@@ -33,8 +34,14 @@ public class Neurologista extends ProfissionalMedicina
    {
       super (nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o seu método construtor personalizado;
       
    }//Fim do método construtor personalizado;
+   
+   @Override
+   public void realizarConsulta()
+   {
+      
+   }
    
 }//Fim da classe Neurologista;

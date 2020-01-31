@@ -37,6 +37,12 @@ public final class CirurgiaoOrtopedista extends ProfissionalMedicinaCirurgia
       //Fim do método super da classe mãe ou super classe ProfissionalMedicinaCirurgia, inicializando seu método construtor personalizado;
       
    }//Fim do método construtor personalizado;
+
+   @Override
+   public void realizarConsulta()
+   {
+      
+   }
    
    @Override
    public void realizarCirurgia()
