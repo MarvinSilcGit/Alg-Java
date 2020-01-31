@@ -28,13 +28,13 @@ public final class ProfissionalEnfermagem_Hemoterapia extends ProfissionalEnferm
    public ProfissionalEnfermagem_Hemoterapia()
    {
       
-   }//Fim do método construtor padrã́o;
+   }//Fim do método construtor padrão;
    
    public ProfissionalEnfermagem_Hemoterapia  (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, String coren)
    {
       super (nome, cpf, dataNascimento, salario, setor, dataNascimento, email, endereco, telefone, coren);
       
-      //Fim do métod super da classe ou super classe ProfissionalEnfermagem, inicializando o seu método construtor personalizado;
+      //Fim do método super da classe ou super classe ProfissionalEnfermagem, inicializando o seu método construtor personalizado;
       
    }//Fim do método construtor personalizado;
    
