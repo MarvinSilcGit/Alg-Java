@@ -14,7 +14,10 @@ package br.com.dominio.hospital.funcionarios.profissionais_enfermagem;
 import java.util.Date;
 
 import br.com.dominio.api.ProfissionalEnfermagem;
+
 import br.com.dominio.api.Endereco;
+
+import br.com.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
@@ -27,8 +30,11 @@ public final class ProfissionalEnfermagem_CentroCirurgico extends ProfissionalEn
       
    }//Fim do método construtor padrão;
    
-   public  ProfissionalEnfermagem_CentroCirurgico (String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String coren)
+   public  ProfissionalEnfermagem_CentroCirurgico  (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, String coren)
    {
+      super (nome, cpf, dataNascimento, salario, setor, dataNascimento, email, endereco, telefone, coren);
+      
+      //Fim do método super da classe mãe ou super classe ProfissionalEnfermagem, inicializando o seu método construtor personalizado;
       
    }//Fim do método construtor personalizado;
    
