@@ -55,9 +55,9 @@ public final class Estudante extends Cidadao
     
    }//Fim do método construtor padrão;
     
-   public Estudante(String nome, int cpf, Endereco endereco, String email, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Date anoMatricula)
+   public Estudante(String nome, int cpf, Date dataNascimento, Endereco endereco, String email, int horasExtras, int matricula, double descontoFiesProUni, Turma turma, Date anoMatricula)
    {    
-      super(nome, cpf);
+      super(nome, cpf, dataNascimento);
         
       //Fim do método Super da classe mãe ou superclasse Cidadao;
      

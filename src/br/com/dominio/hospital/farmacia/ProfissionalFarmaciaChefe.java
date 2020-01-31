@@ -30,9 +30,9 @@ public final class ProfissionalFarmaciaChefe extends ProfissionalFarmacia
       
    }//Fim do método construtor padrão;
    
-   public ProfissionalFarmaciaChefe (String nome, int cpf, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crf)
+   public ProfissionalFarmaciaChefe (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crf)
    {
-      super (nome, cpf, salario, setor, dataAdmissao, email, endereco, telefone, crf);
+      super (nome, cpf, dataNascimento, salario, setor, dataAdmissao, email, endereco, telefone, crf);
       
       //Fim do método super da classe mãe ou super classe ProfissionalFarmacia;
       

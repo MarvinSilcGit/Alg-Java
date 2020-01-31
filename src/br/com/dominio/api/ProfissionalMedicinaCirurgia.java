@@ -27,11 +27,11 @@ public abstract class ProfissionalMedicinaCirurgia extends ProfissionalMedicina
       
    }//Fim do método construtor personalizado;
    
-   public ProfissionalMedicinaCirurgia (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta, float valorCirurgia)
+   public ProfissionalMedicinaCirurgia (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorCirurgia)
    {
-      super(nome, cpf, setor, dataAdmissao, email, endereco, telefone, crm, valorConsulta);
+      super(nome, cpf, dataNascimento, salario, setor, dataAdmissao, email, endereco, telefone, crm);
       
-      //Fim do método super da classe mãe ou super classe ProfissionalMedicina;
+      //Fim do método super da classe mãe ou super classe ProfissionalMedicina, inicializando o seu método construtor personalizado;
       
       this.valorCirurgia = valorCirurgia;
    }//Fim do método construotr personalizado;

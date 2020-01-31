@@ -11,6 +11,8 @@ package br.com.dominio.api;
  * @author belogo
  */
 
+import java.util.Date;
+
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
 
 
@@ -22,6 +24,8 @@ public abstract class Cidadao
    
    private int cpf;
    
+   private Date dataNascimento;
+   
    //Fim do campo de declaração de atributos;
    
    
@@ -30,11 +34,13 @@ public abstract class Cidadao
       
    }//Fim do método construtor padrão;
    
-   public Cidadao (String nome, int cpf)
+   public Cidadao (String nome, int cpf, Date dataNascimento)
    {
       this.nome = nome;
       
       this.cpf = cpf;
+      
+      this.dataNascimento = dataNascimento;
    }//Fim do método construtor personalizado;
    
    public final String retornarNome()

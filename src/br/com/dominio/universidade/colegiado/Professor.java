@@ -16,7 +16,9 @@ import java.util.Date;
 import java.util.ArrayList;
 
 import br.com.dominio.api.Funcionario;
+
 import br.com.dominio.api.Endereco;
+
 import br.com.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
@@ -45,9 +47,9 @@ public final class Professor extends Funcionario
     
    }//Fim do método construtor padrão;
     
-   public Professor (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, double salarioHora)
+   public Professor (String nome, int cpf, Date dataNascimento, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, double salarioHora)
    {    
-      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone);
+      super (nome, cpf, dataAdmissao, setor, dataAdmissao, email, endereco, telefone);
       
       //Fim do método Super da classe mãe ou superclasse Funcionario, inicializando o seu segundo método construtor personalizado; 
         

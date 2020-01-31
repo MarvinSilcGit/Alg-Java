@@ -21,8 +21,6 @@ public abstract class ProfissionalMedicina extends Funcionario
    private ArrayList listaPacientes = new ArrayList(15);
     
    private int crm;
-    
-   private float valorConsulta;
           
    private static final int QUANTIDADE_PLANTOES_SEMANA = 1;
    
@@ -34,26 +32,19 @@ public abstract class ProfissionalMedicina extends Funcionario
         
    }//Fim do método construtor padrão;
      
-   public ProfissionalMedicina (String nome, int cpf, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm, float valorConsulta)
+   public ProfissionalMedicina (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, int crm)
    {    
-      super (nome, cpf, setor, dataAdmissao, email, endereco, telefone);
+      super (nome, cpf, dataNascimento, salario, setor, dataAdmissao, email, endereco, telefone);
       
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu segundo método construtror personalizado;
         
       this.crm = crm;
-        
-      this.valorConsulta = valorConsulta;
    }//Fim do método construtor personalizado;
     
    public final int retornarCrm()
    {  
       return crm;
    }//Fim do método que retorna o Crm do objeto do tipo ProfissionalMedicina;
-
-   public final float retornarValorConsulta()
-   {    
-      return valorConsulta;
-   }//Fim do método que retorna o valor da consulta do objeto do tipo ProfissionalMedicina;
     
    public final int retornarQuantidadePlantoesSemana()
    {

@@ -26,9 +26,9 @@ public abstract class ProfissionalEnfermagem  extends Funcionario
         
    }//Fim do método construtor padrão;
     
-   public ProfissionalEnfermagem (String email, Endereco endereco, float salario, String setor, Date dataAdmissao, String coren)
+   public ProfissionalEnfermagem (String nome, int cpf, Date dataNascimento, float salario, String setor, Date dataAdmissao, String email, Endereco endereco, Telefone telefone, String coren)
    {  
-      super ();        
+      super (nome, cpf, dataNascimento, salario, setor, dataNascimento, email, endereco, telefone);        
         
       //Fim do método super da classe mãe ou super classe Funcionario, inicializando o seu primeiro método construtor;
        
