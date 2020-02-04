@@ -8,10 +8,11 @@ package br.com.dominio.crf;
 
 /**
  *
- * @author belogo
+ * @author belogo\
  */
 
 import br.com.dominio.api.Endereco;
+
 import br.com.dominio.api.Telefone;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
