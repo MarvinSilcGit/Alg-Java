@@ -4,13 +4,14 @@
  *  Autor: MVSC 
  */
 
-package br.com.dominio.api;
+package atm;
 
 /**
  *
  * @author belogo
  */
 
+import br.com.dominio.api.Endereco;
 import java.util.Date;
 
 //Fim dos imports de biblioteca de classes ou APIs (Application Programming Interfaces) Java;
